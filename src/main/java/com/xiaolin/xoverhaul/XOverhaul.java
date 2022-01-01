@@ -6,6 +6,7 @@ import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
 import com.xiaolin.xoverhaul.item.ModTools;
+import com.xiaolin.xoverhaul.registries.ModRegistries;
 import com.xiaolin.xoverhaul.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
@@ -36,6 +37,7 @@ public class XOverhaul implements ModInitializer {
 		ModFood.registerModItems();
 		ModArmor.registerModItems();
 		ModTools.registerModItems();
+		ModRegistries.registerFuels();
 
 		ModBlocks.registerModBlocks();
 

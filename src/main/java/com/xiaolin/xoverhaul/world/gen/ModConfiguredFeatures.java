@@ -36,13 +36,13 @@ public class ModConfiguredFeatures {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.BASE_STONE_NETHER,
                     ModBlocks.SOUL_NETHERRACK.getDefaultState(),
-                    999)); // vein size
+                    50)); // vein size
 
     public static PlacedFeature SOUL_NETHERRACK_PLACED_FEATURE =
             SOUL_NETHERRACK_CONFIGURED_FEATURE.withPlacement(
-                    CountPlacementModifier.of(99), // number of veins per chunk
+                    CountPlacementModifier.of(100), // number of veins per chunk
                     SquarePlacementModifier.of(), // spreading horizontally
-                    HeightRangePlacementModifier.uniform(YOffset.fixed(1), YOffset.fixed(128))); // bottom Y level, top Y level
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(128))); // bottom Y level, top Y level
 
 
 }

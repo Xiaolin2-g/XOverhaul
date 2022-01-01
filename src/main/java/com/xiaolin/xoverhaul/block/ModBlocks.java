@@ -149,8 +149,11 @@ public class ModBlocks {
    // public static final Block GRASS_BLOCK_SLAB = registerBlock("grass_block_slab",
      //       new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK)));
 
-public static final Block SOUL_NETHERRACK = registerBlock("soul_netherrack",
-        new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK)));
+    public static final Block SOUL_NETHERRACK = registerBlock("soul_netherrack",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK)));
+
+    public static final Block SOUL_NETHER_BRICKS = registerBlock("soul_nether_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

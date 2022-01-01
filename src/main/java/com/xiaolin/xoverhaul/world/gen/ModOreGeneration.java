@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.decorator.CountPlacementModifier;
@@ -24,17 +25,25 @@ public class ModOreGeneration {
     public static RegistryKey<ConfiguredFeature<?, ?>> PURPUR_COBBLESTONE_CONFIGURED_KEY = registerConfiguredKey("purpur_cobblestone");
     public static RegistryKey<PlacedFeature> PURPUR_COBBLESTONE_PLACED_KEY = registerPlacedKey("purpur_cobblestone");
 
+    public static RegistryKey<ConfiguredFeature<?, ?>> SOUL_NETHERRACK_CONFIGURED_KEY = registerConfiguredKey("soul_netherrack");
+    public static RegistryKey<PlacedFeature> SOUL_NETHERRACK_PLACED_KEY = registerPlacedKey("soul_netherrack");
+
     private static void configureOres(){
         registerConfiguredFeature(ModConfiguredFeatures.PURPUR_COBBLESTONE_CONFIGURED_FEATURE, PURPUR_COBBLESTONE_CONFIGURED_KEY);
+        registerConfiguredFeature(ModConfiguredFeatures.SOUL_NETHERRACK_CONFIGURED_FEATURE, SOUL_NETHERRACK_CONFIGURED_KEY);
     }
 
     private static void placeOres(){
         registerPlacedFeature(ModConfiguredFeatures.PURPUR_COBBLESTONE_PLACED_FEATURE, PURPUR_COBBLESTONE_PLACED_KEY);
+        registerPlacedFeature(ModConfiguredFeatures.SOUL_NETHERRACK_PLACED_FEATURE, SOUL_NETHERRACK_PLACED_KEY);
     }
 
     private static void addOresToBiomes(){
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
                 GenerationStep.Feature.UNDERGROUND_ORES, PURPUR_COBBLESTONE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SOUL_SAND_VALLEY),
+                GenerationStep.Feature.UNDERGROUND_ORES, SOUL_NETHERRACK_PLACED_KEY);
     }
 
     public static void generateOres(){

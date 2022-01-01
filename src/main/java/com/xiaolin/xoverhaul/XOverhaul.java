@@ -9,13 +9,6 @@ import com.xiaolin.xoverhaul.item.ModTools;
 import com.xiaolin.xoverhaul.registries.ModRegistries;
 import com.xiaolin.xoverhaul.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
-import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
-import net.minecraft.entity.EntityType;
-import net.minecraft.item.Items;
-import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
-import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -34,9 +27,9 @@ public class XOverhaul implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerModItems();
-		ModFood.registerModItems();
-		ModArmor.registerModItems();
-		ModTools.registerModItems();
+		ModFood.registerModFood();
+		ModArmor.registerModArmor();
+		ModTools.registerModTools();
 		ModRegistries.registerFuels();
 
 		ModBlocks.registerModBlocks();

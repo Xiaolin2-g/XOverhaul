@@ -52,7 +52,7 @@ public class ModFood {
         return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name), item);
     }
 
-    public static void registerModItems(){
+    public static void registerModFood(){
         XOverhaul.LOGGER.info("Registering Mod Items for " + XOverhaul.MOD_ID);
 
     }

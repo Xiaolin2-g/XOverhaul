@@ -55,7 +55,7 @@ public class ModArmor {
         return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name), item);
     }
 
-    public static void registerModItems(){
+    public static void registerModArmor(){
         XOverhaul.LOGGER.info("Registering Mod Items for " + XOverhaul.MOD_ID);
 
     }

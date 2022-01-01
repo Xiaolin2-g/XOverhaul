@@ -9,7 +9,7 @@ import net.minecraft.util.registry.Registry;
 public class ModTools {
 
     public static final Item SCRAPER = registerItem("scraper",
-            new Item(new FabricItemSettings()
+            new Scraper(new FabricItemSettings()
                     .maxDamage(8)
                     .group(ModItemGroup.XOVERHAUL_ITEMS)));
 

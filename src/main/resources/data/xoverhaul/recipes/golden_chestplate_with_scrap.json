@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xoverhaul:gold_armor_scrap"
+    },
+    {
+      "item": "xoverhaul:gold_armor_scrap"
+    },
+    {
+      "item": "xoverhaul:gold_armor_scrap"
+    },
+    {
+      "item": "xoverhaul:gold_armor_scrap"
+    },
+    {
+      "item": "xoverhaul:gold_armor_scrap"
+    }
+  ],
+  "result": {
+    "item": "minecraft:golden_chestplate"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xoverhaul:leather_armor_piece"
+    },
+    {
+      "item": "xoverhaul:leather_armor_piece"
+    },
+    {
+      "item": "xoverhaul:leather_armor_piece"
+    },
+    {
+      "item": "xoverhaul:leather_armor_piece"
+    },
+    {
+      "item": "xoverhaul:leather_armor_piece"
+    }
+  ],
+  "result": {
+    "item": "minecraft:leather_chestplate"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.xiaolin.xoverhaul.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "BabyParrotMixin",
+    "BabyParrotModelMixin",
+    "PotionGlintMixin"
+  ],
+  "client": [
+    "XOverhaulMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

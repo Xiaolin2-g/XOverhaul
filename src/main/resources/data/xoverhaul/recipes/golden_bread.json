@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "xoverhaul:golden_wheat"
+    }
+  },
+  "result": {
+    "item": "xoverhaul:golden_bread",
+    "count": 1
+  }
+}

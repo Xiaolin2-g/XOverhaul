@@ -10,6 +10,7 @@ import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -135,6 +136,12 @@ public class ModBlocks {
     public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
             new BaseStairs(Blocks.BLACK_CONCRETE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.BLACK_CONCRETE)));
+
+    public static final Block ROTTEN_FLESH_BLOCK =  registerBlock("rotten_flesh_block",
+            new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT)
+                    .hardness(3)
+                    .resistance(1)
+                    .sounds(BlockSoundGroup.SLIME)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

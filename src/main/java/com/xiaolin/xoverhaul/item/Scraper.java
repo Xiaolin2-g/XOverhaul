@@ -19,5 +19,8 @@ public class Scraper extends Item {
         }
     }*/
 
-
+    @Override
+    public boolean hasRecipeRemainder() {
+        return true;
+    }
 }

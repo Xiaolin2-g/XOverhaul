@@ -9,6 +9,8 @@ import com.xiaolin.xoverhaul.item.ModTools;
 import com.xiaolin.xoverhaul.registries.ModRegistries;
 import com.xiaolin.xoverhaul.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.client.render.RenderLayer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -38,6 +40,12 @@ public class XOverhaul implements ModInitializer {
 
 		ModWorldGen.generateModWorldGen();
 
+		blockRenderLayerMapCutout();
+
 		LOGGER.info("Hello Fabric world!");
+	}
+
+	private void blockRenderLayerMapCutout(){
+		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.ENDER_FLOWER);
 	}
 }

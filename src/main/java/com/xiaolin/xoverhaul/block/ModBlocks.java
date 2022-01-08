@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.mixin.object.builder.AbstractBlockSettingsAccessor;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -154,6 +155,18 @@ public class ModBlocks {
 
     public static final Block SOUL_NETHER_BRICKS = registerBlock("soul_nether_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS)));
+
+    public static final Block ENDER_FLOWER = registerBlock("ender_flower",
+            new EnderFlower(StatusEffects.LEVITATION, 2, FabricBlockSettings.copyOf(Blocks.POPPY)));
+
+
+
+
+
+
+
+
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

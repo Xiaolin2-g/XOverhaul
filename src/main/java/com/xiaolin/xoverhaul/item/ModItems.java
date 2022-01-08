@@ -5,6 +5,7 @@ import com.xiaolin.xoverhaul.XOverhaul;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BoneMealItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.PotionItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -94,6 +95,12 @@ public class ModItems {
     public static final Item STRIPPED_WARPED_BARK = registerItem("stripped_warped_bark",
             new Item(new FabricItemSettings()
                     .group(ModItemGroup.XOVERHAUL_ITEMS)));
+
+
+
+
+
+
 
 
 

@@ -13,12 +13,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class PotionGlintMixin {
 
 
-    /**
-     * @author
-     */
-    @Overwrite
-    public boolean hasGlint(ItemStack itemStack){
-        return false;
+
+    @Inject(method = "hasGlint", at = @At("RETURN"), cancellable = true)
+    public void hasGlint(ItemStack stack, CallbackInfoReturnable<Boolean> cir){
+        cir.setReturnValue(false);
     }
 
 }

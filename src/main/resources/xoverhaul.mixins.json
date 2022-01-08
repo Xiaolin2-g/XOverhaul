@@ -6,7 +6,8 @@
   "mixins": [
     "BabyParrotMixin",
     "BabyParrotModelMixin",
-    "PotionGlintMixin"
+    "PotionGlintMixin",
+    "ShulkerBulletEntityMixin"
   ],
   "client": [
     "XOverhaulMixin"

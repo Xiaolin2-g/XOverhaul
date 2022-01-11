@@ -35,9 +35,5 @@ public abstract class ArmorStandArmsMixin implements ArmorStandInvoker {
                          ArmorStandEntity armorStandEntity){
         ((ArmorStandInvoker)armorStandEntity).invokeSetShowArms(true);
     }
-/*
-    @Inject(method = "useOnBlock", at = @At("TAIL"), cancellable = true, locals = LocalCapture.CAPTURE_FAILSOFT)
-    public void showArms(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir, ArmorStandEntity armorStandEntity){
-        ((ArmorStandInvoker)armorStandEntity).invokeSetShowArms(true);
-    }*/
+
 }

@@ -48,6 +48,13 @@ public class ModFood {
                     .group(ModItemGroup.XOVERHAUL_ITEMS)));
 
 
+    public static final Item COOKED_TROPICAL_FISH = registerItem("cooked_tropical_fish",
+            new Item(new FabricItemSettings()
+                    .food(new FoodComponent.Builder().hunger(5).saturationModifier(1.2f)
+                            .build())
+                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+
+
     public static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name), item);
     }

@@ -8,7 +8,9 @@
     "BabyParrotModelMixin",
     "PotionGlintMixin",
     "ShulkerBulletEntityMixin",
-    "GlowingGlowBerryMixin"
+    "GlowingGlowBerryMixin",
+    "ArmorStandInvoker",
+    "ArmorStandArmsMixin"
   ],
   "client": [
     "XOverhaulMixin"

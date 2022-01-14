@@ -46,6 +46,10 @@ public class XOverhaul implements ModInitializer {
 	}
 
 	private void blockRenderLayerMapCutout(){
-		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), ModBlocks.ENDER_FLOWER);
+		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
+				ModBlocks.ENDER_FLOWER, ModBlocks.MAGENTA_TULIP, ModBlocks.LIGHT_BLUE_TULIP, ModBlocks.YELLOW_TULIP,
+				ModBlocks.LIME_TULIP, ModBlocks.GRAY_TULIP, ModBlocks.LIGHT_GRAY_TULIP, ModBlocks.CYAN_TULIP,
+				ModBlocks.PURPLE_TULIP, ModBlocks.BLUE_TULIP, ModBlocks.BROWN_TULIP, ModBlocks.GREEN_TULIP,
+				ModBlocks.BLACK_TULIP);
 	}
 }

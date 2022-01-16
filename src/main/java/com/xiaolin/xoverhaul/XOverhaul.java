@@ -1,6 +1,7 @@
 package com.xiaolin.xoverhaul;
 
 import com.xiaolin.xoverhaul.block.ModBlocks;
+import com.xiaolin.xoverhaul.datagen.ModDataGeneratorEntrypoint;
 import com.xiaolin.xoverhaul.events.LootTableModifications;
 import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.item.ModFood;
@@ -43,6 +44,7 @@ public class XOverhaul implements ModInitializer {
 		blockRenderLayerMapCutout();
 
 		LOGGER.info("Hello Fabric world!");
+
 	}
 
 	private void blockRenderLayerMapCutout(){

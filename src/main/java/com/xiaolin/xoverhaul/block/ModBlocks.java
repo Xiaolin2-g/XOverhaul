@@ -195,8 +195,7 @@ public class ModBlocks {
     public static final Block BLACK_TULIP = registerBlock("black_tulip",
             new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
 
-    public static final Block ENDER_END_STONE = registerBlock("ender_end_stone",
-            new OreBlock(FabricBlockSettings.copyOf(Blocks.END_STONE)));
+
 
 
 

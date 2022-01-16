@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "xoverhaul:item/cooked_tropical_fish"
-  }
-}

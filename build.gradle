@@ -78,7 +78,7 @@ sourceSets {
 			srcDir "src/main"
 		}
 		resources {
-			srcDir "src/main/resources"
+			srcDir "src/generated/resources"
 		}
 	}
 }
@@ -89,7 +89,7 @@ loom {
 			client()
 			name "Data Generation"
 			vmArg "-Dfabric-api.datagen"
-			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/resources")}"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/generated/resources")}"
 
 			ideConfigGenerated = true
 			runDir "build/datagen"

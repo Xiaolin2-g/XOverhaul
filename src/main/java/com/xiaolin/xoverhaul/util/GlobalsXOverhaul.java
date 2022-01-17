@@ -68,11 +68,11 @@ public class GlobalsXOverhaul {
 
     // Block Category List
 
-    public static Block[] blocks = {ModBlocks.ENDER_END_STONE};
-    public static Block[] slabsBase = {Blocks.BEDROCK};
-    public static Block[] slabs = {ModBlocks.BEDROCK_SLAB};
-    public static Block[] stairsBase = {};
-    public static Block[] stairs = {};
+    public static Block[] BLOCKS = {ModBlocks.ENDER_END_STONE};
+    public static Block[] SLABS_BASE = {Blocks.BEDROCK};
+    public static Block[] SLABS = {ModBlocks.BEDROCK_SLAB};
+    public static Block[] STAIRS_BASE = {Blocks.BEDROCK};
+    public static Block[] STAIRS = {ModBlocks.BEDROCK_STAIRS};
 
 
     // Item variables

@@ -17,14 +17,28 @@ import java.util.function.Supplier;
 @Mixin(BlockStateModelGenerator.class)
 public abstract class BlockStateModelGeneratorMixin implements BlockStateModelGeneratorInterface {
 
-   @Shadow @Final Consumer<BlockStateSupplier> blockStateCollector;
-   @Shadow @Final BiConsumer<Identifier, Supplier<JsonElement>> modelCollector;
+    @Shadow
+    @Final
+    Consumer<BlockStateSupplier> blockStateCollector;
+    @Shadow
+    @Final
+    BiConsumer<Identifier, Supplier<JsonElement>> modelCollector;
 
     public void registerSlab(Block baseBlock, Block slabBlock) {
-        Identifier identifier = ModelIds.getBlockModelId(baseBlock);
+        Identifier identifier_full = ModelIds.getBlockModelId(baseBlock);
         TexturedModel texturedModel = TexturedModel.CUBE_ALL.get(baseBlock);
-        Identifier identifier2 = Models.SLAB.upload(slabBlock, texturedModel.getTexture(), this.modelCollector);
-        Identifier identifier3 = Models.SLAB_TOP.upload(slabBlock, texturedModel.getTexture(), this.modelCollector);
-        this.blockStateCollector.accept(BlockStateModelGenerator.createSlabBlockState(slabBlock, identifier2, identifier3, identifier));
+        Identifier identifier_bottom = Models.SLAB.upload(slabBlock, texturedModel.getTexture(), this.modelCollector);
+        Identifier identifier_top = Models.SLAB_TOP.upload(slabBlock, texturedModel.getTexture(), this.modelCollector);
+        this.blockStateCollector.accept(BlockStateModelGenerator.createSlabBlockState(slabBlock, identifier_bottom, identifier_top, identifier_full));
     }
+
+
+    public void registerStairs(Block baseBlock, Block stairsBlock) {
+        TexturedModel texturedModel = TexturedModel.CUBE_ALL.get(baseBlock);
+        Identifier identifier_inner = Models.INNER_STAIRS.upload(stairsBlock, texturedModel.getTexture(), this.modelCollector);
+        Identifier identifier_full = Models.STAIRS.upload(stairsBlock, texturedModel.getTexture(), this.modelCollector);
+        Identifier identifier_outer = Models.OUTER_STAIRS.upload(stairsBlock, texturedModel.getTexture(), this.modelCollector);
+        this.blockStateCollector.accept(BlockStateModelGenerator.createStairsBlockState(stairsBlock, identifier_inner, identifier_full, identifier_outer));
+    }
+
 }

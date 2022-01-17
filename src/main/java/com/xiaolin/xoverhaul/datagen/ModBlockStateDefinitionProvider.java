@@ -1,18 +1,12 @@
 package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.XOverhaul;
-import com.xiaolin.xoverhaul.block.ModBlocks;
 import com.xiaolin.xoverhaul.util.BlockStateModelGeneratorInterface;
 import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockStateDefinitionProvider;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.enums.SlabType;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.model.*;
-import net.minecraft.state.property.Properties;
-import net.minecraft.util.Identifier;
 
 public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionProvider {
     public ModBlockStateDefinitionProvider(FabricDataGenerator dataGenerator) {
@@ -23,6 +17,7 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         generateCubes(blockStateModelGenerator);
         generateSlabs(blockStateModelGenerator);
+        generateStairs(blockStateModelGenerator);
     }
 
     @Override
@@ -32,37 +27,37 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
     private void generateCubes(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (int i = 0; i < GlobalsXOverhaul.blocks.length; i++) {
-            blockStateModelGenerator.registerSimpleCubeAll(GlobalsXOverhaul.blocks[i]);
-            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.blocks[i],
-                    ModelIds.getBlockModelId(GlobalsXOverhaul.blocks[i]));
+        for (int i = 0; i < GlobalsXOverhaul.BLOCKS.length; i++) {
+            blockStateModelGenerator.registerSimpleCubeAll(GlobalsXOverhaul.BLOCKS[i]);
+            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.BLOCKS[i],
+                    ModelIds.getBlockModelId(GlobalsXOverhaul.BLOCKS[i]));
         }
     }
 
     private void generateSlabs(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (int i = 0; i < GlobalsXOverhaul.slabs.length; i++) {
+        for (int i = 0; i < GlobalsXOverhaul.SLABS.length; i++) {
             XOverhaul.LOGGER.info("DEBUG START");
-            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerSlab(GlobalsXOverhaul.slabsBase[i],
-                    GlobalsXOverhaul.slabs[i]);
+            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerSlab(GlobalsXOverhaul.SLABS_BASE[i],
+                    GlobalsXOverhaul.SLABS[i]);
 
             XOverhaul.LOGGER.info("DEBUG MID");
-            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.slabs[i],
-                    ModelIds.getBlockModelId(GlobalsXOverhaul.slabs[i]));
+            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.SLABS[i],
+                    ModelIds.getBlockModelId(GlobalsXOverhaul.SLABS[i]));
             XOverhaul.LOGGER.info("DEBUG END");
         }
     }
 
     private void generateStairs(BlockStateModelGenerator blockStateModelGenerator) {
-        Block[] slabs = {ModBlocks.BEDROCK_SLAB};
-        Block[] slabsBase = {Blocks.BEDROCK};
 
-        for (int i = 0; i < slabs.length; i++) {
+        for (int i = 0; i < GlobalsXOverhaul.STAIRS.length; i++) {
             XOverhaul.LOGGER.info("DEBUG START");
-            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerSlab(slabsBase[i], slabs[i]);
+            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerStairs(GlobalsXOverhaul.STAIRS_BASE[i],
+                    GlobalsXOverhaul.STAIRS[i]);
 
             XOverhaul.LOGGER.info("DEBUG MID");
-            blockStateModelGenerator.registerParentedItemModel(slabs[i], ModelIds.getBlockModelId(slabs[i]));
+            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.STAIRS[i],
+                    ModelIds.getBlockModelId(GlobalsXOverhaul.STAIRS[i]));
 
             XOverhaul.LOGGER.info("DEBUG END");
         }

@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "xoverhaul:block/bedrock_slab"
-  }
+  "parent": "xoverhaul:block/bedrock_slab"
 }

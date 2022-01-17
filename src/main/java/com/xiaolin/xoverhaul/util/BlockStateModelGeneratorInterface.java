@@ -5,4 +5,6 @@ import net.minecraft.block.Block;
 public interface BlockStateModelGeneratorInterface {
 
     void registerSlab(Block baseBlock, Block slabBlock);
+
+    void registerStairs(Block baseBlock, Block stairsBlock);
 }

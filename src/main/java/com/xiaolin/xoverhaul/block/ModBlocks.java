@@ -201,6 +201,9 @@ public class ModBlocks {
     public static final Block BEDROCK_SLAB = registerBlock("bedrock_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK)));
 
+    public static final Block BEDROCK_STAIRS = registerBlock("bedrock_stairs",
+            new BaseStairs(Blocks.BEDROCK.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.BEDROCK)));
 
 
 

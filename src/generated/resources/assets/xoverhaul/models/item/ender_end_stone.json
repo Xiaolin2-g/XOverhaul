@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "xoverhaul:block/ender_end_stone"
-  }
+  "parent": "xoverhaul:block/ender_end_stone"
 }

@@ -60,7 +60,7 @@ public class ModFood {
     }
 
     public static void registerModFood(){
-        XOverhaul.LOGGER.info("Registering Mod Items for " + XOverhaul.MOD_ID);
+        XOverhaul.LOGGER.info("Registering Mod Food for " + XOverhaul.MOD_ID);
 
     }
 }

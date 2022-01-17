@@ -1,6 +1,6 @@
 package com.xiaolin.xoverhaul.item;
 
-import com.xiaolin.xoverhaul.util.Var;
+import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -12,18 +12,18 @@ import java.util.function.Supplier;
 public enum ModArmorMaterial implements ArmorMaterial {
 
 
-    WOODSTONE(Var.WOODSTONE_NAME, Var.WOODSTONE_DURABILITY_MULTIPLIER, Var.WOODSTONE_PROTECTION_ARRAY,
-              Var.WOODSTONE_ENCHANTABILITY, Var.WOODSTONE_EQUIP_SOUND,
-              Var.WOODSTONE_ARMOR_TOUGHNESS, Var.WOODSTONE_KNOCKBACK_RESISTANCE, () -> {
-        return Ingredient.ofItems(Var.WOODSTONE_REPAIR_INGREDIENT);
+    WOODSTONE(GlobalsXOverhaul.WOODSTONE_NAME, GlobalsXOverhaul.WOODSTONE_DURABILITY_MULTIPLIER, GlobalsXOverhaul.WOODSTONE_PROTECTION_ARRAY,
+              GlobalsXOverhaul.WOODSTONE_ENCHANTABILITY, GlobalsXOverhaul.WOODSTONE_EQUIP_SOUND,
+              GlobalsXOverhaul.WOODSTONE_ARMOR_TOUGHNESS, GlobalsXOverhaul.WOODSTONE_KNOCKBACK_RESISTANCE, () -> {
+        return Ingredient.ofItems(GlobalsXOverhaul.WOODSTONE_REPAIR_INGREDIENT);
     }),
 
     // Monster
 
-    MONSTER(Var.MONSTER_NAME, Var.MONSTER_DURABILITY_MULTIPLIER, Var.MONSTER_PROTECTION_ARRAY,
-            Var.MONSTER_ENCHANTABILITY, Var.MONSTER_EQUIP_SOUND,
-            Var.MONSTER_ARMOR_TOUGHNESS, Var.MONSTER_KNOCKBACK_RESISTANCE, () -> {
-        return Ingredient.ofItems(Var.MONSTER_REPAIR_INGREDIENT);
+    MONSTER(GlobalsXOverhaul.MONSTER_NAME, GlobalsXOverhaul.MONSTER_DURABILITY_MULTIPLIER, GlobalsXOverhaul.MONSTER_PROTECTION_ARRAY,
+            GlobalsXOverhaul.MONSTER_ENCHANTABILITY, GlobalsXOverhaul.MONSTER_EQUIP_SOUND,
+            GlobalsXOverhaul.MONSTER_ARMOR_TOUGHNESS, GlobalsXOverhaul.MONSTER_KNOCKBACK_RESISTANCE, () -> {
+        return Ingredient.ofItems(GlobalsXOverhaul.MONSTER_REPAIR_INGREDIENT);
     }),
 
 

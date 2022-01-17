@@ -2,7 +2,7 @@ package com.xiaolin.xoverhaul.registries;
 
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.item.ModItems;
-import com.xiaolin.xoverhaul.util.Var;
+import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.Item;
 
@@ -32,6 +32,6 @@ public class ModRegistries {
     }
 
     private static void registerBarkFuel(Item item){
-        fuelRegistry.add(item, Var.BARK_FUEL_TIME);
+        fuelRegistry.add(item, GlobalsXOverhaul.BARK_FUEL_TIME);
     }
 }

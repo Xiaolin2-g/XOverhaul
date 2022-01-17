@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "xoverhaul:block/bedrock_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/bedrock"
+    },
+    "type=top": {
+      "model": "xoverhaul:block/bedrock_slab_top"
+    }
+  }
+}

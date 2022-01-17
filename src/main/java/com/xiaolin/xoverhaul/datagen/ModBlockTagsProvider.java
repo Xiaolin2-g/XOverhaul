@@ -12,6 +12,6 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void generateTags() {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.ENDER_END_STONE);
+        // getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.ENDER_END_STONE);
     }
 }

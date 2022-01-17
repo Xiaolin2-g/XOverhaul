@@ -21,7 +21,7 @@ public class ModTools {
     }
 
     public static void registerModTools(){
-        XOverhaul.LOGGER.info("Registering Mod Items for " + XOverhaul.MOD_ID);
+        XOverhaul.LOGGER.info("Registering Mod Tools for " + XOverhaul.MOD_ID);
 
     }
 }

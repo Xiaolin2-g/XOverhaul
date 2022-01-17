@@ -1,30 +1,18 @@
 package com.xiaolin.xoverhaul.world.gen.features;
 
-import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.block.ModBlocks;
-import com.xiaolin.xoverhaul.util.Var;
-import net.minecraft.block.Blocks;
-import net.minecraft.structure.rule.RuleTest;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.collection.DataPool;
-import net.minecraft.util.registry.BuiltinRegistries;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
+import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.decorator.CountPlacementModifier;
 import net.minecraft.world.gen.decorator.HeightRangePlacementModifier;
 import net.minecraft.world.gen.decorator.SquarePlacementModifier;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
-
-import java.text.RuleBasedCollator;
 
 public class ModOreConfiguredFeatures {
 
     public static ConfiguredFeature<?,?> PURPUR_COBBLESTONE_CONFIGURED_FEATURE =
             Feature.ORE.configure(new OreFeatureConfig(
-                    Var.END_STONE,
+                    GlobalsXOverhaul.END_STONE,
                     ModBlocks.PURPUR_COBBLESTONE.getDefaultState(),
                     50)); // vein size
 

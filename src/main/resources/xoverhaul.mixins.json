@@ -10,7 +10,9 @@
     "ShulkerBulletEntityMixin",
     "GlowingGlowBerryMixin",
     "ArmorStandInvoker",
-    "ArmorStandArmsMixin"
+    "ArmorStandArmsMixin",
+    "BlockStateModelGeneratorMixin"
+
   ],
   "client": [
     "XOverhaulMixin"

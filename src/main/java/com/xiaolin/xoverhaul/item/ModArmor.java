@@ -56,7 +56,7 @@ public class ModArmor {
     }
 
     public static void registerModArmor(){
-        XOverhaul.LOGGER.info("Registering Mod Items for " + XOverhaul.MOD_ID);
+        XOverhaul.LOGGER.info("Registering Mod Armor for " + XOverhaul.MOD_ID);
 
     }
 }

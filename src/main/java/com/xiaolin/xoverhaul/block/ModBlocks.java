@@ -198,7 +198,8 @@ public class ModBlocks {
     public static final Block ENDER_END_STONE = registerBlock("ender_end_stone",
             new OreBlock(FabricBlockSettings.copyOf(Blocks.END_STONE)));
 
-
+    public static final Block BEDROCK_SLAB = registerBlock("bedrock_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK)));
 
 
 

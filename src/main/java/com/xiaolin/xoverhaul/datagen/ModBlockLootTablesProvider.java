@@ -23,6 +23,8 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTablesProvider {
         blockDrops();
         slabDrops();
         stairDrops();
+        crossDrops();
+        axisRotatedDrops();
     }
 
     private void blockDrops(){
@@ -40,6 +42,18 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTablesProvider {
     private void stairDrops(){
         for(int i = 0; i < GlobalsXOverhaul.STAIRS.length; i++){
             addDrop(GlobalsXOverhaul.STAIRS[i]);
+        }
+    }
+
+    private void crossDrops(){
+        for(int i = 0; i < GlobalsXOverhaul.CROSS.length; i++){
+            addDrop(GlobalsXOverhaul.CROSS[i]);
+        }
+    }
+
+    private void axisRotatedDrops(){
+        for(int i = 0; i < GlobalsXOverhaul.AXIS_ROTATED.length; i++){
+            addDrop(GlobalsXOverhaul.AXIS_ROTATED[i]);
         }
     }
 

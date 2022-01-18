@@ -96,6 +96,9 @@ public class ModItems {
             new Item(new FabricItemSettings()
                     .group(ModItemGroup.XOVERHAUL_ITEMS)));
 
+    public static final Item GLUE = registerItem("glue",
+            new Item(new FabricItemSettings()
+                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
 
 
 

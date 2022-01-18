@@ -10,6 +10,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModArmor {
 
+
+
     public static final Item WOODSTONE_HELMET = registerItem("woodstone_helmet",
             new ArmorItem(ModArmorMaterial.WOODSTONE, EquipmentSlot.HEAD,
                     new FabricItemSettings()

@@ -8,6 +8,7 @@ public class ModDataGeneratorEntrypoint implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         XOverhaul.LOGGER.info("/////////////DATAGEN INITIALIZED//////////////");
+
         fabricDataGenerator.addProvider(ModRecipeProvider::new);
         fabricDataGenerator.addProvider(ModBlockStateDefinitionProvider::new);
         fabricDataGenerator.addProvider(ModBlockLootTablesProvider::new);
@@ -15,5 +16,6 @@ public class ModDataGeneratorEntrypoint implements DataGeneratorEntrypoint {
 
         ModBlockTagsProvider blockTagsProvider = fabricDataGenerator.addProvider(ModBlockTagsProvider::new);
         fabricDataGenerator.addProvider(new ModItemTagsProvider(fabricDataGenerator, blockTagsProvider));
+
     }
 }

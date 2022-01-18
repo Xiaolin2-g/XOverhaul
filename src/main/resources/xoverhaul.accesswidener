@@ -1,3 +1,4 @@
 accessWidener v2 named
 
 accessible class net/minecraft/data/client/model/BlockStateModelGenerator$BlockTexturePool
+accessible class net/minecraft/data/client/model/BlockStateModelGenerator$TintType

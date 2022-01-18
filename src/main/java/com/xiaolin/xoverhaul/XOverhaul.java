@@ -42,7 +42,7 @@ public class XOverhaul implements ModInitializer {
 
 		blockRenderLayerMapCutout();
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("XOverhaul Main Class initialized!");
 	}
 
 	private void blockRenderLayerMapCutout(){

@@ -122,6 +122,8 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
         for (int i = 0; i < GlobalsXOverhaul.AXIS_ROTATED.length; i++) {
 
             blockStateModelGenerator.registerAxisRotated(GlobalsXOverhaul.AXIS_ROTATED[i], TexturedModel.CUBE_COLUMN);
+            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.AXIS_ROTATED[i],
+                    ModelIds.getBlockModelId(GlobalsXOverhaul.AXIS_ROTATED[i]));
         }
     }
 

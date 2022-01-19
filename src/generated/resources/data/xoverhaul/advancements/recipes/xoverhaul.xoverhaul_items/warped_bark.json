@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "xoverhaul:warped_bark"
+    ]
+  },
+  "criteria": {
+    "has_warped_stem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:warped_stem"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "xoverhaul:warped_bark"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_warped_stem",
+      "has_the_recipe"
+    ]
+  ]
+}

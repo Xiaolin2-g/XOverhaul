@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_warped_stem"
+    },
+    {
+      "item": "xoverhaul:stripped_warped_bark"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stripped_warped_hyphae"
+  }
+}

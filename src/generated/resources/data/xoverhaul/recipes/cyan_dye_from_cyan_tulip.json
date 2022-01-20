@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xoverhaul:cyan_tulip"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cyan_dye"
+  }
+}

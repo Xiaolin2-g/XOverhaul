@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:gray_dye_from_gray_tulip"
+    ]
+  },
+  "criteria": {
+    "has_gray_tulip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xoverhaul:gray_tulip"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:gray_dye_from_gray_tulip"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_gray_tulip",
+      "has_the_recipe"
+    ]
+  ]
+}

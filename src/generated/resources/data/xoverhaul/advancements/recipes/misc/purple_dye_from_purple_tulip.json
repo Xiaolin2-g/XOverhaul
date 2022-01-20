@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:purple_dye_from_purple_tulip"
+    ]
+  },
+  "criteria": {
+    "has_purple_tulip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xoverhaul:purple_tulip"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:purple_dye_from_purple_tulip"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_purple_tulip",
+      "has_the_recipe"
+    ]
+  ]
+}

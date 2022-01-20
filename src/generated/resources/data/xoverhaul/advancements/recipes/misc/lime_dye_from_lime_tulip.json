@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:lime_dye_from_lime_tulip"
+    ]
+  },
+  "criteria": {
+    "has_lime_tulip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xoverhaul:lime_tulip"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:lime_dye_from_lime_tulip"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lime_tulip",
+      "has_the_recipe"
+    ]
+  ]
+}

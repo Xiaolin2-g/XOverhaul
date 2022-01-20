@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:brown_dye_from_brown_tulip"
+    ]
+  },
+  "criteria": {
+    "has_brown_tulip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xoverhaul:brown_tulip"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:brown_dye_from_brown_tulip"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_brown_tulip",
+      "has_the_recipe"
+    ]
+  ]
+}

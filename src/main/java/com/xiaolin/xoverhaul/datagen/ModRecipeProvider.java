@@ -1,10 +1,12 @@
 package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.block.ModBlocks;
+import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.item.ModItems;
 import com.xiaolin.xoverhaul.item.ModTools;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipesProvider;
+import net.fabricmc.fabric.impl.tag.extension.TagDelegate;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.RecipesProvider;
 import net.minecraft.data.server.recipe.CraftingRecipeJsonFactory;
@@ -16,6 +18,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.ItemTags;
+import net.minecraft.tag.Tag;
 
 import java.util.function.Consumer;
 
@@ -31,6 +34,8 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         concreteSlabRecipes(exporter);
         concreteStairsRecipes(exporter);
         dyeRecipes(exporter);
+        compactingRecipes(exporter);
+        armorRecipes(exporter);
     }
 
     public static String convertMirrored(ItemConvertible from) {
@@ -112,14 +117,18 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         return ShapedRecipeJsonFactory.create
                 (output, 4)
                 .input('#', input)
-                .pattern("#  ").pattern("## ").pattern("###");
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###");
     }
 
     public static CraftingRecipeJsonFactory createMirroredStairsRecipe(ItemConvertible input, ItemConvertible output) {
         return ShapedRecipeJsonFactory.create
                 (output, 4)
                 .input('#', input)
-                .pattern("  #").pattern(" ##").pattern("###");
+                .pattern("  #")
+                .pattern(" ##")
+                .pattern("###");
     }
 
     public static void offerStairsRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible input, ItemConvertible output){
@@ -178,8 +187,189 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         offerDyeRecipe(exporter, ModBlocks.GREEN_TULIP, Items.GREEN_DYE, 1);
         offerDyeRecipe(exporter, ModBlocks.BLACK_TULIP, Items.BLACK_DYE, 1);
         offerDyeRecipe(exporter, ModItems.CHARRED_BONE_MEAL, Items.BLACK_DYE, 3);
+    }
 
+    public static void offerCompactingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible input,
+                                             ItemConvertible output){
+        RecipesProvider.offerReversibleCompactingRecipesWithInputItemGroup(exporter, input, output,
+                input + "_from_" + output, null);
+    }
 
+    private void compactingRecipes(Consumer<RecipeJsonProvider> exporter){
+
+        offerCompactingRecipe(exporter, Items.ROTTEN_FLESH, ModBlocks.ROTTEN_FLESH_BLOCK.asItem());
+        offerCompactingRecipe(exporter, ModItems.CHARRED_BONE_MEAL, ModBlocks.CHARRED_BONE_BLOCK.asItem());
+    }
+
+    public static CraftingRecipeJsonFactory createHelmetRecipe(ItemConvertible input, ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .pattern("###")
+                .pattern("# #");
+    }
+
+    public static CraftingRecipeJsonFactory createChestplateRecipe(ItemConvertible input, ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###");
+    }
+
+    public static CraftingRecipeJsonFactory createLeggingsRecipe(ItemConvertible input, ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #");
+    }
+
+    public static CraftingRecipeJsonFactory createBootsRecipe(ItemConvertible input, ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .pattern("# #")
+                .pattern("# #");
+    }
+
+    public static void createArmorRecipeOfTheSameMaterial(Consumer<RecipeJsonProvider> exporter,
+                                                          ItemConvertible material,
+                                                          ItemConvertible helmet,
+                                                          ItemConvertible chestplate,
+                                                          ItemConvertible leggings,
+                                                          ItemConvertible boots){
+        createHelmetRecipe(material, helmet)
+                .criterion(RecipesProvider.hasItem(material),
+                        RecipesProvider.conditionsFromItem(material)).
+                offerTo(exporter);
+
+        createChestplateRecipe(material, chestplate)
+                .criterion(RecipesProvider.hasItem(material),
+                        RecipesProvider.conditionsFromItem(material)).
+                offerTo(exporter);
+
+        createLeggingsRecipe(material, leggings)
+                .criterion(RecipesProvider.hasItem(material),
+                        RecipesProvider.conditionsFromItem(material)).
+                offerTo(exporter);
+
+        createBootsRecipe(material, boots)
+                .criterion(RecipesProvider.hasItem(material),
+                        RecipesProvider.conditionsFromItem(material)).
+                offerTo(exporter);
+    }
+
+    public static void createArmorRecipeOfDifferentMaterials(Consumer<RecipeJsonProvider> exporter,
+                                                             ItemConvertible helmet_material,
+                                                             ItemConvertible chestplate_material,
+                                                             ItemConvertible leggings_material,
+                                                             ItemConvertible boots_material,
+                                                             ItemConvertible helmet,
+                                                             ItemConvertible chestplate,
+                                                             ItemConvertible leggings,
+                                                             ItemConvertible boots){
+        createHelmetRecipe(helmet_material, helmet)
+                .criterion(RecipesProvider.hasItem(helmet_material),
+                        RecipesProvider.conditionsFromItem(helmet_material)).
+                offerTo(exporter);
+
+        createChestplateRecipe(chestplate_material, chestplate)
+                .criterion(RecipesProvider.hasItem(chestplate_material),
+                        RecipesProvider.conditionsFromItem(chestplate_material)).
+                offerTo(exporter);
+
+        createLeggingsRecipe(leggings_material, leggings)
+                .criterion(RecipesProvider.hasItem(leggings_material),
+                        RecipesProvider.conditionsFromItem(leggings_material)).
+                offerTo(exporter);
+
+        createBootsRecipe(boots_material, boots)
+                .criterion(RecipesProvider.hasItem(boots_material),
+                        RecipesProvider.conditionsFromItem(boots_material)).
+                offerTo(exporter);
+    }
+
+    public static CraftingRecipeJsonFactory createHelmetRecipeOfTwoMaterials(ItemConvertible input,
+                                                                             ItemConvertible input_2,
+                                                                             ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .pattern("O#O        ")
+                .pattern("# #");
+    }
+
+    public static CraftingRecipeJsonFactory createChestplateRecipeOfTwoMaterials(ItemConvertible input,
+                                                                                 ItemConvertible input_2,
+                                                                                 ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .input('O', input_2)
+                .pattern("O O")
+                .pattern("#O#")
+                .pattern("O#O");
+    }
+
+    public static CraftingRecipeJsonFactory createLeggingsRecipeOfTwoMaterials(ItemConvertible input,
+                                                                               ItemConvertible input_2,
+                                                                               ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .input('O', input_2)
+                .pattern("O#O")
+                .pattern("# #")
+                .pattern("O O");
+    }
+
+    public static CraftingRecipeJsonFactory createBootsRecipeOfTwoMaterials(ItemConvertible input,
+                                                                            ItemConvertible input_2,
+                                                                            ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .input('O', input_2)
+                .pattern("# #")
+                .pattern("O O");
+    }
+
+    public static void createArmorRecipeOfTwoMaterials(Consumer<RecipeJsonProvider> exporter,
+                                                         ItemConvertible  material,
+                                                         ItemConvertible  material_2,
+                                                         ItemConvertible helmet,
+                                                         ItemConvertible chestplate,
+                                                         ItemConvertible leggings,
+                                                         ItemConvertible boots){
+        createHelmetRecipeOfTwoMaterials(material, material_2, helmet)
+                .criterion(RecipesProvider.hasItem(material),
+                        RecipesProvider.conditionsFromItem(material)).
+                offerTo(exporter);
+
+        createChestplateRecipeOfTwoMaterials(material, material_2, chestplate)
+                .criterion(RecipesProvider.hasItem(material),
+                        RecipesProvider.conditionsFromItem(material)).
+                offerTo(exporter);
+
+        createLeggingsRecipeOfTwoMaterials(material, material_2, leggings)
+                .criterion(RecipesProvider.hasItem(material),
+                        RecipesProvider.conditionsFromItem(material)).
+                offerTo(exporter);
+
+        createBootsRecipeOfTwoMaterials(material, material_2, boots)
+                .criterion(RecipesProvider.hasItem(material),
+                        RecipesProvider.conditionsFromItem(material)).
+                offerTo(exporter);
+    }
+
+    private void armorRecipes(Consumer<RecipeJsonProvider> exporter){
+        createArmorRecipeOfTwoMaterials(exporter,
+                ((Item) ItemTags.PLANKS), ((Item) ItemTags.STONE_CRAFTING_MATERIALS),
+                ModArmor.WOODSTONE_HELMET, ModArmor.WOODSTONE_CHESTPLATE,
+                ModArmor.WOODSTONE_LEGGINGS, ModArmor.WOODSTONE_BOOTS);
     }
 
 

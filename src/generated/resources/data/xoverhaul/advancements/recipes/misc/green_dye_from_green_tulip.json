@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:green_dye_from_green_tulip"
+    ]
+  },
+  "criteria": {
+    "has_green_tulip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xoverhaul:green_tulip"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:green_dye_from_green_tulip"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_green_tulip",
+      "has_the_recipe"
+    ]
+  ]
+}

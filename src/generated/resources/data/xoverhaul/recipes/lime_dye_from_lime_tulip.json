@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xoverhaul:lime_tulip"
+    }
+  ],
+  "result": {
+    "item": "minecraft:lime_dye"
+  }
+}

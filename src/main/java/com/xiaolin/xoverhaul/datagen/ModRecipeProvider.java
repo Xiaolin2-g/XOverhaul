@@ -2,11 +2,14 @@ package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.block.ModBlocks;
 import com.xiaolin.xoverhaul.item.ModArmor;
+import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
 import com.xiaolin.xoverhaul.item.ModTools;
+import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipesProvider;
 import net.fabricmc.fabric.impl.tag.extension.TagDelegate;
+import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.RecipesProvider;
 import net.minecraft.data.server.recipe.CraftingRecipeJsonFactory;
@@ -16,7 +19,12 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonFactory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.predicate.NumberRange;
+import net.minecraft.predicate.entity.EntityPredicate;
+import net.minecraft.predicate.item.ItemPredicate;
+import net.minecraft.recipe.CookingRecipeSerializer;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.tag.ItemTags;
 import net.minecraft.tag.Tag;
 
@@ -36,6 +44,10 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         dyeRecipes(exporter);
         compactingRecipes(exporter);
         armorRecipes(exporter);
+        smeltingRecipes(exporter);
+        cookingRecipes(exporter, "smoking", RecipeSerializer.SMOKING, GlobalsXOverhaul.STANDARD_SMOKING_TIME);
+        cookingRecipes(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, GlobalsXOverhaul.STANDARD_CAMPFIRE_TIME);
+        otherRecipes(exporter);
     }
 
     private void barkRecipes(Consumer<RecipeJsonProvider> exporter){
@@ -70,6 +82,7 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         ModRecipeHelper.offerWoodRecipe(exporter, Blocks.STRIPPED_OAK_LOG, ModItems.STRIPPED_OAK_BARK, Blocks.STRIPPED_OAK_WOOD);
         ModRecipeHelper.offerWoodRecipe(exporter, Blocks.STRIPPED_BIRCH_LOG, ModItems.STRIPPED_BIRCH_BARK, Blocks.STRIPPED_BIRCH_WOOD);
         ModRecipeHelper.offerWoodRecipe(exporter, Blocks.STRIPPED_SPRUCE_LOG, ModItems.STRIPPED_SPRUCE_BARK, Blocks.STRIPPED_SPRUCE_WOOD);
+        ModRecipeHelper.offerWoodRecipe(exporter, Blocks.STRIPPED_JUNGLE_LOG, ModItems.STRIPPED_JUNGLE_BARK, Blocks.STRIPPED_JUNGLE_WOOD);
         ModRecipeHelper.offerWoodRecipe(exporter, Blocks.STRIPPED_ACACIA_LOG, ModItems.STRIPPED_ACACIA_BARK, Blocks.STRIPPED_ACACIA_WOOD);
         ModRecipeHelper.offerWoodRecipe(exporter, Blocks.STRIPPED_DARK_OAK_LOG, ModItems.STRIPPED_DARK_OAK_BARK, Blocks.STRIPPED_DARK_OAK_WOOD);
         ModRecipeHelper.offerWoodRecipe(exporter, Blocks.STRIPPED_CRIMSON_STEM, ModItems.STRIPPED_CRIMSON_BARK, Blocks.STRIPPED_CRIMSON_HYPHAE);
@@ -129,7 +142,7 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.BROWN_TULIP, Items.BROWN_DYE, 1);
         ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.GREEN_TULIP, Items.GREEN_DYE, 1);
         ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.BLACK_TULIP, Items.BLACK_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModItems.CHARRED_BONE_MEAL, Items.BLACK_DYE, 3);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModItems.CHARRED_BONE_MEAL, Items.BLACK_DYE, 1);
     }
 
 
@@ -168,7 +181,69 @@ public class ModRecipeProvider extends FabricRecipesProvider {
                  Items.CHAINMAIL_LEGGINGS, Items.CHAINMAIL_BOOTS);
     }
 
+    private void smeltingRecipes(Consumer<RecipeJsonProvider> exporter){
+        ModRecipeHelper.offerSmelting(exporter, Items.TROPICAL_FISH, ModFood.COOKED_TROPICAL_FISH);
+        ModRecipeHelper.offerSmelting(exporter, ModFood.GOLDEN_POTATO, ModFood.GOLDEN_BAKED_POTATO);
+    }
 
+    private void cookingRecipes(Consumer<RecipeJsonProvider> exporter, String cooker, CookingRecipeSerializer<?> serializer, int cookingTime){
+
+        RecipesProvider.offerCookingRecipe(exporter, cooker, serializer, cookingTime,
+                Items.TROPICAL_FISH, ModFood.COOKED_TROPICAL_FISH, GlobalsXOverhaul.STANDARD_XP_COOKING);
+
+        RecipesProvider.offerCookingRecipe(exporter, cooker, serializer, cookingTime,
+                ModFood.GOLDEN_POTATO, ModFood.GOLDEN_BAKED_POTATO, GlobalsXOverhaul.STANDARD_XP_COOKING);
+
+
+    }
+
+
+    private void otherRecipes(Consumer<RecipeJsonProvider> exporter){
+        // Charred Bone Meal
+        offerShapelessRecipe(exporter, ModItems.CHARRED_BONE_MEAL, ModItems.CHARRED_BONE, null, 3);
+
+        // Chest from Logs
+        ShapedRecipeJsonFactory.create(Blocks.CHEST, 4)
+                .input('#', ItemTags.LOGS)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("###")
+                 .criterion("has_logs", RecipesProvider.conditionsFromTag(ItemTags.LOGS))
+                .offerTo(exporter);
+
+        // Cobweb
+        ShapedRecipeJsonFactory.create(Blocks.COBWEB)
+                .input('#', Items.STRING)
+                .pattern("# #")
+                .pattern(" # ")
+                .pattern("# #")
+                .criterion("has_string", RecipesProvider.conditionsFromItem(Items.STRING))
+                .offerTo(exporter);
+
+        offerShapelessRecipe(exporter, Items.STRING, Blocks.COBWEB, null, 5);
+
+        // Dispenser
+        ShapedRecipeJsonFactory.create(Blocks.DISPENSER)
+                .input('/', Items.STICK)
+                .input('S', Items.STRING)
+                .input('D', Blocks.DROPPER)
+                .pattern(" /S")
+                .pattern("/DS")
+                .pattern(" /S")
+                .criterion("has_dropper", RecipesProvider.conditionsFromItem(Items.DROPPER))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonFactory.create(Blocks.DISPENSER)
+                .input('/', Items.STICK)
+                .input('S', Items.STRING)
+                .input('D', Blocks.DROPPER)
+                .pattern("S/ ")
+                .pattern("SD/")
+                .pattern("S/ ")
+                .criterion("has_dropper", RecipesProvider.conditionsFromItem(Items.DROPPER))
+                .offerTo(exporter, ModRecipeHelper.convertMirrored(Blocks.DISPENSER));
+
+    }
 
 
 }

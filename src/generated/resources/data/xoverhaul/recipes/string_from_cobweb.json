@@ -2,10 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "xoverhaul:charred_bone_meal"
+      "item": "minecraft:cobweb"
     }
   ],
   "result": {
-    "item": "minecraft:black_dye"
+    "item": "minecraft:string",
+    "count": 5
   }
 }

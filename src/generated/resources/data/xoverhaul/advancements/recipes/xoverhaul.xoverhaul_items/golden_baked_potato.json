@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "xoverhaul:golden_baked_potato"
+    ]
+  },
+  "criteria": {
+    "has_golden_potato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xoverhaul:golden_potato"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "xoverhaul:golden_baked_potato"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_golden_potato",
+      "has_the_recipe"
+    ]
+  ]
+}

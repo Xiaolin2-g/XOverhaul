@@ -1,13 +1,14 @@
 package com.xiaolin.xoverhaul.datagen;
 
+import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.item.ModTools;
+import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.minecraft.data.server.RecipesProvider;
-import net.minecraft.data.server.recipe.CraftingRecipeJsonFactory;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonFactory;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonFactory;
+import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.tag.Tag;
 
 import java.util.function.Consumer;
@@ -217,6 +218,7 @@ public class ModRecipeHelper {
                 .pattern("# #")
                 .pattern("O O");
     }
+
 
 
 
@@ -445,5 +447,28 @@ public class ModRecipeHelper {
                 .offerTo(exporter);
     }
 
+    public static void offerSmelting(Consumer<RecipeJsonProvider> exporter,
+                                                         ItemConvertible input, ItemConvertible output){
+        CookingRecipeJsonFactory.createSmelting
+                        (Ingredient.ofItems(input),
+                                output,
+                                GlobalsXOverhaul.STANDARD_XP_SMELTING,
+                                GlobalsXOverhaul.STANDARD_SMELTING_TIME)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public static void offerSmelting(Consumer<RecipeJsonProvider> exporter,
+                                     ItemConvertible input, ItemConvertible output,
+                                     float xp, int cookingTime){
+        CookingRecipeJsonFactory.createSmelting
+                        (Ingredient.ofItems(input),
+                                output,
+                                xp, cookingTime)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter);
+    }
 
 }

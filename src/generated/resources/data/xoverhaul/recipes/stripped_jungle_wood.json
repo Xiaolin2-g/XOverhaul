@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stripped_jungle_log"
+    },
+    {
+      "item": "xoverhaul:stripped_jungle_bark"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stripped_jungle_wood"
+  }
+}

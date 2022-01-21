@@ -146,9 +146,17 @@ public class GlobalsXOverhaul {
             ModFood.GOLDEN_BEETROOT, ModFood.GOLDEN_WHEAT,
             ModFood.GOLDEN_BREAD, ModFood.GOLDEN_POTATO ,ModFood.GOLDEN_BAKED_POTATO, ModFood.GOLDEN_POISONOUS_POTATO,
             ModFood.COOKED_TROPICAL_FISH};
+
     // Bark fuel time
 
     public static int BARK_FUEL_TIME = 100;
+
+    public static float STANDARD_XP_SMELTING = 0.3f;
+    public static int STANDARD_SMELTING_TIME = 200;
+
+    public static float STANDARD_XP_COOKING = 0.35f;
+    public static int STANDARD_SMOKING_TIME = 100;
+    public static int STANDARD_CAMPFIRE_TIME = 600;
 
 
 }

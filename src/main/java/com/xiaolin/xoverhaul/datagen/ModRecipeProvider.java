@@ -4,13 +4,16 @@ import com.xiaolin.xoverhaul.block.ModBlocks;
 import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
+import com.xiaolin.xoverhaul.item.ModTools;
 import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipesProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.RecipesProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonFactory;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonFactory;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.CookingRecipeSerializer;
 import net.minecraft.recipe.RecipeSerializer;
@@ -37,6 +40,7 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         cookingRecipes(exporter, "smoking", RecipeSerializer.SMOKING, GlobalsXOverhaul.STANDARD_SMOKING_TIME);
         cookingRecipes(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, GlobalsXOverhaul.STANDARD_CAMPFIRE_TIME);
         horseArmorRecipes(exporter);
+        smallVerticalRecipes(exporter);
 
 
         otherRecipes(exporter);
@@ -184,6 +188,16 @@ public class ModRecipeProvider extends FabricRecipesProvider {
                  Items.CHAIN,
                  Items.CHAINMAIL_HELMET, Items.CHAINMAIL_CHESTPLATE,
                  Items.CHAINMAIL_LEGGINGS, Items.CHAINMAIL_BOOTS);
+
+         ModRecipeHelper.offerAnotherOne(exporter,
+                 ModItems.LEATHER_ARMOR_PIECE,
+                 Items.LEATHER_BOOTS, Items.LEATHER_HELMET,
+                 Items.LEATHER_LEGGINGS, Items.LEATHER_CHESTPLATE);
+
+        ModRecipeHelper.offerAnotherOne(exporter,
+                ModItems.GOLD_ARMOR_SCRAP,
+                Items.GOLDEN_BOOTS, Items.GOLDEN_HELMET,
+                Items.GOLDEN_LEGGINGS, Items.GOLDEN_CHESTPLATE);
     }
 
     private void smeltingRecipes(Consumer<RecipeJsonProvider> exporter){
@@ -210,6 +224,13 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         offerShapelessRecipe(exporter, Items.IRON_INGOT, Items.IRON_HORSE_ARMOR, null, 2);
         offerShapelessRecipe(exporter, Items.GOLD_INGOT, Items.GOLDEN_HORSE_ARMOR, null, 2);
         offerShapelessRecipe(exporter, Items.DIAMOND, Items.DIAMOND_HORSE_ARMOR, null, 2);
+    }
+
+    private void smallVerticalRecipes(Consumer<RecipeJsonProvider> exporter){
+        ModRecipeHelper.offerSmallVertical(exporter, Blocks.GRASS, Blocks.GRASS, Blocks.TALL_GRASS, 1);
+        ModRecipeHelper.offerSmallVertical(exporter, Blocks.FERN, Blocks.FERN, Blocks.LARGE_FERN, 1);
+
+        ModRecipeHelper.offerSmallVertical(exporter, ItemTags.LOGS, Items.STICK, "has_logs", 16);
     }
 
     private void otherRecipes(Consumer<RecipeJsonProvider> exporter){
@@ -257,7 +278,69 @@ public class ModRecipeProvider extends FabricRecipesProvider {
                 .criterion("has_dropper", RecipesProvider.conditionsFromItem(Items.DROPPER))
                 .offerTo(exporter, ModRecipeHelper.convertMirrored(Blocks.DISPENSER));
 
+        // Dirty Sand
+        ShapelessRecipeJsonFactory.create(ModBlocks.DIRTY_SAND, 2)
+                .input(Blocks.SAND)
+                .input(Blocks.DIRT)
+                .criterion(RecipesProvider.hasItem(Blocks.SAND),
+                        RecipesProvider.conditionsFromItem(Blocks.SAND))
+                .offerTo(exporter);
+
+        // Golden Wheat
+        ShapedRecipeJsonFactory.create(ModFood.GOLDEN_BREAD)
+                .input('#', ModFood.GOLDEN_WHEAT)
+                .pattern("###")
+                .criterion(RecipesProvider.hasItem(ModFood.GOLDEN_WHEAT), RecipesProvider.conditionsFromItem(ModFood.GOLDEN_WHEAT))
+                .offerTo(exporter);
+
+        // Name Tag
+        ShapedRecipeJsonFactory.create(Items.NAME_TAG)
+                .input('#', Items.TRIPWIRE_HOOK)
+                .input('P', Items.PAPER)
+                .pattern("  #")
+                .pattern(" P ")
+                .pattern("P  ")
+                .criterion(RecipesProvider.hasItem(Items.PAPER), RecipesProvider.conditionsFromItem(Items.PAPER))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonFactory.create(Items.NAME_TAG)
+                .input('#', Items.TRIPWIRE_HOOK)
+                .input('P', Items.PAPER)
+                .pattern("#  ")
+                .pattern(" P ")
+                .pattern("  P")
+                .criterion(RecipesProvider.hasItem(Items.PAPER), RecipesProvider.conditionsFromItem(Items.PAPER))
+                .offerTo(exporter, ModRecipeHelper.convertMirrored(Items.NAME_TAG));
+
+        // Saddle
+        ShapedRecipeJsonFactory.create(Items.SADDLE)
+                .input('#', Items.LEATHER)
+                .input('P', Items.TRIPWIRE_HOOK)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("T T")
+                .criterion(RecipesProvider.hasItem(Items.LEATHER), RecipesProvider.conditionsFromItem(Items.LEATHER))
+                .offerTo(exporter);
+
+        // Scraper
+        ShapedRecipeJsonFactory.create(ModTools.SCRAPER)
+                .input('i', Items.IRON_NUGGET)
+                .input('#', Items.IRON_INGOT)
+                .input('/', Items.STICK)
+                .pattern("  i")
+                .pattern(" # ")
+                .pattern("i /")
+                .criterion(RecipesProvider.hasItem(Items.IRON_INGOT), RecipesProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonFactory.create(ModTools.SCRAPER)
+                .input('i', Items.IRON_NUGGET)
+                .input('#', Items.IRON_INGOT)
+                .input('/', Items.STICK)
+                .pattern("i  ")
+                .pattern(" # ")
+                .pattern("/ i")
+                .criterion(RecipesProvider.hasItem(Items.IRON_INGOT), RecipesProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, ModRecipeHelper.convertMirrored(ModTools.SCRAPER));
     }
-
-
 }

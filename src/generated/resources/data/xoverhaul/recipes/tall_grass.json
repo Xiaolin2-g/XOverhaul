@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "O"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:grass"
+    },
+    "O": {
+      "item": "minecraft:grass"
+    }
+  },
+  "result": {
+    "item": "minecraft:tall_grass"
+  }
+}

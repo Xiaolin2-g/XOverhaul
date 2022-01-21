@@ -9,7 +9,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.tag.ItemTags;
 import net.minecraft.tag.Tag;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import java.util.function.Consumer;
 
@@ -19,6 +22,14 @@ public class ModRecipeHelper {
 
     public static String convertMirrored(ItemConvertible from) {
         return RecipesProvider.getItemPath(from) + "_mirrored";
+    }
+
+    public static String convertBetween(ItemConvertible from, Tag.Identified<Item> to) {
+        return RecipesProvider.getItemPath(from) + "_from_" + getItemPath(to);
+    }
+
+    public static String getItemPath(Tag.Identified<Item> item) {
+        return item.getId().getPath();
     }
 
     // Create
@@ -241,6 +252,30 @@ public class ModRecipeHelper {
                 .pattern("T T");
     }
 
+    public static CraftingRecipeJsonFactory createSmallVertical(ItemConvertible input,
+                                                                ItemConvertible input_2,
+                                                                ItemConvertible output,
+                                                                int outputCount) {
+        return ShapedRecipeJsonFactory.create
+                        (output, outputCount)
+                .input('#', input)
+                .input('O', input_2)
+                .pattern("#")
+                .pattern("O");
+    }
+
+
+    public static CraftingRecipeJsonFactory createSmallVertical(Tag.Identified<Item> input,
+                                                                Tag.Identified<Item> input_2,
+                                                                ItemConvertible output,
+                                                                int outputCount) {
+        return ShapedRecipeJsonFactory.create
+                        (output, outputCount)
+                .input('#', input)
+                .input('O', input_2)
+                .pattern("#")
+                .pattern("O");
+    }
 
 
     // Offer
@@ -527,5 +562,104 @@ public class ModRecipeHelper {
                 .offerTo(exporter, RecipesProvider.convertBetween(output, input));
 
     }
+
+
+    public static void offerSmallVertical(Consumer<RecipeJsonProvider> exporter,
+                                          ItemConvertible input,
+                                          ItemConvertible input_2,
+                                          ItemConvertible output,
+                                          int outputCount){
+
+        createSmallVertical(input, input_2, output, outputCount)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter);
+
+
+
+    }
+
+    public static void offerSmallVertical(Consumer<RecipeJsonProvider> exporter,
+                                          Tag.Identified<Item> input,
+                                          Tag.Identified<Item> input_2,
+                                          ItemConvertible output,
+                                          String conditions,
+                                          int outputCount){
+
+        createSmallVertical(input, input_2, output, outputCount)
+                .criterion(conditions,
+                        RecipesProvider.conditionsFromTag(input))
+                .offerTo(exporter);
+
+    }
+
+    public static void offerSmallVertical(Consumer<RecipeJsonProvider> exporter,
+                                          ItemConvertible input,
+                                          ItemConvertible output,
+                                          int outputCount){
+
+        createSmallVertical(input, input, output, outputCount)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+
+    }
+
+    public static void offerSmallVertical(Consumer<RecipeJsonProvider> exporter,
+                                          Tag.Identified<Item> input,
+                                          ItemConvertible output,
+                                          String conditions,
+                                          int outputCount){
+
+        createSmallVertical(input, input, output, outputCount)
+                .criterion(conditions,
+                        RecipesProvider.conditionsFromTag(input))
+                .offerTo(exporter, convertBetween(output, input));
+
+    }
+
+    public static void offerAnotherOne(Consumer<RecipeJsonProvider> exporter,
+                                       ItemConvertible input,
+                                       ItemConvertible output_1,
+                                       ItemConvertible output_2,
+                                       ItemConvertible output_3,
+                                       ItemConvertible output_4){
+
+        ShapelessRecipeJsonFactory.create(output_1)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output_1, input));
+
+        ShapelessRecipeJsonFactory.create(output_2)
+                .input(input)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output_2, input));
+
+        ShapelessRecipeJsonFactory.create(output_3)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output_3, input));
+
+        ShapelessRecipeJsonFactory.create(output_4)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output_4, input));
+    }
+
+
 
 }

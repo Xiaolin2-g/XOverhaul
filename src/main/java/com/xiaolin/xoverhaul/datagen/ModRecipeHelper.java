@@ -219,6 +219,27 @@ public class ModRecipeHelper {
                 .pattern("O O");
     }
 
+    public static CraftingRecipeJsonFactory createHorseArmor(ItemConvertible input,
+                                                             ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .input('T', Items.TRIPWIRE_HOOK)
+                .pattern("  #")
+                .pattern("###")
+                .pattern("T T");
+    }
+
+    public static CraftingRecipeJsonFactory createHorseArmor(Tag.Identified<Item> input,
+                                                             ItemConvertible output) {
+        return ShapedRecipeJsonFactory.create
+                        (output, 1)
+                .input('#', input)
+                .input('T', Items.TRIPWIRE_HOOK)
+                .pattern("  #")
+                .pattern("###")
+                .pattern("T T");
+    }
 
 
 
@@ -469,6 +490,42 @@ public class ModRecipeHelper {
                 .criterion(RecipesProvider.hasItem(input),
                         RecipesProvider.conditionsFromItem(input))
                 .offerTo(exporter);
+    }
+
+
+    public static void offerHorseArmor(Consumer<RecipeJsonProvider> exporter,
+                                       ItemConvertible input,
+                                       ItemConvertible output){
+
+        createHorseArmor(input, output)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public static void offerHorseArmor(Consumer<RecipeJsonProvider> exporter,
+                                       Tag.Identified<Item> input,
+                                       ItemConvertible output,
+                                       String conditions){
+
+        createHorseArmor(input, output)
+                .criterion(conditions,
+                        RecipesProvider.conditionsFromTag(input))
+                .offerTo(exporter);;
+    }
+
+    public static void offerRebarking(Consumer<RecipeJsonProvider> exporter,
+                                      ItemConvertible input,
+                                      ItemConvertible input_2,
+                                      ItemConvertible output){
+
+        ShapelessRecipeJsonFactory.create(output, 1)
+                .input(input)
+                .input(input_2)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+
     }
 
 }

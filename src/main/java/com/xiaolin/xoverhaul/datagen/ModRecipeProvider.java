@@ -4,29 +4,17 @@ import com.xiaolin.xoverhaul.block.ModBlocks;
 import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
-import com.xiaolin.xoverhaul.item.ModTools;
 import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipesProvider;
-import net.fabricmc.fabric.impl.tag.extension.TagDelegate;
-import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.RecipesProvider;
-import net.minecraft.data.server.recipe.CraftingRecipeJsonFactory;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonFactory;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonFactory;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.predicate.NumberRange;
-import net.minecraft.predicate.entity.EntityPredicate;
-import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.recipe.CookingRecipeSerializer;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.tag.ItemTags;
-import net.minecraft.tag.Tag;
 
 import java.util.function.Consumer;
 
@@ -39,14 +27,18 @@ public class ModRecipeProvider extends FabricRecipesProvider {
     protected void generateRecipes(Consumer<RecipeJsonProvider> exporter) {
         barkRecipes(exporter);
         woodRecipes(exporter);
-        concreteSlabRecipes(exporter);
-        concreteStairsRecipes(exporter);
+        rebarkRecipes(exporter);
+        slabRecipes(exporter);
+        stairsRecipes(exporter);
         dyeRecipes(exporter);
         compactingRecipes(exporter);
         armorRecipes(exporter);
         smeltingRecipes(exporter);
         cookingRecipes(exporter, "smoking", RecipeSerializer.SMOKING, GlobalsXOverhaul.STANDARD_SMOKING_TIME);
         cookingRecipes(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, GlobalsXOverhaul.STANDARD_CAMPFIRE_TIME);
+        horseArmorRecipes(exporter);
+
+
         otherRecipes(exporter);
     }
 
@@ -89,7 +81,18 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         ModRecipeHelper.offerWoodRecipe(exporter, Blocks.STRIPPED_WARPED_STEM, ModItems.STRIPPED_WARPED_BARK, Blocks.STRIPPED_WARPED_HYPHAE);
     }
 
-    private void concreteSlabRecipes(Consumer<RecipeJsonProvider> exporter){
+    private void rebarkRecipes(Consumer<RecipeJsonProvider> exporter){
+        ModRecipeHelper.offerRebarking(exporter, Blocks.STRIPPED_OAK_LOG, ModItems.OAK_BARK, Blocks.OAK_LOG);
+        ModRecipeHelper.offerRebarking(exporter, Blocks.STRIPPED_BIRCH_LOG, ModItems.BIRCH_BARK, Blocks.BIRCH_LOG);
+        ModRecipeHelper.offerRebarking(exporter, Blocks.STRIPPED_SPRUCE_LOG, ModItems.SPRUCE_BARK, Blocks.SPRUCE_LOG);
+        ModRecipeHelper.offerRebarking(exporter, Blocks.STRIPPED_JUNGLE_LOG, ModItems.JUNGLE_BARK, Blocks.JUNGLE_LOG);
+        ModRecipeHelper.offerRebarking(exporter, Blocks.STRIPPED_ACACIA_LOG, ModItems.ACACIA_BARK, Blocks.ACACIA_LOG);
+        ModRecipeHelper.offerRebarking(exporter, Blocks.STRIPPED_DARK_OAK_LOG, ModItems.DARK_OAK_BARK, Blocks.DARK_OAK_LOG);
+        ModRecipeHelper.offerRebarking(exporter, Blocks.STRIPPED_CRIMSON_STEM, ModItems.CRIMSON_BARK, Blocks.CRIMSON_STEM);
+        ModRecipeHelper.offerRebarking(exporter, Blocks.STRIPPED_WARPED_STEM, ModItems.WARPED_BARK, Blocks.WARPED_STEM);
+    }
+
+    private void slabRecipes(Consumer<RecipeJsonProvider> exporter){
         offerSlabRecipe(exporter, ModBlocks.WHITE_CONCRETE_SLAB, Blocks.WHITE_CONCRETE);
         offerSlabRecipe(exporter, ModBlocks.ORANGE_CONCRETE_SLAB, Blocks.ORANGE_CONCRETE);
         offerSlabRecipe(exporter, ModBlocks.MAGENTA_CONCRETE_SLAB, Blocks.MAGENTA_CONCRETE);
@@ -106,10 +109,12 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         offerSlabRecipe(exporter, ModBlocks.GREEN_CONCRETE_SLAB, Blocks.GREEN_CONCRETE);
         offerSlabRecipe(exporter, ModBlocks.RED_CONCRETE_SLAB, Blocks.RED_CONCRETE);
         offerSlabRecipe(exporter, ModBlocks.BLACK_CONCRETE_SLAB, Blocks.BLACK_CONCRETE);
+
+        offerSlabRecipe(exporter, ModBlocks.DIRT_SLAB, Blocks.DIRT);
     }
 
 
-    private void concreteStairsRecipes(Consumer<RecipeJsonProvider> exporter){
+    private void stairsRecipes(Consumer<RecipeJsonProvider> exporter){
         ModRecipeHelper.offerStairsRecipe(exporter, Blocks.WHITE_CONCRETE, ModBlocks.WHITE_CONCRETE_STAIRS);
         ModRecipeHelper.offerStairsRecipe(exporter, Blocks.ORANGE_CONCRETE, ModBlocks.ORANGE_CONCRETE_STAIRS);
         ModRecipeHelper.offerStairsRecipe(exporter, Blocks.MAGENTA_CONCRETE, ModBlocks.MAGENTA_CONCRETE_STAIRS);
@@ -194,9 +199,18 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         RecipesProvider.offerCookingRecipe(exporter, cooker, serializer, cookingTime,
                 ModFood.GOLDEN_POTATO, ModFood.GOLDEN_BAKED_POTATO, GlobalsXOverhaul.STANDARD_XP_COOKING);
 
-
     }
 
+    private void horseArmorRecipes(Consumer<RecipeJsonProvider> exporter){
+        ModRecipeHelper.offerHorseArmor(exporter, Items.LEATHER, Items.LEATHER_HORSE_ARMOR);
+        ModRecipeHelper.offerHorseArmor(exporter, Items.IRON_INGOT, Items.IRON_HORSE_ARMOR);
+        ModRecipeHelper.offerHorseArmor(exporter, Items.GOLD_INGOT, Items.GOLDEN_HORSE_ARMOR);
+        ModRecipeHelper.offerHorseArmor(exporter, Items.DIAMOND, Items.DIAMOND_HORSE_ARMOR);
+
+        offerShapelessRecipe(exporter, Items.IRON_INGOT, Items.IRON_HORSE_ARMOR, null, 2);
+        offerShapelessRecipe(exporter, Items.GOLD_INGOT, Items.GOLDEN_HORSE_ARMOR, null, 2);
+        offerShapelessRecipe(exporter, Items.DIAMOND, Items.DIAMOND_HORSE_ARMOR, null, 2);
+    }
 
     private void otherRecipes(Consumer<RecipeJsonProvider> exporter){
         // Charred Bone Meal

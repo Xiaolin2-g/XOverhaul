@@ -6,9 +6,9 @@ import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
 import com.xiaolin.xoverhaul.item.ModTools;
 import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
+import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipesProvider;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.RecipesProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
@@ -41,6 +41,7 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         cookingRecipes(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, GlobalsXOverhaul.STANDARD_CAMPFIRE_TIME);
         horseArmorRecipes(exporter);
         smallVerticalRecipes(exporter);
+        oRecipes(exporter);
 
 
         otherRecipes(exporter);
@@ -227,11 +228,40 @@ public class ModRecipeProvider extends FabricRecipesProvider {
     }
 
     private void smallVerticalRecipes(Consumer<RecipeJsonProvider> exporter){
-        ModRecipeHelper.offerSmallVertical(exporter, Blocks.GRASS, Blocks.GRASS, Blocks.TALL_GRASS, 1);
-        ModRecipeHelper.offerSmallVertical(exporter, Blocks.FERN, Blocks.FERN, Blocks.LARGE_FERN, 1);
+        ModRecipeHelper.offerSmallVertical(exporter, Blocks.GRASS, Blocks.GRASS,
+                Blocks.TALL_GRASS, 1, false);
 
-        ModRecipeHelper.offerSmallVertical(exporter, ItemTags.LOGS, Items.STICK, "has_logs", 16);
+        ModRecipeHelper.offerSmallVertical(exporter, Blocks.FERN, Blocks.FERN,
+                Blocks.LARGE_FERN, 1, false);
+
+        ModRecipeHelper.offerSmallVertical(exporter, ItemTags.LOGS, ItemTags.LOGS,
+                Items.STICK, "has_logs", 16, true);
     }
+
+    private void oRecipes(Consumer<RecipeJsonProvider> exporter){
+
+        ModRecipeHelper.offerOWithMiddle(exporter, Items.GOLD_NUGGET, Items.WHEAT,
+                ModFood.GOLDEN_WHEAT,1, false);
+
+        ModRecipeHelper.offerOWithMiddle(exporter, Items.GOLD_NUGGET, Items.POTATO,
+                ModFood.GOLDEN_POTATO,1, false);
+
+        ModRecipeHelper.offerOWithMiddle(exporter, Items.GOLD_NUGGET, Items.POISONOUS_POTATO,
+                ModFood.GOLDEN_POISONOUS_POTATO,1, false);
+
+        ModRecipeHelper.offerOWithMiddle(exporter, Items.GOLD_NUGGET, Items.BEETROOT,
+                ModFood.GOLDEN_BEETROOT,1, false);
+
+        ModRecipeHelper.offerOWithMiddle(exporter, Items.GOLD_NUGGET, Items.BLACKSTONE,
+                Blocks.GILDED_BLACKSTONE,1, false);
+
+        ModRecipeHelper.offerOWithMiddle(exporter, ItemTags.LOGS, XOverhaulTags.Items.TRIPWIRE_HOOKS,
+                 Blocks.TRAPPED_CHEST, "has_logs",4, true);
+
+        ModRecipeHelper.offerOWithMiddle(exporter, ItemTags.PLANKS, XOverhaulTags.Items.TRIPWIRE_HOOKS,
+                Blocks.TRAPPED_CHEST, "has_planks",1, true);
+    }
+
 
     private void otherRecipes(Consumer<RecipeJsonProvider> exporter){
         // Charred Bone Meal
@@ -315,7 +345,7 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         // Saddle
         ShapedRecipeJsonFactory.create(Items.SADDLE)
                 .input('#', Items.LEATHER)
-                .input('P', Items.TRIPWIRE_HOOK)
+                .input('T', Items.TRIPWIRE_HOOK)
                 .pattern("###")
                 .pattern("# #")
                 .pattern("T T")

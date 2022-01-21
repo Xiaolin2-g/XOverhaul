@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_nugget"
+    },
+    "O": {
+      "item": "minecraft:beetroot"
+    }
+  },
+  "result": {
+    "item": "xoverhaul:golden_beetroot"
+  }
+}

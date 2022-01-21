@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_nugget"
+    },
+    "O": {
+      "item": "minecraft:potato"
+    }
+  },
+  "result": {
+    "item": "xoverhaul:golden_potato"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#O#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:logs"
+    },
+    "O": {
+      "tag": "xoverhaul:tripwire_hooks"
+    }
+  },
+  "result": {
+    "item": "minecraft:trapped_chest",
+    "count": 4
+  }
+}

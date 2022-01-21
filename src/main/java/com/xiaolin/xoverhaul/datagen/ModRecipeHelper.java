@@ -278,6 +278,57 @@ public class ModRecipeHelper {
     }
 
 
+    public static CraftingRecipeJsonFactory createO(ItemConvertible input,
+                                                    ItemConvertible output,
+                                                    int outputCount) {
+        return ShapedRecipeJsonFactory.create
+                        (output, outputCount)
+                .input('#', input)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("###");
+    }
+
+    public static CraftingRecipeJsonFactory createO(Tag.Identified<Item> input,
+                                                    ItemConvertible output,
+                                                    int outputCount) {
+        return ShapedRecipeJsonFactory.create
+                        (output, outputCount)
+                .input('#', input)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("###");
+    }
+
+    public static CraftingRecipeJsonFactory createOWithMiddle(ItemConvertible input,
+                                                    ItemConvertible input_2,
+                                                    ItemConvertible output,
+                                                    int outputCount) {
+        return ShapedRecipeJsonFactory.create
+                        (output, outputCount)
+                .input('#', input)
+                .input('O', input_2)
+                .pattern("###")
+                .pattern("#O#")
+                .pattern("###");
+    }
+
+
+    public static CraftingRecipeJsonFactory createOWithMiddle(Tag.Identified<Item> input,
+                                                              Tag.Identified<Item> input_2,
+                                                              ItemConvertible output,
+                                                              int outputCount) {
+        return ShapedRecipeJsonFactory.create
+                        (output, outputCount)
+                .input('#', input)
+                .input('O', input_2)
+                .pattern("###")
+                .pattern("#O#")
+                .pattern("###");
+    }
+
+
+
     // Offer
 
     public static void offerBarkRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible input, ItemConvertible output){
@@ -568,12 +619,22 @@ public class ModRecipeHelper {
                                           ItemConvertible input,
                                           ItemConvertible input_2,
                                           ItemConvertible output,
-                                          int outputCount){
+                                          int outputCount,
+                                          boolean from){
 
-        createSmallVertical(input, input_2, output, outputCount)
-                .criterion(RecipesProvider.hasItem(input),
-                        RecipesProvider.conditionsFromItem(input))
-                .offerTo(exporter);
+        if(from == true){
+            createSmallVertical(input, input_2, output, outputCount)
+                    .criterion(RecipesProvider.hasItem(input),
+                            RecipesProvider.conditionsFromItem(input))
+                    .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+        }
+        else{
+            createSmallVertical(input, input_2, output, outputCount)
+                    .criterion(RecipesProvider.hasItem(input),
+                            RecipesProvider.conditionsFromItem(input))
+                    .offerTo(exporter);
+        }
+
 
 
 
@@ -584,37 +645,21 @@ public class ModRecipeHelper {
                                           Tag.Identified<Item> input_2,
                                           ItemConvertible output,
                                           String conditions,
-                                          int outputCount){
+                                          int outputCount,
+                                          boolean from){
+        if(from == true){
+            createSmallVertical(input, input_2, output, outputCount)
+                    .criterion(conditions,
+                            RecipesProvider.conditionsFromTag(input))
+                    .offerTo(exporter, convertBetween(output,input));
+        }
+        else{
+            createSmallVertical(input, input_2, output, outputCount)
+                    .criterion(conditions,
+                            RecipesProvider.conditionsFromTag(input))
+                    .offerTo(exporter);
 
-        createSmallVertical(input, input_2, output, outputCount)
-                .criterion(conditions,
-                        RecipesProvider.conditionsFromTag(input))
-                .offerTo(exporter);
-
-    }
-
-    public static void offerSmallVertical(Consumer<RecipeJsonProvider> exporter,
-                                          ItemConvertible input,
-                                          ItemConvertible output,
-                                          int outputCount){
-
-        createSmallVertical(input, input, output, outputCount)
-                .criterion(RecipesProvider.hasItem(input),
-                        RecipesProvider.conditionsFromItem(input))
-                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
-
-    }
-
-    public static void offerSmallVertical(Consumer<RecipeJsonProvider> exporter,
-                                          Tag.Identified<Item> input,
-                                          ItemConvertible output,
-                                          String conditions,
-                                          int outputCount){
-
-        createSmallVertical(input, input, output, outputCount)
-                .criterion(conditions,
-                        RecipesProvider.conditionsFromTag(input))
-                .offerTo(exporter, convertBetween(output, input));
+        }
 
     }
 
@@ -659,6 +704,94 @@ public class ModRecipeHelper {
                         RecipesProvider.conditionsFromItem(input))
                 .offerTo(exporter, RecipesProvider.convertBetween(output_4, input));
     }
+
+    public static void offerO(Consumer<RecipeJsonProvider> exporter,
+                                          ItemConvertible input,
+                                          ItemConvertible output,
+                                          int outputCount,
+                                          boolean from){
+
+        if(from == true){
+            createO(input, output, outputCount)
+                    .criterion(RecipesProvider.hasItem(input),
+                            RecipesProvider.conditionsFromItem(input))
+                    .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+        }
+        else{
+            createO(input, output, outputCount)
+                    .criterion(RecipesProvider.hasItem(input),
+                            RecipesProvider.conditionsFromItem(input))
+                    .offerTo(exporter);
+        }
+
+
+    }
+
+    public static void offerO(Consumer<RecipeJsonProvider> exporter,
+                                          Tag.Identified<Item> input,
+                                          ItemConvertible output,
+                                          String conditions,
+                                          int outputCount,
+                                          boolean from){
+
+        if(from == true){
+            createO(input, output, outputCount)
+                    .criterion(conditions,
+                            RecipesProvider.conditionsFromTag(input))
+                    .offerTo(exporter, convertBetween(output, input));
+        }
+        else{
+            createO(input, output, outputCount)
+                    .criterion(conditions,
+                            RecipesProvider.conditionsFromTag(input))
+                    .offerTo(exporter);
+        }
+    }
+
+    public static void offerOWithMiddle(Consumer<RecipeJsonProvider> exporter,
+                              ItemConvertible input,
+                              ItemConvertible input_2,
+                              ItemConvertible output,
+                              int outputCount,
+                              boolean from){
+
+        if(from == true){
+            createOWithMiddle(input, input_2, output, outputCount)
+                    .criterion(RecipesProvider.hasItem(input),
+                            RecipesProvider.conditionsFromItem(input))
+                    .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+        }
+        else{
+            createOWithMiddle(input, input_2, output, outputCount)
+                    .criterion(RecipesProvider.hasItem(input),
+                            RecipesProvider.conditionsFromItem(input))
+                    .offerTo(exporter);
+        }
+
+    }
+
+    public static void offerOWithMiddle(Consumer<RecipeJsonProvider> exporter,
+                              Tag.Identified<Item> input,
+                              Tag.Identified<Item> input_2,
+                              ItemConvertible output,
+                              String conditions,
+                              int outputCount,
+                              boolean from){
+
+        if(from == true){
+            createOWithMiddle(input, input_2, output, outputCount)
+                    .criterion(conditions,
+                            RecipesProvider.conditionsFromTag(input))
+                    .offerTo(exporter, convertBetween(output, input));
+        }
+        else{
+            createOWithMiddle(input, input_2, output, outputCount)
+                    .criterion(conditions,
+                            RecipesProvider.conditionsFromTag(input))
+                    .offerTo(exporter);
+        }
+    }
+
 
 
 

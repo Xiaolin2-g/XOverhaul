@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "O#O",
+    "# #",
+    "O O"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "O": {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  },
+  "result": {
+    "item": "xoverhaul:woodstone_leggings"
+  }
+}

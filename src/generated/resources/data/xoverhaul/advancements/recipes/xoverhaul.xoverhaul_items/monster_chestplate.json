@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "xoverhaul:monster_chestplate"
+    ]
+  },
+  "criteria": {
+    "has_rotten_flesh": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:rotten_flesh"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "xoverhaul:monster_chestplate"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_rotten_flesh",
+      "has_the_recipe"
+    ]
+  ]
+}

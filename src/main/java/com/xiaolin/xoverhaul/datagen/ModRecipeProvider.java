@@ -222,6 +222,7 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         ModRecipeHelper.offerHorseArmor(exporter, Items.GOLD_INGOT, Items.GOLDEN_HORSE_ARMOR);
         ModRecipeHelper.offerHorseArmor(exporter, Items.DIAMOND, Items.DIAMOND_HORSE_ARMOR);
 
+        offerShapelessRecipe(exporter, Items.LEATHER, Items.LEATHER_HORSE_ARMOR, null, 2);
         offerShapelessRecipe(exporter, Items.IRON_INGOT, Items.IRON_HORSE_ARMOR, null, 2);
         offerShapelessRecipe(exporter, Items.GOLD_INGOT, Items.GOLDEN_HORSE_ARMOR, null, 2);
         offerShapelessRecipe(exporter, Items.DIAMOND, Items.DIAMOND_HORSE_ARMOR, null, 2);
@@ -261,7 +262,6 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         ModRecipeHelper.offerOWithMiddle(exporter, ItemTags.PLANKS, XOverhaulTags.Items.TRIPWIRE_HOOKS,
                 Blocks.TRAPPED_CHEST, "has_planks",1, true);
     }
-
 
     private void otherRecipes(Consumer<RecipeJsonProvider> exporter){
         // Charred Bone Meal
@@ -352,16 +352,9 @@ public class ModRecipeProvider extends FabricRecipesProvider {
                 .criterion(RecipesProvider.hasItem(Items.LEATHER), RecipesProvider.conditionsFromItem(Items.LEATHER))
                 .offerTo(exporter);
 
+        offerShapelessRecipe(exporter, Items.LEATHER, Items.SADDLE, null, 1);
+
         // Scraper
-        ShapedRecipeJsonFactory.create(ModTools.SCRAPER)
-                .input('i', Items.IRON_NUGGET)
-                .input('#', Items.IRON_INGOT)
-                .input('/', Items.STICK)
-                .pattern("  i")
-                .pattern(" # ")
-                .pattern("i /")
-                .criterion(RecipesProvider.hasItem(Items.IRON_INGOT), RecipesProvider.conditionsFromItem(Items.IRON_INGOT))
-                .offerTo(exporter);
 
         ShapedRecipeJsonFactory.create(ModTools.SCRAPER)
                 .input('i', Items.IRON_NUGGET)
@@ -371,6 +364,17 @@ public class ModRecipeProvider extends FabricRecipesProvider {
                 .pattern(" # ")
                 .pattern("/ i")
                 .criterion(RecipesProvider.hasItem(Items.IRON_INGOT), RecipesProvider.conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonFactory.create(ModTools.SCRAPER)
+                .input('i', Items.IRON_NUGGET)
+                .input('#', Items.IRON_INGOT)
+                .input('/', Items.STICK)
+                .pattern("  i")
+                .pattern(" # ")
+                .pattern("i /")
+                .criterion(RecipesProvider.hasItem(Items.IRON_INGOT), RecipesProvider.conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, ModRecipeHelper.convertMirrored(ModTools.SCRAPER));
+
     }
 }

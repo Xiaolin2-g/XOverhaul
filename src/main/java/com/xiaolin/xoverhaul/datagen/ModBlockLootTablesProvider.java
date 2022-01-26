@@ -3,6 +3,7 @@ package com.xiaolin.xoverhaul.datagen;
 import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTablesProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.DataCache;
 import net.minecraft.data.server.BlockLootTableGenerator;
 import net.minecraft.loot.LootTable;
@@ -28,36 +29,34 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTablesProvider {
     }
 
     private void blockDrops(){
-        for(int i = 0; i < GlobalsXOverhaul.BLOCKS.length; i++){
-            addDrop(GlobalsXOverhaul.BLOCKS[i]);
+        for(Block block : GlobalsXOverhaul.BLOCKS){
+            addDrop(block);
         }
     }
 
     private void slabDrops(){
-        for(int i = 0; i < GlobalsXOverhaul.SLABS.length; i++){
-            addDrop(GlobalsXOverhaul.SLABS[i], BlockLootTableGenerator::slabDrops);
+        for(Block slab : GlobalsXOverhaul.SLABS){
+            addDrop(slab, BlockLootTableGenerator::slabDrops);
         }
     }
 
     private void stairDrops(){
-        for(int i = 0; i < GlobalsXOverhaul.STAIRS.length; i++){
-            addDrop(GlobalsXOverhaul.STAIRS[i]);
+        for(Block stairs : GlobalsXOverhaul.STAIRS){
+            addDrop(stairs);
         }
     }
 
     private void crossDrops(){
-        for(int i = 0; i < GlobalsXOverhaul.CROSS.length; i++){
-            addDrop(GlobalsXOverhaul.CROSS[i]);
+        for(Block block : GlobalsXOverhaul.CROSS){
+            addDrop(block);
         }
     }
 
     private void axisRotatedDrops(){
-        for(int i = 0; i < GlobalsXOverhaul.AXIS_ROTATED.length; i++){
-            addDrop(GlobalsXOverhaul.AXIS_ROTATED[i]);
+        for(Block block : GlobalsXOverhaul.AXIS_ROTATED){
+            addDrop(block);
         }
     }
-
-
 
 
 

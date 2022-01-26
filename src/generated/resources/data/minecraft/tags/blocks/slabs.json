@@ -16,6 +16,8 @@
     "xoverhaul:brown_concrete_slab",
     "xoverhaul:green_concrete_slab",
     "xoverhaul:red_concrete_slab",
-    "xoverhaul:black_concrete_slab"
+    "xoverhaul:black_concrete_slab",
+    "xoverhaul:dirt_slab",
+    "xoverhaul:bedrock_slab"
   ]
 }

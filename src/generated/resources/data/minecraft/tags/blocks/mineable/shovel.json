@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "xoverhaul:dirty_sand",
-    "xoverhaul:dirt_slab",
-    "xoverhaul:grass_block_slab"
+    "xoverhaul:dirt_slab"
   ]
 }

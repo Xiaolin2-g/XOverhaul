@@ -1,5 +1,4 @@
 {
-
   "item.xoverhaul.iron_core": "Iron Core",
   "item.xoverhaul.golden_beetroot": "Golden Beetroot",
   "item.xoverhaul.golden_wheat": "Golden Wheat",
@@ -37,9 +36,7 @@
   "item.xoverhaul.stripped_warped_bark": "Stripped Warped Bark",
   "item.xoverhaul.scraper": "Scraper",
   "item.xoverhaul.cooked_tropical_fish": "Cooked Tropical Fish",
-
-
-
+  "item.xoverhaul.glue": "Glue",
   "block.xoverhaul.dirty_sand": "Dirty Sand",
   "block.xoverhaul.charred_bone_block": "Charred Bone Block",
   "block.xoverhaul.purpur_cobblestone": "Purpur Cobblestone",
@@ -59,7 +56,6 @@
   "block.xoverhaul.green_concrete_slab": "Green Concrete Slab",
   "block.xoverhaul.red_concrete_slab": "Red Concrete Slab",
   "block.xoverhaul.black_concrete_slab": "Black Concrete Slab",
-
   "block.xoverhaul.white_concrete_stairs": "White Concrete Stairs",
   "block.xoverhaul.orange_concrete_stairs": "Orange Concrete Stairs",
   "block.xoverhaul.magenta_concrete_stairs": "Magenta Concrete Stairs",
@@ -95,6 +91,9 @@
   "block.xoverhaul.green_tulip": "Green Tulip",
   "block.xoverhaul.black_tulip": "Black Tulip",
   "block.xoverhaul.ender_end_stone": "Ender End Stone",
+  "block.xoverhaul.bedrock_slab": "Bedrock Slab",
+  "block.xoverhaul.bedrock_stairs": "Bedrock Stairs",
+  "block.xoverhaul.crimson_sprouts": "Crimson Sprouts",
 
 
 

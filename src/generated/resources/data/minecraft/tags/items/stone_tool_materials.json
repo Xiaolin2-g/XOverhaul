@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "minecraft:diorite",
-    "minecraft:andesite",
     "minecraft:granite",
+    "minecraft:andesite",
     "minecraft:dripstone_block",
     "minecraft:calcite",
     "minecraft:tuff"

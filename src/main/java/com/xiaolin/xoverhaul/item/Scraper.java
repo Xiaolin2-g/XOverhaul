@@ -17,16 +17,6 @@ public class Scraper extends Item {
         settings.recipeRemainder(this);
     }
 
-   /* @Override
-    public ItemStack getContainerItem(ItemStack itemStack) {
-        ItemStack container = itemStack.copy();
-        if(container.hurt(1, random, null)){
-            return ItemStack.EMPTY;
-        } else {
-            return container;
-        }
-    }*/
-
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();

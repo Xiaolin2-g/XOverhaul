@@ -147,9 +147,6 @@ public class ModBlocks {
     public static final Block DIRT_SLAB = registerBlock("dirt_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.DIRT)));
 
-    public static final Block GRASS_BLOCK_SLAB = registerBlock("grass_block_slab",
-          new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK)));
-
     public static final Block SOUL_NETHERRACK = registerBlock("soul_netherrack",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK)));
 
@@ -205,8 +202,8 @@ public class ModBlocks {
             new BaseStairs(Blocks.BEDROCK.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.BEDROCK)));
 
-
-
+    public static final Block CRIMSON_SPROUTS = registerBlock("crimson_sprouts",
+            new SproutsBlock(FabricBlockSettings.copyOf(Blocks.NETHER_SPROUTS)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

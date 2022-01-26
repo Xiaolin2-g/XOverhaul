@@ -6,6 +6,7 @@ import com.xiaolin.xoverhaul.util.BlockStateModelGeneratorInterface;
 import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockStateDefinitionProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.model.*;
@@ -34,9 +35,9 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
     }
 
     private void generateItems(ItemModelGenerator itemModelGenerator){
-        for (int i = 0; i < GlobalsXOverhaul.ITEMS.length; i++) {
-            XOverhaul.LOGGER.info("Items: " + GlobalsXOverhaul.ITEMS[i]);
-            registerModelGenerated(itemModelGenerator, GlobalsXOverhaul.ITEMS[i]);
+        for (Item item : GlobalsXOverhaul.ITEMS) {
+
+            registerModelGenerated(itemModelGenerator, item);
         }
     }
 
@@ -53,16 +54,16 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
     }
 
     private void generateTools(ItemModelGenerator itemModelGenerator){
-        for (int i = 0; i < GlobalsXOverhaul.TOOLS.length; i++) {
-            XOverhaul.LOGGER.info("Tools: " + GlobalsXOverhaul.TOOLS[i]);
-            registerModelGenerated(itemModelGenerator, GlobalsXOverhaul.TOOLS[i]);
+        for (Item item : GlobalsXOverhaul.TOOLS) {
+
+            registerModelGenerated(itemModelGenerator, item);
         }
     }
 
     private void generateFoods(ItemModelGenerator itemModelGenerator){
-        for (int i = 0; i < GlobalsXOverhaul.FOODS.length; i++) {
-            XOverhaul.LOGGER.info("Food: " + GlobalsXOverhaul.FOODS[i]);
-            registerModelGenerated(itemModelGenerator, GlobalsXOverhaul.FOODS[i]);
+        for (Item food : GlobalsXOverhaul.FOODS) {
+
+            registerModelGenerated(itemModelGenerator, food);
         }
     }
 
@@ -76,10 +77,10 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
     private void generateCubes(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (int i = 0; i < GlobalsXOverhaul.BLOCKS.length; i++) {
-            blockStateModelGenerator.registerSimpleCubeAll(GlobalsXOverhaul.BLOCKS[i]);
-            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.BLOCKS[i],
-                    ModelIds.getBlockModelId(GlobalsXOverhaul.BLOCKS[i]));
+        for (Block block : GlobalsXOverhaul.BLOCKS) {
+            blockStateModelGenerator.registerSimpleCubeAll(block);
+            blockStateModelGenerator.registerParentedItemModel(block,
+                    ModelIds.getBlockModelId(block));
         }
     }
 
@@ -110,20 +111,20 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
     private void generateCross(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (int i = 0; i < GlobalsXOverhaul.CROSS.length; i++) {
+        for (Block block : GlobalsXOverhaul.CROSS) {
 
-            blockStateModelGenerator.registerTintableCross(GlobalsXOverhaul.CROSS[i], BlockStateModelGenerator.TintType.NOT_TINTED);
+            blockStateModelGenerator.registerTintableCross(block, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         }
     }
 
     private void generateAxisRotated(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (int i = 0; i < GlobalsXOverhaul.AXIS_ROTATED.length; i++) {
+        for (Block block : GlobalsXOverhaul.AXIS_ROTATED) {
 
-            blockStateModelGenerator.registerAxisRotated(GlobalsXOverhaul.AXIS_ROTATED[i], TexturedModel.CUBE_COLUMN);
-            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.AXIS_ROTATED[i],
-                    ModelIds.getBlockModelId(GlobalsXOverhaul.AXIS_ROTATED[i]));
+            blockStateModelGenerator.registerAxisRotated(block, TexturedModel.CUBE_COLUMN);
+            blockStateModelGenerator.registerParentedItemModel(block,
+                    ModelIds.getBlockModelId(block));
         }
     }
 

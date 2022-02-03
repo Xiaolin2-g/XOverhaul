@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "xoverhaul:item/gold_armor_scrap"
+    "layer0": "xoverhaul:item/golden_armor_scrap"
   }
 }

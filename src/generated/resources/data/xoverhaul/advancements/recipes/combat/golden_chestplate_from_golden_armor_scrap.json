@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:golden_leggings_from_gold_armor_scrap"
+      "minecraft:golden_chestplate_from_golden_armor_scrap"
     ]
   },
   "criteria": {
-    "has_gold_armor_scrap": {
+    "has_golden_armor_scrap": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "xoverhaul:gold_armor_scrap"
+              "xoverhaul:golden_armor_scrap"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:golden_leggings_from_gold_armor_scrap"
+        "recipe": "minecraft:golden_chestplate_from_golden_armor_scrap"
       }
     }
   },
   "requirements": [
     [
-      "has_gold_armor_scrap",
+      "has_golden_armor_scrap",
       "has_the_recipe"
     ]
   ]

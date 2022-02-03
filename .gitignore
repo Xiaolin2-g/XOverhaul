@@ -33,4 +33,6 @@ bin/
 
 run/
 
+# dategen
+
 .cache/

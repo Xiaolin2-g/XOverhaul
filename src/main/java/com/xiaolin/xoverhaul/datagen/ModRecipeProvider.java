@@ -5,7 +5,6 @@ import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
 import com.xiaolin.xoverhaul.item.ModTools;
-import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import com.xiaolin.xoverhaul.util.SmeltingGlobals;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

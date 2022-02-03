@@ -2,7 +2,6 @@ package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.item.ModTools;
-import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
 import com.xiaolin.xoverhaul.util.SmeltingGlobals;
 import net.minecraft.data.server.RecipesProvider;
 import net.minecraft.data.server.recipe.*;

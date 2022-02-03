@@ -2,7 +2,7 @@ package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.block.ModBlocks;
-import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
+import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -132,7 +132,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
     }
 
     private void slabTags(){
-        for(Block slab : GlobalsXOverhaul.SLABS){
+        for(Block slab : DatagenGlobals.SLABS){
             addToSlabsTag(slab);
         }
     }
@@ -142,7 +142,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
     }
 
     private void stairsTags(){
-        for(Block stairs : GlobalsXOverhaul.STAIRS){
+        for(Block stairs : DatagenGlobals.STAIRS){
             addToStairsTag(stairs);
         }
     }

@@ -14,30 +14,30 @@ public class ModFood {
     public static final Item GOLDEN_BEETROOT = registerItem("golden_beetroot",
             new Item(new FabricItemSettings()
                     .food(new FoodComponent.Builder().hunger(2).saturationModifier(2.4f).build())
-                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+                    .group(ModItemGroup.XOVERHAUL_FOODS)));
 
 
     public static final Item GOLDEN_WHEAT = registerItem("golden_wheat",
             new Item(new FabricItemSettings()
-                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+                    .group(ModItemGroup.XOVERHAUL_FOODS)));
 
 
     public static final Item GOLDEN_BREAD = registerItem("golden_bread",
             new Item(new FabricItemSettings()
                     .food(new FoodComponent.Builder().hunger(8).saturationModifier(2.4f).build())
-                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+                    .group(ModItemGroup.XOVERHAUL_FOODS)));
 
 
     public static final Item GOLDEN_POTATO = registerItem("golden_potato",
             new Item(new FabricItemSettings()
                     .food(new FoodComponent.Builder().hunger(2).saturationModifier(1.2f).build())
-                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+                    .group(ModItemGroup.XOVERHAUL_FOODS)));
 
 
     public static final Item GOLDEN_BAKED_POTATO = registerItem("golden_baked_potato",
             new Item(new FabricItemSettings()
                     .food(new FoodComponent.Builder().hunger(7).saturationModifier(2.4f).build())
-                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+                    .group(ModItemGroup.XOVERHAUL_FOODS)));
 
 
     public static final Item GOLDEN_POISONOUS_POTATO = registerItem("golden_poisonous_potato",
@@ -45,14 +45,14 @@ public class ModFood {
                     .food(new FoodComponent.Builder().hunger(4).saturationModifier(1.2f)
                             .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 3 * 20) ,1)
                             .build())
-                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+                    .group(ModItemGroup.XOVERHAUL_FOODS)));
 
 
     public static final Item COOKED_TROPICAL_FISH = registerItem("cooked_tropical_fish",
             new Item(new FabricItemSettings()
                     .food(new FoodComponent.Builder().hunger(5).saturationModifier(1.2f)
                             .build())
-                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+                    .group(ModItemGroup.XOVERHAUL_FOODS)));
 
 
     public static Item registerItem(String name, Item item){

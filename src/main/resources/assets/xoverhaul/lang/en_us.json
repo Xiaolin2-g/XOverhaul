@@ -17,7 +17,7 @@
   "item.xoverhaul.monster_leggings": "Monster Leggings",
   "item.xoverhaul.monster_boots": "Monster Boots",
   "item.xoverhaul.leather_armor_piece": "Leather Armor Piece",
-  "item.xoverhaul.gold_armor_scrap": "Gold Armor Scrap",
+  "item.xoverhaul.golden_armor_scrap": "Golden Armor Scrap",
   "item.xoverhaul.oak_bark": "Oak Bark",
   "item.xoverhaul.birch_bark": "Birch Bark",
   "item.xoverhaul.spruce_bark": "Spruce Bark",
@@ -37,6 +37,8 @@
   "item.xoverhaul.scraper": "Scraper",
   "item.xoverhaul.cooked_tropical_fish": "Cooked Tropical Fish",
   "item.xoverhaul.glue": "Glue",
+
+
   "block.xoverhaul.dirty_sand": "Dirty Sand",
   "block.xoverhaul.charred_bone_block": "Charred Bone Block",
   "block.xoverhaul.purpur_cobblestone": "Purpur Cobblestone",
@@ -97,17 +99,24 @@
 
 
 
+  "itemGroup.xoverhaul.xoverhaul_items": "XOverhaul Items",
+  "itemGroup.xoverhaul.xoverhaul_blocks": "XOverhaul Blocks",
+  "itemGroup.xoverhaul.xoverhaul_armors": "XOverhaul Armors",
+  "itemGroup.xoverhaul.xoverhaul_weapons": "XOverhaul Weapons",
+  "itemGroup.xoverhaul.xoverhaul_tools": "XOverhaul Tools",
+  "itemGroup.xoverhaul.xoverhaul_foods": "XOverhaul Foods",
+
+
+
 
   "block.minecraft.nether_wart_block": "Crimson Cap Block",
   "block.minecraft.warped_wart_block": "Warped Cap Block",
-  "block.minecraft.nether_sprouts": "Warped Sprouts",
+  "block.minecraft.nether_sprouts": "Warped Sprouts"
 
 
 
 
 
-  "itemGroup.xoverhaul.xoverhaul_items": "XOverhaul Items",
-  "itemGroup.xoverhaul.xoverhaul_blocks": "XOverhaul Blocks"
 
 
 

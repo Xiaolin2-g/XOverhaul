@@ -1,6 +1,6 @@
 package com.xiaolin.xoverhaul.datagen;
 
-import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
+import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTablesProvider;
 import net.minecraft.block.Block;
@@ -29,31 +29,31 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTablesProvider {
     }
 
     private void blockDrops(){
-        for(Block block : GlobalsXOverhaul.BLOCKS){
+        for(Block block : DatagenGlobals.BLOCKS){
             addDrop(block);
         }
     }
 
     private void slabDrops(){
-        for(Block slab : GlobalsXOverhaul.SLABS){
+        for(Block slab : DatagenGlobals.SLABS){
             addDrop(slab, BlockLootTableGenerator::slabDrops);
         }
     }
 
     private void stairDrops(){
-        for(Block stairs : GlobalsXOverhaul.STAIRS){
+        for(Block stairs : DatagenGlobals.STAIRS){
             addDrop(stairs);
         }
     }
 
     private void crossDrops(){
-        for(Block block : GlobalsXOverhaul.CROSS){
+        for(Block block : DatagenGlobals.CROSS){
             addDrop(block);
         }
     }
 
     private void axisRotatedDrops(){
-        for(Block block : GlobalsXOverhaul.AXIS_ROTATED){
+        for(Block block : DatagenGlobals.AXIS_ROTATED){
             addDrop(block);
         }
     }

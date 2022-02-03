@@ -27,7 +27,7 @@ public class ModItems {
             new Item(new FabricItemSettings()
                     .group(ModItemGroup.XOVERHAUL_ITEMS)));
 
-    public static final Item GOLD_ARMOR_SCRAP = registerItem("gold_armor_scrap",
+    public static final Item GOLDEN_ARMOR_SCRAP = registerItem("golden_armor_scrap",
             new Item(new FabricItemSettings()
                     .group(ModItemGroup.XOVERHAUL_ITEMS)));
 

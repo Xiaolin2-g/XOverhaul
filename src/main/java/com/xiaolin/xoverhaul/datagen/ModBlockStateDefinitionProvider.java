@@ -3,7 +3,7 @@ package com.xiaolin.xoverhaul.datagen;
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.util.BlockStateModelGeneratorInterface;
-import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
+import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockStateDefinitionProvider;
 import net.minecraft.block.Block;
@@ -35,7 +35,7 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
     }
 
     private void generateItems(ItemModelGenerator itemModelGenerator){
-        for (Item item : GlobalsXOverhaul.ITEMS) {
+        for (Item item : DatagenGlobals.ITEMS) {
 
             registerModelGenerated(itemModelGenerator, item);
         }
@@ -54,14 +54,14 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
     }
 
     private void generateTools(ItemModelGenerator itemModelGenerator){
-        for (Item item : GlobalsXOverhaul.TOOLS) {
+        for (Item item : DatagenGlobals.TOOLS) {
 
             registerModelGenerated(itemModelGenerator, item);
         }
     }
 
     private void generateFoods(ItemModelGenerator itemModelGenerator){
-        for (Item food : GlobalsXOverhaul.FOODS) {
+        for (Item food : DatagenGlobals.FOODS) {
 
             registerModelGenerated(itemModelGenerator, food);
         }
@@ -77,7 +77,7 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
     private void generateCubes(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (Block block : GlobalsXOverhaul.BLOCKS) {
+        for (Block block : DatagenGlobals.BLOCKS) {
             blockStateModelGenerator.registerSimpleCubeAll(block);
             blockStateModelGenerator.registerParentedItemModel(block,
                     ModelIds.getBlockModelId(block));
@@ -86,32 +86,32 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
     private void generateSlabs(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (int i = 0; i < GlobalsXOverhaul.SLABS.length; i++) {
+        for (int i = 0; i < DatagenGlobals.SLABS.length; i++) {
 
-            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerSlab(GlobalsXOverhaul.SLABS_BASE[i],
-                    GlobalsXOverhaul.SLABS[i]);
+            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerSlab(DatagenGlobals.SLABS_BASE[i],
+                    DatagenGlobals.SLABS[i]);
 
-            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.SLABS[i],
-                    ModelIds.getBlockModelId(GlobalsXOverhaul.SLABS[i]));
+            blockStateModelGenerator.registerParentedItemModel(DatagenGlobals.SLABS[i],
+                    ModelIds.getBlockModelId(DatagenGlobals.SLABS[i]));
         }
     }
 
     private void generateStairs(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (int i = 0; i < GlobalsXOverhaul.STAIRS.length; i++) {
+        for (int i = 0; i < DatagenGlobals.STAIRS.length; i++) {
 
-            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerStairs(GlobalsXOverhaul.STAIRS_BASE[i],
-                    GlobalsXOverhaul.STAIRS[i]);
+            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerStairs(DatagenGlobals.STAIRS_BASE[i],
+                    DatagenGlobals.STAIRS[i]);
 
-            blockStateModelGenerator.registerParentedItemModel(GlobalsXOverhaul.STAIRS[i],
-                    ModelIds.getBlockModelId(GlobalsXOverhaul.STAIRS[i]));
+            blockStateModelGenerator.registerParentedItemModel(DatagenGlobals.STAIRS[i],
+                    ModelIds.getBlockModelId(DatagenGlobals.STAIRS[i]));
 
         }
     }
 
     private void generateCross(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (Block block : GlobalsXOverhaul.CROSS) {
+        for (Block block : DatagenGlobals.CROSS) {
 
             blockStateModelGenerator.registerTintableCross(block, BlockStateModelGenerator.TintType.NOT_TINTED);
 
@@ -120,7 +120,7 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
     private void generateAxisRotated(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (Block block : GlobalsXOverhaul.AXIS_ROTATED) {
+        for (Block block : DatagenGlobals.AXIS_ROTATED) {
 
             blockStateModelGenerator.registerAxisRotated(block, TexturedModel.CUBE_COLUMN);
             blockStateModelGenerator.registerParentedItemModel(block,

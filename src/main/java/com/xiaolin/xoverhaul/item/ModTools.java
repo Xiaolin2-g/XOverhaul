@@ -11,7 +11,7 @@ public class ModTools {
     public static final Item SCRAPER = registerItem("scraper",
             new Scraper(new FabricItemSettings()
                     .maxDamage(8)
-                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+                    .group(ModItemGroup.XOVERHAUL_TOOLS)));
 
 
 

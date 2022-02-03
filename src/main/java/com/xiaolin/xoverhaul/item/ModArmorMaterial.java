@@ -1,6 +1,6 @@
 package com.xiaolin.xoverhaul.item;
 
-import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
+import com.xiaolin.xoverhaul.util.ArmorGlobals;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -12,18 +12,18 @@ import java.util.function.Supplier;
 public enum ModArmorMaterial implements ArmorMaterial {
 
 
-    WOODSTONE(GlobalsXOverhaul.WOODSTONE_NAME, GlobalsXOverhaul.WOODSTONE_DURABILITY_MULTIPLIER, GlobalsXOverhaul.WOODSTONE_PROTECTION_ARRAY,
-              GlobalsXOverhaul.WOODSTONE_ENCHANTABILITY, GlobalsXOverhaul.WOODSTONE_EQUIP_SOUND,
-              GlobalsXOverhaul.WOODSTONE_ARMOR_TOUGHNESS, GlobalsXOverhaul.WOODSTONE_KNOCKBACK_RESISTANCE, () -> {
-        return Ingredient.ofItems(GlobalsXOverhaul.WOODSTONE_REPAIR_INGREDIENT);
+    WOODSTONE(ArmorGlobals.WOODSTONE_NAME, ArmorGlobals.WOODSTONE_DURABILITY_MULTIPLIER, ArmorGlobals.WOODSTONE_PROTECTION_ARRAY,
+              ArmorGlobals.WOODSTONE_ENCHANTABILITY, ArmorGlobals.WOODSTONE_EQUIP_SOUND,
+              ArmorGlobals.WOODSTONE_ARMOR_TOUGHNESS, ArmorGlobals.WOODSTONE_KNOCKBACK_RESISTANCE, () -> {
+        return Ingredient.ofItems(ArmorGlobals.WOODSTONE_REPAIR_INGREDIENT);
     }),
 
     // Monster
 
-    MONSTER(GlobalsXOverhaul.MONSTER_NAME, GlobalsXOverhaul.MONSTER_DURABILITY_MULTIPLIER, GlobalsXOverhaul.MONSTER_PROTECTION_ARRAY,
-            GlobalsXOverhaul.MONSTER_ENCHANTABILITY, GlobalsXOverhaul.MONSTER_EQUIP_SOUND,
-            GlobalsXOverhaul.MONSTER_ARMOR_TOUGHNESS, GlobalsXOverhaul.MONSTER_KNOCKBACK_RESISTANCE, () -> {
-        return Ingredient.ofItems(GlobalsXOverhaul.MONSTER_REPAIR_INGREDIENT);
+    MONSTER(ArmorGlobals.MONSTER_NAME, ArmorGlobals.MONSTER_DURABILITY_MULTIPLIER, ArmorGlobals.MONSTER_PROTECTION_ARRAY,
+            ArmorGlobals.MONSTER_ENCHANTABILITY, ArmorGlobals.MONSTER_EQUIP_SOUND,
+            ArmorGlobals.MONSTER_ARMOR_TOUGHNESS, ArmorGlobals.MONSTER_KNOCKBACK_RESISTANCE, () -> {
+        return Ingredient.ofItems(ArmorGlobals.MONSTER_REPAIR_INGREDIENT);
     }),
 
 

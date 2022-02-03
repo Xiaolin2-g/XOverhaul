@@ -6,6 +6,7 @@ import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
 import com.xiaolin.xoverhaul.item.ModTools;
 import com.xiaolin.xoverhaul.util.GlobalsXOverhaul;
+import com.xiaolin.xoverhaul.util.SmeltingGlobals;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipesProvider;
@@ -37,8 +38,8 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         compactingRecipes(exporter);
         armorRecipes(exporter);
         smeltingRecipes(exporter);
-        cookingRecipes(exporter, "smoking", RecipeSerializer.SMOKING, GlobalsXOverhaul.STANDARD_SMOKING_TIME);
-        cookingRecipes(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, GlobalsXOverhaul.STANDARD_CAMPFIRE_TIME);
+        cookingRecipes(exporter, "smoking", RecipeSerializer.SMOKING, SmeltingGlobals.STANDARD_SMOKING_TIME);
+        cookingRecipes(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, SmeltingGlobals.STANDARD_CAMPFIRE_TIME);
         horseArmorRecipes(exporter);
         smallVerticalRecipes(exporter);
         oRecipes(exporter);
@@ -196,7 +197,7 @@ public class ModRecipeProvider extends FabricRecipesProvider {
                  Items.LEATHER_LEGGINGS, Items.LEATHER_CHESTPLATE);
 
         ModRecipeHelper.offerAnotherOne(exporter,
-                ModItems.GOLD_ARMOR_SCRAP,
+                ModItems.GOLDEN_ARMOR_SCRAP,
                 Items.GOLDEN_BOOTS, Items.GOLDEN_HELMET,
                 Items.GOLDEN_LEGGINGS, Items.GOLDEN_CHESTPLATE);
     }
@@ -209,10 +210,10 @@ public class ModRecipeProvider extends FabricRecipesProvider {
     private void cookingRecipes(Consumer<RecipeJsonProvider> exporter, String cooker, CookingRecipeSerializer<?> serializer, int cookingTime){
 
         RecipesProvider.offerCookingRecipe(exporter, cooker, serializer, cookingTime,
-                Items.TROPICAL_FISH, ModFood.COOKED_TROPICAL_FISH, GlobalsXOverhaul.STANDARD_XP_COOKING);
+                Items.TROPICAL_FISH, ModFood.COOKED_TROPICAL_FISH, SmeltingGlobals.STANDARD_XP_COOKING);
 
         RecipesProvider.offerCookingRecipe(exporter, cooker, serializer, cookingTime,
-                ModFood.GOLDEN_POTATO, ModFood.GOLDEN_BAKED_POTATO, GlobalsXOverhaul.STANDARD_XP_COOKING);
+                ModFood.GOLDEN_POTATO, ModFood.GOLDEN_BAKED_POTATO, SmeltingGlobals.STANDARD_XP_COOKING);
 
     }
 

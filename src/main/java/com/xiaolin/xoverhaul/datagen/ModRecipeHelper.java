@@ -343,7 +343,7 @@ public class ModRecipeHelper {
     // Offer
 
     public static void offerBarkRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible input, ItemConvertible output){
-        ShapelessRecipeJsonFactory.create(output, 1)
+        ShapelessRecipeJsonFactory.create(output, 4)
                 .input(input).input(ModTools.SCRAPER)
                 .criterion(RecipesProvider.hasItem(input), RecipesProvider.conditionsFromItem(input))
                 .offerTo(exporter);

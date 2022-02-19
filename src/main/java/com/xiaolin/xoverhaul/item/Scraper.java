@@ -25,7 +25,7 @@ public class Scraper extends Item {
         return ActionResult.SUCCESS;
     }
 
-    
+
 
 
 }

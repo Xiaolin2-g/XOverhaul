@@ -10,6 +10,8 @@ public class ModTools {
 
     public static final Item SCRAPER = registerItem("scraper",
             new Scraper(new FabricItemSettings()
+                    .maxCount(1)
+                    .recipeRemainder(ModTools.SCRAPER)
                     .group(ModItemGroup.XOVERHAUL_TOOLS)));
 
 

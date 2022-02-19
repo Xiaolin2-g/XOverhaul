@@ -3,6 +3,7 @@ package com.xiaolin.xoverhaul.util;
 import com.xiaolin.xoverhaul.block.ModBlocks;
 import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
+import com.xiaolin.xoverhaul.item.ModSpawnEggs;
 import com.xiaolin.xoverhaul.item.ModTools;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

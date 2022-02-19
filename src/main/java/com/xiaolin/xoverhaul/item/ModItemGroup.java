@@ -26,4 +26,7 @@ public class ModItemGroup {
 
     public static final ItemGroup XOVERHAUL_FOODS = FabricItemGroupBuilder.build(new Identifier(XOverhaul.MOD_ID ,
             "xoverhaul_foods"), () -> new ItemStack(ModFood.GOLDEN_BREAD));
+
+    public static final ItemGroup XOVERHAUL_SPAWN_EGGS = FabricItemGroupBuilder.build(new Identifier(XOverhaul.MOD_ID ,
+            "xoverhaul_spawn_eggs"), () -> new ItemStack(ModSpawnEggs.CHAINED_ZOMBIE_SPAWN_EGG));
 }

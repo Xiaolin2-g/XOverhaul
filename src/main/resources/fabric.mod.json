@@ -21,6 +21,9 @@
     "main": [
       "com.xiaolin.xoverhaul.XOverhaul"
     ],
+    "client":[
+      "com.xiaolin.xoverhaul.XOverhaulClient"
+    ],
     "fabric-datagen" : [
       "com.xiaolin.xoverhaul.datagen.ModDataGeneratorEntrypoint"
     ]

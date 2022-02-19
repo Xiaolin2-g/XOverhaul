@@ -1,5 +1,6 @@
 package com.xiaolin.xoverhaul.datagen;
 
+import com.ibm.icu.text.Normalizer2;
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.util.BlockStateModelGeneratorInterface;
@@ -8,6 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockStateDefinitionProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.render.item.ItemModels;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.model.*;
 import net.minecraft.item.Item;
@@ -16,6 +18,7 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
     public ModBlockStateDefinitionProvider(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
     }
+
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
@@ -67,9 +70,11 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
         }
     }
 
+
     private void registerModelGenerated(ItemModelGenerator itemModelGenerator, Item item){
         itemModelGenerator.register(item, Models.GENERATED);
     }
+
 
     private void registerModelHandheld(ItemModelGenerator itemModelGenerator, Item item){
         itemModelGenerator.register(item, Models.HANDHELD);

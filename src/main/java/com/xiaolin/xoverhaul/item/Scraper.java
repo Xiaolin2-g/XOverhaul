@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 public class Scraper extends Item {
     public Scraper(Settings settings) {
         super(settings);
-        settings.recipeRemainder(this);
+        // settings.recipeRemainder(this);
     }
 
     @Override
@@ -25,8 +25,7 @@ public class Scraper extends Item {
         return ActionResult.SUCCESS;
     }
 
-    @Override
-    public boolean hasRecipeRemainder() {
-        return true;
-    }
+    
+
+
 }

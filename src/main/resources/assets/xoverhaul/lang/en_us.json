@@ -37,6 +37,7 @@
   "item.xoverhaul.scraper": "Scraper",
   "item.xoverhaul.cooked_tropical_fish": "Cooked Tropical Fish",
   "item.xoverhaul.glue": "Glue",
+  "item.xoverhaul.chained_zombie_spawn_egg": "Chained Zombie Spawn Egg",
 
 
   "block.xoverhaul.dirty_sand": "Dirty Sand",
@@ -105,7 +106,7 @@
   "itemGroup.xoverhaul.xoverhaul_weapons": "XOverhaul Weapons",
   "itemGroup.xoverhaul.xoverhaul_tools": "XOverhaul Tools",
   "itemGroup.xoverhaul.xoverhaul_foods": "XOverhaul Foods",
-
+  "itemGroup.xoverhaul.xoverhaul_spawn_eggs": "XOverhaul Spawn Eggs",
 
 
 

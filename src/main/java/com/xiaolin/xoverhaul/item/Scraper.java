@@ -10,8 +10,9 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
-public class Scraper extends Item {
+public class Scraper extends DontConsumeOnCraftItem {
     public Scraper(Settings settings) {
         super(settings);
         // settings.recipeRemainder(this);
@@ -24,8 +25,6 @@ public class Scraper extends Item {
         world.setBlockState(blockpos, Blocks.MAGMA_BLOCK.getDefaultState());
         return ActionResult.SUCCESS;
     }
-
-
 
 
 }

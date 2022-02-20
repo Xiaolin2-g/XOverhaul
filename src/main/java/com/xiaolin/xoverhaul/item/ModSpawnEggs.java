@@ -10,8 +10,10 @@ import net.minecraft.util.registry.Registry;
 
 public class ModSpawnEggs {
 
-    public static final Item CHAINED_ZOMBIE_SPAWN_EGG = registerItem("chained_zombie_spawn_egg",
-            new SpawnEggItem(ModEntities.CHAINED_ZOMBIE, 0x0DA70B, 0x73420E,
+
+
+    public static final Item CHAINED_MONSTER_SPAWN_EGG = registerItem("chained_monster_spawn_egg",
+            new SpawnEggItem(ModEntities.CHAINED_MONSTER, 0x83848A, 0x27282E,
                     new FabricItemSettings()
                     .group(ModItemGroup.XOVERHAUL_SPAWN_EGGS)));
 

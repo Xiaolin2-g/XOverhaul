@@ -1,22 +1,19 @@
 package com.xiaolin.xoverhaul.entity;
 
-import com.sun.net.httpserver.Filter;
 import com.xiaolin.xoverhaul.XOverhaul;
-import com.xiaolin.xoverhaul.entity.entities.ChainedZombieEntity;
+import com.xiaolin.xoverhaul.entity.entities.ChainedMonsterEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.*;
-import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModEntities {
 
 
-    public static final EntityType<ChainedZombieEntity> CHAINED_ZOMBIE =
+    public static final EntityType<ChainedMonsterEntity> CHAINED_MONSTER =
             ModEntities.registerEntity("chained_zombie", SpawnGroup.MONSTER,
-                    ChainedZombieEntity::new, 2, 1);
+                    ChainedMonsterEntity::new, 2, 1);
 
 
     public static EntityType registerEntity(String name, SpawnGroup spawnGroup,
@@ -39,6 +36,6 @@ public class ModEntities {
     }
 
     public static void registerMobAttributes(){
-        FabricDefaultAttributeRegistry.register(CHAINED_ZOMBIE, ChainedZombieEntity.createChainedZombieAttributes());
+        FabricDefaultAttributeRegistry.register(CHAINED_MONSTER, ChainedMonsterEntity.createChainedMonsterAttributes());
     }
 }

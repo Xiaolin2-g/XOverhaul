@@ -8,10 +8,9 @@ import net.minecraft.util.Identifier;
 
 public class ModRenderers {
 
-    public static final EntityModelLayer MODEL_CHAINED_ZOMBIE_LAYER = registerNewModelLayer("chained_zombie");
 
     public static void registerRenderers() {
-        EntityRendererRegistry.register(ModEntities.CHAINED_ZOMBIE, ChainedZombieEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.CHAINED_MONSTER, ChainedMonsterEntityRenderer::new);
     }
 
     public static EntityModelLayer registerNewModelLayer(String name){

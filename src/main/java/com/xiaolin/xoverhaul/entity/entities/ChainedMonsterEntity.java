@@ -58,5 +58,5 @@ public class ChainedMonsterEntity extends ZombieEntity {
     protected boolean shouldBreakDoors() {
         return false;
     }
-    
+
 }

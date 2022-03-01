@@ -1,5 +1,6 @@
 package com.xiaolin.xoverhaul.datagen;
 
+import com.xiaolin.xoverhaul.block.ModBlocks;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTablesProvider;
@@ -30,7 +31,9 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTablesProvider {
 
     private void blockDrops(){
         for(Block block : DatagenGlobals.BLOCKS){
-            addDrop(block);
+            if(block != ModBlocks.WOODEN_CRATE){
+                addDrop(block);
+            }
         }
     }
 

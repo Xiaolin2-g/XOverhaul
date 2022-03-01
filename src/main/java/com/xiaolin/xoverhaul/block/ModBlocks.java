@@ -205,6 +205,9 @@ public class ModBlocks {
     public static final Block CRIMSON_SPROUTS = registerBlock("crimson_sprouts",
             new SproutsBlock(FabricBlockSettings.copyOf(Blocks.NETHER_SPROUTS)));
 
+    public static final Block WOODEN_CRATE = registerBlock("wooden_crate",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registry.BLOCK, new Identifier(XOverhaul.MOD_ID, name), block);

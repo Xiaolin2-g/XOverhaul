@@ -14,7 +14,8 @@ public class DatagenGlobals {
 
     public static final Block[] BLOCKS =
             {ModBlocks.DIRTY_SAND, ModBlocks.PURPUR_COBBLESTONE, ModBlocks.ROTTEN_FLESH_BLOCK,
-                    ModBlocks.SOUL_NETHERRACK, ModBlocks.SOUL_NETHER_BRICKS, ModBlocks.ENDER_END_STONE};
+                    ModBlocks.SOUL_NETHERRACK, ModBlocks.SOUL_NETHER_BRICKS, ModBlocks.ENDER_END_STONE,
+                    ModBlocks.WOODEN_CRATE};
 
     public static final Block[] SLABS_BASE =
             {Blocks.WHITE_CONCRETE, Blocks.ORANGE_CONCRETE, Blocks.MAGENTA_CONCRETE, Blocks.LIGHT_BLUE_CONCRETE,
@@ -67,7 +68,7 @@ public class DatagenGlobals {
                     ModItems.WARPED_BARK, ModItems.STRIPPED_OAK_BARK, ModItems.STRIPPED_BIRCH_BARK,
                     ModItems.STRIPPED_SPRUCE_BARK, ModItems.STRIPPED_JUNGLE_BARK, ModItems.STRIPPED_ACACIA_BARK,
                     ModItems.STRIPPED_DARK_OAK_BARK, ModItems.STRIPPED_CRIMSON_BARK, ModItems.STRIPPED_WARPED_BARK,
-                    ModItems.GLUE};
+                    ModItems.GLUE,};
 
     /* public static Item[] ARMORS =
             {ModArmor.WOODSTONE_HELMET, ModArmor.WOODSTONE_CHESTPLATE, ModArmor.WOODSTONE_LEGGINGS,
@@ -80,6 +81,6 @@ public class DatagenGlobals {
     public static final Item[] FOODS = {
             ModFood.GOLDEN_BEETROOT, ModFood.GOLDEN_WHEAT,
             ModFood.GOLDEN_BREAD, ModFood.GOLDEN_POTATO ,ModFood.GOLDEN_BAKED_POTATO, ModFood.GOLDEN_POISONOUS_POTATO,
-            ModFood.COOKED_TROPICAL_FISH};
+            ModFood.COOKED_TROPICAL_FISH, ModFood.CAKE_SLICE};
 
 }

@@ -674,6 +674,111 @@ public class ModRecipeHelper {
 
     }
 
+    public static void offerTwoOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
+                                             ItemConvertible input,
+                                             ItemConvertible output){
+
+        ShapelessRecipeJsonFactory.create(output)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+    }
+
+    public static void offerThreeOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
+                                             ItemConvertible input,
+                                             ItemConvertible output){
+
+        ShapelessRecipeJsonFactory.create(output)
+                .input(input)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+    }
+
+    public static void offerFourOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
+                                             ItemConvertible input,
+                                             ItemConvertible output){
+
+        ShapelessRecipeJsonFactory.create(output)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+    }
+
+    public static void offerFiveOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
+                                             ItemConvertible input,
+                                             ItemConvertible output){
+
+        ShapelessRecipeJsonFactory.create(output)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+    }
+
+    public static void offerSixOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
+                                             ItemConvertible input,
+                                             ItemConvertible output){
+
+        ShapelessRecipeJsonFactory.create(output)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+    }
+
+    public static void offerSevenOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
+                                             ItemConvertible input,
+                                             ItemConvertible output){
+
+        ShapelessRecipeJsonFactory.create(output)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+    }
+
+    public static void offerEightOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
+                                             ItemConvertible input,
+                                             ItemConvertible output){
+
+        ShapelessRecipeJsonFactory.create(output)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .input(input)
+                .criterion(RecipesProvider.hasItem(input),
+                        RecipesProvider.conditionsFromItem(input))
+                .offerTo(exporter, RecipesProvider.convertBetween(output, input));
+    }
+
     public static void offerAnotherOne(Consumer<RecipeJsonProvider> exporter,
                                        ItemConvertible input,
                                        ItemConvertible output_1,
@@ -681,39 +786,11 @@ public class ModRecipeHelper {
                                        ItemConvertible output_3,
                                        ItemConvertible output_4){
 
-        ShapelessRecipeJsonFactory.create(output_1)
-                .input(input)
-                .input(input)
-                .criterion(RecipesProvider.hasItem(input),
-                        RecipesProvider.conditionsFromItem(input))
-                .offerTo(exporter, RecipesProvider.convertBetween(output_1, input));
 
-        ShapelessRecipeJsonFactory.create(output_2)
-                .input(input)
-                .input(input)
-                .input(input)
-                .criterion(RecipesProvider.hasItem(input),
-                        RecipesProvider.conditionsFromItem(input))
-                .offerTo(exporter, RecipesProvider.convertBetween(output_2, input));
-
-        ShapelessRecipeJsonFactory.create(output_3)
-                .input(input)
-                .input(input)
-                .input(input)
-                .input(input)
-                .criterion(RecipesProvider.hasItem(input),
-                        RecipesProvider.conditionsFromItem(input))
-                .offerTo(exporter, RecipesProvider.convertBetween(output_3, input));
-
-        ShapelessRecipeJsonFactory.create(output_4)
-                .input(input)
-                .input(input)
-                .input(input)
-                .input(input)
-                .input(input)
-                .criterion(RecipesProvider.hasItem(input),
-                        RecipesProvider.conditionsFromItem(input))
-                .offerTo(exporter, RecipesProvider.convertBetween(output_4, input));
+        offerTwoOfTheSameItem(exporter, input, output_1);
+        offerThreeOfTheSameItem(exporter, input, output_2);
+        offerFourOfTheSameItem(exporter, input, output_3);
+        offerFiveOfTheSameItem(exporter, input, output_4);
     }
 
     public static void offerO(Consumer<RecipeJsonProvider> exporter,

@@ -376,5 +376,11 @@ public class ModRecipeProvider extends FabricRecipesProvider {
                 .criterion(RecipesProvider.hasItem(Items.IRON_INGOT), RecipesProvider.conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, ModRecipeHelper.convertMirrored(ModTools.SCRAPER));
 
+        // Cake Slice
+
+        offerShapelessRecipe(exporter, ModFood.CAKE_SLICE, Items.CAKE, null, 7);
+
+        ModRecipeHelper.offerSevenOfTheSameItem(exporter, ModFood.CAKE_SLICE, Items.CAKE);
+
     }
 }

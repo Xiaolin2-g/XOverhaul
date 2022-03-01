@@ -82,7 +82,11 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
     }
 
     private void axeTags(){
+        addToAxeTag(ModBlocks.WOODEN_CRATE);
+    }
 
+    private void addToAxeTag(Block block){
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(block);
     }
 
     private void addToShovelTag(Block block){

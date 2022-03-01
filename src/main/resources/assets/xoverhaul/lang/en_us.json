@@ -37,7 +37,7 @@
   "item.xoverhaul.scraper": "Scraper",
   "item.xoverhaul.cooked_tropical_fish": "Cooked Tropical Fish",
   "item.xoverhaul.glue": "Glue",
-  "item.xoverhaul.chained_zombie_spawn_egg": "Chained Zombie Spawn Egg",
+  "item.xoverhaul.chained_monster_spawn_egg": "Chained Monster Spawn Egg",
 
 
   "block.xoverhaul.dirty_sand": "Dirty Sand",
@@ -97,9 +97,10 @@
   "block.xoverhaul.bedrock_slab": "Bedrock Slab",
   "block.xoverhaul.bedrock_stairs": "Bedrock Stairs",
   "block.xoverhaul.crimson_sprouts": "Crimson Sprouts",
+  "block.xoverhaul.wooden_crate": "Wooden Crate",
 
 
- "entity.xoverhaul.chained_zombie": "Chained Zombie",
+ "entity.xoverhaul.chained_monster": "Chained Monster",
 
 
   "itemGroup.xoverhaul.xoverhaul_items": "XOverhaul Items",

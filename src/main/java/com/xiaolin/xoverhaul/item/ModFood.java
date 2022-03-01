@@ -54,6 +54,11 @@ public class ModFood {
                             .build())
                     .group(ModItemGroup.XOVERHAUL_FOODS)));
 
+    public static final Item CAKE_SLICE = registerItem("cake_slice",
+            new Item(new FabricItemSettings()
+                    .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4f)
+                            .build())
+                    .group(ModItemGroup.XOVERHAUL_FOODS)));
 
     public static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name), item);

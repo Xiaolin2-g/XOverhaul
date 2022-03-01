@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xoverhaul:cake_slice"
+    },
+    {
+      "item": "xoverhaul:cake_slice"
+    },
+    {
+      "item": "xoverhaul:cake_slice"
+    },
+    {
+      "item": "xoverhaul:cake_slice"
+    },
+    {
+      "item": "xoverhaul:cake_slice"
+    },
+    {
+      "item": "xoverhaul:cake_slice"
+    },
+    {
+      "item": "xoverhaul:cake_slice"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cake"
+  }
+}

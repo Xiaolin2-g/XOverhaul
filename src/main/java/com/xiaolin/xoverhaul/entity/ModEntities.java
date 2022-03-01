@@ -12,7 +12,7 @@ public class ModEntities {
 
 
     public static final EntityType<ChainedMonsterEntity> CHAINED_MONSTER =
-            ModEntities.registerEntity("chained_zombie", SpawnGroup.MONSTER,
+            ModEntities.registerEntity("chained_monster", SpawnGroup.MONSTER,
                     ChainedMonsterEntity::new, 2, 1);
 
 

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:cake_slice_from_cake"
+    ]
+  },
+  "criteria": {
+    "has_cake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cake"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:cake_slice_from_cake"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cake",
+      "has_the_recipe"
+    ]
+  ]
+}

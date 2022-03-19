@@ -19,7 +19,7 @@ public class ModAdvancementsProvider extends FabricAdvancementsProvider {
 
     @Override
     public void generateAdvancement(Consumer<Advancement> consumer) {
-        Advancement root = Advancement.Task.create()
+        Advancement root = Advancement.Builder.create()
                 .display(
                         ModBlocks.ENDER_END_STONE,
                         new TranslatableText("advancements.xoverhaul.root.title"),

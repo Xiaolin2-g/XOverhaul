@@ -40,6 +40,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
     }
 
     private void pickaxeTags(){
+        addToPickaxeTag(Blocks.HONEYCOMB_BLOCK);
+
         addToPickaxeTag(ModBlocks.CHARRED_BONE_BLOCK);
         addToPickaxeTag(ModBlocks.PURPUR_COBBLESTONE);
         addToPickaxeTag(ModBlocks.WHITE_CONCRETE_SLAB);

@@ -8,12 +8,12 @@ import com.xiaolin.xoverhaul.item.ModTools;
 import com.xiaolin.xoverhaul.util.SmeltingGlobals;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipesProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.RecipesProvider;
+import net.minecraft.data.server.RecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonFactory;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonFactory;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.CookingRecipeSerializer;
 import net.minecraft.recipe.RecipeSerializer;
@@ -21,7 +21,7 @@ import net.minecraft.tag.ItemTags;
 
 import java.util.function.Consumer;
 
-public class ModRecipeProvider extends FabricRecipesProvider {
+public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
     }
@@ -208,10 +208,10 @@ public class ModRecipeProvider extends FabricRecipesProvider {
 
     private void cookingRecipes(Consumer<RecipeJsonProvider> exporter, String cooker, CookingRecipeSerializer<?> serializer, int cookingTime){
 
-        RecipesProvider.offerCookingRecipe(exporter, cooker, serializer, cookingTime,
+        RecipeProvider.offerCookingRecipe(exporter, cooker, serializer, cookingTime,
                 Items.TROPICAL_FISH, ModFood.COOKED_TROPICAL_FISH, SmeltingGlobals.STANDARD_XP_COOKING);
 
-        RecipesProvider.offerCookingRecipe(exporter, cooker, serializer, cookingTime,
+        RecipeProvider.offerCookingRecipe(exporter, cooker, serializer, cookingTime,
                 ModFood.GOLDEN_POTATO, ModFood.GOLDEN_BAKED_POTATO, SmeltingGlobals.STANDARD_XP_COOKING);
 
     }
@@ -268,112 +268,112 @@ public class ModRecipeProvider extends FabricRecipesProvider {
         offerShapelessRecipe(exporter, ModItems.CHARRED_BONE_MEAL, ModItems.CHARRED_BONE, null, 3);
 
         // Chest from Logs
-        ShapedRecipeJsonFactory.create(Blocks.CHEST, 4)
+        ShapedRecipeJsonBuilder.create(Blocks.CHEST, 4)
                 .input('#', ItemTags.LOGS)
                 .pattern("###")
                 .pattern("# #")
                 .pattern("###")
-                 .criterion("has_logs", RecipesProvider.conditionsFromTag(ItemTags.LOGS))
+                 .criterion("has_logs", RecipeProvider.conditionsFromTag(ItemTags.LOGS))
                 .offerTo(exporter);
 
         // Cobweb
-        ShapedRecipeJsonFactory.create(Blocks.COBWEB)
+        ShapedRecipeJsonBuilder.create(Blocks.COBWEB)
                 .input('#', Items.STRING)
                 .pattern("# #")
                 .pattern(" # ")
                 .pattern("# #")
-                .criterion("has_string", RecipesProvider.conditionsFromItem(Items.STRING))
+                .criterion("has_string", RecipeProvider.conditionsFromItem(Items.STRING))
                 .offerTo(exporter);
 
         offerShapelessRecipe(exporter, Items.STRING, Blocks.COBWEB, null, 5);
 
         // Dispenser
-        ShapedRecipeJsonFactory.create(Blocks.DISPENSER)
+        ShapedRecipeJsonBuilder.create(Blocks.DISPENSER)
                 .input('/', Items.STICK)
                 .input('S', Items.STRING)
                 .input('D', Blocks.DROPPER)
                 .pattern(" /S")
                 .pattern("/DS")
                 .pattern(" /S")
-                .criterion("has_dropper", RecipesProvider.conditionsFromItem(Items.DROPPER))
+                .criterion("has_dropper", RecipeProvider.conditionsFromItem(Items.DROPPER))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonFactory.create(Blocks.DISPENSER)
+        ShapedRecipeJsonBuilder.create(Blocks.DISPENSER)
                 .input('/', Items.STICK)
                 .input('S', Items.STRING)
                 .input('D', Blocks.DROPPER)
                 .pattern("S/ ")
                 .pattern("SD/")
                 .pattern("S/ ")
-                .criterion("has_dropper", RecipesProvider.conditionsFromItem(Items.DROPPER))
+                .criterion("has_dropper", RecipeProvider.conditionsFromItem(Items.DROPPER))
                 .offerTo(exporter, ModRecipeHelper.convertMirrored(Blocks.DISPENSER));
 
         // Dirty Sand
-        ShapelessRecipeJsonFactory.create(ModBlocks.DIRTY_SAND, 2)
+        ShapelessRecipeJsonBuilder.create(ModBlocks.DIRTY_SAND, 2)
                 .input(Blocks.SAND)
                 .input(Blocks.DIRT)
-                .criterion(RecipesProvider.hasItem(Blocks.SAND),
-                        RecipesProvider.conditionsFromItem(Blocks.SAND))
+                .criterion(RecipeProvider.hasItem(Blocks.SAND),
+                        RecipeProvider.conditionsFromItem(Blocks.SAND))
                 .offerTo(exporter);
 
         // Golden Wheat
-        ShapedRecipeJsonFactory.create(ModFood.GOLDEN_BREAD)
+        ShapedRecipeJsonBuilder.create(ModFood.GOLDEN_BREAD)
                 .input('#', ModFood.GOLDEN_WHEAT)
                 .pattern("###")
-                .criterion(RecipesProvider.hasItem(ModFood.GOLDEN_WHEAT), RecipesProvider.conditionsFromItem(ModFood.GOLDEN_WHEAT))
+                .criterion(RecipeProvider.hasItem(ModFood.GOLDEN_WHEAT), RecipeProvider.conditionsFromItem(ModFood.GOLDEN_WHEAT))
                 .offerTo(exporter);
 
         // Name Tag
-        ShapedRecipeJsonFactory.create(Items.NAME_TAG)
+        ShapedRecipeJsonBuilder.create(Items.NAME_TAG)
                 .input('#', Items.TRIPWIRE_HOOK)
                 .input('P', Items.PAPER)
                 .pattern("  #")
                 .pattern(" P ")
                 .pattern("P  ")
-                .criterion(RecipesProvider.hasItem(Items.PAPER), RecipesProvider.conditionsFromItem(Items.PAPER))
+                .criterion(RecipeProvider.hasItem(Items.PAPER), RecipeProvider.conditionsFromItem(Items.PAPER))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonFactory.create(Items.NAME_TAG)
+        ShapedRecipeJsonBuilder.create(Items.NAME_TAG)
                 .input('#', Items.TRIPWIRE_HOOK)
                 .input('P', Items.PAPER)
                 .pattern("#  ")
                 .pattern(" P ")
                 .pattern("  P")
-                .criterion(RecipesProvider.hasItem(Items.PAPER), RecipesProvider.conditionsFromItem(Items.PAPER))
+                .criterion(RecipeProvider.hasItem(Items.PAPER), RecipeProvider.conditionsFromItem(Items.PAPER))
                 .offerTo(exporter, ModRecipeHelper.convertMirrored(Items.NAME_TAG));
 
         // Saddle
-        ShapedRecipeJsonFactory.create(Items.SADDLE)
+        ShapedRecipeJsonBuilder.create(Items.SADDLE)
                 .input('#', Items.LEATHER)
                 .input('T', Items.TRIPWIRE_HOOK)
                 .pattern("###")
                 .pattern("# #")
                 .pattern("T T")
-                .criterion(RecipesProvider.hasItem(Items.LEATHER), RecipesProvider.conditionsFromItem(Items.LEATHER))
+                .criterion(RecipeProvider.hasItem(Items.LEATHER), RecipeProvider.conditionsFromItem(Items.LEATHER))
                 .offerTo(exporter);
 
         offerShapelessRecipe(exporter, Items.LEATHER, Items.SADDLE, null, 1);
 
         // Scraper
 
-        ShapedRecipeJsonFactory.create(ModTools.SCRAPER)
+        ShapedRecipeJsonBuilder.create(ModTools.SCRAPER)
                 .input('i', Items.IRON_NUGGET)
                 .input('#', Items.IRON_INGOT)
                 .input('/', Items.STICK)
                 .pattern("i  ")
                 .pattern(" # ")
                 .pattern("/ i")
-                .criterion(RecipesProvider.hasItem(Items.IRON_INGOT), RecipesProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT), RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonFactory.create(ModTools.SCRAPER)
+        ShapedRecipeJsonBuilder.create(ModTools.SCRAPER)
                 .input('i', Items.IRON_NUGGET)
                 .input('#', Items.IRON_INGOT)
                 .input('/', Items.STICK)
                 .pattern("  i")
                 .pattern(" # ")
                 .pattern("i /")
-                .criterion(RecipesProvider.hasItem(Items.IRON_INGOT), RecipesProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(RecipeProvider.hasItem(Items.IRON_INGOT), RecipeProvider.conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, ModRecipeHelper.convertMirrored(ModTools.SCRAPER));
 
         // Cake Slice

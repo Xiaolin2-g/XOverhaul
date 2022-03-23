@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft:honeycomb_block",
     "xoverhaul:charred_bone_block",
     "xoverhaul:purpur_cobblestone",
     "xoverhaul:white_concrete_slab",

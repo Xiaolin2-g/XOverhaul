@@ -1,12 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:tube_coral_block"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
   ],
+  "key": {
+    "#": {
+      "item": "minecraft:tube_coral"
+    }
+  },
   "result": {
-    "item": "minecraft:tube_coral",
-    "count": 9
+    "item": "minecraft:tube_coral_block"
   }
 }

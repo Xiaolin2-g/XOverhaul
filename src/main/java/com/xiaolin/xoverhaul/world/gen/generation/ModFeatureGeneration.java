@@ -18,12 +18,12 @@ public class ModFeatureGeneration {
         return RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier(XOverhaul.MOD_ID, name));
     }
 
-    public static ConfiguredFeature<?, ?> registerConfiguredFeature(ConfiguredFeature<?, ?> configuredFeature, RegistryKey<ConfiguredFeature<?, ?>> key){
-        return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, key.getValue(), configuredFeature);
+    public static void registerConfiguredFeature(ConfiguredFeature<?, ?> configuredFeature, RegistryKey<ConfiguredFeature<?, ?>> key){
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, key.getValue(), configuredFeature);
     }
 
-    public static PlacedFeature registerPlacedFeature(PlacedFeature placedFeature, RegistryKey<PlacedFeature> key){
-        return Registry.register(BuiltinRegistries.PLACED_FEATURE, key.getValue(), placedFeature);
+    public static void registerPlacedFeature(PlacedFeature placedFeature, RegistryKey<PlacedFeature> key){
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, key.getValue(), placedFeature);
     }
 
     public static void registerConfiguredFeatures(){

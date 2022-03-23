@@ -68,7 +68,7 @@ public class DatagenGlobals {
                     ModItems.WARPED_BARK, ModItems.STRIPPED_OAK_BARK, ModItems.STRIPPED_BIRCH_BARK,
                     ModItems.STRIPPED_SPRUCE_BARK, ModItems.STRIPPED_JUNGLE_BARK, ModItems.STRIPPED_ACACIA_BARK,
                     ModItems.STRIPPED_DARK_OAK_BARK, ModItems.STRIPPED_CRIMSON_BARK, ModItems.STRIPPED_WARPED_BARK,
-                    ModItems.GLUE,};
+                    ModItems.GLUE, ModItems.ELYTRA_WING};
 
     /* public static Item[] ARMORS =
             {ModArmor.WOODSTONE_HELMET, ModArmor.WOODSTONE_CHESTPLATE, ModArmor.WOODSTONE_LEGGINGS,

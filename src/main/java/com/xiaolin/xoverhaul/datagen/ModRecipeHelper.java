@@ -1,6 +1,5 @@
 package com.xiaolin.xoverhaul.datagen;
 
-import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.item.ModTools;
 import com.xiaolin.xoverhaul.util.SmeltingGlobals;
 import net.minecraft.data.server.RecipeProvider;
@@ -9,11 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.tag.ItemTags;
-import net.minecraft.tag.Tag;
 import net.minecraft.tag.TagKey;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 import java.util.function.Consumer;
 
@@ -677,9 +672,10 @@ public class ModRecipeHelper {
 
     public static void offerTwoOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
                                              ItemConvertible input,
-                                             ItemConvertible output){
+                                             ItemConvertible output,
+                                             int outputCount){
 
-        ShapelessRecipeJsonBuilder.create(output)
+        ShapelessRecipeJsonBuilder.create(output, outputCount)
                 .input(input)
                 .input(input)
                 .criterion(RecipeProvider.hasItem(input),
@@ -689,9 +685,10 @@ public class ModRecipeHelper {
 
     public static void offerThreeOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
                                              ItemConvertible input,
-                                             ItemConvertible output){
+                                             ItemConvertible output,
+                                               int outputCount){
 
-        ShapelessRecipeJsonBuilder.create(output)
+        ShapelessRecipeJsonBuilder.create(output, outputCount)
                 .input(input)
                 .input(input)
                 .input(input)
@@ -702,9 +699,10 @@ public class ModRecipeHelper {
 
     public static void offerFourOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
                                              ItemConvertible input,
-                                             ItemConvertible output){
+                                             ItemConvertible output,
+                                              int outputCount){
 
-        ShapelessRecipeJsonBuilder.create(output)
+        ShapelessRecipeJsonBuilder.create(output, outputCount)
                 .input(input)
                 .input(input)
                 .input(input)
@@ -716,9 +714,10 @@ public class ModRecipeHelper {
 
     public static void offerFiveOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
                                              ItemConvertible input,
-                                             ItemConvertible output){
+                                             ItemConvertible output,
+                                              int outputCount){
 
-        ShapelessRecipeJsonBuilder.create(output)
+        ShapelessRecipeJsonBuilder.create(output, outputCount)
                 .input(input)
                 .input(input)
                 .input(input)
@@ -731,9 +730,10 @@ public class ModRecipeHelper {
 
     public static void offerSixOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
                                              ItemConvertible input,
-                                             ItemConvertible output){
+                                             ItemConvertible output,
+                                             int outputCount){
 
-        ShapelessRecipeJsonBuilder.create(output)
+        ShapelessRecipeJsonBuilder.create(output, outputCount)
                 .input(input)
                 .input(input)
                 .input(input)
@@ -747,9 +747,10 @@ public class ModRecipeHelper {
 
     public static void offerSevenOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
                                              ItemConvertible input,
-                                             ItemConvertible output){
+                                             ItemConvertible output,
+                                               int outputCount){
 
-        ShapelessRecipeJsonBuilder.create(output)
+        ShapelessRecipeJsonBuilder.create(output, outputCount)
                 .input(input)
                 .input(input)
                 .input(input)
@@ -764,9 +765,10 @@ public class ModRecipeHelper {
 
     public static void offerEightOfTheSameItem(Consumer<RecipeJsonProvider> exporter,
                                              ItemConvertible input,
-                                             ItemConvertible output){
+                                             ItemConvertible output,
+                                               int outputCount){
 
-        ShapelessRecipeJsonBuilder.create(output)
+        ShapelessRecipeJsonBuilder.create(output, outputCount)
                 .input(input)
                 .input(input)
                 .input(input)
@@ -788,10 +790,10 @@ public class ModRecipeHelper {
                                        ItemConvertible output_4){
 
 
-        offerTwoOfTheSameItem(exporter, input, output_1);
-        offerThreeOfTheSameItem(exporter, input, output_2);
-        offerFourOfTheSameItem(exporter, input, output_3);
-        offerFiveOfTheSameItem(exporter, input, output_4);
+        offerTwoOfTheSameItem(exporter, input, output_1, 1);
+        offerThreeOfTheSameItem(exporter, input, output_2, 1);
+        offerFourOfTheSameItem(exporter, input, output_3, 1);
+        offerFiveOfTheSameItem(exporter, input, output_4, 1);
     }
 
     public static void offerO(Consumer<RecipeJsonProvider> exporter,

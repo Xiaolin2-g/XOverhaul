@@ -57,6 +57,7 @@ public class ModFood {
     public static final Item CAKE_SLICE = registerItem("cake_slice",
             new Item(new FabricItemSettings()
                     .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.4f)
+                            .snack()
                             .build())
                     .group(ModItemGroup.XOVERHAUL_FOODS)));
 

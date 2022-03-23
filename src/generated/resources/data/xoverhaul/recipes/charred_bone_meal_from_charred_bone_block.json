@@ -1,12 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "xoverhaul:charred_bone_block"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
   ],
+  "key": {
+    "#": {
+      "item": "xoverhaul:charred_bone_meal"
+    }
+  },
   "result": {
-    "item": "xoverhaul:charred_bone_meal",
-    "count": 9
+    "item": "xoverhaul:charred_bone_block"
   }
 }

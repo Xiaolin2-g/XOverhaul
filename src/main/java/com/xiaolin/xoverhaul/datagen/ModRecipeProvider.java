@@ -380,7 +380,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerShapelessRecipe(exporter, ModFood.CAKE_SLICE, Items.CAKE, null, 7);
 
-        ModRecipeHelper.offerSevenOfTheSameItem(exporter, ModFood.CAKE_SLICE, Items.CAKE);
+        ModRecipeHelper.offerSevenOfTheSameItem(exporter, ModFood.CAKE_SLICE, Items.CAKE, 1);
 
+        // Elytra
+
+        ModRecipeHelper.offerTwoOfTheSameItem(exporter, ModItems.ELYTRA_WING, Items.ELYTRA, 1);
     }
 }

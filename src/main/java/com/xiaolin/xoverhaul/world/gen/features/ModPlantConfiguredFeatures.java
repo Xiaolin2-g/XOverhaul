@@ -2,12 +2,18 @@ package com.xiaolin.xoverhaul.world.gen.features;
 
 import com.xiaolin.xoverhaul.block.ModBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.world.gen.decorator.BiomePlacementModifier;
-import net.minecraft.world.gen.decorator.CountMultilayerPlacementModifier;
-import net.minecraft.world.gen.decorator.RarityFilterPlacementModifier;
-import net.minecraft.world.gen.decorator.SquarePlacementModifier;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryEntry;
+import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.placementmodifier.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.NoiseBlockStateProvider;
+import org.lwjgl.system.CallbackI;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class ModPlantConfiguredFeatures {
 
@@ -69,17 +75,18 @@ public class ModPlantConfiguredFeatures {
 
 
     private static ConfiguredFeature<?,?> configureFlower(Block flower){
-        return Feature.FLOWER.configure(new RandomPatchFeatureConfig(12, 6, 2, () -> // i: tries, j: x and z spread, k: y spread
-                Feature.SIMPLE_BLOCK.configure(new SimpleBlockFeatureConfig
-                        (BlockStateProvider.of(flower))).withInAirFilter()));
+        return new ConfiguredFeature(Feature.FLOWER, new RandomPatchFeatureConfig(12, 6, 2, // i: tries, j: x and z spread, k: y spread
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
+                        (BlockStateProvider.of(flower)))));
     }
 
     private static PlacedFeature placeFlower(ConfiguredFeature<?,?> configuredFeature, int triesPerChunk){
-        return  configuredFeature.withPlacement(
+        return new PlacedFeature(RegistryEntry.of(configuredFeature),
+                Arrays.asList(
                 RarityFilterPlacementModifier.of(triesPerChunk), // tries per chunk
                 SquarePlacementModifier.of(),
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
-                BiomePlacementModifier.of());
+                BiomePlacementModifier.of()));
     }
 
     private static PlacedFeature placeTulip(ConfiguredFeature<?,?> configuredFeature){
@@ -87,16 +94,19 @@ public class ModPlantConfiguredFeatures {
     }
 
     private static ConfiguredFeature<?, ?> configureSprouts(Block sprouts){
-        return Feature.NETHER_FOREST_VEGETATION.configure
+        return new ConfiguredFeature(Feature.NETHER_FOREST_VEGETATION,
                 (new NetherForestVegetationFeatureConfig
-                        (BlockStateProvider.of(sprouts),8, 4));
+                        (BlockStateProvider.of(sprouts),8, 4)));
     }
 
     private static PlacedFeature placeSprouts(ConfiguredFeature<?,?> configuredFeature){
-        return configuredFeature.withPlacement
-                (CountMultilayerPlacementModifier.of(2),
-                        BiomePlacementModifier.of());
+        return new PlacedFeature(RegistryEntry.of(configuredFeature),
+                Arrays.asList(
+                (CountMultilayerPlacementModifier.of(2)),
+                        BiomePlacementModifier.of()));
 
     }
+
+
 }
 

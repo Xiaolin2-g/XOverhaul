@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xoverhaul:elytra_wing"
+    },
+    {
+      "item": "xoverhaul:elytra_wing"
+    }
+  ],
+  "result": {
+    "item": "minecraft:elytra"
+  }
+}

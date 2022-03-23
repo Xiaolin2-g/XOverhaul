@@ -3,6 +3,7 @@ package com.xiaolin.xoverhaul.item;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.network.ClientPlayerEntity;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -25,6 +26,5 @@ public class Scraper extends DontConsumeOnCraftItem {
         world.setBlockState(blockpos, Blocks.MAGMA_BLOCK.getDefaultState());
         return ActionResult.SUCCESS;
     }
-
 
 }

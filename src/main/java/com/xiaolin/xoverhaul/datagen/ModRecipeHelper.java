@@ -381,7 +381,7 @@ public class ModRecipeHelper {
     public static void offerCompactingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible input,
                                              ItemConvertible output){
         RecipeProvider.offerReversibleCompactingRecipesWithCompactingRecipeGroup(exporter, input, output,
-                input + "_from_" + output, null);
+                output + "_from_" + input, null);
     }
 
 

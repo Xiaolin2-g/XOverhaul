@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:dead_tube_coral_from_dead_tube_coral_block"
+      "minecraft:dead_tube_coral_block_from_dead_tube_coral"
     ]
   },
   "criteria": {
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:dead_tube_coral_from_dead_tube_coral_block"
+        "recipe": "minecraft:dead_tube_coral_block_from_dead_tube_coral"
       }
     }
   },

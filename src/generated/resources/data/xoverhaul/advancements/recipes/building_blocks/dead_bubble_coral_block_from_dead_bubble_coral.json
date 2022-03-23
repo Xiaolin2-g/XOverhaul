@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:dead_brain_coral_from_dead_brain_coral_block"
+      "minecraft:dead_bubble_coral_block_from_dead_bubble_coral"
     ]
   },
   "criteria": {
-    "has_dead_brain_coral": {
+    "has_dead_bubble_coral": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:dead_brain_coral"
+              "minecraft:dead_bubble_coral"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:dead_brain_coral_from_dead_brain_coral_block"
+        "recipe": "minecraft:dead_bubble_coral_block_from_dead_bubble_coral"
       }
     }
   },
   "requirements": [
     [
-      "has_dead_brain_coral",
+      "has_dead_bubble_coral",
       "has_the_recipe"
     ]
   ]

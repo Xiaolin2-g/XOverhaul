@@ -26,6 +26,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         stairsTags();
         enderFlowerPlaceablesTags();
         smallFlowersTags();
+        soulFireBaseTags();
     }
 
     private void mineableTags(){
@@ -181,4 +182,15 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToSmallFlowersTag(ModBlocks.GREEN_TULIP);
         addToSmallFlowersTag(ModBlocks.BLACK_TULIP);
     }
+
+    private void addToSoulFireBaseTag(Block block){
+        getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS).add(block);
+    }
+
+    private void soulFireBaseTags(){
+        addToSoulFireBaseTag(ModBlocks.SOUL_NETHERRACK);
+        addToSoulFireBaseTag(ModBlocks.SOUL_NETHER_BRICKS);
+    }
+
+
 }

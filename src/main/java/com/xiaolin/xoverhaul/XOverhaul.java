@@ -1,6 +1,6 @@
 package com.xiaolin.xoverhaul;
 
-import com.xiaolin.xoverhaul.block.ModBlocks;
+import com.xiaolin.xoverhaul.block.*;
 import com.xiaolin.xoverhaul.entity.ModEntities;
 import com.xiaolin.xoverhaul.events.EntitySpawning;
 import com.xiaolin.xoverhaul.events.LootTableModifications;
@@ -35,6 +35,10 @@ public class XOverhaul implements ModInitializer {
         ModSpawnEggs.registerModSpawnEggs();
 
         ModBlocks.registerModBlocks();
+		ModSlabs.registerModSlabs();
+		ModStairs.registerModStairs();
+		ModWalls.registerModWalls();
+		ModPlants.registerModPlants();
 
 		ModRegistries.registerFuels();
 
@@ -52,10 +56,10 @@ public class XOverhaul implements ModInitializer {
 
 	private void blockRenderLayerMapCutout(){
 		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
-				ModBlocks.ENDER_FLOWER, ModBlocks.MAGENTA_TULIP, ModBlocks.LIGHT_BLUE_TULIP, ModBlocks.YELLOW_TULIP,
-				ModBlocks.LIME_TULIP, ModBlocks.GRAY_TULIP, ModBlocks.LIGHT_GRAY_TULIP, ModBlocks.CYAN_TULIP,
-				ModBlocks.PURPLE_TULIP, ModBlocks.BLUE_TULIP, ModBlocks.BROWN_TULIP, ModBlocks.GREEN_TULIP,
-				ModBlocks.BLACK_TULIP, ModBlocks.CRIMSON_SPROUTS);
+				ModPlants.ENDER_FLOWER, ModPlants.MAGENTA_TULIP, ModPlants.LIGHT_BLUE_TULIP, ModPlants.YELLOW_TULIP,
+				ModPlants.LIME_TULIP, ModPlants.GRAY_TULIP, ModPlants.LIGHT_GRAY_TULIP, ModPlants.CYAN_TULIP,
+				ModPlants.PURPLE_TULIP, ModPlants.BLUE_TULIP, ModPlants.BROWN_TULIP, ModPlants.GREEN_TULIP,
+				ModPlants.BLACK_TULIP, ModPlants.CRIMSON_SPROUTS);
 	}
 
 

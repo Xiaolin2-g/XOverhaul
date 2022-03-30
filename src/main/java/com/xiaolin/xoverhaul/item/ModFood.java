@@ -9,7 +9,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ModFood {
+public class ModFood extends ItemInitBase{
 
     public static final Item GOLDEN_BEETROOT = registerItem("golden_beetroot",
             new Item(new FabricItemSettings()
@@ -60,10 +60,6 @@ public class ModFood {
                             .snack()
                             .build())
                     .group(ModItemGroup.XOVERHAUL_FOODS)));
-
-    public static Item registerItem(String name, Item item){
-        return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name), item);
-    }
 
     public static void registerModFood(){
         XOverhaul.LOGGER.info("Registering Mod Food for " + XOverhaul.MOD_ID);

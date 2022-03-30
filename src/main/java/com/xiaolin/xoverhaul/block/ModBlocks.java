@@ -13,10 +13,10 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ModBlocks {
+public class ModBlocks extends BlockInitBase{
 
     public static final Block DIRTY_SAND = registerBlock("dirty_sand",
-            new DirtySand(FabricBlockSettings.copyOf(Blocks.SAND)));
+            new DirtySandBlock(FabricBlockSettings.copyOf(Blocks.SAND)));
 
     public static final Block CHARRED_BONE_BLOCK = registerBlock("charred_bone_block",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK)));
@@ -24,117 +24,7 @@ public class ModBlocks {
     public static final Block PURPUR_COBBLESTONE = registerBlock("purpur_cobblestone",
             new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
 
-    public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
-        new SlabBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
 
-    public static final Block ORANGE_CONCRETE_SLAB = registerBlock("orange_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_CONCRETE)));
-
-    public static final Block MAGENTA_CONCRETE_SLAB = registerBlock("magenta_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_CONCRETE)));
-
-    public static final Block LIGHT_BLUE_CONCRETE_SLAB = registerBlock("light_blue_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_CONCRETE)));
-
-    public static final Block YELLOW_CONCRETE_SLAB = registerBlock("yellow_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.YELLOW_CONCRETE)));
-
-    public static final Block LIME_CONCRETE_SLAB = registerBlock("lime_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LIME_CONCRETE)));
-
-    public static final Block PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.PINK_CONCRETE)));
-
-    public static final Block GRAY_CONCRETE_SLAB = registerBlock("gray_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRAY_CONCRETE)));
-
-    public static final Block LIGHT_GRAY_CONCRETE_SLAB = registerBlock("light_gray_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_CONCRETE)));
-
-    public static final Block CYAN_CONCRETE_SLAB = registerBlock("cyan_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CYAN_CONCRETE)));
-
-    public static final Block PURPLE_CONCRETE_SLAB = registerBlock("purple_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.PURPLE_CONCRETE)));
-
-    public static final Block BLUE_CONCRETE_SLAB = registerBlock("blue_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BLUE_CONCRETE)));
-
-    public static final Block BROWN_CONCRETE_SLAB = registerBlock("brown_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BROWN_CONCRETE)));
-
-    public static final Block GREEN_CONCRETE_SLAB = registerBlock("green_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.GREEN_CONCRETE)));
-
-    public static final Block RED_CONCRETE_SLAB = registerBlock("red_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.RED_CONCRETE)));
-
-    public static final Block BLACK_CONCRETE_SLAB = registerBlock("black_concrete_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BLACK_CONCRETE)));
-
-    public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
-            new BaseStairs(Blocks.WHITE_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
-
-    public static final Block ORANGE_CONCRETE_STAIRS = registerBlock("orange_concrete_stairs",
-            new BaseStairs(Blocks.ORANGE_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.ORANGE_CONCRETE)));
-
-    public static final Block MAGENTA_CONCRETE_STAIRS = registerBlock("magenta_concrete_stairs",
-            new BaseStairs(Blocks.MAGENTA_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.MAGENTA_CONCRETE)));
-
-    public static final Block LIGHT_BLUE_CONCRETE_STAIRS = registerBlock("light_blue_concrete_stairs",
-            new BaseStairs(Blocks.LIGHT_BLUE_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_CONCRETE)));
-
-    public static final Block YELLOW_CONCRETE_STAIRS = registerBlock("yellow_concrete_stairs",
-            new BaseStairs(Blocks.YELLOW_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.YELLOW_CONCRETE)));
-
-    public static final Block LIME_CONCRETE_STAIRS = registerBlock("lime_concrete_stairs",
-            new BaseStairs(Blocks.LIME_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.LIME_CONCRETE)));
-
-    public static final Block PINK_CONCRETE_STAIRS = registerBlock("pink_concrete_stairs",
-            new BaseStairs(Blocks.PINK_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.PINK_CONCRETE)));
-
-    public static final Block GRAY_CONCRETE_STAIRS = registerBlock("gray_concrete_stairs",
-            new BaseStairs(Blocks.GRAY_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.GRAY_CONCRETE)));
-
-    public static final Block LIGHT_GRAY_CONCRETE_STAIRS = registerBlock("light_gray_concrete_stairs",
-            new BaseStairs(Blocks.LIGHT_GRAY_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_CONCRETE)));
-
-    public static final Block CYAN_CONCRETE_STAIRS = registerBlock("cyan_concrete_stairs",
-            new BaseStairs(Blocks.CYAN_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.CYAN_CONCRETE)));
-
-    public static final Block PURPLE_CONCRETE_STAIRS = registerBlock("purple_concrete_stairs",
-            new BaseStairs(Blocks.PURPLE_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.PURPLE_CONCRETE)));
-
-    public static final Block BLUE_CONCRETE_STAIRS = registerBlock("blue_concrete_stairs",
-            new BaseStairs(Blocks.BLUE_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.BLUE_CONCRETE)));
-
-    public static final Block BROWN_CONCRETE_STAIRS = registerBlock("brown_concrete_stairs",
-            new BaseStairs(Blocks.BROWN_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.BROWN_CONCRETE)));
-
-    public static final Block GREEN_CONCRETE_STAIRS = registerBlock("green_concrete_stairs",
-            new BaseStairs(Blocks.GREEN_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.GREEN_CONCRETE)));
-
-    public static final Block RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
-            new BaseStairs(Blocks.RED_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.RED_CONCRETE)));
-
-    public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
-            new BaseStairs(Blocks.BLACK_CONCRETE.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.BLACK_CONCRETE)));
 
     public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
             new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT)
@@ -142,8 +32,6 @@ public class ModBlocks {
                     .resistance(1)
                     .sounds(BlockSoundGroup.SLIME)));
 
-    public static final Block DIRT_SLAB = registerBlock("dirt_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DIRT)));
 
     public static final Block SOUL_NETHERRACK = registerBlock("soul_netherrack",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK)));
@@ -151,70 +39,14 @@ public class ModBlocks {
     public static final Block SOUL_NETHER_BRICKS = registerBlock("soul_nether_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS)));
 
-    public static final Block ENDER_FLOWER = registerBlock("ender_flower",
-            new EnderFlower(StatusEffects.LEVITATION, 2, FabricBlockSettings.copyOf(Blocks.POPPY)));
-
-    public static final Block MAGENTA_TULIP = registerBlock("magenta_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block LIGHT_BLUE_TULIP = registerBlock("light_blue_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block YELLOW_TULIP = registerBlock("yellow_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block LIME_TULIP = registerBlock("lime_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block GRAY_TULIP = registerBlock("gray_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block LIGHT_GRAY_TULIP = registerBlock("light_gray_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block CYAN_TULIP = registerBlock("cyan_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block PURPLE_TULIP = registerBlock("purple_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block BLUE_TULIP = registerBlock("blue_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block BROWN_TULIP = registerBlock("brown_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block GREEN_TULIP = registerBlock("green_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
-
-    public static final Block BLACK_TULIP = registerBlock("black_tulip",
-            new FlowerBlock(StatusEffects.SPEED, 2, FabricBlockSettings.copyOf(Blocks.WHITE_TULIP)));
 
     public static final Block ENDER_END_STONE = registerBlock("ender_end_stone",
             new OreBlock(FabricBlockSettings.copyOf(Blocks.END_STONE)));
 
-    public static final Block BEDROCK_SLAB = registerBlock("bedrock_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK)));
-
-    public static final Block BEDROCK_STAIRS = registerBlock("bedrock_stairs",
-            new BaseStairs(Blocks.BEDROCK.getDefaultState(),
-                    FabricBlockSettings.copyOf(Blocks.BEDROCK)));
-
-    public static final Block CRIMSON_SPROUTS = registerBlock("crimson_sprouts",
-            new SproutsBlock(FabricBlockSettings.copyOf(Blocks.NETHER_SPROUTS)));
 
     public static final Block WOODEN_CRATE = registerBlock("wooden_crate",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 
-    private static Block registerBlock(String name, Block block){
-        registerBlockItem(name, block);
-        return Registry.register(Registry.BLOCK, new Identifier(XOverhaul.MOD_ID, name), block);
-    }
-
-    private static Item registerBlockItem(String name, Block block){
-        return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(ModItemGroup.XOVERHAUL_BLOCKS)));
-    }
 
     public static void registerModBlocks(){
         XOverhaul.LOGGER.info("Registering Mod Blocks for " + XOverhaul.MOD_ID);

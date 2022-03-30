@@ -19,8 +19,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
 
-public class DirtySand extends FallingBlock {
-    public DirtySand(Settings settings) {
+public class DirtySandBlock extends FallingBlock {
+    public DirtySandBlock(Settings settings) {
         super(settings);
     }
 

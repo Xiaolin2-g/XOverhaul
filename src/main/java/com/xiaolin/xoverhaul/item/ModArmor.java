@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ModArmor {
+public class ModArmor extends ItemInitBase{
 
 
 
@@ -52,10 +52,6 @@ public class ModArmor {
                     new FabricItemSettings()
                             .group(ModItemGroup.XOVERHAUL_ARMORS)));
 
-
-    public static Item registerItem(String name, Item item){
-        return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name), item);
-    }
 
     public static void registerModArmor(){
         XOverhaul.LOGGER.info("Registering Mod Armor for " + XOverhaul.MOD_ID);

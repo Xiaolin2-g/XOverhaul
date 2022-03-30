@@ -2,7 +2,7 @@
   "structures": [
     {
       "structure": "xoverhaul:wooden_crate_small",
-      "weight": 3
+      "weight": 8
     },
     {
       "structure": "xoverhaul:wooden_crate_large",
@@ -12,7 +12,7 @@
   "placement": {
     "type": "minecraft:random_spread",
     "spacing": 7,
-    "separation": 4,
+    "separation": 2,
     "salt": 1646207470
   }
 }

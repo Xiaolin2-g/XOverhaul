@@ -11,6 +11,8 @@ public class ModRenderers {
 
     public static void registerRenderers() {
         EntityRendererRegistry.register(ModEntities.CHAINED_MONSTER, ChainedMonsterEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.LEATHERLING, LeatherlingEntityRenderer::new);
+
     }
 
     public static EntityModelLayer registerNewModelLayer(String name){

@@ -9,5 +9,7 @@
       "item": "minecraft:jungle_log"
     }
   },
-  "result": {}
+  "result": {
+    "item": ""
+  }
 }

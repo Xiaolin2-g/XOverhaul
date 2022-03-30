@@ -1,6 +1,9 @@
 package com.xiaolin.xoverhaul.util;
 
 import com.xiaolin.xoverhaul.block.ModBlocks;
+import com.xiaolin.xoverhaul.block.ModPlants;
+import com.xiaolin.xoverhaul.block.ModSlabs;
+import com.xiaolin.xoverhaul.block.ModStairs;
 import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
 import com.xiaolin.xoverhaul.item.ModSpawnEggs;
@@ -25,13 +28,13 @@ public class DatagenGlobals {
                     Blocks.DIRT, Blocks.BEDROCK};
 
     public static final Block[] SLABS =
-            {ModBlocks.WHITE_CONCRETE_SLAB, ModBlocks.ORANGE_CONCRETE_SLAB, ModBlocks.MAGENTA_CONCRETE_SLAB,
-                    ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, ModBlocks.YELLOW_CONCRETE_SLAB, ModBlocks.LIME_CONCRETE_SLAB,
-                    ModBlocks.PINK_CONCRETE_SLAB, ModBlocks.GRAY_CONCRETE_SLAB, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB,
-                    ModBlocks.CYAN_CONCRETE_SLAB, ModBlocks.PURPLE_CONCRETE_SLAB, ModBlocks.BLUE_CONCRETE_SLAB,
-                    ModBlocks.BROWN_CONCRETE_SLAB, ModBlocks.GREEN_CONCRETE_SLAB, ModBlocks.RED_CONCRETE_SLAB,
-                    ModBlocks.BLACK_CONCRETE_SLAB,
-                    ModBlocks.DIRT_SLAB, ModBlocks.BEDROCK_SLAB};
+            {ModSlabs.WHITE_CONCRETE_SLAB, ModSlabs.ORANGE_CONCRETE_SLAB, ModSlabs.MAGENTA_CONCRETE_SLAB,
+                    ModSlabs.LIGHT_BLUE_CONCRETE_SLAB, ModSlabs.YELLOW_CONCRETE_SLAB, ModSlabs.LIME_CONCRETE_SLAB,
+                    ModSlabs.PINK_CONCRETE_SLAB, ModSlabs.GRAY_CONCRETE_SLAB, ModSlabs.LIGHT_GRAY_CONCRETE_SLAB,
+                    ModSlabs.CYAN_CONCRETE_SLAB, ModSlabs.PURPLE_CONCRETE_SLAB, ModSlabs.BLUE_CONCRETE_SLAB,
+                    ModSlabs.BROWN_CONCRETE_SLAB, ModSlabs.GREEN_CONCRETE_SLAB, ModSlabs.RED_CONCRETE_SLAB,
+                    ModSlabs.BLACK_CONCRETE_SLAB,
+                    ModSlabs.DIRT_SLAB, ModSlabs.BEDROCK_SLAB};
 
     public static final Block[] STAIRS_BASE =
             {Blocks.WHITE_CONCRETE, Blocks.ORANGE_CONCRETE, Blocks.MAGENTA_CONCRETE, Blocks.LIGHT_BLUE_CONCRETE,
@@ -41,19 +44,19 @@ public class DatagenGlobals {
                     Blocks.BEDROCK};
 
     public static final Block[] STAIRS =
-            {ModBlocks.WHITE_CONCRETE_STAIRS, ModBlocks.ORANGE_CONCRETE_STAIRS, ModBlocks.MAGENTA_CONCRETE_STAIRS,
-                    ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS, ModBlocks.YELLOW_CONCRETE_STAIRS, ModBlocks.LIME_CONCRETE_STAIRS,
-                    ModBlocks.PINK_CONCRETE_STAIRS, ModBlocks.GRAY_CONCRETE_STAIRS, ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS,
-                    ModBlocks.CYAN_CONCRETE_STAIRS, ModBlocks.PURPLE_CONCRETE_STAIRS, ModBlocks.BLUE_CONCRETE_STAIRS,
-                    ModBlocks.BROWN_CONCRETE_STAIRS, ModBlocks.GREEN_CONCRETE_STAIRS, ModBlocks.RED_CONCRETE_STAIRS,
-                    ModBlocks.BLACK_CONCRETE_STAIRS,
-                    ModBlocks.BEDROCK_STAIRS};
+            {ModStairs.WHITE_CONCRETE_STAIRS, ModStairs.ORANGE_CONCRETE_STAIRS, ModStairs.MAGENTA_CONCRETE_STAIRS,
+                    ModStairs.LIGHT_BLUE_CONCRETE_STAIRS, ModStairs.YELLOW_CONCRETE_STAIRS, ModStairs.LIME_CONCRETE_STAIRS,
+                    ModStairs.PINK_CONCRETE_STAIRS, ModStairs.GRAY_CONCRETE_STAIRS, ModStairs.LIGHT_GRAY_CONCRETE_STAIRS,
+                    ModStairs.CYAN_CONCRETE_STAIRS, ModStairs.PURPLE_CONCRETE_STAIRS, ModStairs.BLUE_CONCRETE_STAIRS,
+                    ModStairs.BROWN_CONCRETE_STAIRS, ModStairs.GREEN_CONCRETE_STAIRS, ModStairs.RED_CONCRETE_STAIRS,
+                    ModStairs.BLACK_CONCRETE_STAIRS,
+                    ModStairs.BEDROCK_STAIRS};
 
     public static final Block[] CROSS =
-            {ModBlocks.ENDER_FLOWER, ModBlocks.MAGENTA_TULIP, ModBlocks.LIGHT_BLUE_TULIP, ModBlocks.YELLOW_TULIP,
-                    ModBlocks.LIME_TULIP, ModBlocks.GRAY_TULIP, ModBlocks.LIGHT_GRAY_TULIP, ModBlocks.CYAN_TULIP,
-                    ModBlocks.PURPLE_TULIP, ModBlocks.BLUE_TULIP, ModBlocks.BROWN_TULIP, ModBlocks.GREEN_TULIP,
-                    ModBlocks.BLACK_TULIP, ModBlocks.CRIMSON_SPROUTS};
+            {ModPlants.ENDER_FLOWER, ModPlants.MAGENTA_TULIP, ModPlants.LIGHT_BLUE_TULIP, ModPlants.YELLOW_TULIP,
+                    ModPlants.LIME_TULIP, ModPlants.GRAY_TULIP, ModPlants.LIGHT_GRAY_TULIP, ModPlants.CYAN_TULIP,
+                    ModPlants.PURPLE_TULIP, ModPlants.BLUE_TULIP, ModPlants.BROWN_TULIP, ModPlants.GREEN_TULIP,
+                    ModPlants.BLACK_TULIP, ModPlants.CRIMSON_SPROUTS};
 
     public static final Block[] AXIS_ROTATED =
             {ModBlocks.CHARRED_BONE_BLOCK};
@@ -62,7 +65,8 @@ public class DatagenGlobals {
 
 
     public static final Item[] ITEMS =
-            {ModItems.IRON_CORE, ModItems.CHARRED_BONE, ModItems.CHARRED_BONE_MEAL, ModItems.LEATHER_ARMOR_PIECE,
+            {ModItems.TEST_ITEM,
+                    ModItems.IRON_CORE, ModItems.CHARRED_BONE, ModItems.CHARRED_BONE_MEAL, ModItems.LEATHER_ARMOR_PIECE,
                     ModItems.GOLDEN_ARMOR_SCRAP, ModItems.OAK_BARK, ModItems.BIRCH_BARK, ModItems.SPRUCE_BARK,
                     ModItems.JUNGLE_BARK, ModItems.ACACIA_BARK, ModItems.DARK_OAK_BARK, ModItems.CRIMSON_BARK,
                     ModItems.WARPED_BARK, ModItems.STRIPPED_OAK_BARK, ModItems.STRIPPED_BIRCH_BARK,

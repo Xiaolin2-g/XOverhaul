@@ -12,8 +12,8 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 
-public class CharredBoneMeal extends Item {
-    public CharredBoneMeal(Settings settings) {
+public class CharredBoneMealItem extends Item {
+    public CharredBoneMealItem(Settings settings) {
         super(settings);
     }
 

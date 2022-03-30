@@ -1,6 +1,9 @@
 package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.block.ModBlocks;
+import com.xiaolin.xoverhaul.block.ModPlants;
+import com.xiaolin.xoverhaul.block.ModSlabs;
+import com.xiaolin.xoverhaul.block.ModStairs;
 import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
@@ -98,60 +101,60 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void slabRecipes(Consumer<RecipeJsonProvider> exporter){
-        offerSlabRecipe(exporter, ModBlocks.WHITE_CONCRETE_SLAB, Blocks.WHITE_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.ORANGE_CONCRETE_SLAB, Blocks.ORANGE_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.MAGENTA_CONCRETE_SLAB, Blocks.MAGENTA_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, Blocks.LIGHT_BLUE_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.YELLOW_CONCRETE_SLAB, Blocks.YELLOW_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.LIME_CONCRETE_SLAB, Blocks.LIME_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.PINK_CONCRETE_SLAB, Blocks.PINK_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.GRAY_CONCRETE_SLAB, Blocks.GRAY_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, Blocks.LIGHT_GRAY_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.CYAN_CONCRETE_SLAB, Blocks.CYAN_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.PURPLE_CONCRETE_SLAB, Blocks.PURPLE_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.BLUE_CONCRETE_SLAB, Blocks.BLUE_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.BROWN_CONCRETE_SLAB, Blocks.BROWN_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.GREEN_CONCRETE_SLAB, Blocks.GREEN_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.RED_CONCRETE_SLAB, Blocks.RED_CONCRETE);
-        offerSlabRecipe(exporter, ModBlocks.BLACK_CONCRETE_SLAB, Blocks.BLACK_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.WHITE_CONCRETE_SLAB, Blocks.WHITE_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.ORANGE_CONCRETE_SLAB, Blocks.ORANGE_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.MAGENTA_CONCRETE_SLAB, Blocks.MAGENTA_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.LIGHT_BLUE_CONCRETE_SLAB, Blocks.LIGHT_BLUE_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.YELLOW_CONCRETE_SLAB, Blocks.YELLOW_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.LIME_CONCRETE_SLAB, Blocks.LIME_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.PINK_CONCRETE_SLAB, Blocks.PINK_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.GRAY_CONCRETE_SLAB, Blocks.GRAY_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.LIGHT_GRAY_CONCRETE_SLAB, Blocks.LIGHT_GRAY_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.CYAN_CONCRETE_SLAB, Blocks.CYAN_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.PURPLE_CONCRETE_SLAB, Blocks.PURPLE_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.BLUE_CONCRETE_SLAB, Blocks.BLUE_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.BROWN_CONCRETE_SLAB, Blocks.BROWN_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.GREEN_CONCRETE_SLAB, Blocks.GREEN_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.RED_CONCRETE_SLAB, Blocks.RED_CONCRETE);
+        offerSlabRecipe(exporter, ModSlabs.BLACK_CONCRETE_SLAB, Blocks.BLACK_CONCRETE);
 
-        offerSlabRecipe(exporter, ModBlocks.DIRT_SLAB, Blocks.DIRT);
+        offerSlabRecipe(exporter, ModSlabs.DIRT_SLAB, Blocks.DIRT);
     }
 
 
     private void stairsRecipes(Consumer<RecipeJsonProvider> exporter){
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.WHITE_CONCRETE, ModBlocks.WHITE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.ORANGE_CONCRETE, ModBlocks.ORANGE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.MAGENTA_CONCRETE, ModBlocks.MAGENTA_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.LIGHT_BLUE_CONCRETE, ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.YELLOW_CONCRETE, ModBlocks.YELLOW_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.LIME_CONCRETE, ModBlocks.LIME_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.PINK_CONCRETE, ModBlocks.PINK_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.GRAY_CONCRETE, ModBlocks.GRAY_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.LIGHT_GRAY_CONCRETE, ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.CYAN_CONCRETE, ModBlocks.CYAN_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.PURPLE_CONCRETE, ModBlocks.PURPLE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.BLUE_CONCRETE, ModBlocks.BLUE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.BROWN_CONCRETE, ModBlocks.BROWN_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.GREEN_CONCRETE, ModBlocks.GREEN_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.RED_CONCRETE, ModBlocks.RED_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.BLACK_CONCRETE, ModBlocks.BLACK_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.WHITE_CONCRETE, ModStairs.WHITE_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.ORANGE_CONCRETE, ModStairs.ORANGE_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.MAGENTA_CONCRETE, ModStairs.MAGENTA_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.LIGHT_BLUE_CONCRETE, ModStairs.LIGHT_BLUE_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.YELLOW_CONCRETE, ModStairs.YELLOW_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.LIME_CONCRETE, ModStairs.LIME_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.PINK_CONCRETE, ModStairs.PINK_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.GRAY_CONCRETE, ModStairs.GRAY_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.LIGHT_GRAY_CONCRETE, ModStairs.LIGHT_GRAY_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.CYAN_CONCRETE, ModStairs.CYAN_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.PURPLE_CONCRETE, ModStairs.PURPLE_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.BLUE_CONCRETE, ModStairs.BLUE_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.BROWN_CONCRETE, ModStairs.BROWN_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.GREEN_CONCRETE, ModStairs.GREEN_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.RED_CONCRETE, ModStairs.RED_CONCRETE_STAIRS);
+        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.BLACK_CONCRETE, ModStairs.BLACK_CONCRETE_STAIRS);
     }
 
 
     private void dyeRecipes(Consumer<RecipeJsonProvider> exporter){
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.MAGENTA_TULIP, Items.MAGENTA_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.LIGHT_BLUE_TULIP, Items.LIGHT_BLUE_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.YELLOW_TULIP, Items.YELLOW_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.LIME_TULIP, Items.LIME_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.GRAY_TULIP, Items.GRAY_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.LIGHT_GRAY_TULIP, Items.LIGHT_GRAY_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.CYAN_TULIP, Items.CYAN_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.PURPLE_TULIP, Items.PURPLE_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.BLUE_TULIP, Items.BLUE_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.BROWN_TULIP, Items.BROWN_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.GREEN_TULIP, Items.GREEN_DYE, 1);
-        ModRecipeHelper.offerDyeRecipe(exporter, ModBlocks.BLACK_TULIP, Items.BLACK_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.MAGENTA_TULIP, Items.MAGENTA_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.LIGHT_BLUE_TULIP, Items.LIGHT_BLUE_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.YELLOW_TULIP, Items.YELLOW_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.LIME_TULIP, Items.LIME_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.GRAY_TULIP, Items.GRAY_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.LIGHT_GRAY_TULIP, Items.LIGHT_GRAY_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.CYAN_TULIP, Items.CYAN_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.PURPLE_TULIP, Items.PURPLE_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.BLUE_TULIP, Items.BLUE_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.BROWN_TULIP, Items.BROWN_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.GREEN_TULIP, Items.GREEN_DYE, 1);
+        ModRecipeHelper.offerDyeRecipe(exporter, ModPlants.BLACK_TULIP, Items.BLACK_DYE, 1);
         ModRecipeHelper.offerDyeRecipe(exporter, ModItems.CHARRED_BONE_MEAL, Items.BLACK_DYE, 1);
     }
 
@@ -204,6 +207,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private void smeltingRecipes(Consumer<RecipeJsonProvider> exporter){
         ModRecipeHelper.offerSmelting(exporter, Items.TROPICAL_FISH, ModFood.COOKED_TROPICAL_FISH);
         ModRecipeHelper.offerSmelting(exporter, ModFood.GOLDEN_POTATO, ModFood.GOLDEN_BAKED_POTATO);
+        ModRecipeHelper.offerSmelting(exporter, Items.SHEARS, Items.IRON_NUGGET);
     }
 
     private void cookingRecipes(Consumer<RecipeJsonProvider> exporter, String cooker, CookingRecipeSerializer<?> serializer, int cookingTime){
@@ -261,6 +265,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ModRecipeHelper.offerOWithMiddle(exporter, ItemTags.PLANKS, XOverhaulTags.Items.TRIPWIRE_HOOKS,
                 Blocks.TRAPPED_CHEST, "has_planks",1, true);
+    }
+
+    private void sameItemOnTopOfAnotherRecipes(Consumer<RecipeJsonProvider> exporter){
+       // ModRecipeHelper.offerSameItemOnTopOfAnother(exporter, Blocks.OAK_SLAB, Blocks.OAK_PLANKS, 1);
     }
 
     private void otherRecipes(Consumer<RecipeJsonProvider> exporter){

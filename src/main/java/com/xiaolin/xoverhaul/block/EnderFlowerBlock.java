@@ -14,8 +14,8 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 
-public class EnderFlower extends FlowerBlock {
-    public EnderFlower(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
+public class EnderFlowerBlock extends FlowerBlock {
+    public EnderFlowerBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
         super(suspiciousStewEffect, effectDuration, settings);
     }
 

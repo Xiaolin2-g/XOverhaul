@@ -8,7 +8,7 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ModSpawnEggs {
+public class ModSpawnEggs extends ItemInitBase {
 
 
 
@@ -17,9 +17,10 @@ public class ModSpawnEggs {
                     new FabricItemSettings()
                     .group(ModItemGroup.XOVERHAUL_SPAWN_EGGS)));
 
-    public static Item registerItem(String name, SpawnEggItem spawnEggItem){
-        return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name), spawnEggItem);
-    }
+    public static final Item LEATHERLING_SPAWN_EGG = registerItem("leatherling_spawn_egg",
+            new SpawnEggItem(ModEntities.LEATHERLING, 0x663300, 0xcccc00,
+                    new FabricItemSettings()
+                            .group(ModItemGroup.XOVERHAUL_SPAWN_EGGS)));
 
     public static void registerModSpawnEggs(){
         XOverhaul.LOGGER.info("Registering Mod Spawn Eggs for " + XOverhaul.MOD_ID);

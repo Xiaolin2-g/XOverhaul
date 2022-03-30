@@ -17,5 +17,12 @@ public class EntitySpawning {
                 ModEntities.CHAINED_MONSTER,
                 10,
                 1,1 );
+
+        BiomeModifications.addSpawn(
+                BiomeSelectors.foundInOverworld(),
+                SpawnGroup.MONSTER,
+                ModEntities.LEATHERLING,
+                15,
+                1,4);
     }
 }

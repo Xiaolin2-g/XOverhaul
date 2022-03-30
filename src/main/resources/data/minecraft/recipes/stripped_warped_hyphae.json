@@ -9,5 +9,7 @@
       "item": "minecraft:stripped_warped_stem"
     }
   },
-  "result": {}
+  "result": {
+    "item": ""
+  }
 }

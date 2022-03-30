@@ -2,6 +2,9 @@ package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.block.ModBlocks;
+import com.xiaolin.xoverhaul.block.ModPlants;
+import com.xiaolin.xoverhaul.block.ModSlabs;
+import com.xiaolin.xoverhaul.block.ModStairs;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -45,38 +48,38 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
         addToPickaxeTag(ModBlocks.CHARRED_BONE_BLOCK);
         addToPickaxeTag(ModBlocks.PURPUR_COBBLESTONE);
-        addToPickaxeTag(ModBlocks.WHITE_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.ORANGE_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.MAGENTA_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.YELLOW_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.LIME_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.PINK_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.GRAY_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.CYAN_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.PURPLE_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.BLUE_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.BROWN_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.GREEN_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.RED_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.BLACK_CONCRETE_SLAB);
-        addToPickaxeTag(ModBlocks.WHITE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.ORANGE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.MAGENTA_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.YELLOW_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.LIME_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.PINK_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.GRAY_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.CYAN_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.PURPLE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.BLUE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.BROWN_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.GREEN_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.RED_CONCRETE_STAIRS);
-        addToPickaxeTag(ModBlocks.BLACK_CONCRETE_STAIRS);
+        addToPickaxeTag(ModSlabs.WHITE_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.ORANGE_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.MAGENTA_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.LIGHT_BLUE_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.YELLOW_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.LIME_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.PINK_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.GRAY_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.LIGHT_GRAY_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.CYAN_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.PURPLE_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.BLUE_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.BROWN_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.GREEN_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.RED_CONCRETE_SLAB);
+        addToPickaxeTag(ModSlabs.BLACK_CONCRETE_SLAB);
+        addToPickaxeTag(ModStairs.WHITE_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.ORANGE_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.MAGENTA_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.LIGHT_BLUE_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.YELLOW_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.LIME_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.PINK_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.GRAY_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.LIGHT_GRAY_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.CYAN_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.PURPLE_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.BLUE_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.BROWN_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.GREEN_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.RED_CONCRETE_STAIRS);
+        addToPickaxeTag(ModStairs.BLACK_CONCRETE_STAIRS);
         addToPickaxeTag(ModBlocks.SOUL_NETHERRACK);
         addToPickaxeTag(ModBlocks.SOUL_NETHER_BRICKS);
         addToPickaxeTag(ModBlocks.ENDER_END_STONE);
@@ -98,7 +101,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
     private void shovelTags(){
         addToShovelTag(ModBlocks.DIRTY_SAND);
-        addToShovelTag(ModBlocks.DIRT_SLAB);
+        addToShovelTag(ModSlabs.DIRT_SLAB);
     }
 
     private void addToHoeTag(Block block){
@@ -168,19 +171,19 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
     }
 
     private void smallFlowersTags(){
-        addToSmallFlowersTag(ModBlocks.ENDER_FLOWER);
-        addToSmallFlowersTag(ModBlocks.MAGENTA_TULIP);
-        addToSmallFlowersTag(ModBlocks.LIGHT_BLUE_TULIP);
-        addToSmallFlowersTag(ModBlocks.YELLOW_TULIP);
-        addToSmallFlowersTag(ModBlocks.LIME_TULIP);
-        addToSmallFlowersTag(ModBlocks.GRAY_TULIP);
-        addToSmallFlowersTag(ModBlocks.LIGHT_GRAY_TULIP);
-        addToSmallFlowersTag(ModBlocks.CYAN_TULIP);
-        addToSmallFlowersTag(ModBlocks.PURPLE_TULIP);
-        addToSmallFlowersTag(ModBlocks.BLUE_TULIP);
-        addToSmallFlowersTag(ModBlocks.BROWN_TULIP);
-        addToSmallFlowersTag(ModBlocks.GREEN_TULIP);
-        addToSmallFlowersTag(ModBlocks.BLACK_TULIP);
+        addToSmallFlowersTag(ModPlants.ENDER_FLOWER);
+        addToSmallFlowersTag(ModPlants.MAGENTA_TULIP);
+        addToSmallFlowersTag(ModPlants.LIGHT_BLUE_TULIP);
+        addToSmallFlowersTag(ModPlants.YELLOW_TULIP);
+        addToSmallFlowersTag(ModPlants.LIME_TULIP);
+        addToSmallFlowersTag(ModPlants.GRAY_TULIP);
+        addToSmallFlowersTag(ModPlants.LIGHT_GRAY_TULIP);
+        addToSmallFlowersTag(ModPlants.CYAN_TULIP);
+        addToSmallFlowersTag(ModPlants.PURPLE_TULIP);
+        addToSmallFlowersTag(ModPlants.BLUE_TULIP);
+        addToSmallFlowersTag(ModPlants.BROWN_TULIP);
+        addToSmallFlowersTag(ModPlants.GREEN_TULIP);
+        addToSmallFlowersTag(ModPlants.BLACK_TULIP);
     }
 
     private void addToSoulFireBaseTag(Block block){
@@ -192,5 +195,14 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToSoulFireBaseTag(ModBlocks.SOUL_NETHER_BRICKS);
     }
 
+    private void addToInfiniburnTag(Block block){
+        getOrCreateTagBuilder(BlockTags.INFINIBURN_OVERWORLD).add(block);
+        getOrCreateTagBuilder(BlockTags.INFINIBURN_NETHER).add(block);
+        getOrCreateTagBuilder(BlockTags.INFINIBURN_END).add(block);
+    }
+
+    private void infiniburnTags(){
+        addToInfiniburnTag(ModBlocks.SOUL_NETHERRACK);
+    }
 
 }

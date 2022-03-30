@@ -13,8 +13,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class Scraper extends DontConsumeOnCraftItem {
-    public Scraper(Settings settings) {
+public class ScraperItem extends DontConsumeOnCraftItem {
+    public ScraperItem(Settings settings) {
         super(settings);
         // settings.recipeRemainder(this);
     }

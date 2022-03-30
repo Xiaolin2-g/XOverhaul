@@ -2,6 +2,7 @@ package com.xiaolin.xoverhaul.entity;
 
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.entity.entities.ChainedMonsterEntity;
+import com.xiaolin.xoverhaul.entity.entities.LeatherlingEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.*;
@@ -14,6 +15,10 @@ public class ModEntities {
     public static final EntityType<ChainedMonsterEntity> CHAINED_MONSTER =
             ModEntities.registerEntity("chained_monster", SpawnGroup.MONSTER,
                     ChainedMonsterEntity::new, 2, 1);
+
+    public static final EntityType<LeatherlingEntity> LEATHERLING =
+            ModEntities.registerEntity("leatherling", SpawnGroup.MONSTER,
+                    LeatherlingEntity::new, 1, 1);
 
 
     public static EntityType registerEntity(String name, SpawnGroup spawnGroup,
@@ -37,5 +42,7 @@ public class ModEntities {
 
     public static void registerMobAttributes(){
         FabricDefaultAttributeRegistry.register(CHAINED_MONSTER, ChainedMonsterEntity.createChainedMonsterAttributes());
+        FabricDefaultAttributeRegistry.register(LEATHERLING, LeatherlingEntity.createLeatherlingAttributes());
+
     }
 }

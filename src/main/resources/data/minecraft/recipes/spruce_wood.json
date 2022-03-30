@@ -9,5 +9,7 @@
       "item": "minecraft:spruce_log"
     }
   },
-  "result": {}
+  "result": {
+    "item": ""
+  }
 }

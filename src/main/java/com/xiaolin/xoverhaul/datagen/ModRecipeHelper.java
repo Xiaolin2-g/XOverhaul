@@ -8,6 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.tag.Tag;
 import net.minecraft.tag.TagKey;
 
 import java.util.function.Consumer;
@@ -323,9 +324,51 @@ public class ModRecipeHelper {
                 .pattern("###");
     }
 
+    public static CraftingRecipeJsonBuilder createItemOnTopOfAnother(ItemConvertible input,
+                                                                     ItemConvertible input_2,
+                                                                     ItemConvertible output,
+                                                                     int outputCount) {
+        return ShapedRecipeJsonBuilder.create
+                        (output, outputCount)
+                .input('#', input)
+                .input('O', input_2)
+                .pattern("#")
+                .pattern("O");
+    }
+
+    public static CraftingRecipeJsonBuilder createItemOnTopOfAnother(TagKey<Item> input,
+                                                              TagKey<Item> input_2,
+                                                              ItemConvertible output,
+                                                              int outputCount) {
+        return ShapedRecipeJsonBuilder.create
+                        (output, outputCount)
+                .input('#', input)
+                .input('O', input_2)
+                .pattern("#")
+                .pattern("O");
+    }
 
 
+    public static CraftingRecipeJsonBuilder createSameItemOnTopOfAnother(ItemConvertible input,
+                                                                         ItemConvertible output,
+                                                                         int outputCount) {
+        return ShapedRecipeJsonBuilder.create
+                        (output, outputCount)
+                .input('#', input)
+                .pattern("#")
+                .pattern("#");
+    }
 
+
+    public static CraftingRecipeJsonBuilder createSameItemOnTopOfAnother(TagKey<Item> input,
+                                                                     ItemConvertible output,
+                                                                     int outputCount) {
+        return ShapedRecipeJsonBuilder.create
+                        (output, outputCount)
+                .input('#', input)
+                .pattern("#")
+                .pattern("#");
+    }
 
 
 
@@ -881,6 +924,55 @@ public class ModRecipeHelper {
                             RecipeProvider.conditionsFromTag(input))
                     .offerTo(exporter);
         }
+    }
+
+
+    public static void offerItemOnTopOfAnother(Consumer<RecipeJsonProvider> exporter,
+                                               ItemConvertible input,
+                                               ItemConvertible input_2,
+                                               ItemConvertible output,
+                                               int outputCount){
+
+        createItemOnTopOfAnother(input, input_2, output, outputCount)
+                .criterion(RecipeProvider.hasItem(input),
+                        RecipeProvider.conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public static void offerItemOnTopOfAnother(Consumer<RecipeJsonProvider> exporter,
+                                               TagKey<Item> input,
+                                               TagKey<Item> input_2,
+                                               ItemConvertible output,
+                                               int outputCount,
+                                               String conditions){
+
+        createItemOnTopOfAnother(input, input_2, output, outputCount)
+                .criterion(conditions,
+                        RecipeProvider.conditionsFromTag(input))
+                .offerTo(exporter);
+    }
+
+    public static void offerSameItemOnTopOfAnother(Consumer<RecipeJsonProvider> exporter,
+                                               ItemConvertible input,
+                                               ItemConvertible output,
+                                               int outputCount){
+
+        createSameItemOnTopOfAnother(input, output, outputCount)
+                .criterion(RecipeProvider.hasItem(input),
+                        RecipeProvider.conditionsFromItem(input))
+                .offerTo(exporter);
+    }
+
+    public static void offerSameItemOnTopOfAnother(Consumer<RecipeJsonProvider> exporter,
+                                                   TagKey<Item> input,
+                                                   ItemConvertible output,
+                                                   int outputCount,
+                                                   String conditions){
+
+        createSameItemOnTopOfAnother(input, output, outputCount)
+                .criterion(conditions,
+                        RecipeProvider.conditionsFromTag(input))
+                .offerTo(exporter);
     }
 
 

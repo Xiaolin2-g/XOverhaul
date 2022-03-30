@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ModItems {
+public class ModItems extends ItemInitBase {
 
     public static final Item IRON_CORE = registerItem("iron_core",
             new Item(new FabricItemSettings()
@@ -18,7 +18,7 @@ public class ModItems {
                     .group(ModItemGroup.XOVERHAUL_ITEMS)));
 
     public static final Item CHARRED_BONE_MEAL = registerItem("charred_bone_meal",
-            new CharredBoneMeal(new FabricItemSettings()
+            new CharredBoneMealItem(new FabricItemSettings()
                     .group(ModItemGroup.XOVERHAUL_ITEMS)));
 
     public static final Item LEATHER_ARMOR_PIECE = registerItem("leather_armor_piece",
@@ -106,12 +106,16 @@ public class ModItems {
 
 
 
-    public static Item registerItem(String name, Item item){
-        return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name), item);
-    }
+
+
+
+    public static final Item TEST_ITEM = registerItem("test_item",
+            new TestItem(new FabricItemSettings()
+                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+
+
 
     public static void registerModItems(){
         XOverhaul.LOGGER.info("Registering Mod Items for " + XOverhaul.MOD_ID);
-
     }
 }

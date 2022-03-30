@@ -102,7 +102,8 @@
   "block.xoverhaul.wooden_crate": "Wooden Crate",
 
 
- "entity.xoverhaul.chained_monster": "Chained Monster",
+  "entity.xoverhaul.chained_monster": "Chained Monster",
+  "entity.xoverhaul.leatherling": "Leatherling",
 
 
   "itemGroup.xoverhaul.xoverhaul_items": "XOverhaul Items",

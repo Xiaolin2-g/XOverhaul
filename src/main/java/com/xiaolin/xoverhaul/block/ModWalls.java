@@ -18,6 +18,21 @@ public class ModWalls extends BlockInitBase {
     public static final Block SMOOTH_STONE_WALLS = registerBlock("smooth_stone_walls",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.SMOOTH_STONE)));
 
+    public static final Block NETHERRACK_WALLS = registerBlock("netherrack_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK)));
+
+    public static final Block CUT_SANDSTONE_WALLS = registerBlock("cut_sandstone_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE)));
+
+    public static final Block SMOOTH_SANDSTONE_WALLS = registerBlock("smooth_sandstone_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.SMOOTH_SANDSTONE)));
+
+    public static final Block CHISELED_SANDSTONE_WALLS = registerBlock("chiseled_sandstone_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_SANDSTONE)));
+
+    public static final Block CUT_RED_SANDSTONE_WALLS = registerBlock("cut_red_sandstone_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CUT_RED_SANDSTONE)));
+
 
 
     public static void registerModWalls(){

@@ -30,6 +30,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         smallFlowerTagged();
         soulFireBaseTagged();
         infiniburnTagged();
+        leavesTagged();
     }
 
     private void mineableTagged(){
@@ -48,6 +49,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
         addToPickaxeTag(ModBlocks.CHARRED_BONE_BLOCK);
         addToPickaxeTag(ModBlocks.PURPUR_COBBLESTONE);
+
         addToPickaxeTag(ModSlabs.WHITE_CONCRETE_SLAB);
         addToPickaxeTag(ModSlabs.ORANGE_CONCRETE_SLAB);
         addToPickaxeTag(ModSlabs.MAGENTA_CONCRETE_SLAB);
@@ -64,6 +66,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToPickaxeTag(ModSlabs.GREEN_CONCRETE_SLAB);
         addToPickaxeTag(ModSlabs.RED_CONCRETE_SLAB);
         addToPickaxeTag(ModSlabs.BLACK_CONCRETE_SLAB);
+
         addToPickaxeTag(ModStairs.WHITE_CONCRETE_STAIRS);
         addToPickaxeTag(ModStairs.ORANGE_CONCRETE_STAIRS);
         addToPickaxeTag(ModStairs.MAGENTA_CONCRETE_STAIRS);
@@ -80,9 +83,20 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToPickaxeTag(ModStairs.GREEN_CONCRETE_STAIRS);
         addToPickaxeTag(ModStairs.RED_CONCRETE_STAIRS);
         addToPickaxeTag(ModStairs.BLACK_CONCRETE_STAIRS);
+
         addToPickaxeTag(ModBlocks.SOUL_NETHERRACK);
         addToPickaxeTag(ModBlocks.SOUL_NETHER_BRICKS);
         addToPickaxeTag(ModBlocks.ENDER_END_STONE);
+        addToPickaxeTag(ModStairs.SMOOTH_STONE_STAIRS);
+        addToPickaxeTag(ModSlabs.CRACKED_STONE_BRICKS_SLAB);
+        addToPickaxeTag(ModStairs.CRACKED_STONE_BRICKS_STAIRS);
+        addToPickaxeTag(ModSlabs.CHISELED_STONE_BRICKS_SLAB);
+        addToPickaxeTag(ModStairs.CHISELED_STONE_BRICKS_STAIRS);
+        addToPickaxeTag(ModSlabs.NETHERRACK_SLAB);
+        addToPickaxeTag(ModStairs.NETHERRACK_STAIRS);
+        addToPickaxeTag(ModStairs.CUT_SANDSTONE_STAIRS);
+        addToPickaxeTag(ModSlabs.CHISELED_SANDSTONE_SLAB);
+        addToPickaxeTag(ModStairs.CHISELED_SANDSTONE_STAIRS);
 
 
     }
@@ -213,6 +227,15 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
     private void infiniburnTagged(){
         addToInfiniburnTag(ModBlocks.SOUL_NETHERRACK);
+    }
+
+    private void addToLeavesTag(Block block){
+        getOrCreateTagBuilder(BlockTags.LEAVES).add(block);
+    }
+
+    private void leavesTagged(){
+        addToLeavesTag(Blocks.NETHER_WART_BLOCK);
+        addToLeavesTag(Blocks.WARPED_WART_BLOCK);
     }
 
 }

@@ -24,8 +24,6 @@ public class ModBlocks extends BlockInitBase{
     public static final Block PURPUR_COBBLESTONE = registerBlock("purpur_cobblestone",
             new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
 
-
-
     public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
             new Block(FabricBlockSettings.of(Material.ORGANIC_PRODUCT)
                     .hardness(0.5f)

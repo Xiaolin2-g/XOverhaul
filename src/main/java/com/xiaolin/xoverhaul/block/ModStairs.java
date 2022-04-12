@@ -79,6 +79,31 @@ public class ModStairs extends BlockInitBase {
             new BaseStairs(Blocks.SMOOTH_STONE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.SMOOTH_STONE)));
 
+    public static final Block CRACKED_STONE_BRICKS_STAIRS = registerBlock("cracked_stone_bricks_stairs",
+            new BaseStairs(Blocks.CRACKED_STONE_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CRACKED_STONE_BRICKS)));
+
+    public static final Block CHISELED_STONE_BRICKS_STAIRS = registerBlock("chiseled_stone_bricks_stairs",
+            new BaseStairs(Blocks.CHISELED_STONE_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)));
+
+    public static final Block NETHERRACK_STAIRS = registerBlock("netherrack_stairs",
+            new BaseStairs(Blocks.NETHERRACK.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.NETHERRACK)));
+
+    public static final Block CUT_SANDSTONE_STAIRS = registerBlock("cut_sandstone_stairs",
+            new BaseStairs(Blocks.CUT_SANDSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CUT_SANDSTONE)));
+
+    public static final Block CHISELED_SANDSTONE_STAIRS = registerBlock("chiseled_sandstone_stairs",
+            new BaseStairs(Blocks.CHISELED_SANDSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CHISELED_SANDSTONE)));
+
+    public static final Block CUT_RED_SANDSTONE_STAIRS = registerBlock("cut_red_sandstone_stairs",
+            new BaseStairs(Blocks.CUT_RED_SANDSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CUT_RED_SANDSTONE)));
+
+
     public static void registerModStairs(){
         XOverhaul.LOGGER.info("Registering Mod Stairs for " + XOverhaul.MOD_ID);
     }

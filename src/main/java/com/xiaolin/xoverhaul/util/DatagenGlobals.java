@@ -69,7 +69,10 @@ public class DatagenGlobals {
         SLABS.put(Blocks.BLACK_CONCRETE, ModSlabs.BLACK_CONCRETE_SLAB);
         SLABS.put(Blocks.DIRT, ModSlabs.DIRT_SLAB);
         SLABS.put(Blocks.BEDROCK, ModSlabs.BEDROCK_SLAB);
-
+        SLABS.put(Blocks.CRACKED_STONE_BRICKS, ModSlabs.CRACKED_STONE_BRICKS_SLAB);
+        SLABS.put(Blocks.CHISELED_STONE_BRICKS, ModSlabs.CHISELED_STONE_BRICKS_SLAB);
+        SLABS.put(Blocks.NETHERRACK, ModSlabs.NETHERRACK_SLAB);
+        SLABS.put(Blocks.CHISELED_SANDSTONE, ModSlabs.CHISELED_SANDSTONE_SLAB);
     }
 
     private static void registerStairs(){
@@ -91,12 +94,24 @@ public class DatagenGlobals {
         STAIRS.put(Blocks.BLACK_CONCRETE, ModStairs.BLACK_CONCRETE_STAIRS);
         STAIRS.put(Blocks.BEDROCK, ModStairs.BEDROCK_STAIRS);
         STAIRS.put(Blocks.SMOOTH_STONE, ModStairs.SMOOTH_STONE_STAIRS);
+        STAIRS.put(Blocks.CRACKED_STONE_BRICKS, ModStairs.CRACKED_STONE_BRICKS_STAIRS);
+        STAIRS.put(Blocks.CHISELED_STONE_BRICKS, ModStairs.CHISELED_STONE_BRICKS_STAIRS);
+        STAIRS.put(Blocks.NETHERRACK, ModStairs.NETHERRACK_STAIRS);
+        STAIRS.put(Blocks.CUT_SANDSTONE, ModStairs.CUT_SANDSTONE_STAIRS);
+        STAIRS.put(Blocks.CHISELED_SANDSTONE, ModStairs.CHISELED_SANDSTONE_STAIRS);
+        STAIRS.put(Blocks.CUT_RED_SANDSTONE, ModStairs.CUT_RED_SANDSTONE_STAIRS);
 
     }
 
     private static void registerWalls(){
         WALLS.put(Blocks.BEDROCK, ModWalls.BEDROCK_WALLS);
         WALLS.put(Blocks.STONE, ModWalls.STONE_WALLS);
+        WALLS.put(Blocks.SMOOTH_STONE, ModWalls.SMOOTH_STONE_WALLS);
+        WALLS.put(Blocks.NETHERRACK, ModWalls.NETHERRACK_WALLS);
+        WALLS.put(Blocks.CUT_SANDSTONE, ModWalls.CUT_SANDSTONE_WALLS);
+        WALLS.put(Blocks.SMOOTH_SANDSTONE, ModWalls.SMOOTH_SANDSTONE_WALLS);
+        WALLS.put(Blocks.CHISELED_SANDSTONE, ModWalls.CHISELED_SANDSTONE_WALLS);
+        WALLS.put(Blocks.CUT_RED_SANDSTONE, ModWalls.CUT_RED_SANDSTONE_WALLS);
     }
 
     private static void registerPlants(){

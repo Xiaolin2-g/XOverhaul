@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "xoverhaul:bedrock_walls"
+    "xoverhaul:cut_sandstone_walls",
+    "xoverhaul:stone_walls",
+    "xoverhaul:smooth_sandstone_walls",
+    "xoverhaul:chiseled_sandstone_walls",
+    "xoverhaul:bedrock_walls",
+    "xoverhaul:netherrack_walls"
   ]
 }

@@ -12,6 +12,11 @@ public class ModWalls extends BlockInitBase {
     public static final Block BEDROCK_WALLS = registerBlock("bedrock_walls",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK)));
 
+    public static final Block STONE_WALLS = registerBlock("stone_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block SMOOTH_STONE_WALLS = registerBlock("smooth_stone_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.SMOOTH_STONE)));
 
 
 

@@ -90,11 +90,13 @@ public class DatagenGlobals {
         STAIRS.put(Blocks.RED_CONCRETE, ModStairs.RED_CONCRETE_STAIRS);
         STAIRS.put(Blocks.BLACK_CONCRETE, ModStairs.BLACK_CONCRETE_STAIRS);
         STAIRS.put(Blocks.BEDROCK, ModStairs.BEDROCK_STAIRS);
+        STAIRS.put(Blocks.SMOOTH_STONE, ModStairs.SMOOTH_STONE_STAIRS);
 
     }
 
     private static void registerWalls(){
         WALLS.put(Blocks.BEDROCK, ModWalls.BEDROCK_WALLS);
+        WALLS.put(Blocks.STONE, ModWalls.STONE_WALLS);
     }
 
     private static void registerPlants(){

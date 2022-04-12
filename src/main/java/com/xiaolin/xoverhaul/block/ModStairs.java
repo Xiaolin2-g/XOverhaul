@@ -75,6 +75,10 @@ public class ModStairs extends BlockInitBase {
             new BaseStairs(Blocks.BEDROCK.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.BEDROCK)));
 
+    public static final Block SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
+            new BaseStairs(Blocks.SMOOTH_STONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.SMOOTH_STONE)));
+
     public static void registerModStairs(){
         XOverhaul.LOGGER.info("Registering Mod Stairs for " + XOverhaul.MOD_ID);
     }

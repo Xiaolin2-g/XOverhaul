@@ -8,10 +8,12 @@ import com.xiaolin.xoverhaul.item.ModArmor;
 import com.xiaolin.xoverhaul.item.ModFood;
 import com.xiaolin.xoverhaul.item.ModItems;
 import com.xiaolin.xoverhaul.item.ModTools;
+import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import com.xiaolin.xoverhaul.util.SmeltingGlobals;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.RecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
@@ -22,6 +24,7 @@ import net.minecraft.recipe.CookingRecipeSerializer;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.tag.ItemTags;
 
+import java.util.Map;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -34,15 +37,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         barkRecipes(exporter);
         woodRecipes(exporter);
         rebarkRecipes(exporter);
+
         slabRecipes(exporter);
         stairsRecipes(exporter);
+        wallsRecipes(exporter);
+
         dyeRecipes(exporter);
+
         compactingRecipes(exporter);
+
         armorRecipes(exporter);
+        horseArmorRecipes(exporter);
+
         smeltingRecipes(exporter);
         cookingRecipes(exporter, "smoking", RecipeSerializer.SMOKING, SmeltingGlobals.STANDARD_SMOKING_TIME);
         cookingRecipes(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, SmeltingGlobals.STANDARD_CAMPFIRE_TIME);
-        horseArmorRecipes(exporter);
+
         smallVerticalRecipes(exporter);
         oRecipes(exporter);
 
@@ -101,44 +111,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void slabRecipes(Consumer<RecipeJsonProvider> exporter){
-        offerSlabRecipe(exporter, ModSlabs.WHITE_CONCRETE_SLAB, Blocks.WHITE_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.ORANGE_CONCRETE_SLAB, Blocks.ORANGE_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.MAGENTA_CONCRETE_SLAB, Blocks.MAGENTA_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.LIGHT_BLUE_CONCRETE_SLAB, Blocks.LIGHT_BLUE_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.YELLOW_CONCRETE_SLAB, Blocks.YELLOW_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.LIME_CONCRETE_SLAB, Blocks.LIME_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.PINK_CONCRETE_SLAB, Blocks.PINK_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.GRAY_CONCRETE_SLAB, Blocks.GRAY_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.LIGHT_GRAY_CONCRETE_SLAB, Blocks.LIGHT_GRAY_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.CYAN_CONCRETE_SLAB, Blocks.CYAN_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.PURPLE_CONCRETE_SLAB, Blocks.PURPLE_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.BLUE_CONCRETE_SLAB, Blocks.BLUE_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.BROWN_CONCRETE_SLAB, Blocks.BROWN_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.GREEN_CONCRETE_SLAB, Blocks.GREEN_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.RED_CONCRETE_SLAB, Blocks.RED_CONCRETE);
-        offerSlabRecipe(exporter, ModSlabs.BLACK_CONCRETE_SLAB, Blocks.BLACK_CONCRETE);
 
-        offerSlabRecipe(exporter, ModSlabs.DIRT_SLAB, Blocks.DIRT);
+        for (Map.Entry<Block, Block> slabs : DatagenGlobals.SLABS.entrySet()) {
+            offerSlabRecipe(exporter, slabs.getValue(), slabs.getKey());
+        }
     }
 
 
     private void stairsRecipes(Consumer<RecipeJsonProvider> exporter){
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.WHITE_CONCRETE, ModStairs.WHITE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.ORANGE_CONCRETE, ModStairs.ORANGE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.MAGENTA_CONCRETE, ModStairs.MAGENTA_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.LIGHT_BLUE_CONCRETE, ModStairs.LIGHT_BLUE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.YELLOW_CONCRETE, ModStairs.YELLOW_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.LIME_CONCRETE, ModStairs.LIME_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.PINK_CONCRETE, ModStairs.PINK_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.GRAY_CONCRETE, ModStairs.GRAY_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.LIGHT_GRAY_CONCRETE, ModStairs.LIGHT_GRAY_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.CYAN_CONCRETE, ModStairs.CYAN_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.PURPLE_CONCRETE, ModStairs.PURPLE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.BLUE_CONCRETE, ModStairs.BLUE_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.BROWN_CONCRETE, ModStairs.BROWN_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.GREEN_CONCRETE, ModStairs.GREEN_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.RED_CONCRETE, ModStairs.RED_CONCRETE_STAIRS);
-        ModRecipeHelper.offerStairsRecipe(exporter, Blocks.BLACK_CONCRETE, ModStairs.BLACK_CONCRETE_STAIRS);
+
+        for (Map.Entry<Block, Block> stairs : DatagenGlobals.STAIRS.entrySet()) {
+            ModRecipeHelper.offerStairsRecipe(exporter, stairs.getKey(), stairs.getValue());
+        }
+    }
+
+    private void wallsRecipes(Consumer<RecipeJsonProvider> exporter) {
+
+        for (Map.Entry<Block, Block> walls : DatagenGlobals.WALLS.entrySet()) {
+            offerWallRecipe(exporter, walls.getValue(), walls.getKey());
+        }
     }
 
 

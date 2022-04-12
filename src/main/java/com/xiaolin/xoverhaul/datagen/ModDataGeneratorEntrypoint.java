@@ -1,6 +1,7 @@
 package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.XOverhaul;
+import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -8,6 +9,8 @@ public class ModDataGeneratorEntrypoint implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         XOverhaul.LOGGER.info("/////////////DATAGEN INITIALIZED//////////////");
+
+        DatagenGlobals.registerDatagen();
 
         fabricDataGenerator.addProvider(ModRecipeProvider::new);
         fabricDataGenerator.addProvider(ModBlockStateDefinitionProvider::new);

@@ -25,6 +25,7 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTablesProvider {
         blockDrops();
         slabDrops();
         stairDrops();
+        wallsDrops();
         crossDrops();
         axisRotatedDrops();
     }
@@ -38,16 +39,23 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTablesProvider {
     }
 
     private void slabDrops(){
-        for(Block slab : DatagenGlobals.SLABS){
+        for(Block slab : DatagenGlobals.SLABS.values()){
             addDrop(slab, BlockLootTableGenerator::slabDrops);
         }
     }
 
     private void stairDrops(){
-        for(Block stairs : DatagenGlobals.STAIRS){
+        for(Block stairs : DatagenGlobals.STAIRS.values()){
             addDrop(stairs);
         }
     }
+
+    private void wallsDrops(){
+        for(Block walls : DatagenGlobals.WALLS.values()){
+            addDrop(walls);
+        }
+    }
+
 
     private void crossDrops(){
         for(Block block : DatagenGlobals.CROSS){

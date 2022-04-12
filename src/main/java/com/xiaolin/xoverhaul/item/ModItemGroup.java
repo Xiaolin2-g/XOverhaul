@@ -13,7 +13,7 @@ public class ModItemGroup {
             "xoverhaul_items"), () -> new ItemStack(ModItems.IRON_CORE));
 
     public static final ItemGroup XOVERHAUL_BLOCKS = FabricItemGroupBuilder.build(new Identifier(XOverhaul.MOD_ID ,
-            "xoverhaul_blocks"), () -> new ItemStack(ModBlocks.WHITE_CONCRETE_STAIRS));
+            "xoverhaul_blocks"), () -> new ItemStack(ModBlocks.WOODEN_CRATE));
 
     public static final ItemGroup XOVERHAUL_ARMORS = FabricItemGroupBuilder.build(new Identifier(XOverhaul.MOD_ID ,
             "xoverhaul_armors"), () -> new ItemStack(ModArmor.MONSTER_CHESTPLATE));

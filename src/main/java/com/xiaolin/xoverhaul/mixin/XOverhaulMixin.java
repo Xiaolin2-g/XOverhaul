@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class XOverhaulMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		XOverhaul.LOGGER.info("This line is printed by an example mod mixin!");
+		XOverhaul.LOGGER.info("This line is printed by an " + XOverhaul.MOD_ID + " mixin!");
 	}
 }

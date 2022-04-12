@@ -1,23 +1,23 @@
 {
   "replace": false,
   "values": [
+    "xoverhaul:light_blue_concrete_slab",
+    "xoverhaul:green_concrete_slab",
+    "xoverhaul:cyan_concrete_slab",
+    "xoverhaul:black_concrete_slab",
+    "xoverhaul:red_concrete_slab",
+    "xoverhaul:magenta_concrete_slab",
+    "xoverhaul:brown_concrete_slab",
+    "xoverhaul:dirt_slab",
+    "xoverhaul:bedrock_slab",
     "xoverhaul:white_concrete_slab",
     "xoverhaul:orange_concrete_slab",
-    "xoverhaul:magenta_concrete_slab",
-    "xoverhaul:light_blue_concrete_slab",
-    "xoverhaul:yellow_concrete_slab",
-    "xoverhaul:lime_concrete_slab",
+    "xoverhaul:purple_concrete_slab",
     "xoverhaul:pink_concrete_slab",
     "xoverhaul:gray_concrete_slab",
     "xoverhaul:light_gray_concrete_slab",
-    "xoverhaul:cyan_concrete_slab",
-    "xoverhaul:purple_concrete_slab",
-    "xoverhaul:blue_concrete_slab",
-    "xoverhaul:brown_concrete_slab",
-    "xoverhaul:green_concrete_slab",
-    "xoverhaul:red_concrete_slab",
-    "xoverhaul:black_concrete_slab",
-    "xoverhaul:dirt_slab",
-    "xoverhaul:bedrock_slab"
+    "xoverhaul:yellow_concrete_slab",
+    "xoverhaul:lime_concrete_slab",
+    "xoverhaul:blue_concrete_slab"
   ]
 }

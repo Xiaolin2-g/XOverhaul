@@ -2,7 +2,7 @@ package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.item.ModArmor;
-import com.xiaolin.xoverhaul.util.BlockStateModelGeneratorInterface;
+import com.xiaolin.xoverhaul.util.interfaces.BlockStateModelGeneratorInterface;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockStateDefinitionProvider;
@@ -10,6 +10,8 @@ import net.minecraft.block.Block;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.*;
 import net.minecraft.item.Item;
+
+import java.util.Map;
 
 public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionProvider {
     public ModBlockStateDefinitionProvider(FabricDataGenerator dataGenerator) {
@@ -22,6 +24,7 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
         generateCubes(blockStateModelGenerator);
         generateSlabs(blockStateModelGenerator);
         generateStairs(blockStateModelGenerator);
+        generateWalls(blockStateModelGenerator);
         generateCross(blockStateModelGenerator);
         generateAxisRotated(blockStateModelGenerator);
     }
@@ -43,20 +46,17 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
     private void generateArmors(ItemModelGenerator itemModelGenerator){
         XOverhaul.LOGGER.info("Armors: ");
-        registerModelGenerated(itemModelGenerator, ModArmor.WOODSTONE_HELMET);
-        registerModelGenerated(itemModelGenerator, ModArmor.WOODSTONE_CHESTPLATE);
-        registerModelGenerated(itemModelGenerator, ModArmor.WOODSTONE_LEGGINGS);
-        registerModelGenerated(itemModelGenerator, ModArmor.WOODSTONE_BOOTS);
-        registerModelGenerated(itemModelGenerator, ModArmor.MONSTER_HELMET);
-        registerModelGenerated(itemModelGenerator, ModArmor.MONSTER_CHESTPLATE);
-        registerModelGenerated(itemModelGenerator, ModArmor.MONSTER_LEGGINGS);
-        registerModelGenerated(itemModelGenerator, ModArmor.MONSTER_BOOTS);
+
+        for (Item armor : DatagenGlobals.ARMORS) {
+
+            registerModelGenerated(itemModelGenerator, armor);
+        }
     }
 
     private void generateTools(ItemModelGenerator itemModelGenerator){
-        for (Item item : DatagenGlobals.TOOLS) {
+        for (Item tool : DatagenGlobals.TOOLS) {
 
-            registerModelGenerated(itemModelGenerator, item);
+            registerModelGenerated(itemModelGenerator, tool);
         }
     }
 
@@ -81,6 +81,7 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
         for (Block block : DatagenGlobals.BLOCKS) {
             blockStateModelGenerator.registerSimpleCubeAll(block);
+
             blockStateModelGenerator.registerParentedItemModel(block,
                     ModelIds.getBlockModelId(block));
         }
@@ -88,28 +89,43 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
     private void generateSlabs(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (int i = 0; i < DatagenGlobals.SLABS.length; i++) {
+        for (Map.Entry<Block, Block> slabs : DatagenGlobals.SLABS.entrySet()) {
 
-            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerSlab(DatagenGlobals.SLABS_BASE[i],
-                    DatagenGlobals.SLABS[i]);
+            ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
+                    .registerSlab(slabs.getKey(), slabs.getValue());
 
-            blockStateModelGenerator.registerParentedItemModel(DatagenGlobals.SLABS[i],
-                    ModelIds.getBlockModelId(DatagenGlobals.SLABS[i]));
+            blockStateModelGenerator.registerParentedItemModel(slabs.getValue(),
+                    ModelIds.getBlockModelId(slabs.getValue()));
         }
     }
+
+
 
     private void generateStairs(BlockStateModelGenerator blockStateModelGenerator) {
 
-        for (int i = 0; i < DatagenGlobals.STAIRS.length; i++) {
+        for (Map.Entry<Block, Block> stairs : DatagenGlobals.STAIRS.entrySet()) {
 
-            ((BlockStateModelGeneratorInterface)blockStateModelGenerator).registerStairs(DatagenGlobals.STAIRS_BASE[i],
-                    DatagenGlobals.STAIRS[i]);
+            ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
+                    .registerStairs(stairs.getKey(), stairs.getValue());
 
-            blockStateModelGenerator.registerParentedItemModel(DatagenGlobals.STAIRS[i],
-                    ModelIds.getBlockModelId(DatagenGlobals.STAIRS[i]));
+            blockStateModelGenerator
+                    .registerParentedItemModel(stairs.getValue(),
+                    ModelIds.getBlockModelId(stairs.getValue()));
 
         }
     }
+
+
+    private void generateWalls(BlockStateModelGenerator blockStateModelGenerator) {
+
+        for (Map.Entry<Block, Block> wall : DatagenGlobals.WALLS.entrySet()) {
+
+            ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
+                    .registerWalls(wall.getKey(), wall.getValue());
+
+        }
+    }
+
 
     private void generateCross(BlockStateModelGenerator blockStateModelGenerator) {
 

@@ -6,12 +6,16 @@ import com.xiaolin.xoverhaul.events.EntitySpawning;
 import com.xiaolin.xoverhaul.events.LootTableModifications;
 import com.xiaolin.xoverhaul.item.*;
 import com.xiaolin.xoverhaul.registries.ModRegistries;
+import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import com.xiaolin.xoverhaul.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
+
+import javax.xml.crypto.Data;
 
 
 public class XOverhaul implements ModInitializer {
@@ -55,11 +59,7 @@ public class XOverhaul implements ModInitializer {
 	}
 
 	private void blockRenderLayerMapCutout(){
-		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
-				ModPlants.ENDER_FLOWER, ModPlants.MAGENTA_TULIP, ModPlants.LIGHT_BLUE_TULIP, ModPlants.YELLOW_TULIP,
-				ModPlants.LIME_TULIP, ModPlants.GRAY_TULIP, ModPlants.LIGHT_GRAY_TULIP, ModPlants.CYAN_TULIP,
-				ModPlants.PURPLE_TULIP, ModPlants.BLUE_TULIP, ModPlants.BROWN_TULIP, ModPlants.GREEN_TULIP,
-				ModPlants.BLACK_TULIP, ModPlants.CRIMSON_SPROUTS);
+		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), DatagenGlobals.CROSS.toArray(new Block[0]));
 	}
 
 

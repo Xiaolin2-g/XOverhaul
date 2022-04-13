@@ -74,6 +74,33 @@ public class ModSlabs extends BlockInitBase {
     public static final Block CHISELED_SANDSTONE_SLAB = registerBlock("chiseled_sandstone_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_SANDSTONE)));
 
+    public static final Block CHISELED_RED_SANDSTONE_SLAB = registerBlock("chiseled_red_sandstone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_RED_SANDSTONE)));
+
+    public static final Block END_STONE_SLAB = registerBlock("end_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.END_STONE)));
+
+    public static final Block BASALT_SLAB = registerBlock("basalt_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICKS_SLAB = registerBlock("cracked_polished_blackstone_bricks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)));
+
+    public static final Block CHISELED_POLISHED_BLACKSTONE_SLAB = registerBlock("chiseled_polished_blackstone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_POLISHED_BLACKSTONE)));
+
+
+
+
+
+
+
+
+
+    public static final Block OBSIDIAN_SLAB = registerBlock("obsidian_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN)));
+
+
 
 
     public static void registerModSlabs(){

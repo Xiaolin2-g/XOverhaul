@@ -103,6 +103,39 @@ public class ModStairs extends BlockInitBase {
             new BaseStairs(Blocks.CUT_RED_SANDSTONE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.CUT_RED_SANDSTONE)));
 
+    public static final Block CHISELED_RED_SANDSTONE_STAIRS = registerBlock("chiseled_red_sandstone_stairs",
+            new BaseStairs(Blocks.CHISELED_RED_SANDSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CHISELED_RED_SANDSTONE)));
+
+    public static final Block END_STONE_STAIRS = registerBlock("end_stone_stairs",
+            new BaseStairs(Blocks.END_STONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.END_STONE)));
+
+    public static final Block BASALT_STAIRS = registerBlock("basalt_stairs",
+            new BaseStairs(Blocks.BASALT.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.BASALT)));
+
+    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICKS_STAIRS = registerBlock("cracked_polished_blackstone_bricks_stairs",
+            new BaseStairs(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)));
+
+    public static final Block CHISELED_POLISHED_BLACKSTONE_STAIRS = registerBlock("chiseled_polished_blackstone_stairs",
+            new BaseStairs(Blocks.CHISELED_POLISHED_BLACKSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CHISELED_POLISHED_BLACKSTONE)));
+
+
+
+
+
+
+
+
+
+
+    public static final Block OBSIDIAN_STAIRS = registerBlock("obsidian_stairs",
+            new BaseStairs(Blocks.OBSIDIAN.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.OBSIDIAN)));
+
 
     public static void registerModStairs(){
         XOverhaul.LOGGER.info("Registering Mod Stairs for " + XOverhaul.MOD_ID);

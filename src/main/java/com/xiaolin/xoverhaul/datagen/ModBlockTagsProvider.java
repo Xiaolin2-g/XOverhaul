@@ -45,58 +45,25 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
     }
 
     private void pickaxeTagged(){
+
+        for (Block block : DatagenGlobals.SLABS.values()){
+            if(block != ModSlabs.DIRT_SLAB){
+                addToPickaxeTag(block);
+            }
+        }
+
+        for (Block block : DatagenGlobals.STAIRS.values()){
+                addToPickaxeTag(block);
+        }
+
+
         addToPickaxeTag(Blocks.HONEYCOMB_BLOCK);
 
         addToPickaxeTag(ModBlocks.CHARRED_BONE_BLOCK);
         addToPickaxeTag(ModBlocks.PURPUR_COBBLESTONE);
-
-        addToPickaxeTag(ModSlabs.WHITE_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.ORANGE_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.MAGENTA_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.LIGHT_BLUE_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.YELLOW_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.LIME_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.PINK_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.GRAY_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.LIGHT_GRAY_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.CYAN_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.PURPLE_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.BLUE_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.BROWN_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.GREEN_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.RED_CONCRETE_SLAB);
-        addToPickaxeTag(ModSlabs.BLACK_CONCRETE_SLAB);
-
-        addToPickaxeTag(ModStairs.WHITE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.ORANGE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.MAGENTA_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.LIGHT_BLUE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.YELLOW_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.LIME_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.PINK_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.GRAY_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.LIGHT_GRAY_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.CYAN_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.PURPLE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.BLUE_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.BROWN_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.GREEN_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.RED_CONCRETE_STAIRS);
-        addToPickaxeTag(ModStairs.BLACK_CONCRETE_STAIRS);
-
         addToPickaxeTag(ModBlocks.SOUL_NETHERRACK);
         addToPickaxeTag(ModBlocks.SOUL_NETHER_BRICKS);
         addToPickaxeTag(ModBlocks.ENDER_END_STONE);
-        addToPickaxeTag(ModStairs.SMOOTH_STONE_STAIRS);
-        addToPickaxeTag(ModSlabs.CRACKED_STONE_BRICKS_SLAB);
-        addToPickaxeTag(ModStairs.CRACKED_STONE_BRICKS_STAIRS);
-        addToPickaxeTag(ModSlabs.CHISELED_STONE_BRICKS_SLAB);
-        addToPickaxeTag(ModStairs.CHISELED_STONE_BRICKS_STAIRS);
-        addToPickaxeTag(ModSlabs.NETHERRACK_SLAB);
-        addToPickaxeTag(ModStairs.NETHERRACK_STAIRS);
-        addToPickaxeTag(ModStairs.CUT_SANDSTONE_STAIRS);
-        addToPickaxeTag(ModSlabs.CHISELED_SANDSTONE_SLAB);
-        addToPickaxeTag(ModStairs.CHISELED_SANDSTONE_STAIRS);
 
 
     }

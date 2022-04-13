@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "xoverhaul:polished_diorite_walls"
+    ]
+  },
+  "criteria": {
+    "has_polished_diorite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:polished_diorite"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "xoverhaul:polished_diorite_walls"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_polished_diorite",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,11 +1,26 @@
 {
   "replace": false,
   "values": [
-    "xoverhaul:cut_sandstone_walls",
-    "xoverhaul:stone_walls",
-    "xoverhaul:smooth_sandstone_walls",
     "xoverhaul:chiseled_sandstone_walls",
+    "xoverhaul:cut_sandstone_walls",
+    "xoverhaul:smooth_stone_walls",
+    "xoverhaul:cracked_stone_bricks_walls",
+    "xoverhaul:smooth_sandstone_walls",
+    "xoverhaul:cracked_polished_blackstone_bricks_walls",
+    "xoverhaul:smooth_red_sandstone_walls",
+    "xoverhaul:polished_diorite_walls",
+    "xoverhaul:polished_andesite_walls",
+    "xoverhaul:end_stone_walls",
+    "xoverhaul:netherrack_walls",
+    "xoverhaul:purpur_block_walls",
+    "xoverhaul:basalt_walls",
     "xoverhaul:bedrock_walls",
-    "xoverhaul:netherrack_walls"
+    "xoverhaul:polished_granite_walls",
+    "xoverhaul:chiseled_polished_blackstone_walls",
+    "xoverhaul:cut_red_sandstone_walls",
+    "xoverhaul:chiseled_stone_bricks_walls",
+    "xoverhaul:obsidian_walls",
+    "xoverhaul:chiseled_red_sandstone_walls",
+    "xoverhaul:stone_walls"
   ]
 }

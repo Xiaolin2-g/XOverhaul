@@ -48,9 +48,7 @@ public class DatagenGlobals {
 
     }
 
-
-
-    private static void registerSlabs(){
+    private static void registerConcreteSlabs(){
         SLABS.put(Blocks.WHITE_CONCRETE, ModSlabs.WHITE_CONCRETE_SLAB);
         SLABS.put(Blocks.ORANGE_CONCRETE, ModSlabs.ORANGE_CONCRETE_SLAB);
         SLABS.put(Blocks.MAGENTA_CONCRETE, ModSlabs.MAGENTA_CONCRETE_SLAB);
@@ -67,15 +65,34 @@ public class DatagenGlobals {
         SLABS.put(Blocks.GREEN_CONCRETE, ModSlabs.GREEN_CONCRETE_SLAB);
         SLABS.put(Blocks.RED_CONCRETE, ModSlabs.RED_CONCRETE_SLAB);
         SLABS.put(Blocks.BLACK_CONCRETE, ModSlabs.BLACK_CONCRETE_SLAB);
+    }
+
+
+    private static void registerSlabs(){
+        registerConcreteSlabs();
+
         SLABS.put(Blocks.DIRT, ModSlabs.DIRT_SLAB);
         SLABS.put(Blocks.BEDROCK, ModSlabs.BEDROCK_SLAB);
         SLABS.put(Blocks.CRACKED_STONE_BRICKS, ModSlabs.CRACKED_STONE_BRICKS_SLAB);
         SLABS.put(Blocks.CHISELED_STONE_BRICKS, ModSlabs.CHISELED_STONE_BRICKS_SLAB);
         SLABS.put(Blocks.NETHERRACK, ModSlabs.NETHERRACK_SLAB);
         SLABS.put(Blocks.CHISELED_SANDSTONE, ModSlabs.CHISELED_SANDSTONE_SLAB);
+        SLABS.put(Blocks.CHISELED_RED_SANDSTONE, ModSlabs.CHISELED_RED_SANDSTONE_SLAB);
+        SLABS.put(Blocks.END_STONE, ModSlabs.END_STONE_SLAB);
+        SLABS.put(Blocks.BASALT, ModSlabs.BASALT_SLAB);
+        SLABS.put(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, ModSlabs.CRACKED_POLISHED_BLACKSTONE_BRICKS_SLAB);
+        SLABS.put(Blocks.CHISELED_POLISHED_BLACKSTONE, ModSlabs.CHISELED_POLISHED_BLACKSTONE_SLAB);
+
+
+
+
+
+
+        SLABS.put(Blocks.OBSIDIAN, ModSlabs.OBSIDIAN_SLAB);
     }
 
-    private static void registerStairs(){
+
+    private static void registerConcreteStairs(){
         STAIRS.put(Blocks.WHITE_CONCRETE, ModStairs.WHITE_CONCRETE_STAIRS);
         STAIRS.put(Blocks.ORANGE_CONCRETE, ModStairs.ORANGE_CONCRETE_STAIRS);
         STAIRS.put(Blocks.MAGENTA_CONCRETE, ModStairs.MAGENTA_CONCRETE_STAIRS);
@@ -92,6 +109,12 @@ public class DatagenGlobals {
         STAIRS.put(Blocks.GREEN_CONCRETE, ModStairs.GREEN_CONCRETE_STAIRS);
         STAIRS.put(Blocks.RED_CONCRETE, ModStairs.RED_CONCRETE_STAIRS);
         STAIRS.put(Blocks.BLACK_CONCRETE, ModStairs.BLACK_CONCRETE_STAIRS);
+    }
+
+    private static void registerStairs(){
+
+        registerConcreteStairs();
+
         STAIRS.put(Blocks.BEDROCK, ModStairs.BEDROCK_STAIRS);
         STAIRS.put(Blocks.SMOOTH_STONE, ModStairs.SMOOTH_STONE_STAIRS);
         STAIRS.put(Blocks.CRACKED_STONE_BRICKS, ModStairs.CRACKED_STONE_BRICKS_STAIRS);
@@ -100,6 +123,18 @@ public class DatagenGlobals {
         STAIRS.put(Blocks.CUT_SANDSTONE, ModStairs.CUT_SANDSTONE_STAIRS);
         STAIRS.put(Blocks.CHISELED_SANDSTONE, ModStairs.CHISELED_SANDSTONE_STAIRS);
         STAIRS.put(Blocks.CUT_RED_SANDSTONE, ModStairs.CUT_RED_SANDSTONE_STAIRS);
+        STAIRS.put(Blocks.CHISELED_RED_SANDSTONE, ModStairs.CHISELED_RED_SANDSTONE_STAIRS);
+        STAIRS.put(Blocks.END_STONE, ModStairs.END_STONE_STAIRS);
+        STAIRS.put(Blocks.BASALT, ModStairs.BASALT_STAIRS);
+        STAIRS.put(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, ModStairs.CRACKED_POLISHED_BLACKSTONE_BRICKS_STAIRS);
+        STAIRS.put(Blocks.CHISELED_POLISHED_BLACKSTONE, ModStairs.CHISELED_POLISHED_BLACKSTONE_STAIRS);
+
+
+
+
+
+
+        STAIRS.put(Blocks.OBSIDIAN, ModStairs.OBSIDIAN_STAIRS);
 
     }
 
@@ -107,11 +142,30 @@ public class DatagenGlobals {
         WALLS.put(Blocks.BEDROCK, ModWalls.BEDROCK_WALLS);
         WALLS.put(Blocks.STONE, ModWalls.STONE_WALLS);
         WALLS.put(Blocks.SMOOTH_STONE, ModWalls.SMOOTH_STONE_WALLS);
+        WALLS.put(Blocks.CRACKED_STONE_BRICKS, ModWalls.CRACKED_STONE_BRICKS_WALLS);
+        WALLS.put(Blocks.CHISELED_STONE_BRICKS, ModWalls.CHISELED_STONE_BRICKS_WALLS);
         WALLS.put(Blocks.NETHERRACK, ModWalls.NETHERRACK_WALLS);
         WALLS.put(Blocks.CUT_SANDSTONE, ModWalls.CUT_SANDSTONE_WALLS);
         WALLS.put(Blocks.SMOOTH_SANDSTONE, ModWalls.SMOOTH_SANDSTONE_WALLS);
         WALLS.put(Blocks.CHISELED_SANDSTONE, ModWalls.CHISELED_SANDSTONE_WALLS);
         WALLS.put(Blocks.CUT_RED_SANDSTONE, ModWalls.CUT_RED_SANDSTONE_WALLS);
+        WALLS.put(Blocks.SMOOTH_RED_SANDSTONE, ModWalls.SMOOTH_RED_SANDSTONE_WALLS);
+        WALLS.put(Blocks.CHISELED_RED_SANDSTONE, ModWalls.CHISELED_RED_SANDSTONE_WALLS);
+        WALLS.put(Blocks.END_STONE, ModWalls.END_STONE_WALLS);
+        WALLS.put(Blocks.POLISHED_GRANITE, ModWalls.POLISHED_GRANITE_WALLS);
+        WALLS.put(Blocks.POLISHED_DIORITE, ModWalls.POLISHED_DIORITE_WALLS);
+        WALLS.put(Blocks.POLISHED_ANDESITE, ModWalls.POLISHED_ANDESITE_WALLS);
+        WALLS.put(Blocks.PURPUR_BLOCK, ModWalls.PURPUR_BLOCK_WALLS);
+        WALLS.put(Blocks.BASALT, ModWalls.BASALT_WALLS);
+        WALLS.put(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS, ModWalls.CRACKED_POLISHED_BLACKSTONE_BRICKS_WALLS);
+        WALLS.put(Blocks.CHISELED_POLISHED_BLACKSTONE, ModWalls.CHISELED_POLISHED_BLACKSTONE_WALLS);
+
+
+
+
+
+
+        WALLS.put(Blocks.OBSIDIAN, ModWalls.OBSIDIAN_WALLS);
     }
 
     private static void registerPlants(){

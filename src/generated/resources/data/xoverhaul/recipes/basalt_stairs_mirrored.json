@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " ##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:basalt"
+    }
+  },
+  "result": {
+    "item": "xoverhaul:basalt_stairs",
+    "count": 4
+  }
+}

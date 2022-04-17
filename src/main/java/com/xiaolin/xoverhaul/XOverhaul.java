@@ -16,6 +16,8 @@ import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
 
 import javax.xml.crypto.Data;
+import java.sql.Array;
+import java.util.Map;
 
 
 public class XOverhaul implements ModInitializer {
@@ -59,7 +61,7 @@ public class XOverhaul implements ModInitializer {
 	}
 
 	private void blockRenderLayerMapCutout(){
-		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), DatagenGlobals.CROSS.toArray(new Block[0]));
+		BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), DatagenGlobals.CROSS.toArray(new Block[DatagenGlobals.CROSS.size()]));
 	}
 
 

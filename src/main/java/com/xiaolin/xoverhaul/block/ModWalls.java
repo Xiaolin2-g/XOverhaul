@@ -69,6 +69,26 @@ public class ModWalls extends BlockInitBase {
     public static final Block CHISELED_POLISHED_BLACKSTONE_WALLS = registerBlock("chiseled_polished_blackstone_walls",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_POLISHED_BLACKSTONE)));
 
+    public static final Block QUARTZ_BLOCK_WALLS = registerBlock("quartz_block_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BLOCK)));
+
+    public static final Block CHISELED_QUARTZ_BLOCK_WALLS = registerBlock("chiseled_quartz_block_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_QUARTZ_BLOCK)));
+
+    public static final Block SMOOTH_QUARTZ_WALLS = registerBlock("smooth_quartz_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.SMOOTH_QUARTZ)));
+
+    public static final Block QUARTZ_BRICKS_WALLS = registerBlock("quartz_bricks_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)));
+
+    public static final Block CRACKED_NETHER_BRICKS_WALLS = registerBlock("cracked_nether_bricks_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CRACKED_NETHER_BRICKS)));
+
+    public static final Block CHISELED_NETHER_BRICKS_WALLS = registerBlock("chiseled_nether_bricks_walls",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_NETHER_BRICKS)));
+
+
+
 
 
 

@@ -1,6 +1,7 @@
 package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.block.ModBlocks;
+import com.xiaolin.xoverhaul.block.ModPlants;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTablesProvider;
@@ -59,7 +60,12 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTablesProvider {
 
     private void crossDrops(){
         for(Block block : DatagenGlobals.CROSS){
-            addDrop(block);
+            if(block != ModPlants.CRIMSON_SPROUTS){
+                addDrop(block);
+            }
+            else{
+                addVinePlantDrop(block, block);
+            }
         }
     }
 

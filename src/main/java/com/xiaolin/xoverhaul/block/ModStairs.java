@@ -123,6 +123,23 @@ public class ModStairs extends BlockInitBase {
             new BaseStairs(Blocks.CHISELED_POLISHED_BLACKSTONE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.CHISELED_POLISHED_BLACKSTONE)));
 
+    public static final Block CHISELED_QUARTZ_BLOCK_STAIRS = registerBlock("chiseled_quartz_block_stairs",
+            new BaseStairs(Blocks.CHISELED_QUARTZ_BLOCK.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CHISELED_QUARTZ_BLOCK)));
+
+    public static final Block QUARTZ_BRICKS_STAIRS = registerBlock("quartz_bricks_stairs",
+            new BaseStairs(Blocks.QUARTZ_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)));
+
+    public static final Block CRACKED_NETHER_BRICKS_STAIRS = registerBlock("cracked_nether_bricks_stairs",
+            new BaseStairs(Blocks.CRACKED_NETHER_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CRACKED_NETHER_BRICKS)));
+
+    public static final Block CHISELED_NETHER_BRICKS_STAIRS = registerBlock("chiseled_nether_bricks_stairs",
+            new BaseStairs(Blocks.CHISELED_NETHER_BRICKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CHISELED_NETHER_BRICKS)));
+
+
 
 
 

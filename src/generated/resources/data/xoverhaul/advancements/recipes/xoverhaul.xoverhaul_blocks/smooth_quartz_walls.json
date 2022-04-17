@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "xoverhaul:smooth_quartz_walls"
+    ]
+  },
+  "criteria": {
+    "has_smooth_quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:smooth_quartz"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "xoverhaul:smooth_quartz_walls"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_smooth_quartz",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -62,10 +62,10 @@ public class ModSlabs extends BlockInitBase {
     public static final Block BEDROCK_SLAB = registerBlock("bedrock_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK)));
 
-    public static final Block CRACKED_STONE_BRICKS_SLAB = registerBlock("cracked_stone_bricks_slab",
+    public static final Block CRACKED_STONE_BRICK_SLAB = registerBlock("cracked_stone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CRACKED_STONE_BRICKS)));
 
-    public static final Block CHISELED_STONE_BRICKS_SLAB = registerBlock("chiseled_stone_bricks_slab",
+    public static final Block CHISELED_STONE_BRICK_SLAB = registerBlock("chiseled_stone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)));
 
     public static final Block NETHERRACK_SLAB = registerBlock("netherrack_slab",
@@ -83,7 +83,7 @@ public class ModSlabs extends BlockInitBase {
     public static final Block BASALT_SLAB = registerBlock("basalt_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.BASALT)));
 
-    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICKS_SLAB = registerBlock("cracked_polished_blackstone_bricks_slab",
+    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_SLAB = registerBlock("cracked_polished_blackstone_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)));
 
     public static final Block CHISELED_POLISHED_BLACKSTONE_SLAB = registerBlock("chiseled_polished_blackstone_slab",
@@ -95,18 +95,11 @@ public class ModSlabs extends BlockInitBase {
     public static final Block QUARTZ_BRICKS_SLAB = registerBlock("quartz_bricks_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)));
 
-    public static final Block CRACKED_NETHER_BRICKS_SLAB = registerBlock("cracked_nether_bricks_slab",
+    public static final Block CRACKED_NETHER_BRICK_SLAB = registerBlock("cracked_nether_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CRACKED_NETHER_BRICKS)));
 
-    public static final Block CHISELED_NETHER_BRICKS_SLAB = registerBlock("chiseled_nether_bricks_slab",
+    public static final Block CHISELED_NETHER_BRICK_SLAB = registerBlock("chiseled_nether_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_NETHER_BRICKS)));
-
-
-
-
-
-
-
 
     public static final Block OBSIDIAN_SLAB = registerBlock("obsidian_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN)));

@@ -4,6 +4,7 @@ import com.xiaolin.xoverhaul.block.ModBlocks;
 import com.xiaolin.xoverhaul.block.ModPlants;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTablesProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.DataCache;
@@ -16,7 +17,7 @@ import java.io.IOException;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-public class ModBlockLootTablesProvider extends FabricBlockLootTablesProvider {
+public class ModBlockLootTablesProvider extends FabricBlockLootTableProvider {
     protected ModBlockLootTablesProvider(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
     }

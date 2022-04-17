@@ -79,11 +79,11 @@ public class ModStairs extends BlockInitBase {
             new BaseStairs(Blocks.SMOOTH_STONE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.SMOOTH_STONE)));
 
-    public static final Block CRACKED_STONE_BRICKS_STAIRS = registerBlock("cracked_stone_bricks_stairs",
+    public static final Block CRACKED_STONE_BRICK_STAIRS = registerBlock("cracked_stone_brick_stairs",
             new BaseStairs(Blocks.CRACKED_STONE_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.CRACKED_STONE_BRICKS)));
 
-    public static final Block CHISELED_STONE_BRICKS_STAIRS = registerBlock("chiseled_stone_bricks_stairs",
+    public static final Block CHISELED_STONE_BRICK_STAIRS = registerBlock("chiseled_stone_brick_stairs",
             new BaseStairs(Blocks.CHISELED_STONE_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)));
 
@@ -115,7 +115,7 @@ public class ModStairs extends BlockInitBase {
             new BaseStairs(Blocks.BASALT.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.BASALT)));
 
-    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICKS_STAIRS = registerBlock("cracked_polished_blackstone_bricks_stairs",
+    public static final Block CRACKED_POLISHED_BLACKSTONE_BRICK_STAIRS = registerBlock("cracked_polished_blackstone_brick_stairs",
             new BaseStairs(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS)));
 
@@ -131,23 +131,13 @@ public class ModStairs extends BlockInitBase {
             new BaseStairs(Blocks.QUARTZ_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)));
 
-    public static final Block CRACKED_NETHER_BRICKS_STAIRS = registerBlock("cracked_nether_bricks_stairs",
+    public static final Block CRACKED_NETHER_BRICK_STAIRS = registerBlock("cracked_nether_brick_stairs",
             new BaseStairs(Blocks.CRACKED_NETHER_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.CRACKED_NETHER_BRICKS)));
 
-    public static final Block CHISELED_NETHER_BRICKS_STAIRS = registerBlock("chiseled_nether_bricks_stairs",
+    public static final Block CHISELED_NETHER_BRICK_STAIRS = registerBlock("chiseled_nether_brick_stairs",
             new BaseStairs(Blocks.CHISELED_NETHER_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.CHISELED_NETHER_BRICKS)));
-
-
-
-
-
-
-
-
-
-
 
     public static final Block OBSIDIAN_STAIRS = registerBlock("obsidian_stairs",
             new BaseStairs(Blocks.OBSIDIAN.getDefaultState(),

@@ -143,6 +143,75 @@ public class ModStairs extends BlockInitBase {
             new BaseStairs(Blocks.OBSIDIAN.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.OBSIDIAN)));
 
+    public static final Block TERRACOTA_STAIRS = registerBlock("terracota_stairs",
+            new BaseStairs(Blocks.TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+
+    public static final Block WHITE_TERRACOTA_STAIRS = registerBlock("white_terracota_stairs",
+            new BaseStairs(Blocks.WHITE_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
+
+    public static final Block ORANGE_TERRACOTA_STAIRS = registerBlock("orange_terracota_stairs",
+            new BaseStairs(Blocks.ORANGE_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
+
+    public static final Block MAGENTA_TERRACOTA_STAIRS = registerBlock("magenta_terracota_stairs",
+            new BaseStairs(Blocks.MAGENTA_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
+
+    public static final Block LIGHT_BLUE_TERRACOTA_STAIRS = registerBlock("light_blue_terracota_stairs",
+            new BaseStairs(Blocks.LIGHT_BLUE_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
+
+    public static final Block YELLOW_TERRACOTA_STAIRS = registerBlock("yellow_terracota_stairs",
+            new BaseStairs(Blocks.YELLOW_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
+
+    public static final Block LIME_TERRACOTA_STAIRS = registerBlock("lime_terracota_stairs",
+            new BaseStairs(Blocks.LIME_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
+
+    public static final Block PINK_TERRACOTA_STAIRS = registerBlock("pink_terracota_stairs",
+            new BaseStairs(Blocks.PINK_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
+
+    public static final Block GRAY_TERRACOTA_STAIRS = registerBlock("gray_terracota_stairs",
+            new BaseStairs(Blocks.GRAY_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
+
+    public static final Block LIGHT_GRAY_TERRACOTA_STAIRS = registerBlock("light_gray_terracota_stairs",
+            new BaseStairs(Blocks.LIGHT_GRAY_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
+
+    public static final Block CYAN_TERRACOTA_STAIRS = registerBlock("cyan_terracota_stairs",
+            new BaseStairs(Blocks.CYAN_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
+
+    public static final Block PURPLE_TERRACOTA_STAIRS = registerBlock("purple_terracota_stairs",
+            new BaseStairs(Blocks.PURPLE_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
+
+    public static final Block BLUE_TERRACOTA_STAIRS = registerBlock("blue_terracota_stairs",
+            new BaseStairs(Blocks.BLUE_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
+
+    public static final Block BROWN_TERRACOTA_STAIRS = registerBlock("brown_terracota_stairs",
+            new BaseStairs(Blocks.BROWN_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
+
+    public static final Block GREEN_TERRACOTA_STAIRS = registerBlock("green_terracota_stairs",
+            new BaseStairs(Blocks.GREEN_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
+
+    public static final Block RED_TERRACOTA_STAIRS = registerBlock("red_terracota_stairs",
+            new BaseStairs(Blocks.RED_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
+
+    public static final Block BLACK_TERRACOTA_STAIRS = registerBlock("black_terracota_stairs",
+            new BaseStairs(Blocks.BLACK_TERRACOTTA.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
+
+
 
     public static void registerModStairs(){
         XOverhaul.LOGGER.info("Registering Mod Stairs for " + XOverhaul.MOD_ID);

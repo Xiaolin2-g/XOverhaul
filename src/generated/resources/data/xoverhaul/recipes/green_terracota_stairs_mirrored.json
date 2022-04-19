@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " ##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:green_terracotta"
+    }
+  },
+  "result": {
+    "item": "xoverhaul:green_terracota_stairs",
+    "count": 4
+  }
+}

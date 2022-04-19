@@ -96,6 +96,106 @@ public class ModWalls extends BlockInitBase {
     public static final Block OBSIDIAN_WALL = registerBlock("obsidian_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN)));
 
+    public static final Block WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
+
+    public static final Block ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_CONCRETE)));
+
+    public static final Block MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_CONCRETE)));
+
+    public static final Block LIGHT_BLUE_CONCRETE_WALL = registerBlock("light_blue_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_CONCRETE)));
+
+    public static final Block YELLOW_CONCRETE_WALL = registerBlock("yellow_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.YELLOW_CONCRETE)));
+
+    public static final Block LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LIME_CONCRETE)));
+
+    public static final Block PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.PINK_CONCRETE)));
+
+    public static final Block GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.GRAY_CONCRETE)));
+
+    public static final Block LIGHT_GRAY_CONCRETE_WALL = registerBlock("light_gray_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_CONCRETE)));
+
+    public static final Block CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CYAN_CONCRETE)));
+
+    public static final Block PURPLE_CONCRETE_WALL = registerBlock("purple_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.PURPLE_CONCRETE)));
+
+    public static final Block BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BLUE_CONCRETE)));
+
+    public static final Block BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BROWN_CONCRETE)));
+
+    public static final Block GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.GREEN_CONCRETE)));
+
+    public static final Block RED_CONCRETE_WALL = registerBlock("red_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.RED_CONCRETE)));
+
+    public static final Block BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BLACK_CONCRETE)));
+
+    public static final Block TERRACOTA_WALL = registerBlock("terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+
+    public static final Block WHITE_TERRACOTA_WALL = registerBlock("white_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
+
+    public static final Block ORANGE_TERRACOTA_WALL = registerBlock("orange_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
+
+    public static final Block MAGENTA_TERRACOTA_WALL = registerBlock("magenta_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
+
+    public static final Block LIGHT_BLUE_TERRACOTA_WALL = registerBlock("light_blue_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
+
+    public static final Block YELLOW_TERRACOTA_WALL = registerBlock("yellow_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
+
+    public static final Block LIME_TERRACOTA_WALL = registerBlock("lime_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
+
+    public static final Block PINK_TERRACOTA_WALL = registerBlock("pink_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
+
+    public static final Block GRAY_TERRACOTA_WALL = registerBlock("gray_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
+
+    public static final Block LIGHT_GRAY_TERRACOTA_WALL = registerBlock("light_gray_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
+
+    public static final Block CYAN_TERRACOTA_WALL = registerBlock("cyan_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
+
+    public static final Block PURPLE_TERRACOTA_WALL = registerBlock("purple_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
+
+    public static final Block BLUE_TERRACOTA_WALL = registerBlock("blue_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
+
+    public static final Block BROWN_TERRACOTA_WALL = registerBlock("brown_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
+
+    public static final Block GREEN_TERRACOTA_WALL = registerBlock("green_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
+
+    public static final Block RED_TERRACOTA_WALL = registerBlock("red_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
+
+    public static final Block BLACK_TERRACOTA_WALL = registerBlock("black_terracota_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
+
+
 
 
     public static void registerModWalls(){

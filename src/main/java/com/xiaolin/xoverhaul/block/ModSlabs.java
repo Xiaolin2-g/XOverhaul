@@ -104,6 +104,58 @@ public class ModSlabs extends BlockInitBase {
     public static final Block OBSIDIAN_SLAB = registerBlock("obsidian_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN)));
 
+    public static final Block TERRACOTA_SLAB = registerBlock("terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.TERRACOTTA)));
+
+    public static final Block WHITE_TERRACOTA_SLAB = registerBlock("white_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.WHITE_TERRACOTTA)));
+
+    public static final Block ORANGE_TERRACOTA_SLAB = registerBlock("orange_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_TERRACOTTA)));
+
+    public static final Block MAGENTA_TERRACOTA_SLAB = registerBlock("magenta_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_TERRACOTTA)));
+
+    public static final Block LIGHT_BLUE_TERRACOTA_SLAB = registerBlock("light_blue_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_BLUE_TERRACOTTA)));
+
+    public static final Block YELLOW_TERRACOTA_SLAB = registerBlock("yellow_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.YELLOW_TERRACOTTA)));
+
+    public static final Block LIME_TERRACOTA_SLAB = registerBlock("lime_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LIME_TERRACOTTA)));
+
+    public static final Block PINK_TERRACOTA_SLAB = registerBlock("pink_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.PINK_TERRACOTTA)));
+
+    public static final Block GRAY_TERRACOTA_SLAB = registerBlock("gray_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.GRAY_TERRACOTTA)));
+
+    public static final Block LIGHT_GRAY_TERRACOTA_SLAB = registerBlock("light_gray_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.LIGHT_GRAY_TERRACOTTA)));
+
+    public static final Block CYAN_TERRACOTA_SLAB = registerBlock("cyan_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.CYAN_TERRACOTTA)));
+
+    public static final Block PURPLE_TERRACOTA_SLAB = registerBlock("purple_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.PURPLE_TERRACOTTA)));
+
+    public static final Block BLUE_TERRACOTA_SLAB = registerBlock("blue_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BLUE_TERRACOTTA)));
+
+    public static final Block BROWN_TERRACOTA_SLAB = registerBlock("brown_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BROWN_TERRACOTTA)));
+
+    public static final Block GREEN_TERRACOTA_SLAB = registerBlock("green_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.GREEN_TERRACOTTA)));
+
+    public static final Block RED_TERRACOTA_SLAB = registerBlock("red_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.RED_TERRACOTTA)));
+
+    public static final Block BLACK_TERRACOTA_SLAB = registerBlock("black_terracota_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.BLACK_TERRACOTTA)));
+
+
 
 
 

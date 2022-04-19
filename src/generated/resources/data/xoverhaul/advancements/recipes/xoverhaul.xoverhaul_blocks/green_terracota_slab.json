@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "xoverhaul:green_terracota_slab"
+    ]
+  },
+  "criteria": {
+    "has_green_terracotta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:green_terracotta"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "xoverhaul:green_terracota_slab"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_green_terracotta",
+      "has_the_recipe"
+    ]
+  ]
+}

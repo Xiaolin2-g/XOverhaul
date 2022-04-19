@@ -64,8 +64,8 @@ public class XOverhaul implements ModInitializer {
 		return new Block[]{
 				ModPlants.ENDER_FLOWER,
 				ModPlants.MAGENTA_TULIP,
-				ModPlants.YELLOW_TULIP,
 				ModPlants.LIGHT_BLUE_TULIP,
+				ModPlants.YELLOW_TULIP,
 				ModPlants.LIME_TULIP,
 				ModPlants.GRAY_TULIP,
 				ModPlants.LIGHT_GRAY_TULIP,

@@ -65,9 +65,29 @@ public class DatagenGlobals {
         SLABS.put(Blocks.BLACK_CONCRETE, ModSlabs.BLACK_CONCRETE_SLAB);
     }
 
+    private static void registerTerracotaSlabs(){
+        SLABS.put(Blocks.TERRACOTTA, ModSlabs.TERRACOTA_SLAB);
+        SLABS.put(Blocks.WHITE_TERRACOTTA, ModSlabs.WHITE_TERRACOTA_SLAB);
+        SLABS.put(Blocks.ORANGE_TERRACOTTA, ModSlabs.ORANGE_TERRACOTA_SLAB);
+        SLABS.put(Blocks.MAGENTA_TERRACOTTA, ModSlabs.MAGENTA_TERRACOTA_SLAB);
+        SLABS.put(Blocks.LIGHT_BLUE_TERRACOTTA, ModSlabs.LIGHT_BLUE_TERRACOTA_SLAB);
+        SLABS.put(Blocks.YELLOW_TERRACOTTA, ModSlabs.YELLOW_TERRACOTA_SLAB);
+        SLABS.put(Blocks.LIME_TERRACOTTA, ModSlabs.LIME_TERRACOTA_SLAB);
+        SLABS.put(Blocks.PINK_TERRACOTTA, ModSlabs.PINK_TERRACOTA_SLAB);
+        SLABS.put(Blocks.GRAY_TERRACOTTA, ModSlabs.GRAY_TERRACOTA_SLAB);
+        SLABS.put(Blocks.LIGHT_GRAY_TERRACOTTA, ModSlabs.LIGHT_GRAY_TERRACOTA_SLAB);
+        SLABS.put(Blocks.CYAN_TERRACOTTA, ModSlabs.CYAN_TERRACOTA_SLAB);
+        SLABS.put(Blocks.PURPLE_TERRACOTTA, ModSlabs.PURPLE_TERRACOTA_SLAB);
+        SLABS.put(Blocks.BLUE_TERRACOTTA, ModSlabs.BLUE_TERRACOTA_SLAB);
+        SLABS.put(Blocks.BROWN_TERRACOTTA, ModSlabs.BROWN_TERRACOTA_SLAB);
+        SLABS.put(Blocks.GREEN_TERRACOTTA, ModSlabs.GREEN_TERRACOTA_SLAB);
+        SLABS.put(Blocks.RED_TERRACOTTA, ModSlabs.RED_TERRACOTA_SLAB);
+        SLABS.put(Blocks.BLACK_TERRACOTTA, ModSlabs.BLACK_TERRACOTA_SLAB);
+    }
 
     private static void registerSlabs() {
         registerConcreteSlabs();
+        registerTerracotaSlabs();
 
         SLABS.put(Blocks.DIRT, ModSlabs.DIRT_SLAB);
         SLABS.put(Blocks.BEDROCK, ModSlabs.BEDROCK_SLAB);
@@ -107,9 +127,30 @@ public class DatagenGlobals {
         STAIRS.put(Blocks.BLACK_CONCRETE, ModStairs.BLACK_CONCRETE_STAIRS);
     }
 
+    private static void registerTerracotaStairs(){
+        STAIRS.put(Blocks.TERRACOTTA, ModStairs.TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.WHITE_TERRACOTTA, ModStairs.WHITE_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.ORANGE_TERRACOTTA, ModStairs.ORANGE_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.MAGENTA_TERRACOTTA, ModStairs.MAGENTA_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.LIGHT_BLUE_TERRACOTTA, ModStairs.LIGHT_BLUE_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.YELLOW_TERRACOTTA, ModStairs.YELLOW_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.LIME_TERRACOTTA, ModStairs.LIME_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.PINK_TERRACOTTA, ModStairs.PINK_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.GRAY_TERRACOTTA, ModStairs.GRAY_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.LIGHT_GRAY_TERRACOTTA, ModStairs.LIGHT_GRAY_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.CYAN_TERRACOTTA, ModStairs.CYAN_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.PURPLE_TERRACOTTA, ModStairs.PURPLE_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.BLUE_TERRACOTTA, ModStairs.BLUE_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.BROWN_TERRACOTTA, ModStairs.BROWN_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.GREEN_TERRACOTTA, ModStairs.GREEN_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.RED_TERRACOTTA, ModStairs.RED_TERRACOTA_STAIRS);
+        STAIRS.put(Blocks.BLACK_TERRACOTTA, ModStairs.BLACK_TERRACOTA_STAIRS);
+    }
+
     private static void registerStairs() {
 
         registerConcreteStairs();
+        registerTerracotaStairs();
 
         STAIRS.put(Blocks.BEDROCK, ModStairs.BEDROCK_STAIRS);
         STAIRS.put(Blocks.SMOOTH_STONE, ModStairs.SMOOTH_STONE_STAIRS);
@@ -132,7 +173,50 @@ public class DatagenGlobals {
 
     }
 
+    private static void registerConcreteWalls(){
+        WALLS.put(Blocks.WHITE_CONCRETE, ModWalls.WHITE_CONCRETE_WALL);
+        WALLS.put(Blocks.ORANGE_CONCRETE, ModWalls.ORANGE_CONCRETE_WALL);
+        WALLS.put(Blocks.MAGENTA_CONCRETE, ModWalls.MAGENTA_CONCRETE_WALL);
+        WALLS.put(Blocks.LIGHT_BLUE_CONCRETE, ModWalls.LIGHT_BLUE_CONCRETE_WALL);
+        WALLS.put(Blocks.YELLOW_CONCRETE, ModWalls.YELLOW_CONCRETE_WALL);
+        WALLS.put(Blocks.LIME_CONCRETE, ModWalls.LIME_CONCRETE_WALL);
+        WALLS.put(Blocks.PINK_CONCRETE, ModWalls.PINK_CONCRETE_WALL);
+        WALLS.put(Blocks.GRAY_CONCRETE, ModWalls.GRAY_CONCRETE_WALL);
+        WALLS.put(Blocks.LIGHT_GRAY_CONCRETE, ModWalls.LIGHT_GRAY_CONCRETE_WALL);
+        WALLS.put(Blocks.CYAN_CONCRETE, ModWalls.CYAN_CONCRETE_WALL);
+        WALLS.put(Blocks.PURPLE_CONCRETE, ModWalls.PURPLE_CONCRETE_WALL);
+        WALLS.put(Blocks.BLUE_CONCRETE, ModWalls.BLUE_CONCRETE_WALL);
+        WALLS.put(Blocks.BROWN_CONCRETE, ModWalls.BROWN_CONCRETE_WALL);
+        WALLS.put(Blocks.GREEN_CONCRETE, ModWalls.GREEN_CONCRETE_WALL);
+        WALLS.put(Blocks.RED_CONCRETE, ModWalls.RED_CONCRETE_WALL);
+        WALLS.put(Blocks.BLACK_CONCRETE, ModWalls.BLACK_CONCRETE_WALL);
+    }
+
+    private static void registerTerracotaWalls(){
+        WALLS.put(Blocks.TERRACOTTA, ModWalls.TERRACOTA_WALL);
+        WALLS.put(Blocks.WHITE_TERRACOTTA, ModWalls.WHITE_TERRACOTA_WALL);
+        WALLS.put(Blocks.ORANGE_TERRACOTTA, ModWalls.ORANGE_TERRACOTA_WALL);
+        WALLS.put(Blocks.MAGENTA_TERRACOTTA, ModWalls.MAGENTA_TERRACOTA_WALL);
+        WALLS.put(Blocks.LIGHT_BLUE_TERRACOTTA, ModWalls.LIGHT_BLUE_TERRACOTA_WALL);
+        WALLS.put(Blocks.YELLOW_TERRACOTTA, ModWalls.YELLOW_TERRACOTA_WALL);
+        WALLS.put(Blocks.LIME_TERRACOTTA, ModWalls.LIME_TERRACOTA_WALL);
+        WALLS.put(Blocks.PINK_TERRACOTTA, ModWalls.PINK_TERRACOTA_WALL);
+        WALLS.put(Blocks.GRAY_TERRACOTTA, ModWalls.GRAY_TERRACOTA_WALL);
+        WALLS.put(Blocks.LIGHT_GRAY_TERRACOTTA, ModWalls.LIGHT_GRAY_TERRACOTA_WALL);
+        WALLS.put(Blocks.CYAN_TERRACOTTA, ModWalls.CYAN_TERRACOTA_WALL);
+        WALLS.put(Blocks.PURPLE_TERRACOTTA, ModWalls.PURPLE_TERRACOTA_WALL);
+        WALLS.put(Blocks.BLUE_TERRACOTTA, ModWalls.BLUE_TERRACOTA_WALL);
+        WALLS.put(Blocks.BROWN_TERRACOTTA, ModWalls.BROWN_TERRACOTA_WALL);
+        WALLS.put(Blocks.GREEN_TERRACOTTA, ModWalls.GREEN_TERRACOTA_WALL);
+        WALLS.put(Blocks.RED_TERRACOTTA, ModWalls.RED_TERRACOTA_WALL);
+        WALLS.put(Blocks.BLACK_TERRACOTTA, ModWalls.BLACK_TERRACOTA_WALL);
+    }
+
     private static void registerWalls() {
+
+        registerConcreteWalls();
+        registerTerracotaWalls();
+
         WALLS.put(Blocks.BEDROCK, ModWalls.BEDROCK_WALL);
         WALLS.put(Blocks.STONE, ModWalls.STONE_WALL);
         WALLS.put(Blocks.SMOOTH_STONE, ModWalls.SMOOTH_STONE_WALL);

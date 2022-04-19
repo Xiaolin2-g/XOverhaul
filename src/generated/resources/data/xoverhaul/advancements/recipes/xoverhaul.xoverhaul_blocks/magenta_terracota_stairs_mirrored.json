@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:magenta_terracota_stairs_mirrored"
+    ]
+  },
+  "criteria": {
+    "has_magenta_terracotta": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:magenta_terracotta"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:magenta_terracota_stairs_mirrored"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_magenta_terracotta",
+      "has_the_recipe"
+    ]
+  ]
+}

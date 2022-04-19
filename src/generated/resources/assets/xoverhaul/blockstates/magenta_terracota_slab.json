@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "xoverhaul:block/magenta_terracota_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/magenta_terracotta"
+    },
+    "type=top": {
+      "model": "xoverhaul:block/magenta_terracota_slab_top"
+    }
+  }
+}

@@ -91,7 +91,8 @@ public class ModBlockStateDefinitionProvider extends FabricModelProvider {
     private void generateSlabs(BlockStateModelGenerator blockStateModelGenerator) {
         for (Map.Entry<Block, Block> slabs : DatagenGlobals.SLABS.entrySet()) {
 
-            if(slabs.getValue() != ModSlabs.BASALT_SLAB){
+            if(slabs.getValue() != ModSlabs.BASALT_SLAB)
+            {
 
                 ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
                         .registerSlab(slabs.getKey(), slabs.getValue());
@@ -108,7 +109,8 @@ public class ModBlockStateDefinitionProvider extends FabricModelProvider {
 
         for (Map.Entry<Block, Block> stairs : DatagenGlobals.STAIRS.entrySet()) {
 
-            if(stairs.getValue() != ModStairs.BASALT_STAIRS){
+            if(stairs.getValue() != ModStairs.BASALT_STAIRS)
+            {
 
                 ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
                         .registerStairs(stairs.getKey(), stairs.getValue());
@@ -129,7 +131,8 @@ public class ModBlockStateDefinitionProvider extends FabricModelProvider {
                     wall.getValue() != ModWalls.BASALT_WALL &&
                     wall.getValue() != ModWalls.SMOOTH_SANDSTONE_WALL &&
                     wall.getValue() != ModWalls.SMOOTH_RED_SANDSTONE_WALL &&
-                    wall.getValue() != ModWalls.QUARTZ_BLOCK_WALL)
+                    wall.getValue() != ModWalls.QUARTZ_BLOCK_WALL
+            )
             {
 
                 ((BlockStateModelGeneratorInterface)blockStateModelGenerator)

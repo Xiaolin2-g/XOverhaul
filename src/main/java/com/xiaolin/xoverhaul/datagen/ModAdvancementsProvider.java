@@ -3,7 +3,7 @@ package com.xiaolin.xoverhaul.datagen;
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementsProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.criterion.OnKilledCriterion;
@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Consumer;
 
-public class ModAdvancementsProvider extends FabricAdvancementsProvider {
+public class ModAdvancementsProvider extends FabricAdvancementProvider {
     protected ModAdvancementsProvider(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
     }

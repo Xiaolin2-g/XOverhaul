@@ -1,11 +1,13 @@
 package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.XOverhaul;
-import com.xiaolin.xoverhaul.item.ModArmor;
+import com.xiaolin.xoverhaul.block.ModSlabs;
+import com.xiaolin.xoverhaul.block.ModStairs;
+import com.xiaolin.xoverhaul.block.ModWalls;
 import com.xiaolin.xoverhaul.util.interfaces.BlockStateModelGeneratorInterface;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockStateDefinitionProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.*;
@@ -13,7 +15,7 @@ import net.minecraft.item.Item;
 
 import java.util.Map;
 
-public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionProvider {
+public class ModBlockStateDefinitionProvider extends FabricModelProvider {
     public ModBlockStateDefinitionProvider(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
     }
@@ -45,7 +47,6 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
     }
 
     private void generateArmors(ItemModelGenerator itemModelGenerator){
-        XOverhaul.LOGGER.info("Armors: ");
 
         for (Item armor : DatagenGlobals.ARMORS) {
 
@@ -88,14 +89,16 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
     }
 
     private void generateSlabs(BlockStateModelGenerator blockStateModelGenerator) {
-
         for (Map.Entry<Block, Block> slabs : DatagenGlobals.SLABS.entrySet()) {
 
-            ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
-                    .registerSlab(slabs.getKey(), slabs.getValue());
+            if(slabs.getValue() != ModSlabs.BASALT_SLAB){
 
-            blockStateModelGenerator.registerParentedItemModel(slabs.getValue(),
-                    ModelIds.getBlockModelId(slabs.getValue()));
+                ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
+                        .registerSlab(slabs.getKey(), slabs.getValue());
+
+                blockStateModelGenerator.registerParentedItemModel(slabs.getValue(),
+                        ModelIds.getBlockModelId(slabs.getValue()));
+            }
         }
     }
 
@@ -105,13 +108,15 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
         for (Map.Entry<Block, Block> stairs : DatagenGlobals.STAIRS.entrySet()) {
 
-            ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
-                    .registerStairs(stairs.getKey(), stairs.getValue());
+            if(stairs.getValue() != ModStairs.BASALT_STAIRS){
 
-            blockStateModelGenerator
-                    .registerParentedItemModel(stairs.getValue(),
-                    ModelIds.getBlockModelId(stairs.getValue()));
+                ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
+                        .registerStairs(stairs.getKey(), stairs.getValue());
 
+                blockStateModelGenerator
+                        .registerParentedItemModel(stairs.getValue(),
+                                ModelIds.getBlockModelId(stairs.getValue()));
+            }
         }
     }
 
@@ -120,9 +125,16 @@ public class ModBlockStateDefinitionProvider extends FabricBlockStateDefinitionP
 
         for (Map.Entry<Block, Block> wall : DatagenGlobals.WALLS.entrySet()) {
 
-            ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
-                    .registerWalls(wall.getKey(), wall.getValue());
+            if(
+                    wall.getValue() != ModWalls.BASALT_WALL &&
+                    wall.getValue() != ModWalls.SMOOTH_SANDSTONE_WALL &&
+                    wall.getValue() != ModWalls.SMOOTH_RED_SANDSTONE_WALL &&
+                    wall.getValue() != ModWalls.QUARTZ_BLOCK_WALL)
+            {
 
+                ((BlockStateModelGeneratorInterface)blockStateModelGenerator)
+                        .registerWalls(wall.getKey(), wall.getValue());
+            }
         }
     }
 

@@ -12,7 +12,6 @@ import java.util.*;
 public class DatagenGlobals {
 
 
-
     public static final List<Block> BLOCKS = new ArrayList<>();
 
     public static Map<Block, Block> SLABS = new HashMap<>();
@@ -36,8 +35,7 @@ public class DatagenGlobals {
     public static final List<Item> FOODS = new ArrayList<>();
 
 
-
-    private static void registerBlocks(){
+    private static void registerBlocks() {
         BLOCKS.add(ModBlocks.DIRTY_SAND);
         BLOCKS.add(ModBlocks.PURPUR_COBBLESTONE);
         BLOCKS.add(ModBlocks.ROTTEN_FLESH_BLOCK);
@@ -48,7 +46,7 @@ public class DatagenGlobals {
 
     }
 
-    private static void registerConcreteSlabs(){
+    private static void registerConcreteSlabs() {
         SLABS.put(Blocks.WHITE_CONCRETE, ModSlabs.WHITE_CONCRETE_SLAB);
         SLABS.put(Blocks.ORANGE_CONCRETE, ModSlabs.ORANGE_CONCRETE_SLAB);
         SLABS.put(Blocks.MAGENTA_CONCRETE, ModSlabs.MAGENTA_CONCRETE_SLAB);
@@ -68,7 +66,7 @@ public class DatagenGlobals {
     }
 
 
-    private static void registerSlabs(){
+    private static void registerSlabs() {
         registerConcreteSlabs();
 
         SLABS.put(Blocks.DIRT, ModSlabs.DIRT_SLAB);
@@ -85,11 +83,12 @@ public class DatagenGlobals {
         SLABS.put(Blocks.QUARTZ_BRICKS, ModSlabs.QUARTZ_BRICKS_SLAB);
         SLABS.put(Blocks.CRACKED_NETHER_BRICKS, ModSlabs.CRACKED_NETHER_BRICK_SLAB);
         SLABS.put(Blocks.CHISELED_NETHER_BRICKS, ModSlabs.CHISELED_NETHER_BRICK_SLAB);
+        SLABS.put(Blocks.BASALT, ModSlabs.BASALT_SLAB);
         SLABS.put(Blocks.OBSIDIAN, ModSlabs.OBSIDIAN_SLAB);
     }
 
 
-    private static void registerConcreteStairs(){
+    private static void registerConcreteStairs() {
         STAIRS.put(Blocks.WHITE_CONCRETE, ModStairs.WHITE_CONCRETE_STAIRS);
         STAIRS.put(Blocks.ORANGE_CONCRETE, ModStairs.ORANGE_CONCRETE_STAIRS);
         STAIRS.put(Blocks.MAGENTA_CONCRETE, ModStairs.MAGENTA_CONCRETE_STAIRS);
@@ -108,7 +107,7 @@ public class DatagenGlobals {
         STAIRS.put(Blocks.BLACK_CONCRETE, ModStairs.BLACK_CONCRETE_STAIRS);
     }
 
-    private static void registerStairs(){
+    private static void registerStairs() {
 
         registerConcreteStairs();
 
@@ -128,11 +127,12 @@ public class DatagenGlobals {
         STAIRS.put(Blocks.QUARTZ_BRICKS, ModStairs.QUARTZ_BRICKS_STAIRS);
         STAIRS.put(Blocks.CRACKED_NETHER_BRICKS, ModStairs.CRACKED_NETHER_BRICK_STAIRS);
         STAIRS.put(Blocks.CHISELED_NETHER_BRICKS, ModStairs.CHISELED_NETHER_BRICK_STAIRS);
+        STAIRS.put(Blocks.BASALT, ModStairs.BASALT_STAIRS);
         STAIRS.put(Blocks.OBSIDIAN, ModStairs.OBSIDIAN_STAIRS);
 
     }
 
-    private static void registerWalls(){
+    private static void registerWalls() {
         WALLS.put(Blocks.BEDROCK, ModWalls.BEDROCK_WALL);
         WALLS.put(Blocks.STONE, ModWalls.STONE_WALL);
         WALLS.put(Blocks.SMOOTH_STONE, ModWalls.SMOOTH_STONE_WALL);
@@ -156,10 +156,14 @@ public class DatagenGlobals {
         WALLS.put(Blocks.CHISELED_NETHER_BRICKS, ModWalls.CHISELED_NETHER_BRICK_WALL);
         WALLS.put(Blocks.PRISMARINE_BRICKS, ModWalls.PRISMARINE_BRICK_WALL);
         WALLS.put(Blocks.DARK_PRISMARINE, ModWalls.DARK_PRISMARINE_WALL);
+        WALLS.put(Blocks.BASALT, ModWalls.BASALT_WALL);
+        WALLS.put(Blocks.SMOOTH_SANDSTONE, ModWalls.SMOOTH_SANDSTONE_WALL);
+        WALLS.put(Blocks.SMOOTH_RED_SANDSTONE, ModWalls.SMOOTH_RED_SANDSTONE_WALL);
+        WALLS.put(Blocks.QUARTZ_BLOCK, ModWalls.QUARTZ_BLOCK_WALL);
         WALLS.put(Blocks.OBSIDIAN, ModWalls.OBSIDIAN_WALL);
     }
 
-    private static void registerPlants(){
+    private static void registerPlants() {
         PLANTS.add(ModPlants.ENDER_FLOWER);
         PLANTS.add(ModPlants.MAGENTA_TULIP);
         PLANTS.add(ModPlants.LIGHT_BLUE_TULIP);
@@ -176,12 +180,12 @@ public class DatagenGlobals {
         PLANTS.add(ModPlants.CRIMSON_SPROUTS);
     }
 
-    private static void registerCross(){
+    private static void registerCross() {
         registerPlants();
         CROSS.addAll(PLANTS);
     }
 
-    private static void registerAxisRotated(){
+    private static void registerAxisRotated() {
         AXIS_ROTATED.add(ModBlocks.CHARRED_BONE_BLOCK);
     }
 
@@ -198,7 +202,7 @@ public class DatagenGlobals {
         ITEMS.add(ModItems.ELYTRA_WING);
     }
 
-    private static void registerBarks(){
+    private static void registerBarks() {
         ITEMS.add(ModItems.OAK_BARK);
         ITEMS.add(ModItems.BIRCH_BARK);
         ITEMS.add(ModItems.SPRUCE_BARK);
@@ -230,11 +234,11 @@ public class DatagenGlobals {
         ARMORS.add(ModArmor.MONSTER_BOOTS);
     }
 
-    private static void registerTools(){
+    private static void registerTools() {
         TOOLS.add(ModTools.SCRAPER);
     }
 
-    private static void registerFoods(){
+    private static void registerFoods() {
         FOODS.add(ModFood.GOLDEN_BEETROOT);
         FOODS.add(ModFood.GOLDEN_WHEAT);
         FOODS.add(ModFood.GOLDEN_BREAD);
@@ -245,7 +249,7 @@ public class DatagenGlobals {
         FOODS.add(ModFood.CAKE_SLICE);
     }
 
-    private static void registerAllBlocks(){
+    private static void registerAllBlocks() {
         registerBlocks();
         registerSlabs();
         registerStairs();
@@ -254,7 +258,7 @@ public class DatagenGlobals {
         registerAxisRotated();
     }
 
-    private static void registerAllItems(){
+    private static void registerAllItems() {
         registerItems();
         registerArmors();
         registerTools();
@@ -262,11 +266,10 @@ public class DatagenGlobals {
     }
 
 
-    public static void registerDatagen(){
+    public static void registerDatagen() {
         XOverhaul.LOGGER.info("Registering data for datagen...");
         registerAllBlocks();
         registerAllItems();
     }
-
 
 }

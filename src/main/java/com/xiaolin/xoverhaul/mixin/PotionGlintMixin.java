@@ -12,8 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(PotionItem.class)
 public class PotionGlintMixin {
 
-
-
     @Inject(method = "hasGlint", at = @At("RETURN"), cancellable = true)
     public void hasGlint(ItemStack stack, CallbackInfoReturnable<Boolean> cir){
         cir.setReturnValue(false);

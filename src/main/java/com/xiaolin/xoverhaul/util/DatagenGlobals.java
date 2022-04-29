@@ -244,6 +244,7 @@ public class DatagenGlobals {
         WALLS.put(Blocks.SMOOTH_SANDSTONE, ModWalls.SMOOTH_SANDSTONE_WALL);
         WALLS.put(Blocks.SMOOTH_RED_SANDSTONE, ModWalls.SMOOTH_RED_SANDSTONE_WALL);
         WALLS.put(Blocks.QUARTZ_BLOCK, ModWalls.QUARTZ_BLOCK_WALL);
+        WALLS.put(Blocks.SMOOTH_QUARTZ, ModWalls.SMOOTH_QUARTZ_WALL);
         WALLS.put(Blocks.OBSIDIAN, ModWalls.OBSIDIAN_WALL);
     }
 

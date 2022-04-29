@@ -13,7 +13,9 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.biome.OverworldBiomeCreator;
 import org.slf4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 public class XOverhaul implements ModInitializer {
 
@@ -29,6 +31,7 @@ public class XOverhaul implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
 		ModItems.registerModItems();
 		ModFood.registerModFood();
 		ModArmor.registerModArmor();
@@ -43,6 +46,7 @@ public class XOverhaul implements ModInitializer {
 
 		ModRegistries.registerFuels();
 
+		GeckoLib.initialize();
 		ModEntities.registerModEntities();
 		EntitySpawning.spawnEntities();
 
@@ -78,6 +82,4 @@ public class XOverhaul implements ModInitializer {
 				ModPlants.CRIMSON_SPROUTS,
 		};
 	}
-
-
 }

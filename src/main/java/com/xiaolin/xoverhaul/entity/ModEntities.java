@@ -11,14 +11,17 @@ import net.minecraft.util.registry.Registry;
 
 public class ModEntities {
 
+    public static final String CHAINED_MONSTER_ID = "chained_monster";
+    public static final String LEATHERLING_ID = "leatherling";
+
 
     public static final EntityType<ChainedMonsterEntity> CHAINED_MONSTER =
-            ModEntities.registerEntity("chained_monster", SpawnGroup.MONSTER,
+            ModEntities.registerEntity(CHAINED_MONSTER_ID, SpawnGroup.MONSTER,
                     ChainedMonsterEntity::new, 2, 1);
 
     public static final EntityType<LeatherlingEntity> LEATHERLING =
-            ModEntities.registerEntity("leatherling", SpawnGroup.MONSTER,
-                    LeatherlingEntity::new, 1, 1);
+            ModEntities.registerEntity(LEATHERLING_ID, SpawnGroup.MONSTER,
+                    LeatherlingEntity::new, 2, 1);
 
 
     public static EntityType registerEntity(String name, SpawnGroup spawnGroup,

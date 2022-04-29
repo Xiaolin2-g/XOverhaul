@@ -131,7 +131,9 @@ public class ModBlockStateDefinitionProvider extends FabricModelProvider {
                     wall.getValue() != ModWalls.BASALT_WALL &&
                     wall.getValue() != ModWalls.SMOOTH_SANDSTONE_WALL &&
                     wall.getValue() != ModWalls.SMOOTH_RED_SANDSTONE_WALL &&
-                    wall.getValue() != ModWalls.QUARTZ_BLOCK_WALL
+                    wall.getValue() != ModWalls.QUARTZ_BLOCK_WALL &&
+                    wall.getValue() != ModWalls.SMOOTH_QUARTZ_WALL
+
             )
             {
 

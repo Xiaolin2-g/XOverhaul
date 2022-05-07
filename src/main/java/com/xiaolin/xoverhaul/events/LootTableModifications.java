@@ -47,8 +47,6 @@ public class LootTableModifications {
                         .with(ItemEntry.builder(ModBlocks.WOODEN_CRATE));
 
                 fabricLootSupplierBuilder.withPool(poolBuilder.build());
-
-                fabricLootSupplierBuilder.withPool(poolBuilder.build());
             }
 
         });

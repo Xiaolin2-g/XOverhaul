@@ -21,7 +21,7 @@ public class ModEntities {
 
     public static final EntityType<LeatherlingEntity> LEATHERLING =
             ModEntities.registerEntity(LEATHERLING_ID, SpawnGroup.MONSTER,
-                    LeatherlingEntity::new, 0.6f, 0.6f);
+                    LeatherlingEntity::new, 1.2f, 0.6f);
 
 
     public static EntityType registerEntity(String name, SpawnGroup spawnGroup,
@@ -44,8 +44,8 @@ public class ModEntities {
     }
 
     public static void registerMobAttributes(){
-        FabricDefaultAttributeRegistry.register(CHAINED_MONSTER, ChainedMonsterEntity.createChainedMonsterAttributes());
-        FabricDefaultAttributeRegistry.register(LEATHERLING, LeatherlingEntity.createLeatherlingAttributes());
+        FabricDefaultAttributeRegistry.register(CHAINED_MONSTER, ChainedMonsterEntity.createAttributes());
+        FabricDefaultAttributeRegistry.register(LEATHERLING, LeatherlingEntity.createAttributes());
 
     }
 }

@@ -1,6 +1,7 @@
 package com.xiaolin.xoverhaul.events;
 
 import com.xiaolin.xoverhaul.entity.ModEntities;
+import com.xiaolin.xoverhaul.world.gen.biomes.ModBiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.entity.SpawnGroup;
@@ -19,7 +20,7 @@ public class EntitySpawning {
                 1,1 );
 
         BiomeModifications.addSpawn(
-                BiomeSelectors.foundInOverworld(),
+                ModBiomeSelectors.foundInTheOverworldExceptUnderground(),
                 SpawnGroup.MONSTER,
                 ModEntities.LEATHERLING,
                 15,

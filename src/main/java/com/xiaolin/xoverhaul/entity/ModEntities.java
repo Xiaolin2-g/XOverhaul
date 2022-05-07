@@ -17,11 +17,11 @@ public class ModEntities {
 
     public static final EntityType<ChainedMonsterEntity> CHAINED_MONSTER =
             ModEntities.registerEntity(CHAINED_MONSTER_ID, SpawnGroup.MONSTER,
-                    ChainedMonsterEntity::new, 2, 1);
+                    ChainedMonsterEntity::new, 1.95f, 0.6f);
 
     public static final EntityType<LeatherlingEntity> LEATHERLING =
             ModEntities.registerEntity(LEATHERLING_ID, SpawnGroup.MONSTER,
-                    LeatherlingEntity::new, 2, 1);
+                    LeatherlingEntity::new, 0.6f, 0.6f);
 
 
     public static EntityType registerEntity(String name, SpawnGroup spawnGroup,

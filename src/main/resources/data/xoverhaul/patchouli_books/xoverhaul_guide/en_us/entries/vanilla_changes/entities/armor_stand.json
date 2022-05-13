@@ -1,0 +1,11 @@
+{
+  "name": "Armor Stand",
+  "icon": "minecraft:armor_stand",
+  "category": "xoverhaul:vanilla_changes/entities",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Armor Stands now have arms when placed by the player."
+    }
+  ]
+}

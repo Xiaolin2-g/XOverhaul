@@ -1,0 +1,12 @@
+{
+  "name": "Ender Flower",
+  "icon": "xoverhaul:ender_flower",
+  "category": "xoverhaul:new_content/blocks/flowers",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:ender_flower",
+      "text": "$(l)Ender Flower$() is a block that $(3)generates on the $(c)End dimension$() on top of End Stone and $(l:new_content/blocks/full_blocks/dirty_sand)Purpur Cobblestone$()."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Entities",
+  "description": "The changes to entities",
+  "icon": "minecraft:armor_stand",
+  "parent": "xoverhaul:vanilla_changes"
+}

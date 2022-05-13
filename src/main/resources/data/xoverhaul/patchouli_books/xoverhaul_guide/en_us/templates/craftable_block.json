@@ -1,0 +1,12 @@
+{
+  "components": [
+    {
+      "type": "patchouli:header",
+      "text": "#name#"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "#name# is a cool block that can be crafted with the following materials:"
+    }
+  ]
+}

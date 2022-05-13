@@ -10,5 +10,7 @@
       "item": "minecraft:leather"
     }
   },
-  "result": {}
+  "result": {
+    "item": "xoverhaul:recipe_removed_item"
+  }
 }

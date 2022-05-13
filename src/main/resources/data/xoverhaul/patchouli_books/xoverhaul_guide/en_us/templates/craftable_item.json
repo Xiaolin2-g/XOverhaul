@@ -1,0 +1,9 @@
+{
+  "components": [
+    {
+      "type": "patchouli:text",
+      "title": "#name#",
+      "text": "#name# is a cool item that can be crafted with the following materials:"
+    }
+  ]
+}

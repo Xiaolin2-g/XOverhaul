@@ -1,0 +1,16 @@
+{
+  "name": "Dirty Sand",
+  "icon": "xoverhaul:dirty_sand",
+  "category": "xoverhaul:new_content/blocks/full_blocks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:dirty_sand",
+      "text": "$(l)Dirty Sand$() is a block that $(#00f)generates on beaches$() and can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:dirty_sand"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Tulips",
+  "description": "",
+  "icon": "xoverhaul:magenta_tulip",
+  "parent": "xoverhaul:new_content/blocks/plants"
+}

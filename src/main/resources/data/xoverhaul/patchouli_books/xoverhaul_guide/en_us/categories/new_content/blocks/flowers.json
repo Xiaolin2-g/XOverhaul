@@ -1,0 +1,6 @@
+{
+  "name": "Flowers",
+  "description": "",
+  "icon": "xoverhaul:ender_flower",
+  "parent": "xoverhaul:new_content/blocks/plants"
+}

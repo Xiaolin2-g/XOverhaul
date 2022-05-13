@@ -276,6 +276,7 @@ public class DatagenGlobals {
 
     private static void registerItems() {
         ITEMS.add(ModItems.TEST_ITEM);
+        ITEMS.add(ModItems.RECIPE_REMOVED_ITEM);
 
         ITEMS.add(ModItems.IRON_CORE);
         ITEMS.add(ModItems.CHARRED_BONE);
@@ -285,6 +286,7 @@ public class DatagenGlobals {
         registerBarks();
         ITEMS.add(ModItems.GLUE);
         ITEMS.add(ModItems.ELYTRA_WING);
+
     }
 
     private static void registerBarks() {

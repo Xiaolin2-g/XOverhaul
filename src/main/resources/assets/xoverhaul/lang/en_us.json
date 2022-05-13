@@ -115,6 +115,8 @@
   "itemGroup.xoverhaul.xoverhaul_spawn_eggs": "XOverhaul Spawn Eggs",
 
 
+  "tooltip.xoverhaul.recipe_removed_item_1": "Recipe removed by XOverhaul Mod.",
+  "tooltip.xoverhaul.recipe_removed_item_2": "Check the XOverhaul Guidebook for more information.",
 
   "block.minecraft.nether_wart_block": "Crimson Cap Block",
   "block.minecraft.warped_wart_block": "Warped Cap Block",

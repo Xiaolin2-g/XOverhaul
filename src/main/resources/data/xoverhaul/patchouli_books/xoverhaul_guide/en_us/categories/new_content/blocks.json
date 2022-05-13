@@ -1,0 +1,6 @@
+{
+  "name": "Blocks",
+  "description": "The new blocks",
+  "icon": "xoverhaul:dirty_sand",
+  "parent": "xoverhaul:new_content"
+}

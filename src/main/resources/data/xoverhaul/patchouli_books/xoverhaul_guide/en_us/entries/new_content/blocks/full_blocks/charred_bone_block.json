@@ -1,0 +1,16 @@
+{
+  "name": "Charred Bone Block",
+  "icon": "xoverhaul:charred_bone_block",
+  "category": "xoverhaul:new_content/blocks/full_blocks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:charred_bone_block",
+      "text": "$(l)Charred Bone Block$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:charred_bone_block_from_charred_bone_meal"
+    }
+  ]
+}

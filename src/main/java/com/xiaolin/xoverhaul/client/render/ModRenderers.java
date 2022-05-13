@@ -15,7 +15,4 @@ public class ModRenderers {
 
     }
 
-    public static EntityModelLayer registerNewModelLayer(String name){
-            return new EntityModelLayer(new Identifier(XOverhaul.MOD_ID), name);
-        }
 }

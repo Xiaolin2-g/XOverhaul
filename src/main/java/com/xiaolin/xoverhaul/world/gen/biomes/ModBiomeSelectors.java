@@ -13,5 +13,4 @@ public class ModBiomeSelectors {
                 && !Biome.getCategory(context.getBiomeRegistryEntry()).equals(Biome.Category.UNDERGROUND);
     }
 
-
 }

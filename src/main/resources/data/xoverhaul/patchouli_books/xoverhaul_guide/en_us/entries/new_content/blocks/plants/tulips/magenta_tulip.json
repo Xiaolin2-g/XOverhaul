@@ -1,0 +1,12 @@
+{
+  "name": "Magenta Tulip",
+  "icon": "xoverhaul:magenta_tulip",
+  "category": "xoverhaul:new_content/blocks/tulips",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:magenta_tulip",
+      "text": "$(l)Magenta Tulip$() is a block that $(#00f)generates on flower forests$()."
+    }
+  ]
+}

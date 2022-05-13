@@ -113,6 +113,10 @@ public class ModItems extends ItemInitBase {
             new TestItem(new FabricItemSettings()
                     .group(ModItemGroup.XOVERHAUL_ITEMS)));
 
+    public static final Item RECIPE_REMOVED_ITEM = registerItem("recipe_removed_item",
+            new RecipeRemovedItem(new FabricItemSettings()
+                    .group(ModItemGroup.XOVERHAUL_ITEMS)));
+
 
 
     public static void registerModItems(){

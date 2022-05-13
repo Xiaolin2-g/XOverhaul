@@ -1,0 +1,6 @@
+{
+  "name": "Slabs",
+  "description": "",
+  "icon": "xoverhaul:red_concrete_slab",
+  "parent": "xoverhaul:new_content/blocks"
+}

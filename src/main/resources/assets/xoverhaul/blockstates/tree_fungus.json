@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
       "model": "xoverhaul:block/tree_fungus"
+    },
+    "facing=north": {
+      "model": "xoverhaul:block/tree_fungus",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "xoverhaul:block/tree_fungus",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "xoverhaul:block/tree_fungus",
+      "y": 180
     }
   }
 }

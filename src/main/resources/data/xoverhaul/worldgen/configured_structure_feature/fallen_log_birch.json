@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:village",
+  "config": {
+    "start_pool": "xoverhaul:fallen_log_birch",
+    "size": 1
+  },
+  "biomes": "#xoverhaul:is_birch_forest",
+  "adapt_noise": true,
+  "spawn_overrides": {}
+}

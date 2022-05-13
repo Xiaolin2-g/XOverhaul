@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "xoverhaul:fallen_log_birch",
+      "weight": 5
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 3,
+    "separation": 2,
+    "salt": 4645297470
+  }
+}

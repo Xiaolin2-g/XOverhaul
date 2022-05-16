@@ -8,10 +8,10 @@ import net.minecraft.item.Item;
 
 public class ModRegistries {
 
-    private static FuelRegistry fuelRegistry = FuelRegistry.INSTANCE;
+    private static final FuelRegistry fuelRegistry = FuelRegistry.INSTANCE;
 
     public static void registerFuels(){
-        XOverhaul.LOGGER.info("Now registering fuels for: " + XOverhaul.MOD_ID);
+        XOverhaul.LOGGER.info("Registering fuels for: " + XOverhaul.MOD_ID);
 
         registerBarkFuel(ModItems.OAK_BARK);
         registerBarkFuel(ModItems.BIRCH_BARK);

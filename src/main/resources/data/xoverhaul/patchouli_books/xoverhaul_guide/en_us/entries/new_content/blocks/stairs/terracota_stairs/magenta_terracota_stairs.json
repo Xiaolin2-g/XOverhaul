@@ -1,0 +1,16 @@
+{
+  "name": "Magenta Terracota Stairs",
+  "icon": "xoverhaul:magenta_terracota_stairs",
+  "category": "xoverhaul:new_content/blocks/terracota_stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:magenta_terracota_stairs",
+      "text": "$(l)Magenta Terracota Stairs$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:magenta_terracota_stairs"
+    }
+  ]
+}

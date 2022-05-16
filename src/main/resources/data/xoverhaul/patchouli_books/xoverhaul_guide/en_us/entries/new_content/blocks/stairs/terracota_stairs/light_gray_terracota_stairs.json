@@ -1,0 +1,16 @@
+{
+  "name": "Light Gray Terracota Stairs",
+  "icon": "xoverhaul:light_gray_terracota_stairs",
+  "category": "xoverhaul:new_content/blocks/terracota_stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:light_gray_terracota_stairs",
+      "text": "$(l)Light Gray Terracota Stairs$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:light_gray_terracota_stairs"
+    }
+  ]
+}

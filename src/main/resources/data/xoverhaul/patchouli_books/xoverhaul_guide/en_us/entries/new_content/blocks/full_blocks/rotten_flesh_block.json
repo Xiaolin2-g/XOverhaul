@@ -1,0 +1,16 @@
+{
+  "name": "Rotten Flesh Block",
+  "icon": "xoverhaul:rotten_flesh_block",
+  "category": "xoverhaul:new_content/blocks/full_blocks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:rotten_flesh_block",
+      "text": "$(l)Rotten Flesh Block$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:rotten_flesh_block_from_rotten_flesh"
+    }
+  ]
+}

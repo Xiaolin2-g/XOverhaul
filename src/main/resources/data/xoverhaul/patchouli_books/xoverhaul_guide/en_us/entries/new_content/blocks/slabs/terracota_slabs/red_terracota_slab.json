@@ -1,0 +1,16 @@
+{
+  "name": "Red Terracota Slab",
+  "icon": "xoverhaul:red_terracota_slab",
+  "category": "xoverhaul:new_content/blocks/terracota_slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:red_terracota_slab",
+      "text": "$(l)Red Terracota Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:red_terracota_slab"
+    }
+  ]
+}

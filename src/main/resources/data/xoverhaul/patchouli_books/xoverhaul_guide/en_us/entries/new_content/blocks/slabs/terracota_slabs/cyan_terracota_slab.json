@@ -1,0 +1,16 @@
+{
+  "name": "Cyan Terracota Slab",
+  "icon": "xoverhaul:cyan_terracota_slab",
+  "category": "xoverhaul:new_content/blocks/terracota_slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cyan_terracota_slab",
+      "text": "$(l)Cyan Terracota Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cyan_terracota_slab"
+    }
+  ]
+}

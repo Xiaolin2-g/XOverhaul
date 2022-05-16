@@ -1,0 +1,16 @@
+{
+  "name": "Green Terracota Slab",
+  "icon": "xoverhaul:green_terracota_slab",
+  "category": "xoverhaul:new_content/blocks/terracota_slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:green_terracota_slab",
+      "text": "$(l)Green Terracota Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:green_terracota_slab"
+    }
+  ]
+}

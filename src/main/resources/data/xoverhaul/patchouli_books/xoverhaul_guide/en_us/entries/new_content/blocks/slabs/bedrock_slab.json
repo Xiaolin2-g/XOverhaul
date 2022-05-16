@@ -1,0 +1,12 @@
+{
+  "name": "Bedrock Slab",
+  "icon": "xoverhaul:bedrock_slab",
+  "category": "xoverhaul:new_content/blocks/slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:bedrock_slab",
+      "text": "$(l)Bedrock Slab$() is an unobtainable block."
+    }
+  ]
+}

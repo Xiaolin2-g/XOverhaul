@@ -1,5 +1,6 @@
 package com.xiaolin.xoverhaul.util;
 
+import com.eliotlash.mclib.math.functions.classic.Mod;
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.block.*;
 import com.xiaolin.xoverhaul.item.*;
@@ -263,6 +264,7 @@ public class DatagenGlobals {
         PLANTS.add(ModPlants.GREEN_TULIP);
         PLANTS.add(ModPlants.BLACK_TULIP);
         PLANTS.add(ModPlants.CRIMSON_SPROUTS);
+        PLANTS.add(ModPlants.BIRCH_FLOWER);
     }
 
     private static void registerCross() {

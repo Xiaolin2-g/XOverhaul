@@ -1,0 +1,16 @@
+{
+  "name": "Red Concrete Slab",
+  "icon": "xoverhaul:red_concrete_slab",
+  "category": "xoverhaul:new_content/blocks/concrete_slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:red_concrete_slab",
+      "text": "$(l)Red Concrete Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:red_concrete_slab"
+    }
+  ]
+}

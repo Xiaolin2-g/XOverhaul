@@ -1,0 +1,12 @@
+{
+  "name": "Crimson Sprouts",
+  "icon": "xoverhaul:crimson_sprouts",
+  "category": "xoverhaul:new_content/blocks/plants",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:crimson_sprouts",
+      "text": "$(l)Crimson Sprouts$() is a block that $(3)generates on the $(c)Nether dimension $(3)on Crimson Forests$()."
+    }
+  ]
+}

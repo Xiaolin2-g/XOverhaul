@@ -1,0 +1,16 @@
+{
+  "name": "Terracota Stairs",
+  "icon": "xoverhaul:terracota_stairs",
+  "category": "xoverhaul:new_content/blocks/terracota_stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:terracota_stairs",
+      "text": "$(l)Terracota Stairs$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:terracota_stairs"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Terracota Slabs",
+  "description": "",
+  "icon": "xoverhaul:white_terracota_slab",
+  "parent": "xoverhaul:new_content/blocks/slabs"
+}

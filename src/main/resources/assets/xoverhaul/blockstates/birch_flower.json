@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "xoverhaul:block/birch_flower_bottom"
+    },
+    "half=upper": {
+      "model": "xoverhaul:block/birch_flower_top"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Lime Concrete Slab",
+  "icon": "xoverhaul:lime_concrete_slab",
+  "category": "xoverhaul:new_content/blocks/concrete_slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:lime_concrete_slab",
+      "text": "$(l)Lime Concrete Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:lime_concrete_slab"
+    }
+  ]
+}

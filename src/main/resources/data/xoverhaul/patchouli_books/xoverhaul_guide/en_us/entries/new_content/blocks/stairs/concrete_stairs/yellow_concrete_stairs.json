@@ -1,0 +1,16 @@
+{
+  "name": "Yellow Concrete Stairs",
+  "icon": "xoverhaul:yellow_concrete_stairs",
+  "category": "xoverhaul:new_content/blocks/concrete_stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:yellow_concrete_stairs",
+      "text": "$(l)Yellow Concrete Stairs$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:yellow_concrete_stairs"
+    }
+  ]
+}

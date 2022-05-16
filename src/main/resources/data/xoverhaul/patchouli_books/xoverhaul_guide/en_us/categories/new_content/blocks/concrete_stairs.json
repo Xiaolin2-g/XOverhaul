@@ -1,0 +1,6 @@
+{
+  "name": "Concrete Stairs",
+  "description": "",
+  "icon": "xoverhaul:white_concrete_stairs",
+  "parent": "xoverhaul:new_content/blocks/stairs"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "White Terracota Slab",
+  "icon": "xoverhaul:white_terracota_slab",
+  "category": "xoverhaul:new_content/blocks/terracota_slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:white_terracota_slab",
+      "text": "$(l)White Terracota Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:white_terracota_slab"
+    }
+  ]
+}

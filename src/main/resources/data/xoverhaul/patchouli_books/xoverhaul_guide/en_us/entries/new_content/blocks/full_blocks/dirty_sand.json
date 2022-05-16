@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "xoverhaul:dirty_sand",
-      "text": "$(l)Dirty Sand$() is a block that $(#00f)generates on beaches$() and can be crafted using the following materials:"
+      "text": "$(l)Dirty Sand$() is a block that $(3)generates on beaches$() and can be crafted using the following materials:"
     },
     {
       "type": "patchouli:crafting",

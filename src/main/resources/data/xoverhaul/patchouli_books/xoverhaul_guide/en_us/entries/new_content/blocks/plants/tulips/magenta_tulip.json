@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "xoverhaul:magenta_tulip",
-      "text": "$(l)Magenta Tulip$() is a block that $(#00f)generates on flower forests$()."
+      "text": "$(l)Magenta Tulip$() is a block that $(3)generates on flower forests$()."
     }
   ]
 }

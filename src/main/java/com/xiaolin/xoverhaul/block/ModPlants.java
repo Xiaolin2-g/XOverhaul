@@ -2,11 +2,9 @@ package com.xiaolin.xoverhaul.block;
 
 import com.xiaolin.xoverhaul.XOverhaul;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FlowerBlock;
-import net.minecraft.block.SproutsBlock;
+import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.sound.BlockSoundGroup;
 
 public class ModPlants extends BlockInitBase {
 
@@ -51,6 +49,9 @@ public class ModPlants extends BlockInitBase {
 
     public static final Block CRIMSON_SPROUTS = registerBlock("crimson_sprouts",
             new SproutsBlock(FabricBlockSettings.copyOf(Blocks.NETHER_SPROUTS)));
+
+    public static final Block BIRCH_FLOWER = registerBlock("birch_flower",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)));
 
     public static void registerModPlants(){
         XOverhaul.LOGGER.info("Registering Mod Plants for " + XOverhaul.MOD_ID);

@@ -1,0 +1,16 @@
+{
+  "name": "Black Terracota Stairs",
+  "icon": "xoverhaul:black_terracota_stairs",
+  "category": "xoverhaul:new_content/blocks/terracota_stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:black_terracota_stairs",
+      "text": "$(l)Black Terracota Stairs$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:black_terracota_stairs"
+    }
+  ]
+}

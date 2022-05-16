@@ -1,0 +1,16 @@
+{
+  "name": "Blue Concrete Stairs",
+  "icon": "xoverhaul:blue_concrete_stairs",
+  "category": "xoverhaul:new_content/blocks/concrete_stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:blue_concrete_stairs",
+      "text": "$(l)Blue Concrete Stairs$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:blue_concrete_stairs"
+    }
+  ]
+}

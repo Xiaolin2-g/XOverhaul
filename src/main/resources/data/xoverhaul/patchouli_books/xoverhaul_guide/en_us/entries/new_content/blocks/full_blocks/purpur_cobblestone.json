@@ -1,0 +1,12 @@
+{
+  "name": "Purpur Cobblestone",
+  "icon": "xoverhaul:purpur_cobblestone",
+  "category": "xoverhaul:new_content/blocks/full_blocks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:purpur_cobblestone",
+      "text": "$(l)Purpur Cobblestone$() is a block that $(3)generates on the $(c)End dimension$()."
+    }
+  ]
+}

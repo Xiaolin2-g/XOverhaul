@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "xoverhaul:ender_flower",
-      "text": "$(l)Ender Flower$() is a block that $(3)generates on the $(c)End dimension$() on top of End Stone and $(l:new_content/blocks/full_blocks/dirty_sand)Purpur Cobblestone$()."
+      "text": "$(l)Ender Flower$() is a block that $(3)generates on the $(c)End dimension$() on top of End Stone and $(l:new_content/blocks/full_blocks/purpur_cobblestone)Purpur Cobblestone$(). $(br2)When an entity touches it, it gets the Levitation effect for 1 second."
     }
   ]
 }

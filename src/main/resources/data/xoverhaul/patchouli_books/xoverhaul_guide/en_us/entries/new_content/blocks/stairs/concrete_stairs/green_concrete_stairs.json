@@ -1,0 +1,16 @@
+{
+  "name": "Green Concrete Stairs",
+  "icon": "xoverhaul:green_concrete_stairs",
+  "category": "xoverhaul:new_content/blocks/concrete_stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:green_concrete_stairs",
+      "text": "$(l)Green Concrete Stairs$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:green_concrete_stairs"
+    }
+  ]
+}

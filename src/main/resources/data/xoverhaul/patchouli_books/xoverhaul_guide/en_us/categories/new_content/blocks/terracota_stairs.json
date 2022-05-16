@@ -1,0 +1,6 @@
+{
+  "name": "Terracota Stairs",
+  "description": "",
+  "icon": "xoverhaul:white_terracota_stairs",
+  "parent": "xoverhaul:new_content/blocks/stairs"
+}

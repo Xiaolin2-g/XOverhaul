@@ -1,0 +1,16 @@
+{
+  "name": "Pink Concrete Slab",
+  "icon": "xoverhaul:pink_concrete_slab",
+  "category": "xoverhaul:new_content/blocks/concrete_slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:pink_concrete_slab",
+      "text": "$(l)Pink Concrete Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:pink_concrete_slab"
+    }
+  ]
+}

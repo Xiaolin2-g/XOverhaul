@@ -1,0 +1,12 @@
+{
+  "name": "Soul Nether Bricks",
+  "icon": "xoverhaul:soul_nether_bricks",
+  "category": "xoverhaul:new_content/blocks/full_blocks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:soul_nether_bricks",
+      "text": "$(l)Soul Nether Bricks$() is a block. $(br2)Fire becomes blue on top of it and you get a boost of speed on it with the Soul Speed enchantment."
+    }
+  ]
+}

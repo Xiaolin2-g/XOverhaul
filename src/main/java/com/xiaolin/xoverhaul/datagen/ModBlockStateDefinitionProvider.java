@@ -1,9 +1,7 @@
 package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.XOverhaul;
-import com.xiaolin.xoverhaul.block.ModSlabs;
-import com.xiaolin.xoverhaul.block.ModStairs;
-import com.xiaolin.xoverhaul.block.ModWalls;
+import com.xiaolin.xoverhaul.block.*;
 import com.xiaolin.xoverhaul.util.interfaces.BlockStateModelGeneratorInterface;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -148,8 +146,11 @@ public class ModBlockStateDefinitionProvider extends FabricModelProvider {
 
         for (Block block : DatagenGlobals.CROSS) {
 
-            blockStateModelGenerator.registerTintableCross(block, BlockStateModelGenerator.TintType.NOT_TINTED);
+            if(block != ModPlants.BIRCH_FLOWER){
 
+                blockStateModelGenerator.registerTintableCross(block, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+            }
         }
     }
 

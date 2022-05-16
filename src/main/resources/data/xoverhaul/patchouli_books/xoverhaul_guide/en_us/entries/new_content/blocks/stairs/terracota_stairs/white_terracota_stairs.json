@@ -1,0 +1,16 @@
+{
+  "name": "White Terracota Stairs",
+  "icon": "xoverhaul:white_terracota_stairs",
+  "category": "xoverhaul:new_content/blocks/terracota_stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:white_terracota_stairs",
+      "text": "$(l)White Terracota Stairs$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:white_terracota_stairs"
+    }
+  ]
+}

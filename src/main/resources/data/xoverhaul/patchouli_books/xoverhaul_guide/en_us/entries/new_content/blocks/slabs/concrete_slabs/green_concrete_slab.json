@@ -1,0 +1,16 @@
+{
+  "name": "Green Concrete Slab",
+  "icon": "xoverhaul:green_concrete_slab",
+  "category": "xoverhaul:new_content/blocks/concrete_slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:green_concrete_slab",
+      "text": "$(l)Green Concrete Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:green_concrete_slab"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Lime Tulip",
+  "icon": "xoverhaul:lime_tulip",
+  "category": "xoverhaul:new_content/blocks/tulips",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:lime_tulip",
+      "text": "$(l)Lime Tulip$() is a block that $(3)generates on flower forests$()."
+    }
+  ]
+}

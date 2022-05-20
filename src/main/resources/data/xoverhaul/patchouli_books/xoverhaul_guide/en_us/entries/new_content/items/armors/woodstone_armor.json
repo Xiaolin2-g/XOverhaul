@@ -1,0 +1,21 @@
+{
+  "name": "Woodstone Armor",
+  "icon": "xoverhaul:woodstone_helmet",
+  "category": "xoverhaul:new_content/items/armors",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Woodstone Armor$() is an early game armor that can be crafted in the first minutes of playing. $(br2)♦ Defense ♦ $(br)- Helmet: 1 $(br)- Chestplate: 1 $(br)- Leggings: 1 $(br)- Boots: 1 $(br)♦ Total: 4 $(br2)It is crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:woodstone_helmet",
+      "recipe2": "xoverhaul:woodstone_chestplate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:woodstone_leggings",
+      "recipe2": "xoverhaul:woodstone_boots"
+    }
+  ]
+}

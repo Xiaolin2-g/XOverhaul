@@ -1,0 +1,16 @@
+{
+  "name": "Cooked Tropical Fish",
+  "icon": "xoverhaul:cooked_tropical_fish",
+  "category": "xoverhaul:new_content/items/foods",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cooked_tropical_fish",
+      "text": "$(l)Cooked Tropical Fish$() is an item that can be cooked using the following materials: $(br2)It restores 5 hunger points."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "xoverhaul:cooked_tropical_fish"
+    }
+  ]
+}

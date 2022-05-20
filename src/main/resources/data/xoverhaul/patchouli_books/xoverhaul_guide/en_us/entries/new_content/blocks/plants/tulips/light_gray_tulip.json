@@ -1,0 +1,12 @@
+{
+  "name": "Light Gray Tulip",
+  "icon": "xoverhaul:light_gray_tulip",
+  "category": "xoverhaul:new_content/blocks/tulips",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:light_gray_tulip",
+      "text": "$(l)Light Gray Tulip$() is a block that $(3)generates on flower forests$()."
+    }
+  ]
+}

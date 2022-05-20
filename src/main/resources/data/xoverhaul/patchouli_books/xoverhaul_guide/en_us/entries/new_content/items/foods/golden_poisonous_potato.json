@@ -1,0 +1,16 @@
+{
+  "name": "Golden Poisonous Potato",
+  "icon": "xoverhaul:golden_poisonous_potato",
+  "category": "xoverhaul:new_content/items/foods",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:golden_poisonous_potato",
+      "text": "$(l)Golden Poisonous Potato$() is an item that can be crafted using the following materials: $(br2)It restores 4 hunger points and gives the Poison effect for 3 seconds."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:golden_poisonous_potato"
+    }
+  ]
+}

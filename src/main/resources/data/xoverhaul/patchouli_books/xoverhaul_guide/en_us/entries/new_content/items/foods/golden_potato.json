@@ -1,0 +1,16 @@
+{
+  "name": "Golden Potato",
+  "icon": "xoverhaul:golden_potato",
+  "category": "xoverhaul:new_content/items/foods",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:golden_potato",
+      "text": "$(l)Golden Potato$() is an item that can be crafted using the following materials: $(br2)It restores 2 hunger points."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:golden_potato"
+    }
+  ]
+}

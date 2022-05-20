@@ -1,0 +1,12 @@
+{
+  "name": "Iron Core",
+  "icon": "xoverhaul:iron_core",
+  "category": "xoverhaul:new_content/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:iron_core",
+      "text": "$(l)Iron Core$() is an item (link)used to craft Iron Armor and $(l)is now required in the recipe$()."
+    }
+  ]
+}

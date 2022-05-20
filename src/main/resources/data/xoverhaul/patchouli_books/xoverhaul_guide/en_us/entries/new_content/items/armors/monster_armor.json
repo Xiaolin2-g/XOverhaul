@@ -1,0 +1,21 @@
+{
+  "name": "Monster Armor",
+  "icon": "xoverhaul:monster_helmet",
+  "category": "xoverhaul:new_content/items/armors",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Monster Armor$() is an armor you can craft after a couple nights. $(br2)♦ Defense ♦ $(br)- Helmet: 2 $(br)- Chestplate: 4 $(br)- Leggings: 3 $(br)- Boots: 1 $(br)♦ Total: 10 $(br2)It is crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:monster_helmet",
+      "recipe2": "xoverhaul:monster_chestplate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:monster_leggings",
+      "recipe2": "xoverhaul:monster_boots"
+    }
+  ]
+}

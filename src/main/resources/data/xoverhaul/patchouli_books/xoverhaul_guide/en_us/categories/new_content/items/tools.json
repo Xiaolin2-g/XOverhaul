@@ -1,0 +1,6 @@
+{
+  "name": "Tools",
+  "description": "",
+  "icon": "xoverhaul:scraper",
+  "parent": "xoverhaul:new_content/items"
+}

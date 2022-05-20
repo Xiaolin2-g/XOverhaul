@@ -1,0 +1,16 @@
+{
+  "name": "Golden Wheat",
+  "icon": "xoverhaul:golden_wheat",
+  "category": "xoverhaul:new_content/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:golden_wheat",
+      "text": "$(l)Golden Wheat$() is an item that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:golden_wheat"
+    }
+  ]
+}

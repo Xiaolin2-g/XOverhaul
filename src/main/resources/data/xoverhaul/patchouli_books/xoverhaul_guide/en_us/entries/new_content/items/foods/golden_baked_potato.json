@@ -1,0 +1,16 @@
+{
+  "name": "Golden Baked Potato",
+  "icon": "xoverhaul:golden_baked_potato",
+  "category": "xoverhaul:new_content/items/foods",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:golden_baked_potato",
+      "text": "$(l)Golden Baked Potato$() is an item that can be cooked using the following materials: $(br2)It restores 7 hunger points."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "xoverhaul:golden_baked_potato"
+    }
+  ]
+}

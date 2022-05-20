@@ -1,0 +1,12 @@
+{
+  "name": "Cyan Tulip",
+  "icon": "xoverhaul:cyan_tulip",
+  "category": "xoverhaul:new_content/blocks/tulips",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cyan_tulip",
+      "text": "$(l)Cyan Tulip$() is a block that $(3)generates on flower forests$()."
+    }
+  ]
+}

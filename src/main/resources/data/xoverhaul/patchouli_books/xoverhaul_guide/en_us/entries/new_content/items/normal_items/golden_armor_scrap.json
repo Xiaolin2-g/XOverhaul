@@ -1,0 +1,12 @@
+{
+  "name": "Golden Armor Scrap",
+  "icon": "xoverhaul:golden_armor_scrap",
+  "category": "xoverhaul:new_content/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:golden_armor_scrap",
+      "text": "$(l)Golden Armor Scrap$() is an item (link)used to craft Golden Armor instead of using Gold Ingots. $(br2)You can get it by breaking (link)Wooden Crates."
+    }
+  ]
+}

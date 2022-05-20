@@ -1,7 +1,7 @@
 {
   "name": "Charred Bone Block",
   "icon": "xoverhaul:charred_bone_block",
-  "category": "xoverhaul:new_content/blocks/full_blocks",
+  "category": "xoverhaul:new_content/blocks",
   "pages": [
     {
       "type": "patchouli:spotlight",

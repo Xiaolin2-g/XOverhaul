@@ -1,7 +1,7 @@
 {
   "name": "Purpur Cobblestone",
   "icon": "xoverhaul:purpur_cobblestone",
-  "category": "xoverhaul:new_content/blocks/full_blocks",
+  "category": "xoverhaul:new_content/blocks",
   "pages": [
     {
       "type": "patchouli:spotlight",

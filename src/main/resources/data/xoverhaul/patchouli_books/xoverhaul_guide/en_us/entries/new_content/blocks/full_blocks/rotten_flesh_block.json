@@ -1,7 +1,7 @@
 {
   "name": "Rotten Flesh Block",
   "icon": "xoverhaul:rotten_flesh_block",
-  "category": "xoverhaul:new_content/blocks/full_blocks",
+  "category": "xoverhaul:new_content/blocks",
   "pages": [
     {
       "type": "patchouli:spotlight",

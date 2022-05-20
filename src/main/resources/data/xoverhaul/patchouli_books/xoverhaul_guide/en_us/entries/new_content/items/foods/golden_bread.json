@@ -1,0 +1,16 @@
+{
+  "name": "Golden Bread",
+  "icon": "xoverhaul:golden_bread",
+  "category": "xoverhaul:new_content/items/foods",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:golden_bread",
+      "text": "$(l)Golden Bread$() is an item that can be crafted using the following materials: $(br2)It restores 8 hunger points."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:golden_bread"
+    }
+  ]
+}

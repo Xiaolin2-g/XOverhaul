@@ -1,0 +1,12 @@
+{
+  "name": "Yellow Tulip",
+  "icon": "xoverhaul:yellow_tulip",
+  "category": "xoverhaul:new_content/blocks/tulips",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:yellow_tulip",
+      "text": "$(l)Yellow Tulip$() is a block that $(3)generates on flower forests$()."
+    }
+  ]
+}

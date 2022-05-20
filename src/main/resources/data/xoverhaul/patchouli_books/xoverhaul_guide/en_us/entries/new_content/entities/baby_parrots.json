@@ -1,0 +1,16 @@
+{
+  "name": "Baby Parrots",
+  "icon": "minecraft:parrot_spawn_egg",
+  "category": "xoverhaul:new_content/entities",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Parrots now can be bred with seeds, and need to be airborne to reproduce."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:parrot{Age:-24000}",
+      "name": "Baby Parrot"
+    }
+  ]
+}

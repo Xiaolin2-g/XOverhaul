@@ -1,0 +1,16 @@
+{
+  "name": "Golden Beetroot",
+  "icon": "xoverhaul:golden_beetroot",
+  "category": "xoverhaul:new_content/items/foods",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:golden_beetroot",
+      "text": "$(l)Golden Beetroot$() is an item that can be crafted using the following materials: $(br2)It restores 2 hunger points."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:golden_beetroot"
+    }
+  ]
+}

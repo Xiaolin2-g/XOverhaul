@@ -1,0 +1,17 @@
+{
+  "name": "Scraper",
+  "icon": "xoverhaul:scraper",
+  "category": "xoverhaul:new_content/items/tools",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:scraper",
+      "text": "$(l)Scraper$() is an item that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:scraper",
+      "recipe2": "xoverhaul:scraper_mirrored"
+    }
+  ]
+}

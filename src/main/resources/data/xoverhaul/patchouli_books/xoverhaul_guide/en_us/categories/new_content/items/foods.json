@@ -1,0 +1,6 @@
+{
+  "name": "Foods",
+  "description": "",
+  "icon": "xoverhaul:golden_bread",
+  "parent": "xoverhaul:new_content/items"
+}

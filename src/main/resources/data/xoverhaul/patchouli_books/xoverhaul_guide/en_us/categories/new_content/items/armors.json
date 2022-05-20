@@ -1,0 +1,6 @@
+{
+  "name": "Armors",
+  "description": "",
+  "icon": "xoverhaul:woodstone_helmet",
+  "parent": "xoverhaul:new_content/items"
+}

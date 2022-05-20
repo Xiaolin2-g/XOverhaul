@@ -1,0 +1,15 @@
+{
+  "name": "Observer",
+  "icon": "minecraft:observer",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Observers now accept any type of stone."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:observer"
+    }
+  ]
+}

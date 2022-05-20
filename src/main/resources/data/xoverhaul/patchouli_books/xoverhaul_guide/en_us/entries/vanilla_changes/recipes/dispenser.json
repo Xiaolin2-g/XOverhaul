@@ -1,0 +1,15 @@
+{
+  "name": "Dispenser",
+  "icon": "minecraft:dispenser",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dispensers now accept any type of stone."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:dispenser"
+    }
+  ]
+}

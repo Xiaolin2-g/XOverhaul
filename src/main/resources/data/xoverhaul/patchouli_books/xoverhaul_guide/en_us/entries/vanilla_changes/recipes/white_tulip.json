@@ -1,0 +1,15 @@
+{
+  "name": "White Tulip",
+  "icon": "minecraft:white_tulip",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "It now gives White Dye instead of Light Gray Dye."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:white_tulip"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Wood Blocks",
+  "icon": "minecraft:oak_wood",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Now requires Barks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:oak_wood",
+      "recipe2": "minecraft:birch_wood"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:spruce_wood",
+      "recipe2": "minecraft:jungle_wood"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:acacia_wood",
+      "recipe2": "minecraft:dark_oak_wood"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:crimson_wood",
+      "recipe2": "minecraft:warped_wood"
+    }
+  ]
+}

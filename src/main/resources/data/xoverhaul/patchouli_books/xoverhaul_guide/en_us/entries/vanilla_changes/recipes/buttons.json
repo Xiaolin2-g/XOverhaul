@@ -1,0 +1,36 @@
+{
+  "name": "Buttons",
+  "icon": "minecraft:oak_button",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The amount of buttons the recipes give was increased from 1 to 16:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:oak_button",
+      "recipe2": "minecraft:birch_button"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:spruce_button",
+      "recipe2": "minecraft:jungle_button"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:acacia_button",
+      "recipe2": "minecraft:dark_oak_button"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:crimson_button",
+      "recipe2": "minecraft:warped_button"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:stone_button",
+      "recipe2": "minecraft:polished_blackstone_button"
+    }
+  ]
+}

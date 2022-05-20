@@ -1,0 +1,35 @@
+{
+  "name": "Trapdoors",
+  "icon": "minecraft:oak_trapdoor",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The amount of trapdoors the recipes give was increased from 2 to 12, and from 2 to 8 in Iron Trapdoor's case:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:oak_trapdoor",
+      "recipe2": "minecraft:birch_trapdoor"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:spruce_trapdoor",
+      "recipe2": "minecraft:jungle_trapdoor"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:acacia_trapdoor",
+      "recipe2": "minecraft:dark_oak_trapdoor"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:crimson_trapdoor",
+      "recipe2": "minecraft:warped_trapdoor"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:iron_trapdoor"
+    }
+  ]
+}

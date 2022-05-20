@@ -1,0 +1,6 @@
+{
+  "name": "Recipes",
+  "description": "The changes to recipes",
+  "icon": "minecraft:iron_helmet",
+  "parent": "xoverhaul:vanilla_changes"
+}

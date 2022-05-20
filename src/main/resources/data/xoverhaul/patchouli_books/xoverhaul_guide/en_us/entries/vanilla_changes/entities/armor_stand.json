@@ -6,6 +6,10 @@
     {
       "type": "patchouli:text",
       "text": "Armor Stands now have arms when placed by the player."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:armor_stand{ShowArms:1}"
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "name": "Piston",
+  "icon": "minecraft:piston",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Pistons now accept any type of stone."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:piston"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Pressure Plates",
+  "icon": "minecraft:oak_pressure_plate",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The amount of pressure plates the recipes give was increased from 1 to 8:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:oak_pressure_plate",
+      "recipe2": "minecraft:birch_pressure_plate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:spruce_pressure_plate",
+      "recipe2": "minecraft:jungle_pressure_plate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:acacia_pressure_plate",
+      "recipe2": "minecraft:dark_oak_pressure_plate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:crimson_pressure_plate",
+      "recipe2": "minecraft:warped_pressure_plate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:stone_pressure_plate",
+      "recipe2": "minecraft:polished_blackstone_pressure_plate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:heavy_weighted_pressure_plate",
+      "recipe2": "minecraft:light_weighted_pressure_plate"
+    }
+  ]
+}

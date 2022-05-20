@@ -1,0 +1,31 @@
+{
+  "name": "Stripped Wood Blocks",
+  "icon": "minecraft:stripped_oak_wood",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Now requires Barks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:stripped_oak_wood",
+      "recipe2": "minecraft:stripped_birch_wood"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:stripped_spruce_wood",
+      "recipe2": "minecraft:stripped_jungle_wood"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:stripped_acacia_wood",
+      "recipe2": "minecraft:stripped_dark_oak_wood"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:stripped_crimson_wood",
+      "recipe2": "minecraft:stripped_warped_wood"
+    }
+  ]
+}

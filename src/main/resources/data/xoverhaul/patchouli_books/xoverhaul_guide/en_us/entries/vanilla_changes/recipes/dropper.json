@@ -1,0 +1,15 @@
+{
+  "name": "Dropper",
+  "icon": "minecraft:dropper",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Droppers now accept any type of stone."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:dropper"
+    }
+  ]
+}

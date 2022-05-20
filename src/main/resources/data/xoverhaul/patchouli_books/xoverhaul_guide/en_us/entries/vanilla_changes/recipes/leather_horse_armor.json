@@ -1,0 +1,15 @@
+{
+  "name": "Leather Horse Armor",
+  "icon": "minecraft:leather_horse_armor",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "To be consistent with the new horse armor recipes, it is no longer an H shape out of leather."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:leather_horse_armor"
+    }
+  ]
+}

@@ -16,6 +16,11 @@
       "type": "patchouli:crafting",
       "recipe": "xoverhaul:woodstone_leggings",
       "recipe2": "xoverhaul:woodstone_boots"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie{ArmorItems:[{id:\"xoverhaul:woodstone_boots\",Count:1b,tag:{Damage:0}},{id:\"xoverhaul:woodstone_leggings\",Count:1b,tag:{Damage:0}},{id:\"xoverhaul:woodstone_chestplate\",Count:1b,tag:{Damage:0}},{id:\"xoverhaul:woodstone_helmet\",Count:1b,tag:{Damage:0}}]}",
+      "name": "Armor Showcase"
     }
   ]
 }

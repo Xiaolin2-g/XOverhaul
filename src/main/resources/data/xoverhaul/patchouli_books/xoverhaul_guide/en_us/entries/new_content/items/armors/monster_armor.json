@@ -16,6 +16,11 @@
       "type": "patchouli:crafting",
       "recipe": "xoverhaul:monster_leggings",
       "recipe2": "xoverhaul:monster_boots"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie{ArmorItems:[{id:\"xoverhaul:monster_boots\",Count:1b,tag:{Damage:0}},{id:\"xoverhaul:monster_leggings\",Count:1b,tag:{Damage:0}},{id:\"xoverhaul:monster_chestplate\",Count:1b,tag:{Damage:0}},{id:\"xoverhaul:monster_helmet\",Count:1b,tag:{Damage:0}}]}"
+      "name": "Armor Showcase"
     }
   ]
 }

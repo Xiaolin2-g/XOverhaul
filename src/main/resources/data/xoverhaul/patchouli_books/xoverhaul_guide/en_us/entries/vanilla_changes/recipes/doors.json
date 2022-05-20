@@ -1,0 +1,35 @@
+{
+  "name": "Doors",
+  "icon": "minecraft:oak_door",
+  "category": "xoverhaul:vanilla_changes/recipes",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The amount of doors the recipes give was decreased from 3 to 2:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:oak_door",
+      "recipe2": "minecraft:birch_door"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:spruce_door",
+      "recipe2": "minecraft:jungle_door"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:acacia_door",
+      "recipe2": "minecraft:dark_oak_door"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:crimson_door",
+      "recipe2": "minecraft:warped_door"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:iron_door"
+    }
+  ]
+}

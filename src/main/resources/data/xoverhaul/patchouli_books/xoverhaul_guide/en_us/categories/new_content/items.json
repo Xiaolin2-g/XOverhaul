@@ -1,0 +1,6 @@
+{
+  "name": "Items",
+  "description": "The new items",
+  "icon": "xoverhaul:iron_core",
+  "parent": "xoverhaul:new_content"
+}

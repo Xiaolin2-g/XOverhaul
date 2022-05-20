@@ -1,0 +1,6 @@
+{
+  "name": "Barks",
+  "description": "",
+  "icon": "xoverhaul:oak_bark",
+  "parent": "xoverhaul:new_content/items"
+}

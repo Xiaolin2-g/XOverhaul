@@ -1,0 +1,16 @@
+{
+  "name": "Charred Bone",
+  "icon": "xoverhaul:charred_bone",
+  "category": "xoverhaul:new_content/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:charred_bone",
+      "text": "$(l)Charred Bone$() is the bone (link)Wither Skeletons now drop instead of normal Bones."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:charred_bone"
+    }
+  ]
+}

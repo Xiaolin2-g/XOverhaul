@@ -1,0 +1,16 @@
+{
+  "name": "Spruce Bark",
+  "icon": "xoverhaul:spruce_bark",
+  "category": "xoverhaul:new_content/items/barks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:spruce_bark",
+      "text": "$(l)Spruce Bark$() is an item that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:spruce_bark"
+    }
+  ]
+}

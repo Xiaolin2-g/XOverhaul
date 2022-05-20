@@ -1,0 +1,16 @@
+{
+  "name": "Stripped Crimson Bark",
+  "icon": "xoverhaul:stripped_crimson_bark",
+  "category": "xoverhaul:new_content/items/barks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:stripped_crimson_bark",
+      "text": "$(l)Stripped Crimson Bark$() is an item that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:stripped_crimson_bark"
+    }
+  ]
+}

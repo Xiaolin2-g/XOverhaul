@@ -1,0 +1,16 @@
+{
+  "name": "Acacia Bark",
+  "icon": "xoverhaul:acacia_bark",
+  "category": "xoverhaul:new_content/items/barks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:acacia_bark",
+      "text": "$(l)Acacia Bark$() is an item that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:acacia_bark"
+    }
+  ]
+}

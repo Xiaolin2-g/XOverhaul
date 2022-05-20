@@ -1,0 +1,16 @@
+{
+  "name": "Stripped Warped Bark",
+  "icon": "xoverhaul:stripped_warped_bark",
+  "category": "xoverhaul:new_content/items/barks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:stripped_warped_bark",
+      "text": "$(l)Stripped Warped Bark$() is an item that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:stripped_warped_bark"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Charred Bone Meal",
+  "icon": "xoverhaul:charred_bone_meal",
+  "category": "xoverhaul:new_content/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:charred_bone_meal",
+      "text": "$(l)Charred Bone Meal$() is an item that can be crafted using the following materials: $(br2)It can be used on baby mobs to make them permanently baby."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:charred_bone_meal_from_charred_bone",
+      "recipe2": "xoverhaul:charred_bone_meal"
+    }
+  ]
+}

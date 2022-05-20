@@ -1,0 +1,16 @@
+{
+  "name": "Dark Oak Bark",
+  "icon": "xoverhaul:dark_oak_bark",
+  "category": "xoverhaul:new_content/items/barks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:dark_oak_bark",
+      "text": "$(l)Dark Oak Bark$() is an item that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:dark_oak_bark"
+    }
+  ]
+}

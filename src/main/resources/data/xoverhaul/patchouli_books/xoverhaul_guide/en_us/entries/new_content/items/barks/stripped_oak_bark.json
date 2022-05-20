@@ -1,0 +1,16 @@
+{
+  "name": "Stripped Oak Bark",
+  "icon": "xoverhaul:stripped_oak_bark",
+  "category": "xoverhaul:new_content/items/barks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:stripped_oak_bark",
+      "text": "$(l)Stripped Oak Bark$() is an item that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:stripped_oak_bark"
+    }
+  ]
+}

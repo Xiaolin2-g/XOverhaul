@@ -1,0 +1,16 @@
+{
+  "name": "Crimson Bark",
+  "icon": "xoverhaul:crimson_bark",
+  "category": "xoverhaul:new_content/items/barks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:crimson_bark",
+      "text": "$(l)Crimson Bark$() is an item that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:crimson_bark"
+    }
+  ]
+}

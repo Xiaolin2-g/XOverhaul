@@ -1,10 +1,9 @@
 package com.xiaolin.xoverhaul;
 
-import com.xiaolin.xoverhaul.block.*;
 import com.xiaolin.xoverhaul.entity.ModEntities;
 import com.xiaolin.xoverhaul.events.EntitySpawning;
 import com.xiaolin.xoverhaul.events.LootTableModifications;
-import com.xiaolin.xoverhaul.item.*;
+import com.xiaolin.xoverhaul.init.*;
 import com.xiaolin.xoverhaul.registries.ModRegistries;
 import com.xiaolin.xoverhaul.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;

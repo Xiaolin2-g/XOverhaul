@@ -1,20 +1,13 @@
 package com.xiaolin.xoverhaul.world.gen.features;
 
-import com.xiaolin.xoverhaul.block.ModBlocks;
-import com.xiaolin.xoverhaul.block.ModPlants;
+import com.xiaolin.xoverhaul.init.ModPlants;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
-import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.stateprovider.NoiseBlockStateProvider;
-import org.lwjgl.system.CallbackI;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class ModPlantConfiguredFeatures {
 

@@ -1,6 +1,6 @@
 package com.xiaolin.xoverhaul.datagen;
 
-import com.xiaolin.xoverhaul.block.ModBlocks;
+import com.xiaolin.xoverhaul.init.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.SimpleFabricLootTableProvider;
 import net.minecraft.data.DataCache;

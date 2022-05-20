@@ -1,4 +1,4 @@
-package com.xiaolin.xoverhaul.item;
+package com.xiaolin.xoverhaul.init;
 
 import com.xiaolin.xoverhaul.util.ArmorGlobals;
 import net.minecraft.entity.EquipmentSlot;

@@ -1,9 +1,7 @@
 package com.xiaolin.xoverhaul.util;
 
-import com.eliotlash.mclib.math.functions.classic.Mod;
 import com.xiaolin.xoverhaul.XOverhaul;
-import com.xiaolin.xoverhaul.block.*;
-import com.xiaolin.xoverhaul.item.*;
+import com.xiaolin.xoverhaul.init.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;

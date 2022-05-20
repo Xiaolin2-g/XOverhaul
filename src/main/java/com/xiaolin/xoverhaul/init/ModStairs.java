@@ -1,6 +1,8 @@
-package com.xiaolin.xoverhaul.block;
+package com.xiaolin.xoverhaul.init;
 
 import com.xiaolin.xoverhaul.XOverhaul;
+import com.xiaolin.xoverhaul.block.BaseStairs;
+import com.xiaolin.xoverhaul.block.BlockInitBase;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

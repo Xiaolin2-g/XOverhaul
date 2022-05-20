@@ -1,9 +1,8 @@
 package com.xiaolin.xoverhaul.datagen;
 
-import com.xiaolin.xoverhaul.block.ModBlocks;
-import com.xiaolin.xoverhaul.block.ModPlants;
-import com.xiaolin.xoverhaul.block.ModSlabs;
-import com.xiaolin.xoverhaul.block.ModStairs;
+import com.xiaolin.xoverhaul.init.ModBlocks;
+import com.xiaolin.xoverhaul.init.ModPlants;
+import com.xiaolin.xoverhaul.init.ModSlabs;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

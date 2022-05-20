@@ -1,6 +1,6 @@
 package com.xiaolin.xoverhaul.datagen;
 
-import com.xiaolin.xoverhaul.item.ModFood;
+import com.xiaolin.xoverhaul.init.ModFood;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;

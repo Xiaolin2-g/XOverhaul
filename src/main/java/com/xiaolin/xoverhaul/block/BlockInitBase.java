@@ -1,7 +1,7 @@
 package com.xiaolin.xoverhaul.block;
 
 import com.xiaolin.xoverhaul.XOverhaul;
-import com.xiaolin.xoverhaul.item.ModItemGroup;
+import com.xiaolin.xoverhaul.init.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;

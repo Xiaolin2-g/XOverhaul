@@ -1,7 +1,7 @@
 package com.xiaolin.xoverhaul.item;
 
+import com.xiaolin.xoverhaul.init.ModItems;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.passive.ParrotEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;

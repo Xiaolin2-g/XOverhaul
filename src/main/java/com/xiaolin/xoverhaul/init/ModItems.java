@@ -1,11 +1,13 @@
-package com.xiaolin.xoverhaul.item;
+package com.xiaolin.xoverhaul.init;
 
 
 import com.xiaolin.xoverhaul.XOverhaul;
+import com.xiaolin.xoverhaul.item.CharredBoneMealItem;
+import com.xiaolin.xoverhaul.item.ItemInitBase;
+import com.xiaolin.xoverhaul.item.RecipeRemovedItem;
+import com.xiaolin.xoverhaul.item.TestItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class ModItems extends ItemInitBase {
 

@@ -1,19 +1,15 @@
-package com.xiaolin.xoverhaul.block;
+package com.xiaolin.xoverhaul.init;
 
 
 import com.xiaolin.xoverhaul.XOverhaul;
-import com.xiaolin.xoverhaul.item.ModItemGroup;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import com.xiaolin.xoverhaul.block.BlockInitBase;
+import com.xiaolin.xoverhaul.block.DirtySandBlock;
+import com.xiaolin.xoverhaul.block.TreeFungusBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
-public class ModBlocks extends BlockInitBase{
+public class ModBlocks extends BlockInitBase {
 
     public static final Block DIRTY_SAND = registerBlock("dirty_sand",
             new DirtySandBlock(FabricBlockSettings.copyOf(Blocks.SAND)));

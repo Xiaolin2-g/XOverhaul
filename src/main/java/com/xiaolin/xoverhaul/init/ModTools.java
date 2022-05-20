@@ -1,12 +1,12 @@
-package com.xiaolin.xoverhaul.item;
+package com.xiaolin.xoverhaul.init;
 
 import com.xiaolin.xoverhaul.XOverhaul;
+import com.xiaolin.xoverhaul.item.ItemInitBase;
+import com.xiaolin.xoverhaul.item.ScraperItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
-public class ModTools extends ItemInitBase{
+public class ModTools extends ItemInitBase {
 
     public static final Item SCRAPER = registerItem("scraper",
             new ScraperItem(new FabricItemSettings()

@@ -2,7 +2,7 @@
 package com.xiaolin.xoverhaul.world.gen;
  */
 /*
-import com.xiaolin.xoverhaul.block.ModBlocks;
+import com.xiaolin.xoverhaul.init.ModBlocks;
 import com.xiaolin.xoverhaul.util.Var;
 import net.minecraft.block.Block;
 import net.minecraft.structure.rule.RuleTest;

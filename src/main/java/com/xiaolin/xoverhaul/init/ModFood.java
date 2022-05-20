@@ -1,15 +1,14 @@
-package com.xiaolin.xoverhaul.item;
+package com.xiaolin.xoverhaul.init;
 
 import com.xiaolin.xoverhaul.XOverhaul;
+import com.xiaolin.xoverhaul.item.ItemInitBase;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
-public class ModFood extends ItemInitBase{
+public class ModFood extends ItemInitBase {
 
     public static final Item GOLDEN_BEETROOT = registerItem("golden_beetroot",
             new Item(new FabricItemSettings()

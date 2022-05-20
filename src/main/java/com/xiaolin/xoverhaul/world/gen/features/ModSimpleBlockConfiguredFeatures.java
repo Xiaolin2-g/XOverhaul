@@ -1,6 +1,5 @@
 package com.xiaolin.xoverhaul.world.gen.features;
 
-import com.xiaolin.xoverhaul.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;

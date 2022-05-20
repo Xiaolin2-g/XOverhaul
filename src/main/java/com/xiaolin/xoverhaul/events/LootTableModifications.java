@@ -1,23 +1,14 @@
 package com.xiaolin.xoverhaul.events;
 
-import com.xiaolin.xoverhaul.block.ModBlocks;
-import com.xiaolin.xoverhaul.item.ModItems;
-import net.fabricmc.api.ModInitializer;
+import com.xiaolin.xoverhaul.init.ModBlocks;
+import com.xiaolin.xoverhaul.init.ModItems;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
-import net.fabricmc.fabric.api.transfer.v1.item.ItemVariant;
-import net.minecraft.data.server.FishingLootTableGenerator;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
-
-import javax.swing.text.html.parser.Entity;
 
 public class LootTableModifications {
 

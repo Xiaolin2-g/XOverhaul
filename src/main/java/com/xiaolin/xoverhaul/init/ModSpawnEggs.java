@@ -1,12 +1,11 @@
-package com.xiaolin.xoverhaul.item;
+package com.xiaolin.xoverhaul.init;
 
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.entity.ModEntities;
+import com.xiaolin.xoverhaul.item.ItemInitBase;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class ModSpawnEggs extends ItemInitBase {
 

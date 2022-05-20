@@ -1,6 +1,6 @@
 package com.xiaolin.xoverhaul;
 
-import com.xiaolin.xoverhaul.block.ModPlants;
+import com.xiaolin.xoverhaul.init.ModPlants;
 import com.xiaolin.xoverhaul.client.render.ModRenderers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;

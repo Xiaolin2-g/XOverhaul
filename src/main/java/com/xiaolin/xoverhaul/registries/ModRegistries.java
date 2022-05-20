@@ -1,7 +1,7 @@
 package com.xiaolin.xoverhaul.registries;
 
 import com.xiaolin.xoverhaul.XOverhaul;
-import com.xiaolin.xoverhaul.item.ModItems;
+import com.xiaolin.xoverhaul.init.ModItems;
 import com.xiaolin.xoverhaul.util.FuelGlobals;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.Item;

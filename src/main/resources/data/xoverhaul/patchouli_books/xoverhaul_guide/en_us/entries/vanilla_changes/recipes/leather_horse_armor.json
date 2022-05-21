@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "minecraft:leather_horse_armor"
+      "recipe": "xoverhaul:leather_horse_armor"
     }
   ]
 }

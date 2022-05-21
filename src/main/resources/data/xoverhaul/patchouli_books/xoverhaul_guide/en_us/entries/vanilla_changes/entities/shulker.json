@@ -1,0 +1,15 @@
+{
+  "name": "Shulker",
+  "icon": "minecraft:shulker_spawn_egg",
+  "category": "xoverhaul:vanilla_changes/entities",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Shulker projectiles Levitation effect duration reduced from 10 seconds to 3 seconds."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:shulker_bullet"
+    }
+  ]
+}

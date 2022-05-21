@@ -19,7 +19,7 @@
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:zombie{ArmorItems:[{id:\"xoverhaul:woodstone_boots\",Count:1b,tag:{Damage:0}},{id:\"xoverhaul:woodstone_leggings\",Count:1b,tag:{Damage:0}},{id:\"xoverhaul:woodstone_chestplate\",Count:1b,tag:{Damage:0}},{id:\"xoverhaul:woodstone_helmet\",Count:1b,tag:{Damage:0}}]}",
+      "entity": "minecraft:zombie{ArmorItems:[{id:\"xoverhaul:woodstone_boots\",Count:1b},{id:\"xoverhaul:woodstone_leggings\",Count:1b},{id:\"xoverhaul:woodstone_chestplate\",Count:1b},{id:\"xoverhaul:woodstone_helmet\",Count:1b}]}",
       "name": "Armor Showcase"
     }
   ]

@@ -1,0 +1,6 @@
+{
+  "name": "Items",
+  "description": "Changes to items.",
+  "icon": "minecraft:white_bed",
+  "parent": "xoverhaul:vanilla_changes"
+}

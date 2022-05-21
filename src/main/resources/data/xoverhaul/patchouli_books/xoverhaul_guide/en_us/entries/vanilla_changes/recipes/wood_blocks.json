@@ -5,27 +5,27 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Now requires Barks."
+      "text": "Now requires Barks instead of 4 Logs."
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "minecraft:oak_wood",
-      "recipe2": "minecraft:birch_wood"
+      "recipe": "xoverhaul:oak_wood",
+      "recipe2": "xoverhaul:birch_wood"
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "minecraft:spruce_wood",
-      "recipe2": "minecraft:jungle_wood"
+      "recipe": "xoverhaul:spruce_wood",
+      "recipe2": "xoverhaul:jungle_wood"
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "minecraft:acacia_wood",
-      "recipe2": "minecraft:dark_oak_wood"
+      "recipe": "xoverhaul:acacia_wood",
+      "recipe2": "xoverhaul:dark_oak_wood"
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "minecraft:crimson_wood",
-      "recipe2": "minecraft:warped_wood"
+      "recipe": "xoverhaul:crimson_hyphae",
+      "recipe2": "xoverhaul:warped_hyphae"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "name": "Beds",
+  "icon": "minecraft:white_bed",
+  "category": "xoverhaul:vanilla_changes/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:white_bed",
+      "text": "Beds are now 2D in the inventory like in Bedrock Edition."
+    }
+  ]
+}

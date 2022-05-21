@@ -1,0 +1,12 @@
+{
+  "name": "Potions",
+  "icon": "minecraft:potion{\"Potion\":\"minecraft:fire_resistance\"}",
+  "category": "xoverhaul:vanilla_changes/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:potion{\"Potion\": \"minecraft:fire_resistance\"}",
+      "text": "Potions no longer have the enchantment glint applied."
+    }
+  ]
+}

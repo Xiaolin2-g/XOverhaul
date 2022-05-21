@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "minecraft:white_tulip"
+      "recipe": "minecraft:light_gray_dye_from_white_tulip"
     }
   ]
 }

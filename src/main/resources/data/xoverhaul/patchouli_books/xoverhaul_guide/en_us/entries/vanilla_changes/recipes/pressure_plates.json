@@ -31,11 +31,6 @@
       "type": "patchouli:crafting",
       "recipe": "minecraft:stone_pressure_plate",
       "recipe2": "minecraft:polished_blackstone_pressure_plate"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "minecraft:heavy_weighted_pressure_plate",
-      "recipe2": "minecraft:light_weighted_pressure_plate"
     }
   ]
 }

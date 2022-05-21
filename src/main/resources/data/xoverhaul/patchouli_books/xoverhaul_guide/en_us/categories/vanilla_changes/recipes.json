@@ -1,6 +1,6 @@
 {
   "name": "Recipes",
-  "description": "The changes to recipes",
+  "description": "These recipes $(l)OVERRIDE$() vanilla recipes.",
   "icon": "minecraft:iron_helmet",
   "parent": "xoverhaul:vanilla_changes"
 }

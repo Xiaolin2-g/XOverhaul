@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "xoverhaul:charred_bone",
-      "text": "$(l)Charred Bone$() is the bone (link)Wither Skeletons now drop instead of normal Bones."
+      "text": "$(l)Charred Bone$() is the bone $(l:vanilla_changes/entities/wither_skeleton)Wither Skeletons now drop instead of normal Bones$()."
     },
     {
       "type": "patchouli:crafting",

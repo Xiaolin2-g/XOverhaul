@@ -1,0 +1,11 @@
+{
+  "name": "Chest",
+  "icon": "minecraft:chest",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:chest"
+    }
+  ]
+}

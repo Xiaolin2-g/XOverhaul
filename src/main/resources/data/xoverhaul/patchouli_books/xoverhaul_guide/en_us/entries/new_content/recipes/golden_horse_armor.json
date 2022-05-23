@@ -1,0 +1,11 @@
+{
+  "name": "Golden Horse Armor",
+  "icon": "minecraft:golden_horse_armor",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:golden_horse_armor"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Purple Dye",
+  "icon": "minecraft:purple_dye",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:purple_dye_from_purple_tulip"
+    }
+  ]
+}

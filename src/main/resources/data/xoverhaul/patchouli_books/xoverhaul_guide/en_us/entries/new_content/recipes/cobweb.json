@@ -1,0 +1,11 @@
+{
+  "name": "Cobweb",
+  "icon": "minecraft:cobweb",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cobweb"
+    }
+  ]
+}

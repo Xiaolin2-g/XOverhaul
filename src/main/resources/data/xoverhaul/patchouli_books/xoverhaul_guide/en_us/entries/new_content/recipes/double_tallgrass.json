@@ -1,0 +1,11 @@
+{
+  "name": "Tall Grass",
+  "icon": "minecraft:tall_grass",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:tall_grass"
+    }
+  ]
+}

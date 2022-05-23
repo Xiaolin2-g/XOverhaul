@@ -1,0 +1,11 @@
+{
+  "name": "Light Blue Dye",
+  "icon": "minecraft:light_blue_dye",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:light_blue_dye_from_light_blue_tulip"
+    }
+  ]
+}

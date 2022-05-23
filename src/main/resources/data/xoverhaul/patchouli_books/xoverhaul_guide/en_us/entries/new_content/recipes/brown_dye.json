@@ -1,0 +1,11 @@
+{
+  "name": "Brown Dye",
+  "icon": "minecraft:brown_dye",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:brown_dye_from_brown_tulip"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Large Fern",
+  "icon": "minecraft:large_fern",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:large_fern"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Logs",
+  "icon": "minecraft:oak_log",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:oak_log_from_stripped_oak_log",
+      "recipe2": "xoverhaul:birch_log_from_stripped_birch_log"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:spruce_log_from_stripped_spruce_log",
+      "recipe2": "xoverhaul:jungle_log_from_stripped_jungle_log"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:acacia_log_from_stripped_acacia_log",
+      "recipe2": "xoverhaul:dark_oak_log_from_stripped_dark_oak_log"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:crimson_stem_from_stripped_crimson_stem",
+      "recipe2": "xoverhaul:warped_stem_from_stripped_warped_stem"
+    }
+  ]
+}

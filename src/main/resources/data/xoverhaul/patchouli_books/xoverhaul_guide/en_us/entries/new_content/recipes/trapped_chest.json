@@ -1,0 +1,12 @@
+{
+  "name": "Trapped Chest",
+  "icon": "minecraft:trapped_chest",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:trapped_chest_from_logs",
+      "recipe2": "xoverhaul:trapped_chest_from_planks"
+    }
+  ]
+}

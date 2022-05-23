@@ -1,0 +1,21 @@
+{
+  "name": "Coral Blocks",
+  "icon": "minecraft:tube_coral_block",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:tube_coral_block_from_tube_coral",
+      "recipe2": "xoverhaul:brain_coral_block_from_brain_coral"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:bubble_coral_block_from_bubble_coral",
+      "recipe2": "xoverhaul:fire_coral_block_from_fire_coral"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:horn_coral_block_from_horn_coral"
+    }
+  ]
+}

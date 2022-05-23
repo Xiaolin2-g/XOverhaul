@@ -1,0 +1,11 @@
+{
+  "name": "Green Dye",
+  "icon": "minecraft:green_dye",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:green_dye_from_green_tulip"
+    }
+  ]
+}

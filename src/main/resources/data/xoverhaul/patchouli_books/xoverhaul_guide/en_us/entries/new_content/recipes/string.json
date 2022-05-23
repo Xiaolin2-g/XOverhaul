@@ -1,0 +1,11 @@
+{
+  "name": "String",
+  "icon": "minecraft:string",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:string_from_cobweb"
+    }
+  ]
+}

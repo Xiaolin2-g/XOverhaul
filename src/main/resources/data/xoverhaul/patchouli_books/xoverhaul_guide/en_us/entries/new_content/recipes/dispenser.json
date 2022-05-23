@@ -1,0 +1,12 @@
+{
+  "name": "Dispenser",
+  "icon": "minecraft:dispenser",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:dispenser",
+      "recipe2": "xoverhaul:dispenser_mirrored"
+    }
+  ]
+}

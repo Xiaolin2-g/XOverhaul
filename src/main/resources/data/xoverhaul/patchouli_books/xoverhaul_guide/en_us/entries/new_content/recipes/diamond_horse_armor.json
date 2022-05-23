@@ -1,0 +1,11 @@
+{
+  "name": "Diamond Horse Armor",
+  "icon": "minecraft:diamond_horse_armor",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:diamond_horse_armor"
+    }
+  ]
+}

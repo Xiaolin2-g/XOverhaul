@@ -1,0 +1,11 @@
+{
+  "name": "Gilded Blackstone",
+  "icon": "minecraft:gilded_blackstone",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:gilded_blackstone"
+    }
+  ]
+}

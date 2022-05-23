@@ -1,0 +1,11 @@
+{
+  "name": "Iron Ingot",
+  "icon": "minecraft:iron_ingot",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:iron_ingot_from_iron_horse_armor"
+    }
+  ]
+}

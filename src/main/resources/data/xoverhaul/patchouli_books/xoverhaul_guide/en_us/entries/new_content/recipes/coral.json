@@ -1,0 +1,21 @@
+{
+  "name": "Coral",
+  "icon": "minecraft:tube_coral",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:tube_coral",
+      "recipe2": "xoverhaul:brain_coral"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:bubble_coral",
+      "recipe2": "xoverhaul:fire_coral"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:horn_coral"
+    }
+  ]
+}

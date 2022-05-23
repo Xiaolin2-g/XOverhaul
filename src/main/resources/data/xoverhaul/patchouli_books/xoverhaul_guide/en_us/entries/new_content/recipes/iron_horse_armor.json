@@ -1,0 +1,11 @@
+{
+  "name": "Iron Horse Armor",
+  "icon": "minecraft:iron_horse_armor",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:iron_horse_armor"
+    }
+  ]
+}

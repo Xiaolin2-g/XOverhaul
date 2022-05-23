@@ -1,0 +1,17 @@
+{
+  "name": "Chainmail Armor",
+  "icon": "minecraft:chainmail_helmet",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:chainmail_helmet",
+      "recipe2": "xoverhaul:chainmail_chestplate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:chainmail_leggings",
+      "recipe2": "xoverhaul:chainmail_boots"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Lime Dye",
+  "icon": "minecraft:lime_dye",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:lime_dye_from_lime_tulip"
+    }
+  ]
+}

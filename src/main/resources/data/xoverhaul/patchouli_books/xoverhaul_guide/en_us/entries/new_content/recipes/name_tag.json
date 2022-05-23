@@ -1,0 +1,12 @@
+{
+  "name": "Name Tag",
+  "icon": "minecraft:name_tag",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:name_tag",
+      "recipe2": "xoverhaul:name_tag_mirrored"
+    }
+  ]
+}

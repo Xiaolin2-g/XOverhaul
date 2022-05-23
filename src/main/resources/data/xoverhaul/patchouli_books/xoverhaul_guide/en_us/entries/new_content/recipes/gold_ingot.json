@@ -1,0 +1,11 @@
+{
+  "name": "Gold Ingot",
+  "icon": "minecraft:gold_ingot",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:gold_ingot_from_golden_horse_armor"
+    }
+  ]
+}

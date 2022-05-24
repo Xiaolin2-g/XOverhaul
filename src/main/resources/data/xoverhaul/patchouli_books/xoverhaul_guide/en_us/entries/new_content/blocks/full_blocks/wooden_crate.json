@@ -1,0 +1,16 @@
+{
+  "name": "Wooden Crate",
+  "icon": "xoverhaul:wooden_crate",
+  "category": "xoverhaul:new_content/blocks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:wooden_crate",
+      "text": "$(l)Wooden Crate$() is a block that $(3)generates on the (link)Wooden Crate Structures$() and can be fished 1 to 2 crates on all biomes. $(br2)When broken without Silk Touch, you can get a random drop from this list:"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "♦ Drops ♦ $(br)1 Sapling (11,7%) $(br)1 Log (11,7%) $(br)1-4 Coal (11,7%) $(br)1-3 Bread (11,7%) $(br)1-4 Stick (11,7%) $(br)1-8 Cobblestone (11,7%) $(br)1 Apple (8,8%) $(br)1-2 $(l:new_content/items/normal_items/leather_armor_piece)Leather Armor Piece$() (8,8%) $(br)1 $(l:new_content/items/normal_items/golden_armor_scrap)Golden Armor Scrap$() (5,9%) $(br)1 Stone Pickaxe (5,9%)"
+    }
+  ]
+}

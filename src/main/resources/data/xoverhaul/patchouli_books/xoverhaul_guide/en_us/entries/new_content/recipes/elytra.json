@@ -1,0 +1,11 @@
+{
+  "name": "Elytra",
+  "icon": "minecraft:elytra",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:elytra_from_elytra_wing"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Cake Slice",
+  "icon": "xoverhaul:cake_slice",
+  "category": "xoverhaul:new_content/items/foods",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cake_slice",
+      "text": "$(l)Cake Slice$() is an item that can be crafted using the following materials: $(br2)It restores 2 hunger points and can be eaten quickly."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cake_slice_from_cake"
+    }
+  ]
+}

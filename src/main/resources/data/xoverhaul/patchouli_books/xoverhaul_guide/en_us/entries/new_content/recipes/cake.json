@@ -1,0 +1,11 @@
+{
+  "name": "Cake",
+  "icon": "minecraft:cake",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cake_from_cake_slice"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Bedrock Wall",
+  "icon": "xoverhaul:bedrock_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:bedrock_wall",
+      "text": "$(l)Bedrock Wall$() is an unobtainable block."
+    }
+  ]
+}

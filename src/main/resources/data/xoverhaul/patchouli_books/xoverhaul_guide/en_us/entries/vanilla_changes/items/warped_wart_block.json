@@ -1,0 +1,12 @@
+{
+  "name": "Warped Wart Block",
+  "icon": "minecraft:warped_wart_block",
+  "category": "xoverhaul:vanilla_changes/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:warped_wart_block",
+      "text": "This block is now called $(l)Warped Cap Block$()."
+    }
+  ]
+}

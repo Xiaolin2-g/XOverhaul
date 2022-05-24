@@ -1,0 +1,16 @@
+{
+  "name": "Smooth Stone Wall",
+  "icon": "xoverhaul:smooth_stone_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:smooth_stone_wall",
+      "text": "$(l)Smooth Stone Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:smooth_stone_wall"
+    }
+  ]
+}

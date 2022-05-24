@@ -1,0 +1,6 @@
+{
+  "name": "Tags",
+  "description": "The changes or additions to tags",
+  "icon": "minecraft:name_tag",
+  "parent": "xoverhaul:vanilla_changes"
+}

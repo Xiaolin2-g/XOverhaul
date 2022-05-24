@@ -1,0 +1,12 @@
+{
+  "name": "Glow Berries",
+  "icon": "minecraft:glow_berries",
+  "category": "xoverhaul:vanilla_changes/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:glow_berries",
+      "text": "Glow Berries now give the player the Glowing effect for 2 seconds after eating it."
+    }
+  ]
+}

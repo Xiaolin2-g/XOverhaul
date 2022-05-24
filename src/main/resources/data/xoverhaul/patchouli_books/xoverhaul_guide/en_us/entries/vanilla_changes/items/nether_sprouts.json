@@ -1,0 +1,12 @@
+{
+  "name": "Nether Sprouts",
+  "icon": "minecraft:nether_sprouts",
+  "category": "xoverhaul:vanilla_changes/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:nether_sprouts",
+      "text": "This block is now called $(l)Warped Sprouts$()."
+    }
+  ]
+}

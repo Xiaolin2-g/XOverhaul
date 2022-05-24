@@ -1,0 +1,11 @@
+{
+  "name": "Stone Crafting Materials",
+  "icon": "minecraft:name_tag",
+  "category": "xoverhaul:vanilla_changes/tags",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "These items are now part of this tag: $(br2)- Granite $(br)- Andesite $(br)- Diorite $(br)- Tuff $(br)- Calcite $(br)- Dripstone"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Recipe removed, this block is now called (link)Crimson Cap Block."
+      "text": "Recipe removed, this block is now called $(l:vanilla_changes/items/nether_wart_block)Crimson Cap Block$()."
     }
   ]
 }

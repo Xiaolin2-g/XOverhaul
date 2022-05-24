@@ -1,0 +1,16 @@
+{
+  "name": "Cracked Stone Brick Wall",
+  "icon": "xoverhaul:cracked_stone_brick_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cracked_stone_brick_wall",
+      "text": "$(l)Cracked Stone Bricks Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cracked_stone_brick_wall"
+    }
+  ]
+}

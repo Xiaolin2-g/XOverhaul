@@ -1,0 +1,6 @@
+{
+  "name": "Blocks",
+  "description": "The changes to blocks",
+  "icon": "minecraft:honeycomb_block",
+  "parent": "xoverhaul:vanilla_changes"
+}

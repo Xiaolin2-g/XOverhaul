@@ -1,0 +1,12 @@
+{
+  "name": "Honeycomb Block",
+  "icon": "minecraft:honeycomb_block",
+  "category": "xoverhaul:vanilla_changes/blocks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:honeycomb_block",
+      "text": "This block mining tool is now Pickaxe."
+    }
+  ]
+}

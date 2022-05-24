@@ -1,0 +1,12 @@
+{
+  "name": "Nether Wart Block",
+  "icon": "minecraft:nether_wart_block",
+  "category": "xoverhaul:vanilla_changes/items",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:nether_wart_block",
+      "text": "$(l:vanilla_changes/recipes/nether_wart_block)Recipe removed$(). And this block is now called $(l)Crimson Cap Block$()."
+    }
+  ]
+}

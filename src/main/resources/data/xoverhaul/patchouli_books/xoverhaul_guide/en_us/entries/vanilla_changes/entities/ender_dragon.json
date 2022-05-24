@@ -1,0 +1,15 @@
+{
+  "name": "Ender Dragon",
+  "icon": "minecraft:dragon_head",
+  "category": "xoverhaul:vanilla_changes/entities",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ender Dragon now drops 1 $(l:new_content/items/normal_items/elytra_wing)Elytra Wing$() (100%) on death."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:ender_dragon"
+    }
+  ]
+}

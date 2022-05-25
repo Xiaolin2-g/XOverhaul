@@ -1,0 +1,16 @@
+{
+  "name": "Purpur Block Wall",
+  "icon": "xoverhaul:purpur_block_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:purpur_block_wall",
+      "text": "$(l)Purpur Block Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:purpur_block_wall"
+    }
+  ]
+}

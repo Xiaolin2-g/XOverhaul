@@ -1,0 +1,16 @@
+{
+  "name": "Polished Granite Wall",
+  "icon": "xoverhaul:polished_granite_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:polished_granite_wall",
+      "text": "$(l)Polished Granite Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:polished_granite_wall"
+    }
+  ]
+}

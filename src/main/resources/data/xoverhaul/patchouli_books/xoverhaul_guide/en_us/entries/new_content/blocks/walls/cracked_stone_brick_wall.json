@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "xoverhaul:cracked_stone_brick_wall",
-      "text": "$(l)Cracked Stone Bricks Wall$() is a block that can be crafted with the following materials:"
+      "text": "$(l)Cracked Stone Brick Wall$() is a block that can be crafted with the following materials:"
     },
     {
       "type": "patchouli:crafting",

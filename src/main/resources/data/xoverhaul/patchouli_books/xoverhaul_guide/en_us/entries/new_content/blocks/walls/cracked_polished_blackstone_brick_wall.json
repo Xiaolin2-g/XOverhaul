@@ -1,0 +1,16 @@
+{
+  "name": "Cracked Polished Blackstone Brick Wall",
+  "icon": "xoverhaul:cracked_polished_blackstone_brick_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cracked_polished_blackstone_brick_wall",
+      "text": "$(l)Cracked Polished Blackstone Brick Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cracked_polished_blackstone_brick_wall"
+    }
+  ]
+}

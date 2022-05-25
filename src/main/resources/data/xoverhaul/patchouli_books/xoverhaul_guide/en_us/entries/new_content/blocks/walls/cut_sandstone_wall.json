@@ -1,0 +1,16 @@
+{
+  "name": "Cut Sandstone Wall",
+  "icon": "xoverhaul:cut_sandstone_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cut_sandstone_wall",
+      "text": "$(l)Cut Sandstone Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cut_sandstone_wall"
+    }
+  ]
+}

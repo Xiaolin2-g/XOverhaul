@@ -1,0 +1,16 @@
+{
+  "name": "Polished Andesite Wall",
+  "icon": "xoverhaul:polished_andesite_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:polished_andesite_wall",
+      "text": "$(l)Polished Andesite Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:polished_andesite_wall"
+    }
+  ]
+}

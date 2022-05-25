@@ -1,0 +1,16 @@
+{
+  "name": "Cracked Nether Brick Wall",
+  "icon": "xoverhaul:cracked_nether_brick_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cracked_nether_brick_wall",
+      "text": "$(l)Cracked Nether Brick Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cracked_nether_brick_wall"
+    }
+  ]
+}

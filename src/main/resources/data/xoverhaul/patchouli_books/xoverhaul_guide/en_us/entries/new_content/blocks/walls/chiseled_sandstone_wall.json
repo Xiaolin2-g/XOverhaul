@@ -1,0 +1,16 @@
+{
+  "name": "Chiseled Sandstone Wall",
+  "icon": "xoverhaul:chiseled_sandstone_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:chiseled_sandstone_wall",
+      "text": "$(l)Chiseled Sandstone Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:chiseled_sandstone_wall"
+    }
+  ]
+}

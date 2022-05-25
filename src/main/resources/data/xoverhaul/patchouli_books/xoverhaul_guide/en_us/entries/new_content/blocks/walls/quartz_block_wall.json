@@ -1,0 +1,16 @@
+{
+  "name": "Quartz Block Wall",
+  "icon": "xoverhaul:quartz_block_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:quartz_block_wall",
+      "text": "$(l)Quartz Block Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:quartz_block_wall"
+    }
+  ]
+}

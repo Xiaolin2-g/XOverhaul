@@ -1,0 +1,16 @@
+{
+  "name": "Netherrack Wall",
+  "icon": "xoverhaul:netherrack_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:netherrack_wall",
+      "text": "$(l)Netherrack Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:netherrack_wall"
+    }
+  ]
+}

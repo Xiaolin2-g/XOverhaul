@@ -385,6 +385,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // Crying Obsidian
 
-        ModRecipeHelper.offerTwoOfTheSameItem(exporter, ModItems.ELYTRA_WING, Items.ELYTRA, 1);
+        ModRecipeHelper.offerTwoItemsShapeless(exporter, Blocks.OBSIDIAN, Items.GHAST_TEAR, Blocks.CRYING_OBSIDIAN, 1);
     }
 }

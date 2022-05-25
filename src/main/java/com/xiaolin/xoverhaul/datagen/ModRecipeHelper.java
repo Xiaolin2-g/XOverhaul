@@ -974,6 +974,19 @@ public class ModRecipeHelper {
                 .offerTo(exporter);
     }
 
+    public static void offerTwoItemsShapeless(Consumer<RecipeJsonProvider> exporter,
+                                             ItemConvertible input,
+                                             ItemConvertible input_2,
+                                             ItemConvertible output,
+                                             int outputCount){
+
+        ShapelessRecipeJsonBuilder.create(output, outputCount)
+                .input(input)
+                .input(input_2)
+                .criterion(RecipeProvider.hasItem(input),
+                        RecipeProvider.conditionsFromItem(input))
+                .offerTo(exporter);
+    }
 
 
 

@@ -1,0 +1,11 @@
+{
+  "name": "Crying Obsidian",
+  "icon": "minecraft:crying_obsidian",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:crying_obsidian"
+    }
+  ]
+}

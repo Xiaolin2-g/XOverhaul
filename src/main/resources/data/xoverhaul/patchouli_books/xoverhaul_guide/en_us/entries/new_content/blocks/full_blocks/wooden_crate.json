@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "xoverhaul:wooden_crate",
-      "text": "$(l)Wooden Crate$() is a block that $(3)generates on the (link)Wooden Crate Structures$() and can be fished 1 to 2 crates on all biomes. $(br2)When broken without Silk Touch, you can get a random drop from this list:"
+      "text": "$(l)Wooden Crate$() is a block that $(3)generates on the Wooden Crate Structures $(l:new_content/structures/wooden_crate_small)(1)$() $(l:new_content/structures/wooden_crate_large)(2)$() and can be fished 1 to 2 crates on all biomes. $(br2)When broken without Silk Touch, you can get a random drop from this list:"
     },
     {
       "type": "patchouli:text",

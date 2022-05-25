@@ -1,0 +1,16 @@
+{
+  "name": "White Terracota Wall",
+  "icon": "xoverhaul:white_terracota_wall",
+  "category": "xoverhaul:new_content/blocks/terracota_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:white_terracota_wall",
+      "text": "$(l)White Terracota Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:white_terracota_wall"
+    }
+  ]
+}

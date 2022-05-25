@@ -1,0 +1,16 @@
+{
+  "name": "Orange Terracota Wall",
+  "icon": "xoverhaul:orange_terracota_wall",
+  "category": "xoverhaul:new_content/blocks/terracota_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:orange_terracota_wall",
+      "text": "$(l)Orange Terracota Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:orange_terracota_wall"
+    }
+  ]
+}

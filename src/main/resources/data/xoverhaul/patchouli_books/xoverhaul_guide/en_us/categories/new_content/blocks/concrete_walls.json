@@ -1,6 +1,6 @@
 {
   "name": "Concrete Walls",
   "description": "",
-  "icon": "xoverhaul:white_concrete_walls",
+  "icon": "xoverhaul:white_concrete_wall",
   "parent": "xoverhaul:new_content/blocks/walls"
 }

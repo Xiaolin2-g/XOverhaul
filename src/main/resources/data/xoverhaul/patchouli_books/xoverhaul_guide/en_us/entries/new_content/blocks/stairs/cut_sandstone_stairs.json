@@ -1,0 +1,16 @@
+{
+  "name": "Cut Sandstone Stairs",
+  "icon": "xoverhaul:cut_sandstone_stairs",
+  "category": "xoverhaul:new_content/blocks/stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cut_sandstone_stairs",
+      "text": "$(l)Cut Sandstone Stairs$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cut_sandstone_stairs"
+    }
+  ]
+}

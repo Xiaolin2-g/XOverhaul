@@ -129,7 +129,7 @@ public class ModStairs extends BlockInitBase {
             new BaseStairs(Blocks.CHISELED_QUARTZ_BLOCK.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.CHISELED_QUARTZ_BLOCK)));
 
-    public static final Block QUARTZ_BRICKS_STAIRS = registerBlock("quartz_bricks_stairs",
+    public static final Block QUARTZ_BRICK_STAIRS = registerBlock("quartz_brick_stairs",
             new BaseStairs(Blocks.QUARTZ_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)));
 

@@ -1,0 +1,16 @@
+{
+  "name": "Light Gray Terracota Wall",
+  "icon": "xoverhaul:light_gray_terracota_wall",
+  "category": "xoverhaul:new_content/blocks/terracota_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:light_gray_terracota_wall",
+      "text": "$(l)Light Gray Terracota Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:light_gray_terracota_wall"
+    }
+  ]
+}

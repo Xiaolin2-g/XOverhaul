@@ -1,0 +1,16 @@
+{
+  "name": "Green Concrete Wall",
+  "icon": "xoverhaul:green_concrete_wall",
+  "category": "xoverhaul:new_content/blocks/concrete_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:green_concrete_wall",
+      "text": "$(l)Green Concrete Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:green_concrete_wall"
+    }
+  ]
+}

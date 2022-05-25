@@ -1,0 +1,16 @@
+{
+  "name": "Cracked Polished Blackstone Brick Slab",
+  "icon": "xoverhaul:cracked_polished_blackstone_brick_slab",
+  "category": "xoverhaul:new_content/blocks/slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cracked_polished_blackstone_brick_slab",
+      "text": "$(l)Cracked Polished Blackstone Brick Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cracked_polished_blackstone_brick_slab"
+    }
+  ]
+}

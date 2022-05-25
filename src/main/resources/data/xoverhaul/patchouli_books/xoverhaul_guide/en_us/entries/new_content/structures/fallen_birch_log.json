@@ -1,0 +1,11 @@
+{
+  "name": "Fallen Birch Log",
+  "icon": "minecraft:birch_log",
+  "category": "xoverhaul:new_content/structures",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Fallen Birch Log$() is a structure that $(3)generates on birch forests$()."
+    }
+  ]
+}

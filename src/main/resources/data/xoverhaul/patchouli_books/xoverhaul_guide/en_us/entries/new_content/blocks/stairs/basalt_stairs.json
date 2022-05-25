@@ -1,0 +1,16 @@
+{
+  "name": "Basalt Stairs",
+  "icon": "xoverhaul:basalt_stairs",
+  "category": "xoverhaul:new_content/blocks/stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:basalt_stairs",
+      "text": "$(l)Basalt Stairs$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:basalt_stairs"
+    }
+  ]
+}

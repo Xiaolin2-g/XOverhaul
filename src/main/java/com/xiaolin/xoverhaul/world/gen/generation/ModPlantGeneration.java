@@ -39,6 +39,8 @@ public class ModPlantGeneration extends ModFeatureGeneration{
     public static RegistryKey<PlacedFeature> BLACK_TULIP_PLACED_KEY = registerPlacedKey("black_tulip");
     public static RegistryKey<ConfiguredFeature<?, ?>> CRIMSON_SPROUTS_CONFIGURED_KEY = registerConfiguredKey("crimson_sprouts");
     public static RegistryKey<PlacedFeature> CRIMSON_SPROUTS_PLACED_KEY = registerPlacedKey("crimson_sprouts");
+    public static RegistryKey<ConfiguredFeature<?, ?>> BIRCH_FLOWER_CONFIGURED_KEY = registerConfiguredKey("birch_flower");
+    public static RegistryKey<PlacedFeature> BIRCH_FLOWER_PLACED_KEY = registerPlacedKey("birch_flower");
 
 
     private static void configurePlants(){
@@ -56,6 +58,8 @@ public class ModPlantGeneration extends ModFeatureGeneration{
         registerConfiguredFeature(ModPlantConfiguredFeatures.GREEN_TULIP_CONFIGURED_FEATURE, GREEN_TULIP_CONFIGURED_KEY);
         registerConfiguredFeature(ModPlantConfiguredFeatures.BLACK_TULIP_CONFIGURED_FEATURE, BLACK_TULIP_CONFIGURED_KEY);
         registerConfiguredFeature(ModPlantConfiguredFeatures.CRIMSON_SPROUTS_CONFIGURED_FEATURE, CRIMSON_SPROUTS_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantConfiguredFeatures.BIRCH_FLOWER_CONFIGURED_FEATURE, BIRCH_FLOWER_CONFIGURED_KEY);
+
     }
 
     private static void placePlants(){
@@ -73,6 +77,7 @@ public class ModPlantGeneration extends ModFeatureGeneration{
         registerPlacedFeature(ModPlantConfiguredFeatures.GREEN_TULIP_PLACED_FEATURE, GREEN_TULIP_PLACED_KEY);
         registerPlacedFeature(ModPlantConfiguredFeatures.BLACK_TULIP_PLACED_FEATURE, BLACK_TULIP_PLACED_KEY);
         registerPlacedFeature(ModPlantConfiguredFeatures.CRIMSON_SPROUTS_PLACED_FEATURE, CRIMSON_SPROUTS_PLACED_KEY);
+        registerPlacedFeature(ModPlantConfiguredFeatures.BIRCH_FLOWER_PLACED_FEATURE, BIRCH_FLOWER_PLACED_KEY);
     }
 
     private static void addPlantsToBiomes(){
@@ -90,6 +95,7 @@ public class ModPlantGeneration extends ModFeatureGeneration{
         addToFlowerForest(GREEN_TULIP_PLACED_KEY);
         addToFlowerForest(BLACK_TULIP_PLACED_KEY);
         addToCrimsonForest(CRIMSON_SPROUTS_PLACED_KEY);
+        addToBirchForest(BIRCH_FLOWER_PLACED_KEY);
     }
 
     public static void generatePlants(){
@@ -100,6 +106,11 @@ public class ModPlantGeneration extends ModFeatureGeneration{
 
     private static void addToFlowerForest(RegistryKey<PlacedFeature> key){
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FLOWER_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, key);
+    }
+
+    private static void addToBirchForest(RegistryKey<PlacedFeature> key){
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BIRCH_FOREST, BiomeKeys.OLD_GROWTH_BIRCH_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, key);
     }
 

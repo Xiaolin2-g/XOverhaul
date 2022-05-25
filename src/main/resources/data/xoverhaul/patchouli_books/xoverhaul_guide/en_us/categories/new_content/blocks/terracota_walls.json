@@ -1,6 +1,6 @@
 {
   "name": "Terracota Walls",
   "description": "",
-  "icon": "xoverhaul:white_terracota_walls",
+  "icon": "xoverhaul:white_terracota_wall",
   "parent": "xoverhaul:new_content/blocks/walls"
 }

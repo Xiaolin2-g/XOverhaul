@@ -1,0 +1,16 @@
+{
+  "name": "Smooth Stone Stairs",
+  "icon": "xoverhaul:smooth_stone_stairs",
+  "category": "xoverhaul:new_content/blocks/stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:smooth_stone_stairs",
+      "text": "$(l)Smooth Stone Stairs$() is an unobtainable block."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:smooth_stone_stairs"
+    }
+  ]
+}

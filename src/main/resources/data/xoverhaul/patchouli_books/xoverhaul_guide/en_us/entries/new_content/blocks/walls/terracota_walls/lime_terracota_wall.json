@@ -1,0 +1,16 @@
+{
+  "name": "Lime Terracota Wall",
+  "icon": "xoverhaul:lime_terracota_wall",
+  "category": "xoverhaul:new_content/blocks/terracota_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:lime_terracota_wall",
+      "text": "$(l)Lime Terracota Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:lime_terracota_wall"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Cracked Nether Brick Stairs",
+  "icon": "xoverhaul:cracked_nether_brick_stairs",
+  "category": "xoverhaul:new_content/blocks/stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cracked_nether_brick_stairs",
+      "text": "$(l)Cracked Nether Brick Stairs$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cracked_nether_brick_stairs"
+    }
+  ]
+}

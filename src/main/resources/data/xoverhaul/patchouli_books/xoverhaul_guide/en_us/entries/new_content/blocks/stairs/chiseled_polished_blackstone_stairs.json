@@ -1,0 +1,16 @@
+{
+  "name": "Chiseled Polished Blackstone Stairs",
+  "icon": "xoverhaul:chiseled_polished_blackstone_stairs",
+  "category": "xoverhaul:new_content/blocks/stairs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:chiseled_polished_blackstone_stairs",
+      "text": "$(l)Chiseled Polished Blackstone Stairs$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:chiseled_polished_blackstone_stairs"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Chiseled Stone Brick Slab",
+  "icon": "xoverhaul:chiseled_stone_brick_slab",
+  "category": "xoverhaul:new_content/blocks/slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:chiseled_stone_brick_slab",
+      "text": "$(l)Chiseled Stone Brick Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:chiseled_stone_brick_slab"
+    }
+  ]
+}

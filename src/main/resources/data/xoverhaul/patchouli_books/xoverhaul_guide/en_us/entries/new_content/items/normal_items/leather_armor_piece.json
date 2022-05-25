@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "xoverhaul:leather_armor_piece",
-      "text": "$(l)Leather Armor Piece$() is an item (link)used to craft Leather Armor instead of using Leather. $(br2)You can get it by breaking (link)Wooden Crates and by killing (link)Leatherlings."
+      "text": "$(l)Leather Armor Piece$() is an item $(l:new_content/recipes/leather_armor)used to craft Leather Armor instead of using Leather$(). $(br2)You can get it by breaking $(l:new_content/blocks/full_blocks/wooden_crate)Wooden Crates$() and by killing $(l:new_content/entities/leatherling)Leatherlings$()."
     }
   ]
 }

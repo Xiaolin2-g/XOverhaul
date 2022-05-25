@@ -1,0 +1,6 @@
+{
+  "name": "Structures",
+  "description": "New structures on the world",
+  "icon": "minecraft:birch_log",
+  "parent": "xoverhaul:new_content"
+}

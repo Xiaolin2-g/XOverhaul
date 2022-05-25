@@ -1,0 +1,11 @@
+{
+  "name": "Wooden Crate Large",
+  "icon": "xoverhaul:wooden_crate",
+  "category": "xoverhaul:new_content/structures",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Wooden Crate Large$() is a structure that $(3)generates on all biomes of the $(c)Overworld dimension$()."
+    }
+  ]
+}

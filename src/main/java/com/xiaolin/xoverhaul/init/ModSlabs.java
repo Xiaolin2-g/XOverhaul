@@ -93,7 +93,7 @@ public class ModSlabs extends BlockInitBase {
     public static final Block CHISELED_QUARTZ_BLOCK_SLAB = registerBlock("chiseled_quartz_block_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHISELED_QUARTZ_BLOCK)));
 
-    public static final Block QUARTZ_BRICKS_SLAB = registerBlock("quartz_bricks_slab",
+    public static final Block QUARTZ_BRICK_SLAB = registerBlock("quartz_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BRICKS)));
 
     public static final Block CRACKED_NETHER_BRICK_SLAB = registerBlock("cracked_nether_brick_slab",

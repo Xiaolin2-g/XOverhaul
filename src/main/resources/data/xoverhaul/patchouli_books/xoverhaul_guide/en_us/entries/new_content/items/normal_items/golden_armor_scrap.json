@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "xoverhaul:golden_armor_scrap",
-      "text": "$(l)Golden Armor Scrap$() is an item (link)used to craft Golden Armor instead of using Gold Ingots. $(br2)You can get it by breaking (link)Wooden Crates."
+      "text": "$(l)Golden Armor Scrap$() is an item $(l:new_content/recipes/golden_armor)used to craft Golden Armor instead of using Gold Ingots$(). $(br2)You can get it by breaking $(l:new_content/blocks/full_blocks/wooden_crate)Wooden Crates$()."
     }
   ]
 }

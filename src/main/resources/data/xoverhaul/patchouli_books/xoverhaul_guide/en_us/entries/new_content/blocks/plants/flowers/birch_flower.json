@@ -1,0 +1,12 @@
+{
+  "name": "Birch Flower",
+  "icon": "xoverhaul:birch_flower",
+  "category": "xoverhaul:new_content/blocks/flowers",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:birch_flower",
+      "text": "$(l)Birch Flower$() is a block that $(3)generates on birch forests$()."
+    }
+  ]
+}

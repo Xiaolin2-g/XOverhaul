@@ -1,0 +1,17 @@
+{
+  "name": "Leather Armor",
+  "icon": "minecraft:leather_helmet",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:leather_helmet_from_leather_armor_piece",
+      "recipe2": "xoverhaul:leather_chestplate_from_leather_armor_piece"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:leather_leggings_from_leather_armor_piece",
+      "recipe2": "xoverhaul:leather_boots_from_leather_armor_piece"
+    }
+  ]
+}

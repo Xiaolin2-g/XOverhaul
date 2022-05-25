@@ -1,0 +1,16 @@
+{
+  "name": "Pink Terracota Wall",
+  "icon": "xoverhaul:pink_terracota_wall",
+  "category": "xoverhaul:new_content/blocks/terracota_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:pink_terracota_wall",
+      "text": "$(l)Pink Terracota Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:pink_terracota_wall"
+    }
+  ]
+}

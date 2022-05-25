@@ -1,0 +1,16 @@
+{
+  "name": "Green Terracota Wall",
+  "icon": "xoverhaul:green_terracota_wall",
+  "category": "xoverhaul:new_content/blocks/terracota_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:green_terracota_wall",
+      "text": "$(l)Green Terracota Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:green_terracota_wall"
+    }
+  ]
+}

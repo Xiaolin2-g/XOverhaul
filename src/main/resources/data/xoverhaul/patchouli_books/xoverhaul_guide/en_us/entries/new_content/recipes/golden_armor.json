@@ -1,0 +1,17 @@
+{
+  "name": "Golden Armor",
+  "icon": "minecraft:golden_helmet",
+  "category": "xoverhaul:new_content/recipes",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:golden_helmet_from_golden_armor_scrap",
+      "recipe2": "xoverhaul:golden_chestplate_from_golden_armor_scrap"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:golden_leggings_from_golden_armor_scrap",
+      "recipe2": "xoverhaul:golden_boots_from_golden_armor_scrap"
+    }
+  ]
+}

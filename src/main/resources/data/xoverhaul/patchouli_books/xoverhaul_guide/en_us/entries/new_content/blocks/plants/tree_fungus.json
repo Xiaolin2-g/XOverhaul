@@ -1,0 +1,12 @@
+{
+  "name": "Tree Fungus",
+  "icon": "xoverhaul:tree_fungus",
+  "category": "xoverhaul:new_content/blocks/plants",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:tree_fungus",
+      "text": "$(l)Tree Fungus$() is a block that $(3)generates on Birch Forests$() on the sides of the birch trees."
+    }
+  ]
+}

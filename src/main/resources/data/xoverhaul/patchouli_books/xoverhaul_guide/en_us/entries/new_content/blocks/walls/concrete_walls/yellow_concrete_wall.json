@@ -1,0 +1,16 @@
+{
+  "name": "Yellow Concrete Wall",
+  "icon": "xoverhaul:yellow_concrete_wall",
+  "category": "xoverhaul:new_content/blocks/concrete_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:yellow_concrete_wall",
+      "text": "$(l)Yellow Concrete Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:yellow_concrete_wall"
+    }
+  ]
+}

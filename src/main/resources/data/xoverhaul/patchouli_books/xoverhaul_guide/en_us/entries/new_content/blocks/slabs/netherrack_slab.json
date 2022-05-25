@@ -1,0 +1,16 @@
+{
+  "name": "Netherrack Slab",
+  "icon": "xoverhaul:netherrack_slab",
+  "category": "xoverhaul:new_content/blocks/slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:netherrack_slab",
+      "text": "$(l)Netherrack Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:netherrack_slab"
+    }
+  ]
+}

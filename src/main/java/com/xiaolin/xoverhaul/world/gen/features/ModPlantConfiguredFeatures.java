@@ -67,6 +67,10 @@ public class ModPlantConfiguredFeatures {
 
     public static PlacedFeature CRIMSON_SPROUTS_PLACED_FEATURE = placeSprouts(CRIMSON_SPROUTS_CONFIGURED_FEATURE);
 
+    public static ConfiguredFeature<?, ?> BIRCH_FLOWER_CONFIGURED_FEATURE = configureFlower(ModPlants.BIRCH_FLOWER);
+
+    public static PlacedFeature BIRCH_FLOWER_PLACED_FEATURE = placeFlower(BIRCH_FLOWER_CONFIGURED_FEATURE, 25);
+
 
     private static ConfiguredFeature<?,?> configureFlower(Block flower){
         return new ConfiguredFeature(Feature.FLOWER, new RandomPatchFeatureConfig(12, 6, 2, // i: tries, j: x and z spread, k: y spread

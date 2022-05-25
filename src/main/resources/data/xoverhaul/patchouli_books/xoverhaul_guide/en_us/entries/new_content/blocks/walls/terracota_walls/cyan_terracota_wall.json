@@ -1,0 +1,16 @@
+{
+  "name": "Cyan Terracota Wall",
+  "icon": "xoverhaul:cyan_terracota_wall",
+  "category": "xoverhaul:new_content/blocks/terracota_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:cyan_terracota_wall",
+      "text": "$(l)Cyan Terracota Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:cyan_terracota_wall"
+    }
+  ]
+}

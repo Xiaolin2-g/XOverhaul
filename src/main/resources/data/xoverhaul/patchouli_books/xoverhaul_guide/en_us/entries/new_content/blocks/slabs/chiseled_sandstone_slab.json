@@ -1,0 +1,16 @@
+{
+  "name": "Chiseled Sandstone Slab",
+  "icon": "xoverhaul:chiseled_sandstone_slab",
+  "category": "xoverhaul:new_content/blocks/slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:chiseled_sandstone_slab",
+      "text": "$(l)Chiseled Sandstone Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:chiseled_sandstone_slab"
+    }
+  ]
+}

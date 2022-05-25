@@ -1,0 +1,16 @@
+{
+  "name": "Lime Concrete Wall",
+  "icon": "xoverhaul:lime_concrete_wall",
+  "category": "xoverhaul:new_content/blocks/concrete_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:lime_concrete_wall",
+      "text": "$(l)Lime Concrete Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:lime_concrete_wall"
+    }
+  ]
+}

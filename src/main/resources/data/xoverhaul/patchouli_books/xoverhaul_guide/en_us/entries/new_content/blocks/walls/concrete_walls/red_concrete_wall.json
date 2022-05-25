@@ -1,0 +1,16 @@
+{
+  "name": "Red Concrete Wall",
+  "icon": "xoverhaul:red_concrete_wall",
+  "category": "xoverhaul:new_content/blocks/concrete_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:red_concrete_wall",
+      "text": "$(l)Red Concrete Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:red_concrete_wall"
+    }
+  ]
+}

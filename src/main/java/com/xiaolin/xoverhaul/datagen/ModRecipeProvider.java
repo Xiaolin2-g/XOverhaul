@@ -382,5 +382,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         // Elytra
 
         ModRecipeHelper.offerTwoOfTheSameItem(exporter, ModItems.ELYTRA_WING, Items.ELYTRA, 1);
+
+        // Crying Obsidian
+
+        ModRecipeHelper.offerTwoOfTheSameItem(exporter, ModItems.ELYTRA_WING, Items.ELYTRA, 1);
     }
 }

@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "xoverhaul:elytra_wing",
-      "text": "$(l)Elytra Wing$() is an item that drops from the Ender Dragon."
+      "text": "$(l)Elytra Wing$() is an item that $(l:vanilla_changes/entities/ender_dragon)drops from the Ender Dragon$()."
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "name": "Light Gray Concrete Wall",
+  "icon": "xoverhaul:light_gray_concrete_wall",
+  "category": "xoverhaul:new_content/blocks/concrete_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:light_gray_concrete_wall",
+      "text": "$(l)Light Gray Concrete Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:light_gray_concrete_wall"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Basalt Slab",
+  "icon": "xoverhaul:basalt_slab",
+  "category": "xoverhaul:new_content/blocks/slabs",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:basalt_slab",
+      "text": "$(l)Basalt Slab$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:basalt_slab"
+    }
+  ]
+}

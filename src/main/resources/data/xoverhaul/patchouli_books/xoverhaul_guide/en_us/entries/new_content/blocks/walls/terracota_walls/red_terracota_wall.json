@@ -1,0 +1,16 @@
+{
+  "name": "Red Terracota Wall",
+  "icon": "xoverhaul:red_terracota_wall",
+  "category": "xoverhaul:new_content/blocks/terracota_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:red_terracota_wall",
+      "text": "$(l)Red Terracota Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:red_terracota_wall"
+    }
+  ]
+}

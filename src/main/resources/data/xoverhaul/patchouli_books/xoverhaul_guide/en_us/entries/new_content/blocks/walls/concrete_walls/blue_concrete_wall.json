@@ -1,0 +1,16 @@
+{
+  "name": "Blue Concrete Wall",
+  "icon": "xoverhaul:blue_concrete_wall",
+  "category": "xoverhaul:new_content/blocks/concrete_walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:blue_concrete_wall",
+      "text": "$(l)Blue Concrete Wall$() is a block that can be crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:blue_concrete_wall"
+    }
+  ]
+}

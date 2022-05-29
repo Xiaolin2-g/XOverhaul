@@ -1,19 +1,8 @@
 {
   "variants": {
-    "facing=east": {
-      "model": "xoverhaul:block/tree_fungus",
-      "y": 90
-    },
-    "facing=north": {
-      "model": "xoverhaul:block/tree_fungus"
-    },
-    "facing=south": {
-      "model": "xoverhaul:block/tree_fungus",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "xoverhaul:block/tree_fungus",
-      "y": 270
-    }
+    "facing=north": { "model": "xoverhaul:block/tree_fungus" },
+    "facing=south": { "model": "xoverhaul:block/tree_fungus", "y": 180 },
+    "facing=west":  { "model": "xoverhaul:block/tree_fungus", "y": 270 },
+    "facing=east":  { "model": "xoverhaul:block/tree_fungus", "y": 90 }
   }
 }

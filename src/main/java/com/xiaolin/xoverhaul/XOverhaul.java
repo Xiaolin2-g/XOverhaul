@@ -6,6 +6,7 @@ import com.xiaolin.xoverhaul.events.LootTableModifications;
 import com.xiaolin.xoverhaul.init.*;
 import com.xiaolin.xoverhaul.registries.ModRegistries;
 import com.xiaolin.xoverhaul.world.gen.ModWorldGen;
+import com.xiaolin.xoverhaul.world.gen.treedecorator.ModTreeDecoratorType;
 import net.fabricmc.api.ModInitializer;
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
@@ -37,6 +38,7 @@ public class XOverhaul implements ModInitializer {
 		ModStairs.registerModStairs();
 		ModWalls.registerModWalls();
 		ModPlants.registerModPlants();
+		ModTreeDecoratorType.registerModTreeTypes();
 
 		ModRegistries.registerFuels();
 

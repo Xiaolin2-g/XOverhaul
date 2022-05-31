@@ -11,7 +11,8 @@
     "GlowingGlowBerryMixin",
     "ArmorStandInvoker",
     "ArmorStandArmsMixin",
-    "BlockStateModelGeneratorMixin"
+    "BlockStateModelGeneratorMixin",
+    "TreeDecoratorTypeInvoker"
 
   ],
   "client": [

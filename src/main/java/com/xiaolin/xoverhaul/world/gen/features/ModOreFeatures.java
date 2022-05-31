@@ -13,30 +13,30 @@ import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
 import java.util.Arrays;
 
-public class ModOreConfiguredFeatures {
+public class ModOreFeatures {
 
-    public static ConfiguredFeature<?,?> PURPUR_COBBLESTONE_CONFIGURED_FEATURE =
+    public static final ConfiguredFeature<?,?> PURPUR_COBBLESTONE_CONFIGURED_FEATURE =
             configureOre(RuleTestGlobals.END_STONE, ModBlocks.PURPUR_COBBLESTONE, 50);
 
 
-    public static PlacedFeature PURPUR_COBBLESTONE_PLACED_FEATURE =
+    public static final PlacedFeature PURPUR_COBBLESTONE_PLACED_FEATURE =
             placeOre(PURPUR_COBBLESTONE_CONFIGURED_FEATURE, 2, YOffset.fixed(50), YOffset.fixed(100));
 
 
 
-    public static ConfiguredFeature<?,?> SOUL_NETHERRACK_CONFIGURED_FEATURE =
+    public static final ConfiguredFeature<?,?> SOUL_NETHERRACK_CONFIGURED_FEATURE =
             configureOre(OreConfiguredFeatures.BASE_STONE_NETHER, ModBlocks.SOUL_NETHERRACK, 64);
 
 
-    public static PlacedFeature SOUL_NETHERRACK_PLACED_FEATURE =
+    public static final PlacedFeature SOUL_NETHERRACK_PLACED_FEATURE =
             placeOre(SOUL_NETHERRACK_CONFIGURED_FEATURE, 4, YOffset.getBottom(), YOffset.fixed(128));
 
 
 
-    public static ConfiguredFeature<?,?> DIRTY_SAND_CONFIGURED_FEATURE =
+    public static final ConfiguredFeature<?,?> DIRTY_SAND_CONFIGURED_FEATURE =
             configureOre(RuleTestGlobals.SAND, ModBlocks.DIRTY_SAND, 10);
 
-    public static PlacedFeature DIRTY_SAND_PLACED_FEATURE =
+    public static final PlacedFeature DIRTY_SAND_PLACED_FEATURE =
             placeOre(DIRTY_SAND_CONFIGURED_FEATURE, 1, YOffset.fixed(62), YOffset.fixed(65));
 
 

@@ -1,6 +1,6 @@
 package com.xiaolin.xoverhaul.world.gen.generation;
 
-import com.xiaolin.xoverhaul.world.gen.features.ModPlantConfiguredFeatures;
+import com.xiaolin.xoverhaul.world.gen.features.ModPlantFeatures;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.util.registry.RegistryKey;
@@ -44,40 +44,40 @@ public class ModPlantGeneration extends ModFeatureGeneration{
 
 
     private static void configurePlants(){
-        registerConfiguredFeature(ModPlantConfiguredFeatures.ENDER_FLOWER_CONFIGURED_FEATURE, ENDER_FLOWER_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.MAGENTA_TULIP_CONFIGURED_FEATURE, MAGENTA_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.LIGHT_BLUE_TULIP_CONFIGURED_FEATURE, LIGHT_BLUE_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.YELLOW_TULIP_CONFIGURED_FEATURE, YELLOW_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.LIME_TULIP_CONFIGURED_FEATURE, LIME_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.GRAY_TULIP_CONFIGURED_FEATURE, GRAY_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.LIGHT_GRAY_TULIP_CONFIGURED_FEATURE, LIGHT_GRAY_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.CYAN_TULIP_CONFIGURED_FEATURE, CYAN_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.PURPLE_TULIP_CONFIGURED_FEATURE, PURPLE_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.BLUE_TULIP_CONFIGURED_FEATURE, BLUE_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.BROWN_TULIP_CONFIGURED_FEATURE, BROWN_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.GREEN_TULIP_CONFIGURED_FEATURE, GREEN_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.BLACK_TULIP_CONFIGURED_FEATURE, BLACK_TULIP_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.CRIMSON_SPROUTS_CONFIGURED_FEATURE, CRIMSON_SPROUTS_CONFIGURED_KEY);
-        registerConfiguredFeature(ModPlantConfiguredFeatures.BIRCH_FLOWER_CONFIGURED_FEATURE, BIRCH_FLOWER_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.ENDER_FLOWER_CONFIGURED_FEATURE, ENDER_FLOWER_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.MAGENTA_TULIP_CONFIGURED_FEATURE, MAGENTA_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.LIGHT_BLUE_TULIP_CONFIGURED_FEATURE, LIGHT_BLUE_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.YELLOW_TULIP_CONFIGURED_FEATURE, YELLOW_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.LIME_TULIP_CONFIGURED_FEATURE, LIME_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.GRAY_TULIP_CONFIGURED_FEATURE, GRAY_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.LIGHT_GRAY_TULIP_CONFIGURED_FEATURE, LIGHT_GRAY_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.CYAN_TULIP_CONFIGURED_FEATURE, CYAN_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.PURPLE_TULIP_CONFIGURED_FEATURE, PURPLE_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.BLUE_TULIP_CONFIGURED_FEATURE, BLUE_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.BROWN_TULIP_CONFIGURED_FEATURE, BROWN_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.GREEN_TULIP_CONFIGURED_FEATURE, GREEN_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.BLACK_TULIP_CONFIGURED_FEATURE, BLACK_TULIP_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.CRIMSON_SPROUTS_CONFIGURED_FEATURE, CRIMSON_SPROUTS_CONFIGURED_KEY);
+        registerConfiguredFeature(ModPlantFeatures.BIRCH_FLOWER_CONFIGURED_FEATURE, BIRCH_FLOWER_CONFIGURED_KEY);
 
     }
 
     private static void placePlants(){
-        registerPlacedFeature(ModPlantConfiguredFeatures.ENDER_FLOWER_PLACED_FEATURE, ENDER_FLOWER_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.MAGENTA_TULIP_PLACED_FEATURE, MAGENTA_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.LIGHT_BLUE_TULIP_PLACED_FEATURE, LIGHT_BLUE_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.YELLOW_TULIP_PLACED_FEATURE, YELLOW_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.LIME_TULIP_PLACED_FEATURE, LIME_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.GRAY_TULIP_PLACED_FEATURE, GRAY_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.LIGHT_GRAY_TULIP_PLACED_FEATURE, LIGHT_GRAY_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.CYAN_TULIP_PLACED_FEATURE, CYAN_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.PURPLE_TULIP_PLACED_FEATURE, PURPLE_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.BLUE_TULIP_PLACED_FEATURE, BLUE_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.BROWN_TULIP_PLACED_FEATURE, BROWN_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.GREEN_TULIP_PLACED_FEATURE, GREEN_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.BLACK_TULIP_PLACED_FEATURE, BLACK_TULIP_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.CRIMSON_SPROUTS_PLACED_FEATURE, CRIMSON_SPROUTS_PLACED_KEY);
-        registerPlacedFeature(ModPlantConfiguredFeatures.BIRCH_FLOWER_PLACED_FEATURE, BIRCH_FLOWER_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.ENDER_FLOWER_PLACED_FEATURE, ENDER_FLOWER_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.MAGENTA_TULIP_PLACED_FEATURE, MAGENTA_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.LIGHT_BLUE_TULIP_PLACED_FEATURE, LIGHT_BLUE_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.YELLOW_TULIP_PLACED_FEATURE, YELLOW_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.LIME_TULIP_PLACED_FEATURE, LIME_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.GRAY_TULIP_PLACED_FEATURE, GRAY_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.LIGHT_GRAY_TULIP_PLACED_FEATURE, LIGHT_GRAY_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.CYAN_TULIP_PLACED_FEATURE, CYAN_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.PURPLE_TULIP_PLACED_FEATURE, PURPLE_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.BLUE_TULIP_PLACED_FEATURE, BLUE_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.BROWN_TULIP_PLACED_FEATURE, BROWN_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.GREEN_TULIP_PLACED_FEATURE, GREEN_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.BLACK_TULIP_PLACED_FEATURE, BLACK_TULIP_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.CRIMSON_SPROUTS_PLACED_FEATURE, CRIMSON_SPROUTS_PLACED_KEY);
+        registerPlacedFeature(ModPlantFeatures.BIRCH_FLOWER_PLACED_FEATURE, BIRCH_FLOWER_PLACED_KEY);
     }
 
     private static void addPlantsToBiomes(){

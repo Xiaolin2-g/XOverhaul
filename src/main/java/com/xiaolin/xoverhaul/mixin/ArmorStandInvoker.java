@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 public interface ArmorStandInvoker {
 
     @Invoker("setShowArms")
-    public void invokeSetShowArms(boolean showArms);
+    void invokeSetShowArms(boolean showArms);
 
 
 }

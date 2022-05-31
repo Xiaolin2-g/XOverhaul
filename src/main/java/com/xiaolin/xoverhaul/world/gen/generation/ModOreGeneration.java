@@ -6,7 +6,7 @@ import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
-import com.xiaolin.xoverhaul.world.gen.features.ModOreConfiguredFeatures;
+import com.xiaolin.xoverhaul.world.gen.features.ModOreFeatures;
 
 public class ModOreGeneration extends ModFeatureGeneration {
 
@@ -20,16 +20,16 @@ public class ModOreGeneration extends ModFeatureGeneration {
     public static RegistryKey<PlacedFeature> DIRTY_SAND_PLACED_KEY = registerPlacedKey("dirty_sand");
 
     private static void configureOres(){
-        registerConfiguredFeature(ModOreConfiguredFeatures.PURPUR_COBBLESTONE_CONFIGURED_FEATURE, PURPUR_COBBLESTONE_CONFIGURED_KEY);
-        registerConfiguredFeature(ModOreConfiguredFeatures.SOUL_NETHERRACK_CONFIGURED_FEATURE, SOUL_NETHERRACK_CONFIGURED_KEY);
-        registerConfiguredFeature(ModOreConfiguredFeatures.DIRTY_SAND_CONFIGURED_FEATURE, DIRTY_SAND_CONFIGURED_KEY);
+        registerConfiguredFeature(ModOreFeatures.PURPUR_COBBLESTONE_CONFIGURED_FEATURE, PURPUR_COBBLESTONE_CONFIGURED_KEY);
+        registerConfiguredFeature(ModOreFeatures.SOUL_NETHERRACK_CONFIGURED_FEATURE, SOUL_NETHERRACK_CONFIGURED_KEY);
+        registerConfiguredFeature(ModOreFeatures.DIRTY_SAND_CONFIGURED_FEATURE, DIRTY_SAND_CONFIGURED_KEY);
 
     }
 
     private static void placeOres(){
-        registerPlacedFeature(ModOreConfiguredFeatures.PURPUR_COBBLESTONE_PLACED_FEATURE, PURPUR_COBBLESTONE_PLACED_KEY);
-        registerPlacedFeature(ModOreConfiguredFeatures.SOUL_NETHERRACK_PLACED_FEATURE, SOUL_NETHERRACK_PLACED_KEY);
-        registerPlacedFeature(ModOreConfiguredFeatures.DIRTY_SAND_PLACED_FEATURE, DIRTY_SAND_PLACED_KEY);
+        registerPlacedFeature(ModOreFeatures.PURPUR_COBBLESTONE_PLACED_FEATURE, PURPUR_COBBLESTONE_PLACED_KEY);
+        registerPlacedFeature(ModOreFeatures.SOUL_NETHERRACK_PLACED_FEATURE, SOUL_NETHERRACK_PLACED_KEY);
+        registerPlacedFeature(ModOreFeatures.DIRTY_SAND_PLACED_FEATURE, DIRTY_SAND_PLACED_KEY);
     }
 
     private static void addOresToBiomes(){

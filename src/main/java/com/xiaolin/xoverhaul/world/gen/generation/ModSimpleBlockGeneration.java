@@ -1,15 +1,5 @@
 package com.xiaolin.xoverhaul.world.gen.generation;
 
-import com.xiaolin.xoverhaul.world.gen.features.ModOreConfiguredFeatures;
-import com.xiaolin.xoverhaul.world.gen.features.ModSimpleBlockConfiguredFeatures;
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.minecraft.util.registry.RegistryKey;
-import net.minecraft.world.biome.BiomeKeys;
-import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.PlacedFeature;
-
 public class ModSimpleBlockGeneration extends ModFeatureGeneration{
 
     // public static RegistryKey<ConfiguredFeature<?, ?>> WOODEN_CRATE_CONFIGURED_KEY = registerConfiguredKey("wooden_crate");

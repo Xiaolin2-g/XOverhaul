@@ -10,7 +10,7 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 
 import java.util.Arrays;
 
-public class ModSimpleBlockConfiguredFeatures {
+public class ModSimpleBlockFeatures {
 
   //  public static ConfiguredFeature<?,?> WOODEN_CRATE_CONFIGURED_FEATURE = configureSimpleBlock(ModBlocks.WOODEN_CRATE);
 

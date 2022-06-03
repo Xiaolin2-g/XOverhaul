@@ -148,7 +148,8 @@ public class ModBlockStateDefinitionProvider extends FabricModelProvider {
 
         for (Block block : DatagenGlobals.CROSS) {
 
-            if(block != ModPlants.BIRCH_FLOWER){
+            if(block != ModPlants.BIRCH_FLOWER &&
+               block != ModPlants.TREE_FUNGUS){
 
                 blockStateModelGenerator.registerTintableCross(block, BlockStateModelGenerator.TintType.NOT_TINTED);
 

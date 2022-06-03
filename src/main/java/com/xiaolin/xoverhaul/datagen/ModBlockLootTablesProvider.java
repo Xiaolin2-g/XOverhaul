@@ -60,18 +60,22 @@ public class ModBlockLootTablesProvider extends FabricBlockLootTableProvider {
 
     private void crossDrops(){
         for(Block block : DatagenGlobals.CROSS){
-            if(block != ModPlants.CRIMSON_SPROUTS){
+            if(     block != ModPlants.CRIMSON_SPROUTS &&
+                    block != ModPlants.BIRCH_FLOWER){
+
                 addDrop(block);
             }
             else{
-                addVinePlantDrop(block, block);
+                if(block != ModPlants.BIRCH_FLOWER){
+                    addVinePlantDrop(block, block);
+                }
             }
         }
     }
 
     private void axisRotatedDrops(){
         for(Block block : DatagenGlobals.AXIS_ROTATED){
-            addDrop(block);
+                addDrop(block);
         }
     }
 

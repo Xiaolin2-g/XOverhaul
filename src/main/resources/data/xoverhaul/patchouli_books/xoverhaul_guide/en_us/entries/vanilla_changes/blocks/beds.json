@@ -1,0 +1,12 @@
+{
+  "name": "Beds",
+  "icon": "minecraft:white_bed",
+  "category": "xoverhaul:vanilla_changes/blocks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:white_bed",
+      "text": "These blocks mining tool is now Axe."
+    }
+  ]
+}

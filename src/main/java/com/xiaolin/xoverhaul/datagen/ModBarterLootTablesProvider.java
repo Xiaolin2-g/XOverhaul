@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-public class ModBarterLootTablesProvider extends SimpleFabricLootTableProvider {
+public class  ModBarterLootTablesProvider extends SimpleFabricLootTableProvider {
 
     public ModBarterLootTablesProvider(FabricDataGenerator dataGenerator, LootContextType lootContextType) {
         super(dataGenerator, lootContextType);

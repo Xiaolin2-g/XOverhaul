@@ -69,10 +69,30 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
     private void axeTagged(){
         addToAxeTag(ModBlocks.WOODEN_CRATE);
+        bedsToAxeTag();
     }
 
     private void addToAxeTag(Block block){
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(block);
+    }
+
+    private void bedsToAxeTag(){
+        addToAxeTag(Blocks.WHITE_BED);
+        addToAxeTag(Blocks.ORANGE_BED);
+        addToAxeTag(Blocks.MAGENTA_BED);
+        addToAxeTag(Blocks.LIGHT_BLUE_BED);
+        addToAxeTag(Blocks.YELLOW_BED);
+        addToAxeTag(Blocks.LIME_BED);
+        addToAxeTag(Blocks.PINK_BED);
+        addToAxeTag(Blocks.GRAY_BED);
+        addToAxeTag(Blocks.LIGHT_GRAY_BED);
+        addToAxeTag(Blocks.CYAN_BED);
+        addToAxeTag(Blocks.PURPLE_BED);
+        addToAxeTag(Blocks.BLUE_BED);
+        addToAxeTag(Blocks.BROWN_BED);
+        addToAxeTag(Blocks.GREEN_BED);
+        addToAxeTag(Blocks.RED_BED);
+        addToAxeTag(Blocks.BLACK_BED);
     }
 
     private void addToShovelTag(Block block){

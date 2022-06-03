@@ -1,13 +1,14 @@
 {
+  "parent": "xoverhaul:progression/root",
   "display": {
     "icon": {
-      "item": "xoverhaul:ender_end_stone"
+      "item": "xoverhaul:tree_fungus"
     },
     "title": {
-      "translate": "advancements.xoverhaul.root.title"
+      "translate": "advancements.xoverhaul.advancement2.title"
     },
     "description": {
-      "translate": "advancements.xoverhaul.root.description"
+      "translate": "advancements.xoverhaul.advancement2.description"
     },
     "frame": "task",
     "show_toast": true,
@@ -17,7 +18,7 @@
   },
   "criteria": {
     "killed_something": {
-      "trigger": "minecraft:player_killed_entity",
+      "trigger": "minecraft:entity_killed_player",
       "conditions": {}
     }
   },

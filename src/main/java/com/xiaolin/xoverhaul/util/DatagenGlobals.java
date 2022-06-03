@@ -262,6 +262,7 @@ public class DatagenGlobals {
         PLANTS.add(ModPlants.GREEN_TULIP);
         PLANTS.add(ModPlants.BLACK_TULIP);
         PLANTS.add(ModPlants.CRIMSON_SPROUTS);
+        PLANTS.add(ModPlants.TREE_FUNGUS);
         PLANTS.add(ModPlants.BIRCH_FLOWER);
     }
 

@@ -2,7 +2,7 @@ package com.xiaolin.xoverhaul.world.gen.treedecorator;
 
 import com.mojang.serialization.Codec;
 import com.xiaolin.xoverhaul.block.TreeFungusBlock;
-import com.xiaolin.xoverhaul.init.ModBlocks;
+import com.xiaolin.xoverhaul.init.ModPlants;
 import net.minecraft.block.*;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.math.BlockPos;
@@ -49,7 +49,7 @@ public class TreeFungusTreeDecorator extends TreeDecorator {
                     if (random.nextFloat() <= 0.10F) {
                         BlockPos blockPos = pos.add(direction.getOffsetX(), 0, direction.getOffsetZ());
                         if (Feature.isAir(world, blockPos)) {
-                            replacer.accept(blockPos, ModBlocks.TREE_FUNGUS.getDefaultState().with(TreeFungusBlock.FACING, direction));
+                            replacer.accept(blockPos, ModPlants.TREE_FUNGUS.getDefaultState().with(TreeFungusBlock.FACING, direction));
                         }
                     }
                 }

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "xoverhaul:ender_end_stone"
+    },
+    "title": {
+      "translate": "advancements.xoverhaul.root.title"
+    },
+    "description": {
+      "translate": "advancements.xoverhaul.root.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/end.png"
+  },
+  "criteria": {
+    "killed_something": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "killed_something"
+    ]
+  ]
+}

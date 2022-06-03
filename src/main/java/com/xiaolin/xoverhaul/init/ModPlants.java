@@ -3,6 +3,7 @@ package com.xiaolin.xoverhaul.init;
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.block.BlockInitBase;
 import com.xiaolin.xoverhaul.block.EnderFlowerBlock;
+import com.xiaolin.xoverhaul.block.TreeFungusBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
@@ -54,6 +55,10 @@ public class ModPlants extends BlockInitBase {
 
     public static final Block BIRCH_FLOWER = registerBlock("birch_flower",
             new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH)));
+
+    public static final Block TREE_FUNGUS = registerBlock("tree_fungus",
+            new TreeFungusBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)
+                    .sounds(BlockSoundGroup.FUNGUS)));
 
     public static void registerModPlants(){
         XOverhaul.LOGGER.info("Registering Mod Plants for " + XOverhaul.MOD_ID);

@@ -17,7 +17,7 @@
   },
   "criteria": {
     "killed_something": {
-      "trigger": "minecraft:entity_killed_player",
+      "trigger": "minecraft:player_killed_entity",
       "conditions": {}
     }
   },

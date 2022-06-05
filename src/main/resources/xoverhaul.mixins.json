@@ -4,16 +4,16 @@
   "package": "com.xiaolin.xoverhaul.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "ArmorStandArmsMixin",
+    "ArmorStandInvoker",
     "BabyParrotMixin",
     "BabyParrotModelMixin",
+    "BlockStateModelGeneratorMixin",
+    "GlowingGlowBerryMixin",
     "PotionGlintMixin",
     "ShulkerBulletEntityMixin",
-    "GlowingGlowBerryMixin",
-    "ArmorStandInvoker",
-    "ArmorStandArmsMixin",
-    "BlockStateModelGeneratorMixin",
-    "TreeDecoratorTypeInvoker"
-
+    "TreeDecoratorTypeInvoker",
+    "TurtleLeashMixin"
   ],
   "client": [
     "XOverhaulMixin"

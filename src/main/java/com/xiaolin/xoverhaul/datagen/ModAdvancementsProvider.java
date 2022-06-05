@@ -1,6 +1,7 @@
 package com.xiaolin.xoverhaul.datagen;
 
 import com.xiaolin.xoverhaul.XOverhaul;
+import com.xiaolin.xoverhaul.entity.ModEntities;
 import com.xiaolin.xoverhaul.init.ModBlocks;
 import com.xiaolin.xoverhaul.init.ModPlants;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -10,6 +11,7 @@ import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.criterion.CriterionConditions;
 import net.minecraft.advancement.criterion.OnKilledCriterion;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 
@@ -28,11 +30,11 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
     public void generateAdvancement(Consumer<Advancement> consumer) {
         Advancement root = createRootAdvancement(consumer,
                 ModBlocks.ENDER_END_STONE, progression, killedSomething,
-                OnKilledCriterion.Conditions.createEntityKilledPlayer(), "end");
+                OnKilledCriterion.Conditions.createPlayerKilledEntity(), "end");
 
         Advancement advancement = createProgressionAdvancement(consumer,
                 ModPlants.TREE_FUNGUS, "advancement2", killedSomething,
-                OnKilledCriterion.Conditions.createEntityKilledPlayer(), root);
+                OnKilledCriterion.Conditions.createPlayerKilledEntity(EntityPredicate.Builder.create().type(ModEntities.LEATHERLING)), root);
 
     }
 

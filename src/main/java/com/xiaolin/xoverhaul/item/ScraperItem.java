@@ -24,13 +24,6 @@ public class ScraperItem extends DontConsumeOnCraftItem {
         // settings.recipeRemainder(this);
     }
 
-    @Override
-    public ActionResult useOnBlock(ItemUsageContext context) {
-        World world = context.getWorld();
-        BlockPos blockpos = context.getBlockPos();
-        world.setBlockState(blockpos, Blocks.MAGMA_BLOCK.getDefaultState());
-        return ActionResult.SUCCESS;
-    }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {

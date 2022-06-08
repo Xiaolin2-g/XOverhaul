@@ -28,22 +28,4 @@ public class RecipeRemovedItem extends Item {
 
     }
 
-    @Override
-    public void onCraft(ItemStack stack, World world, PlayerEntity player) {
-        super.onCraft(stack, world, player);
-
-        // Enchantment HashMap
-        HashMap<Enchantment, Integer> enchantments = new HashMap<>();
-
-        // Putting an enchantment on the map
-        enchantments.put(Enchantments.EFFICIENCY, 1); // Efficiency 1 for testing, can be any enchantment.
-
-        // If the item doesn't have already the enchantments
-        if(!stack.getEnchantments().contains(enchantments)){
-
-            // Enchant
-            EnchantmentHelper.set(enchantments, stack);
-        }
-
-    }
 }

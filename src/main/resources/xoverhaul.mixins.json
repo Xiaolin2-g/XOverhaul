@@ -13,7 +13,9 @@
     "PotionGlintMixin",
     "ShulkerBulletEntityMixin",
     "TreeDecoratorTypeInvoker",
-    "TurtleLeashMixin"
+    "TurtleLeashMixin",
+    "ZombieVillagerConversionDiscountNerfMixin",
+    "ZombieVillagerConversionMixin"
   ],
   "client": [
     "XOverhaulMixin"

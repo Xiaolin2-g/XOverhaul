@@ -13,5 +13,4 @@ public interface ArmorStandInvoker {
     @Invoker("setShowArms")
     void invokeSetShowArms(boolean showArms);
 
-
 }

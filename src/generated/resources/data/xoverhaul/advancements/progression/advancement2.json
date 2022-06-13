@@ -14,7 +14,7 @@
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false,
-    "background": "minecraft:textures/gui/advancements/backgrounds/end.png"
+    "background": "minecraft:textures/gui/advancements/backgrounds/null.png"
   },
   "criteria": {
     "killed_something": {

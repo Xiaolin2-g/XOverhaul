@@ -17,7 +17,11 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void generateTags() {
-        copy(XOverhaulTags.Blocks.TRIPWIRE_HOOKS, XOverhaulTags.Items.TRIPWIRE_HOOKS);
+
+        tripwireHookTagged();
+        hoeTagged();
+        swordTagged();
+
         slabTagged();
         stairsTagged();
         fishTagged();
@@ -52,5 +56,35 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
         addToStoneMaterialsTag(Items.DRIPSTONE_BLOCK);
         addToStoneMaterialsTag(Items.CALCITE);
         addToStoneMaterialsTag(Items.TUFF);
+    }
+
+    private void tripwireHookTagged(){
+        copy(XOverhaulTags.Blocks.TRIPWIRE_HOOKS, XOverhaulTags.Items.TRIPWIRE_HOOKS);
+    }
+
+    private void addToHoeTag(Item item){
+        getOrCreateTagBuilder(XOverhaulTags.Items.HOES).add(item);
+    }
+
+    private void hoeTagged(){
+        addToHoeTag(Items.WOODEN_HOE);
+        addToHoeTag(Items.STONE_HOE);
+        addToHoeTag(Items.GOLDEN_HOE);
+        addToHoeTag(Items.IRON_HOE);
+        addToHoeTag(Items.DIAMOND_HOE);
+        addToHoeTag(Items.NETHERITE_HOE);
+    }
+
+    private void addToSwordTag(Item item){
+        getOrCreateTagBuilder(XOverhaulTags.Items.SWORDS).add(item);
+    }
+
+    private void swordTagged(){
+        addToSwordTag(Items.WOODEN_SWORD);
+        addToSwordTag(Items.STONE_SWORD);
+        addToSwordTag(Items.GOLDEN_SWORD);
+        addToSwordTag(Items.IRON_SWORD);
+        addToSwordTag(Items.DIAMOND_SWORD);
+        addToSwordTag(Items.NETHERITE_SWORD);
     }
 }

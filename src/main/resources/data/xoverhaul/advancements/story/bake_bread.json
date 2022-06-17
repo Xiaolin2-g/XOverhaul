@@ -5,16 +5,15 @@
       "item": "minecraft:bread"
     },
     "title": {
-      "translate": "advancements.xoverhaul.bake_bread.title"
+      "translate": "advancements.xoverhaul.husbandry.bake_bread.title"
     },
     "description": {
-      "translate": "advancements.xoverhaul.bake_bread.description"
+      "translate": "advancements.xoverhaul.husbandry.bake_bread.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false,
-    "background": "minecraft:textures/gui/advancements/backgrounds/null.png"
+    "hidden": false
   },
   "criteria": {
     "inventory_changed": {

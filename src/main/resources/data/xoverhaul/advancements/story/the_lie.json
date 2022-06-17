@@ -5,16 +5,15 @@
       "item": "minecraft:cake"
     },
     "title": {
-      "translate": "advancements.xoverhaul.the_lie.title"
+      "translate": "advancements.xoverhaul.husbandry.the_lie.title"
     },
     "description": {
-      "translate": "advancements.xoverhaul.the_lie.description"
+      "translate": "advancements.xoverhaul.husbandry.the_lie.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false,
-    "background": "minecraft:textures/gui/advancements/backgrounds/null.png"
+    "hidden": false
   },
   "criteria": {
     "inventory_changed": {

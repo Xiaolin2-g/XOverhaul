@@ -1,0 +1,16 @@
+{
+  "name": "Dark Prismarine Wall",
+  "icon": "xoverhaul:dark_prismarine_wall",
+  "category": "xoverhaul:new_content/blocks/walls",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "xoverhaul:dark_prismarine_wall",
+      "text": "$(l)Dark Prismarine Wall$() is a block that can be crafted with the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:dark_prismarine_wall"
+    }
+  ]
+}

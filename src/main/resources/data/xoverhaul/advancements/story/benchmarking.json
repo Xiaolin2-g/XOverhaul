@@ -5,16 +5,15 @@
       "item": "minecraft:crafting_table"
     },
     "title": {
-      "translate": "advancements.xoverhaul.benchmarking.title"
+      "translate": "advancements.xoverhaul.story.benchmarking.title"
     },
     "description": {
-      "translate": "advancements.xoverhaul.benchmarking.description"
+      "translate": "advancements.xoverhaul.story.benchmarking.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false,
-    "background": "minecraft:textures/gui/advancements/backgrounds/null.png"
+    "hidden": false
   },
   "criteria": {
     "inventory_changed": {

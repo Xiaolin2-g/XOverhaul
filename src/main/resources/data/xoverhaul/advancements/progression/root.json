@@ -1,19 +1,19 @@
 {
-  "parent": "minecraft:story/mine_stone",
   "display": {
     "icon": {
-      "item": "minecraft:furnace"
+      "item": "xoverhaul:iron_core"
     },
     "title": {
-      "translate": "advancements.xoverhaul.story.hot_topic.title"
+      "translate": "advancements.xoverhaul.progression.root.title"
     },
     "description": {
-      "translate": "advancements.xoverhaul.story.hot_topic.description"
+      "translate": "advancements.xoverhaul.progression.root.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/end.png"
   },
   "criteria": {
     "inventory_changed": {
@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:furnace"
-            ]
+            "tag": "minecraft:logs"
           }
         ]
       }

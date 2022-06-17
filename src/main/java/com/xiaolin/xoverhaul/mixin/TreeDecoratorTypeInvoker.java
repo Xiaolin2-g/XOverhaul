@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 public interface TreeDecoratorTypeInvoker {
 
     @Invoker("<init>")
-    static <P extends TreeDecorator> TreeDecoratorType invokeTreeDecorator(Codec<P> codec) {
+    static <P extends TreeDecorator> TreeDecoratorType<P> invokeTreeDecorator(Codec<P> codec) {
         throw new AssertionError();
     }
 

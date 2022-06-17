@@ -13,7 +13,9 @@ public class ModTreeGeneration extends ModFeatureGeneration {
 
 
     private static void addTreesToBiomes(){
+
         addToBirchForest(ModTreeFeatures.BIRCH_TREE_FUNGUS_SPAWNED_PLACED_FEATURE.getKey().get());
+
     }
 
     private static void addToBirchForest(RegistryKey<PlacedFeature> key){

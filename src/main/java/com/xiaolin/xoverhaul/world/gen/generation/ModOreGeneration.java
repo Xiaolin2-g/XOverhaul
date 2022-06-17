@@ -10,45 +10,31 @@ import com.xiaolin.xoverhaul.world.gen.features.ModOreFeatures;
 
 public class ModOreGeneration extends ModFeatureGeneration {
 
-    public static RegistryKey<ConfiguredFeature<?, ?>> PURPUR_COBBLESTONE_CONFIGURED_KEY = registerConfiguredKey("purpur_cobblestone");
-    public static RegistryKey<PlacedFeature> PURPUR_COBBLESTONE_PLACED_KEY = registerPlacedKey("purpur_cobblestone");
-
-    public static RegistryKey<ConfiguredFeature<?, ?>> SOUL_NETHERRACK_CONFIGURED_KEY = registerConfiguredKey("soul_netherrack");
-    public static RegistryKey<PlacedFeature> SOUL_NETHERRACK_PLACED_KEY = registerPlacedKey("soul_netherrack");
-
-    public static RegistryKey<ConfiguredFeature<?, ?>> DIRTY_SAND_CONFIGURED_KEY = registerConfiguredKey("dirty_sand");
-    public static RegistryKey<PlacedFeature> DIRTY_SAND_PLACED_KEY = registerPlacedKey("dirty_sand");
-
-    private static void configureOres(){
-        registerConfiguredFeature(ModOreFeatures.PURPUR_COBBLESTONE_CONFIGURED_FEATURE, PURPUR_COBBLESTONE_CONFIGURED_KEY);
-        registerConfiguredFeature(ModOreFeatures.SOUL_NETHERRACK_CONFIGURED_FEATURE, SOUL_NETHERRACK_CONFIGURED_KEY);
-        registerConfiguredFeature(ModOreFeatures.DIRTY_SAND_CONFIGURED_FEATURE, DIRTY_SAND_CONFIGURED_KEY);
-
-    }
-
-    private static void placeOres(){
-        registerPlacedFeature(ModOreFeatures.PURPUR_COBBLESTONE_PLACED_FEATURE, PURPUR_COBBLESTONE_PLACED_KEY);
-        registerPlacedFeature(ModOreFeatures.SOUL_NETHERRACK_PLACED_FEATURE, SOUL_NETHERRACK_PLACED_KEY);
-        registerPlacedFeature(ModOreFeatures.DIRTY_SAND_PLACED_FEATURE, DIRTY_SAND_PLACED_KEY);
-    }
-
     private static void addOresToBiomes(){
+
+        addOreToTheEnd(ModOreFeatures.PURPUR_COBBLESTONE_PLACED_FEATURE.getKey().get());
+
+        addOreToSoulSandValley(ModOreFeatures.SOUL_NETHERRACK_PLACED_FEATURE.getKey().get());
+
+        addOreBeach(ModOreFeatures.DIRTY_SAND_PLACED_FEATURE.getKey().get());
+    }
+
+    private static void addOreToTheEnd(RegistryKey<PlacedFeature> key){
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, PURPUR_COBBLESTONE_PLACED_KEY);
+                GenerationStep.Feature.UNDERGROUND_ORES, key);
+    }
 
+    private static void addOreToSoulSandValley(RegistryKey<PlacedFeature> key){
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SOUL_SAND_VALLEY),
-                GenerationStep.Feature.UNDERGROUND_ORES, SOUL_NETHERRACK_PLACED_KEY);
+                GenerationStep.Feature.UNDERGROUND_ORES, key);
+    }
 
+    private static void addOreBeach(RegistryKey<PlacedFeature> key){
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BEACH),
-                GenerationStep.Feature.UNDERGROUND_ORES, DIRTY_SAND_PLACED_KEY);
+                GenerationStep.Feature.UNDERGROUND_ORES, key);
     }
 
     public static void generateOres(){
-        configureOres();
-        placeOres();
         addOresToBiomes();
     }
-
-
-
 }

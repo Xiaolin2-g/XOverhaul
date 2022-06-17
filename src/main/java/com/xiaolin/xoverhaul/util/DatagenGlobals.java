@@ -42,7 +42,6 @@ public class DatagenGlobals {
         BLOCKS.add(ModBlocks.SOUL_NETHER_BRICKS);
         BLOCKS.add(ModBlocks.ENDER_END_STONE);
         BLOCKS.add(ModBlocks.WOODEN_CRATE);
-
     }
 
     private static void registerConcreteSlabs() {

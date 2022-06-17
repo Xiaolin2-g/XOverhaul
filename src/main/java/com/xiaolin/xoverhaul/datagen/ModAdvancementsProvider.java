@@ -5,16 +5,16 @@ import com.google.gson.JsonObject;
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.entity.ModEntities;
 import com.xiaolin.xoverhaul.init.ModBlocks;
+import com.xiaolin.xoverhaul.init.ModItems;
 import com.xiaolin.xoverhaul.init.ModPlants;
+import com.xiaolin.xoverhaul.init.ModSpawnEggs;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementFrame;
-import net.minecraft.advancement.criterion.Criterion;
-import net.minecraft.advancement.criterion.CriterionConditions;
-import net.minecraft.advancement.criterion.InventoryChangedCriterion;
-import net.minecraft.advancement.criterion.OnKilledCriterion;
+import net.minecraft.advancement.AdvancementRewards;
+import net.minecraft.advancement.criterion.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.StoryTabAdvancementGenerator;
@@ -39,6 +39,12 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
         super(dataGenerator);
     }
 
+    @Override
+    public void generateAdvancement(Consumer<Advancement> consumer) {
+
+    }
+}
+/*
     private final String killedSomething = "killed_something";
 
     private final String progression = "progression";
@@ -50,17 +56,19 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
 
     @Override
     public void generateAdvancement(Consumer<Advancement> consumer) {
+
         Advancement ROOT = createRootAdvancement(consumer,
-                ModBlocks.ENDER_END_STONE, end,
-                killedSomething, OnKilledCriterion.Conditions.createPlayerKilledEntity(),
+                ModItems.IRON_CORE, end,
+                killedSomething, new TickCriterion().trigger(),
                 progression);
 
-        Advancement advancement = createProgressionAdvancement(consumer,
-                ModPlants.TREE_FUNGUS, "advancement2",
+        Advancement KILL_LEATHERLING = createProgressionAdvancement(consumer,
+                ModSpawnEggs.LEATHERLING_SPAWN_EGG, "kill_leatherling",
                 killedSomething, OnKilledCriterion.Conditions.createPlayerKilledEntity(EntityPredicate.Builder.create().type(ModEntities.LEATHERLING)),
-                ROOT);
+                ROOT, null);
 
-        /*
+
+
         Advancement BENCHMARKING = createStoryAdvancement(consumer,
 
                 Blocks.CRAFTING_TABLE, "benchmarking",
@@ -97,7 +105,7 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                 Items.WOODEN_SWORD, "time_to_strike",
                 "inventory_changed", InventoryChangedCriterion.Conditions.items(ItemPredicate.Builder.create().tag(XOverhaulTags.Items.SWORDS).build()),
                 ROOT);
-        */
+
     }
 
 
@@ -106,7 +114,7 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                                          AdvancementFrame advancementFrame,
                                          boolean showToast, boolean announceToChat, boolean hidden,
                                          String criterion_id, CriterionConditions criterion,
-                                         Advancement parent, String tabName) {
+                                         Advancement parent, String tabName, AdvancementRewards rewards) {
 
         return Advancement.Builder.create()
                 .display(icon,
@@ -117,6 +125,7 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                         showToast, announceToChat, hidden)
                 .criterion(criterion_id, criterion)
                 .parent(parent)
+                .rewards(rewards)
                 .build(consumer, namespace + ":" + tabName + "/" + name);
     }
 
@@ -125,7 +134,7 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                                          AdvancementFrame advancementFrame,
                                          boolean showToast, boolean announceToChat, boolean hidden,
                                          String criterion_id, CriterionConditions criterion,
-                                         Identifier parent, String tabName) {
+                                         Identifier parent, String tabName, AdvancementRewards rewards) {
 
         return Advancement.Builder.create()
                 .display(icon,
@@ -136,6 +145,7 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                         showToast, announceToChat, hidden)
                 .criterion(criterion_id, criterion)
                 .parent(parent)
+                .rewards(rewards)
                 .build(consumer, namespace + ":" + tabName + "/" + name);
     }
 
@@ -145,48 +155,48 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                                               ItemConvertible icon, String name,
                                               String background,
                                               String criterion_id, CriterionConditions criterion,
-                                              Advancement parent, String tabName) {
+                                              Advancement parent, String tabName, AdvancementRewards rewards) {
         return createAdvancement(consumer,
                 icon, name, XOverhaul.MOD_ID,
                 new Identifier("textures/gui/advancements/backgrounds/" + background + ".png"),
                 AdvancementFrame.TASK, true, true, false,
                 criterion_id, criterion,
-                parent, tabName);
+                parent, tabName, rewards);
     }
 
 
     public Advancement createRootAdvancement(Consumer<Advancement> consumer,
                                              ItemConvertible icon, String background,
                                              String criterion_id, CriterionConditions criterion,
-                                             String tabName) {
+                                             String tabName, AdvancementRewards rewards) {
         return createBasicAdvancement(consumer,
                 icon, "root",
                 background,
                 criterion_id, criterion,
-                null, tabName);
+                null, tabName, rewards);
 
     }
 
     public Advancement createProgressionAdvancement(Consumer<Advancement> consumer,
                                                     ItemConvertible icon, String name,
                                                     String criterion_id, CriterionConditions criterion,
-                                                    Advancement parent){
+                                                    Advancement parent, AdvancementRewards rewards){
         return createBasicAdvancement(consumer,
                 icon, name,
                 null,
                 criterion_id, criterion,
-                parent, progression);
+                parent, progression, rewards);
     }
 
     public Advancement createStoryAdvancement(Consumer<Advancement> consumer,
                                               ItemConvertible icon, String name,
                                               String criterion_id, CriterionConditions criterion,
-                                              Advancement parent){
+                                              Advancement parent, AdvancementRewards rewards){
         return createBasicAdvancement(consumer,
                 icon, name,
                 null,
                 criterion_id, criterion,
-                parent, story);
+                parent, story, rewards);
     }
+*/
 
-}

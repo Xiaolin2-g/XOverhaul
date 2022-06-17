@@ -2,19 +2,18 @@
   "parent": "xoverhaul:progression/root",
   "display": {
     "icon": {
-      "item": "xoverhaul:tree_fungus"
+      "item": "xoverhaul:leather_armor_piece"
     },
     "title": {
-      "translate": "advancements.xoverhaul.advancement2.title"
+      "translate": "advancements.xoverhaul.progression.son_of_the_leather.title"
     },
     "description": {
-      "translate": "advancements.xoverhaul.advancement2.description"
+      "translate": "advancements.xoverhaul.progression.son_of_the_leather.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false,
-    "background": "minecraft:textures/gui/advancements/backgrounds/null.png"
+    "hidden": false
   },
   "criteria": {
     "killed_something": {

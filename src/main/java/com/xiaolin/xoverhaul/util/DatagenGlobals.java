@@ -319,6 +319,8 @@ public class DatagenGlobals {
         ARMORS.add(ModArmor.MONSTER_CHESTPLATE);
         ARMORS.add(ModArmor.MONSTER_LEGGINGS);
         ARMORS.add(ModArmor.MONSTER_BOOTS);
+
+        ARMORS.add(ModArmor.VILLAGE_CROWN);
     }
 
     private static void registerTools() {

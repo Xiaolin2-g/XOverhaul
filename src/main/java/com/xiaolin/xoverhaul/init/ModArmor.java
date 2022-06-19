@@ -2,13 +2,13 @@ package com.xiaolin.xoverhaul.init;
 
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.item.ItemInitBase;
+import com.xiaolin.xoverhaul.item.VillageCrownItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 
 public class ModArmor extends ItemInitBase {
-
 
 
     public static final Item WOODSTONE_HELMET = registerItem("woodstone_helmet",
@@ -48,6 +48,11 @@ public class ModArmor extends ItemInitBase {
 
     public static final Item MONSTER_BOOTS = registerItem("monster_boots",
             new ArmorItem(ModArmorMaterial.MONSTER, EquipmentSlot.FEET,
+                    new FabricItemSettings()
+                            .group(ModItemGroup.XOVERHAUL_ARMORS)));
+
+    public static final Item VILLAGE_CROWN = registerItem("vilage_crown",
+            new VillageCrownItem(ModArmorMaterial.VILLAGE_CROWN, EquipmentSlot.HEAD,
                     new FabricItemSettings()
                             .group(ModItemGroup.XOVERHAUL_ARMORS)));
 

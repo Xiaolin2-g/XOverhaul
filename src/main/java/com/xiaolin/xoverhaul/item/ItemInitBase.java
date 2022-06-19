@@ -10,5 +10,4 @@ public class ItemInitBase {
     protected static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(XOverhaul.MOD_ID, name), item);
     }
-
 }

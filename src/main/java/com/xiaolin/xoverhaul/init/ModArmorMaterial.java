@@ -12,18 +12,27 @@ import java.util.function.Supplier;
 public enum ModArmorMaterial implements ArmorMaterial {
 
 
-    WOODSTONE(ArmorGlobals.WOODSTONE_NAME, ArmorGlobals.WOODSTONE_DURABILITY_MULTIPLIER, ArmorGlobals.WOODSTONE_PROTECTION_ARRAY,
-              ArmorGlobals.WOODSTONE_ENCHANTABILITY, ArmorGlobals.WOODSTONE_EQUIP_SOUND,
-              ArmorGlobals.WOODSTONE_ARMOR_TOUGHNESS, ArmorGlobals.WOODSTONE_KNOCKBACK_RESISTANCE, () -> {
-        return Ingredient.ofItems(ArmorGlobals.WOODSTONE_REPAIR_INGREDIENT);
+    WOODSTONE(ArmorGlobals.WOODSTONE.NAME, ArmorGlobals.WOODSTONE.DURABILITY_MULTIPLIER,
+            ArmorGlobals.WOODSTONE.PROTECTION_ARRAY, ArmorGlobals.WOODSTONE.ENCHANTABILITY,
+            ArmorGlobals.WOODSTONE.EQUIP_SOUND, ArmorGlobals.WOODSTONE.ARMOR_TOUGHNESS,
+            ArmorGlobals.WOODSTONE.KNOCKBACK_RESISTANCE, () -> {
+        return Ingredient.ofItems(ArmorGlobals.WOODSTONE.REPAIR_INGREDIENT);
     }),
 
     // Monster
 
-    MONSTER(ArmorGlobals.MONSTER_NAME, ArmorGlobals.MONSTER_DURABILITY_MULTIPLIER, ArmorGlobals.MONSTER_PROTECTION_ARRAY,
-            ArmorGlobals.MONSTER_ENCHANTABILITY, ArmorGlobals.MONSTER_EQUIP_SOUND,
-            ArmorGlobals.MONSTER_ARMOR_TOUGHNESS, ArmorGlobals.MONSTER_KNOCKBACK_RESISTANCE, () -> {
-        return Ingredient.ofItems(ArmorGlobals.MONSTER_REPAIR_INGREDIENT);
+    MONSTER(ArmorGlobals.MONSTER.NAME, ArmorGlobals.MONSTER.DURABILITY_MULTIPLIER,
+            ArmorGlobals.MONSTER.PROTECTION_ARRAY, ArmorGlobals.MONSTER.ENCHANTABILITY,
+            ArmorGlobals.MONSTER.EQUIP_SOUND, ArmorGlobals.MONSTER.ARMOR_TOUGHNESS,
+            ArmorGlobals.MONSTER.KNOCKBACK_RESISTANCE, () -> {
+        return Ingredient.ofItems(ArmorGlobals.MONSTER.REPAIR_INGREDIENT);
+    }),
+
+    VILLAGE_CROWN(ArmorGlobals.VILLAGE_CROWN.NAME, ArmorGlobals.VILLAGE_CROWN.DURABILITY_MULTIPLIER,
+            ArmorGlobals.VILLAGE_CROWN.PROTECTION_ARRAY, ArmorGlobals.VILLAGE_CROWN.ENCHANTABILITY,
+            ArmorGlobals.VILLAGE_CROWN.EQUIP_SOUND, ArmorGlobals.VILLAGE_CROWN.ARMOR_TOUGHNESS,
+            ArmorGlobals.VILLAGE_CROWN.KNOCKBACK_RESISTANCE, () -> {
+        return Ingredient.ofItems(ArmorGlobals.VILLAGE_CROWN.REPAIR_INGREDIENT);
     }),
 
 

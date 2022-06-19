@@ -2,6 +2,7 @@ package com.xiaolin.xoverhaul.mixin;
 
 
 import com.xiaolin.xoverhaul.goals.ArmorTemptGoal;
+import com.xiaolin.xoverhaul.init.ModArmor;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.passive.VillagerEntity;
@@ -22,7 +23,7 @@ public abstract class VillagersFollowCrownMixin extends MerchantEntity {
     @Override
     public void initGoals() {
 
-        itemToFollow = Ingredient.ofItems(Items.GOLDEN_HELMET);
+        itemToFollow = Ingredient.ofItems(ModArmor.VILLAGE_CROWN);
 
         this.goalSelector.add(4, new ArmorTemptGoal(((VillagerEntity)(Object)this), 1.0f, itemToFollow, false));
     }

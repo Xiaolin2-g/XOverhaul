@@ -40,11 +40,9 @@ public class TreeFungusTreeDecorator extends TreeDecorator {
 
             // Get Y value of the first log of the tree, bottom one?
             int i = logPositions.get(0).getY() + 2;
-            MinecraftClient.getInstance().player.sendChatMessage("Y: " + i);
 
             logPositions.stream().filter((pos) -> pos.getY() - i <= 2).forEach((pos) -> {
 
-                MinecraftClient.getInstance().player.sendChatMessage("Pos: " + pos);
                 for (Direction direction : Direction.Type.HORIZONTAL) {
                     if (random.nextFloat() <= 0.10F) {
                         BlockPos blockPos = pos.add(direction.getOffsetX(), 0, direction.getOffsetZ());

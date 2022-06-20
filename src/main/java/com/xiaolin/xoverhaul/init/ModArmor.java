@@ -51,7 +51,7 @@ public class ModArmor extends ItemInitBase {
                     new FabricItemSettings()
                             .group(ModItemGroup.XOVERHAUL_ARMORS)));
 
-    public static final Item VILLAGE_CROWN = registerItem("vilage_crown",
+    public static final Item VILLAGE_CROWN = registerItem("village_crown",
             new VillageCrownItem(ModArmorMaterial.VILLAGE_CROWN, EquipmentSlot.HEAD,
                     new FabricItemSettings()
                             .group(ModItemGroup.XOVERHAUL_ARMORS)));

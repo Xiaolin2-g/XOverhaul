@@ -9,6 +9,14 @@ public class VillageCrownArmorRenderer extends GeoArmorRenderer<VillageCrownItem
 
     public VillageCrownArmorRenderer() {
         super(new VillageCrownArmorModel());
+
+        bodyBone = null;
+        leftArmBone = null;
+        rightArmBone = null;
+        leftBootBone = null;
+        leftLegBone = null;
+        rightBootBone = null;
+        rightLegBone = null;
     }
 
 }

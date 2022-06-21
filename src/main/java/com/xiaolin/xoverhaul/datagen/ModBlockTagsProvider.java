@@ -57,6 +57,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
 
         addToPickaxeTag(Blocks.HONEYCOMB_BLOCK);
+        glassPickaxeTagged();
+        addToPickaxeTag(Blocks.BEACON);
 
         addToPickaxeTag(ModBlocks.CHARRED_BONE_BLOCK);
         addToPickaxeTag(ModBlocks.PURPUR_COBBLESTONE);
@@ -65,6 +67,43 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToPickaxeTag(ModBlocks.ENDER_END_STONE);
 
 
+    }
+
+    private void glassPickaxeTagged(){
+        addToPickaxeTag(Blocks.GLASS);
+        addToPickaxeTag(Blocks.WHITE_STAINED_GLASS);
+        addToPickaxeTag(Blocks.ORANGE_STAINED_GLASS);
+        addToPickaxeTag(Blocks.MAGENTA_STAINED_GLASS);
+        addToPickaxeTag(Blocks.LIGHT_BLUE_STAINED_GLASS);
+        addToPickaxeTag(Blocks.YELLOW_STAINED_GLASS);
+        addToPickaxeTag(Blocks.LIME_STAINED_GLASS);
+        addToPickaxeTag(Blocks.PINK_STAINED_GLASS);
+        addToPickaxeTag(Blocks.GRAY_STAINED_GLASS);
+        addToPickaxeTag(Blocks.LIGHT_GRAY_STAINED_GLASS);
+        addToPickaxeTag(Blocks.CYAN_STAINED_GLASS);
+        addToPickaxeTag(Blocks.PURPLE_STAINED_GLASS);
+        addToPickaxeTag(Blocks.BLUE_STAINED_GLASS);
+        addToPickaxeTag(Blocks.BROWN_STAINED_GLASS);
+        addToPickaxeTag(Blocks.GREEN_STAINED_GLASS);
+        addToPickaxeTag(Blocks.RED_STAINED_GLASS);
+        addToPickaxeTag(Blocks.BLACK_STAINED_GLASS);
+        addToPickaxeTag(Blocks.GLASS_PANE);
+        addToPickaxeTag(Blocks.WHITE_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.ORANGE_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.MAGENTA_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.LIGHT_BLUE_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.YELLOW_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.LIME_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.PINK_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.GRAY_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.LIGHT_GRAY_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.CYAN_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.PURPLE_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.BLUE_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.BROWN_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.GREEN_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.RED_STAINED_GLASS_PANE);
+        addToPickaxeTag(Blocks.BLACK_STAINED_GLASS_PANE);
     }
 
     private void axeTagged(){

@@ -386,5 +386,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         // Crying Obsidian
 
         ModRecipeHelper.offerTwoItemsShapeless(exporter, Blocks.OBSIDIAN, Items.GHAST_TEAR, Blocks.CRYING_OBSIDIAN, 1);
+
+        // Village Crown
+
+        ShapedRecipeJsonBuilder.create(ModArmor.VILLAGE_CROWN)
+                .input('G', Items.GOLD_INGOT)
+                .input('E', Items.EMERALD)
+                .pattern(" G ")
+                .pattern("GEG")
+                .pattern("GGG")
+                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT), RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter);
+
     }
 }

@@ -1,0 +1,37 @@
+{
+  "parent": "xoverhaul:progression/root",
+  "display": {
+    "icon": {
+      "item": "xoverhaul:village_crown"
+    },
+    "title": {
+      "translate": "advancements.xoverhaul.progression.king_of_the_village.title"
+    },
+    "description": {
+      "translate": "advancements.xoverhaul.progression.king_of_the_village.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "xoverhaul:village_crown"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ]
+}

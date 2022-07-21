@@ -78,10 +78,13 @@ public class ModBlockStateDefinitionProvider extends FabricModelProvider {
     private void generateCubes(BlockStateModelGenerator blockStateModelGenerator) {
 
         for (Block block : DatagenGlobals.BLOCKS) {
-            blockStateModelGenerator.registerSimpleCubeAll(block);
+            if(block != ModBlocks.GLAZED_TERRACOTTA){
 
-            blockStateModelGenerator.registerParentedItemModel(block,
-                    ModelIds.getBlockModelId(block));
+                blockStateModelGenerator.registerSimpleCubeAll(block);
+
+                blockStateModelGenerator.registerParentedItemModel(block,
+                        ModelIds.getBlockModelId(block));
+            }
         }
     }
 

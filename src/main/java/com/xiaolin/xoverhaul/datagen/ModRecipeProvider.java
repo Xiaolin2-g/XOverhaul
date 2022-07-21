@@ -197,6 +197,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ModRecipeHelper.offerSmelting(exporter, Items.TROPICAL_FISH, ModFood.COOKED_TROPICAL_FISH);
         ModRecipeHelper.offerSmelting(exporter, ModFood.GOLDEN_POTATO, ModFood.GOLDEN_BAKED_POTATO);
         ModRecipeHelper.offerSmelting(exporter, Items.SHEARS, Items.IRON_NUGGET);
+        ModRecipeHelper.offerSmelting(exporter, Blocks.TERRACOTTA, ModBlocks.GLAZED_TERRACOTTA);
     }
 
     private void cookingRecipes(Consumer<RecipeJsonProvider> exporter, String cooker, CookingRecipeSerializer<?> serializer, int cookingTime){

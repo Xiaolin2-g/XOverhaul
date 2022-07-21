@@ -41,6 +41,9 @@ public class ModBlocks extends BlockInitBase {
     public static final Block WOODEN_CRATE = registerBlock("wooden_crate",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 
+    public static final Block GLAZED_TERRACOTTA = registerBlock("glazed_terracotta",
+            new GlazedTerracottaBlock(FabricBlockSettings.copyOf(Blocks.WHITE_GLAZED_TERRACOTTA)));
+
 
     public static void registerModBlocks(){
         XOverhaul.LOGGER.info("Registering Mod Blocks for " + XOverhaul.MOD_ID);

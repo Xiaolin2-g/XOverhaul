@@ -59,13 +59,14 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToPickaxeTag(Blocks.HONEYCOMB_BLOCK);
         glassPickaxeTagged();
         addToPickaxeTag(Blocks.BEACON);
+        headsPickaxeTagged();
 
         addToPickaxeTag(ModBlocks.CHARRED_BONE_BLOCK);
         addToPickaxeTag(ModBlocks.PURPUR_COBBLESTONE);
         addToPickaxeTag(ModBlocks.SOUL_NETHERRACK);
         addToPickaxeTag(ModBlocks.SOUL_NETHER_BRICKS);
         addToPickaxeTag(ModBlocks.ENDER_END_STONE);
-
+        addToPickaxeTag(ModBlocks.GLAZED_TERRACOTTA);
 
     }
 
@@ -104,6 +105,15 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToPickaxeTag(Blocks.GREEN_STAINED_GLASS_PANE);
         addToPickaxeTag(Blocks.RED_STAINED_GLASS_PANE);
         addToPickaxeTag(Blocks.BLACK_STAINED_GLASS_PANE);
+    }
+
+    private void headsPickaxeTagged(){
+        addToPickaxeTag(Blocks.CREEPER_HEAD);
+        addToPickaxeTag(Blocks.CREEPER_WALL_HEAD);
+        addToPickaxeTag(Blocks.DRAGON_HEAD);
+        addToPickaxeTag(Blocks.PLAYER_HEAD);
+        addToPickaxeTag(Blocks.ZOMBIE_HEAD);
+        addToPickaxeTag(Blocks.ZOMBIE_WALL_HEAD);
     }
 
     private void axeTagged(){

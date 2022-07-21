@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "xoverhaul",
-  "version": "1.18.1-1.0.0",
+  "version": "${version}",
 
   "name": "XOverhaul Mod",
   "description": "XOverhaul is a mod that improves a lot of aspects of vanilla Minecraft and expands upon them.",
@@ -9,11 +9,11 @@
     "Xiaolin2"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": ""
   },
 
-  "license": "CC0-1.0",
+  "license": "GNU GENERAL PUBLIC LICENSE 3",
   "icon": "assets/xoverhaul/icon.png",
 
   "environment": "*",
@@ -40,7 +40,7 @@
   },
   "suggests": {
     "another-mod": "*",
-    "skeletonfix": "1.1.1+1.18"
+    "skeletonfix": "1.1.2+1.18.2"
   },
 
   "accessWidener": "xoverhaul.accesswidener"

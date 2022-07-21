@@ -111,7 +111,9 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToPickaxeTag(Blocks.CREEPER_HEAD);
         addToPickaxeTag(Blocks.CREEPER_WALL_HEAD);
         addToPickaxeTag(Blocks.DRAGON_HEAD);
+        addToPickaxeTag(Blocks.DRAGON_WALL_HEAD);
         addToPickaxeTag(Blocks.PLAYER_HEAD);
+        addToPickaxeTag(Blocks.PLAYER_WALL_HEAD);
         addToPickaxeTag(Blocks.ZOMBIE_HEAD);
         addToPickaxeTag(Blocks.ZOMBIE_WALL_HEAD);
     }

@@ -6,7 +6,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "minecraft:white_bed",
-      "text": "These blocks mining tool is now Axe."
+      "text": "These blocks are now mined faster with an Axe."
     }
   ]
 }

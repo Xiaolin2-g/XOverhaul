@@ -1,0 +1,12 @@
+{
+  "name": "All Glass Blocks",
+  "icon": "minecraft:glass",
+  "category": "xoverhaul:vanilla_changes/blocks",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:glass",
+      "text": "Glass, Glass Pane, the 16 types of Stained Glass, and the 16 types of Stained Glass Pane are now mined faster with a Pickaxe."
+    }
+  ]
+}

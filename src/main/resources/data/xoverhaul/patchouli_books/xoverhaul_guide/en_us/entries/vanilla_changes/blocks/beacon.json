@@ -1,11 +1,11 @@
 {
-  "name": "Honeycomb Block",
-  "icon": "minecraft:honeycomb_block",
+  "name": "Beacon",
+  "icon": "minecraft:beacon",
   "category": "xoverhaul:vanilla_changes/blocks",
   "pages": [
     {
       "type": "patchouli:spotlight",
-      "item": "minecraft:honeycomb_block",
+      "item": "minecraft:beacon",
       "text": "This block is now mined faster with a Pickaxe."
     }
   ]

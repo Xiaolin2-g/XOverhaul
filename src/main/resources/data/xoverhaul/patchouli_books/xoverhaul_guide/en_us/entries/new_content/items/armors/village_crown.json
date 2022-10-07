@@ -1,0 +1,20 @@
+{
+  "name": "Village Crown",
+  "icon": "xoverhaul:village_crown",
+  "category": "xoverhaul:new_content/items/armors",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Village Crown$() is a helmet that can lure Villagers to you. $(br2)It is crafted using the following materials:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "xoverhaul:village_crown"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie{ArmorItems:[{},{},{},{id:\"xoverhaul:village_crown\",Count:1b}]}",
+      "name": "Helmet Showcase"
+    }
+  ]
+}

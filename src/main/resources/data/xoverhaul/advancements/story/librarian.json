@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:story/enchant_item",
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf"
+    },
+    "title": {
+      "translate": "advancements.xoverhaul.story.librarian.title"
+    },
+    "description": {
+      "translate": "advancements.xoverhaul.story.librarian.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inventory_changed": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bookshelf"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "inventory_changed"
+    ]
+  ]
+}

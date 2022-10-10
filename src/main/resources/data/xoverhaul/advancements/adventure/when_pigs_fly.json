@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:saddle"
+    },
+    "title": {
+      "translate": "advancements.xoverhaul.adventure.when_pigs_fly.title"
+    },
+    "description": {
+      "translate": "advancements.xoverhaul.adventure.when_pigs_fly.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:saddle"
+          ]
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:pig",
+              "effects": {
+                "minecraft:levitation": {}
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

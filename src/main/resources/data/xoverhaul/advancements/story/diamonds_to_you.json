@@ -1,4 +1,5 @@
 {
+  "parent": "minecraft:story/mine_diamond",
   "display": {
     "icon": {
       "item": "minecraft:diamond"
@@ -14,9 +15,8 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "minecraft:story/mine_diamond",
   "criteria": {
-    "requirement": {
+    "thrown_item_picked_up_by_entity": {
       "trigger": "minecraft:thrown_item_picked_up_by_entity",
       "conditions": {
         "item": {
@@ -26,5 +26,10 @@
         }
       }
     }
-  }
+  },
+  "requirements": [
+    [
+      "thrown_item_picked_up_by_entity"
+    ]
+  ]
 }

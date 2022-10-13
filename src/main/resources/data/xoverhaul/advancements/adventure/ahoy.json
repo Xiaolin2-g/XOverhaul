@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:spruce_boat"
+    },
+    "title": {
+      "translate": "advancements.xoverhaul.adventure.ahoy.title"
+    },
+    "description": {
+      "translate": "advancements.xoverhaul.adventure.ahoy.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shipwreck": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "feature": "minecraft:shipwreck"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shipwreck"
+    ]
+  ]
+}

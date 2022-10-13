@@ -1,0 +1,31 @@
+{
+  "parent": "xoverhaul:building/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:flower_pot"
+    },
+    "title": {
+      "translate": "advancements.xoverhaul.building.pot_planter.title"
+    },
+    "description": {
+      "translate": "advancements.xoverhaul.building.pot_planter.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "place_block": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:flower_pot"
+        }
+    }
+  },
+  "requirements": [
+    [
+      "place_block"
+    ]
+  ]
+}

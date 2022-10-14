@@ -19,7 +19,7 @@
     "ZombieVillagerConversionMixin"
   ],
   "client": [
-    "XOverhaulMixin"
+
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "title": {
+      "translate": "advancements.xoverhaul.adventure.me_gold.title"
+    },
+    "description": {
+      "translate": "advancements.xoverhaul.adventure.me_gold.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "buried_treasure": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "feature": "minecraft:buried_treasure"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "buried_treasure"
+    ]
+  ]
+}

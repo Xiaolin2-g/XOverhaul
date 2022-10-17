@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:suspicious_stew"
+    },
+    "title": {
+      "translate": "advancements.xoverhaul.husbandry.time_for_stew.title"
+    },
+    "description": {
+      "translate": "advancements.xoverhaul.husbandry.time_for_stew.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thrown_item_picked_up_by_entity": {
+      "trigger": "minecraft:thrown_item_picked_up_by_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:suspicious_stew"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "thrown_item_picked_up_by_entity"
+    ]
+  ]
+}

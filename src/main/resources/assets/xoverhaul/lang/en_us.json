@@ -53,6 +53,10 @@
   "advancements.xoverhaul.adventure.me_gold.title": "Me Gold!",
   "advancements.xoverhaul.progression.beach_cleaner.description": "Use a Water Bottle on a Dirty Sand block.\n Unimplemented because of MC-184263",
   "advancements.xoverhaul.progression.beach_cleaner.title": "Beach Cleaner",
+  "advancements.xoverhaul.husbandry.time_for_stew.description": "Drop a Suspicious Stew, then have a player or a mob pick it up",
+  "advancements.xoverhaul.husbandry.time_for_stew.title": "Time for Stew",
+  "advancements.xoverhaul.adventure.kill_the_beast.description": "Defeat a Ravager",
+  "advancements.xoverhaul.adventure.kill_the_beast.title": "Kill the Beast",
 
   "block.xoverhaul.basalt_slab": "Basalt Slab",
   "block.xoverhaul.basalt_stairs": "Basalt Stairs",

@@ -9,6 +9,7 @@
     "BabyParrotMixin",
     "BabyParrotModelMixin",
     "BlockStateModelGeneratorMixin",
+    "EvokerBuffMixin",
     "GlowingGlowBerryMixin",
     "PotionGlintMixin",
     "ShulkerBulletEntityMixin",
@@ -19,7 +20,6 @@
     "ZombieVillagerConversionMixin"
   ],
   "client": [
-
   ],
   "injectors": {
     "defaultRequire": 1

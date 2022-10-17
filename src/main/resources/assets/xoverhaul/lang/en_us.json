@@ -51,6 +51,8 @@
   "advancements.xoverhaul.adventure.feeling_ill.title": "Feeling Ill",
   "advancements.xoverhaul.adventure.me_gold.description": "Dig up a buried treasure",
   "advancements.xoverhaul.adventure.me_gold.title": "Me Gold!",
+  "advancements.xoverhaul.progression.beach_cleaner.description": "Use a Water Bottle on a Dirty Sand block.\n Unimplemented because of MC-184263",
+  "advancements.xoverhaul.progression.beach_cleaner.title": "Beach Cleaner",
 
   "block.xoverhaul.basalt_slab": "Basalt Slab",
   "block.xoverhaul.basalt_stairs": "Basalt Stairs",

@@ -29,8 +29,7 @@ public class DirtySandBlock extends FallingBlock {
         // Gets hand item
         ItemStack itemStack = player.getStackInHand(hand);
         // If item is water bottle
-        if(itemStack.getItem() == Items.POTION){
-
+        if (PotionUtil.getPotion(itemStack) == Potions.WATER) {
             // And only in the server
             if(!world.isClient){
                 // Set dirty sand to sand

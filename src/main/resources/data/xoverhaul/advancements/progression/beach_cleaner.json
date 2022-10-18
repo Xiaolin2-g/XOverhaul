@@ -25,7 +25,8 @@
         "location": {
           "block": {
             "blocks": [
-              "xoverhaul:dirty_sand"
+              "xoverhaul:dirty_sand",
+              "minecraft:sand"
             ]
           }
         }

@@ -9,6 +9,8 @@
     "BabyParrotMixin",
     "BabyParrotModelMixin",
     "BlockStateModelGeneratorMixin",
+    "ElderGuardianBossBarMixin",
+    "EvokerBossBarMixin",
     "EvokerBuffMixin",
     "GlowingGlowBerryMixin",
     "PotionGlintMixin",

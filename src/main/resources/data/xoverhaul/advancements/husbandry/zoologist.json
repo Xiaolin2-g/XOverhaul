@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:husbandry/breed_an_animal",
+  "display": {
+    "icon": {
+      "item": "minecraft:bamboo"
+    },
+    "title": {
+      "translate": "advancements.xoverhaul.husbandry.zoologist.title"
+    },
+    "description": {
+      "translate": "advancements.xoverhaul.husbandry.zoologist.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bred_animal": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:panda"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bred_animal"
+    ]
+  ]
+}

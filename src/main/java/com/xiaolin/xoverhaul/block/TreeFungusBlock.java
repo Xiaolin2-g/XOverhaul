@@ -1,5 +1,6 @@
 package com.xiaolin.xoverhaul.block;
 
+import com.xiaolin.xiaolib.block.BaseDirectionalBlock;
 import net.minecraft.block.*;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.shape.VoxelShape;

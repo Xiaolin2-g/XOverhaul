@@ -1,5 +1,6 @@
 package com.xiaolin.xoverhaul.util;
 
+import com.xiaolin.xiaolib.util.ModArmorData;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.sound.SoundEvent;

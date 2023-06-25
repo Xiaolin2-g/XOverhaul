@@ -1,16 +1,11 @@
 package com.xiaolin.xoverhaul.client.model;
 
-import com.ibm.icu.text.Normalizer2;
+import com.xiaolin.xiaolib.util.FileGlobals;
 import com.xiaolin.xoverhaul.XOverhaul;
 import com.xiaolin.xoverhaul.entity.ModEntities;
 import com.xiaolin.xoverhaul.entity.entities.LeatherlingEntity;
-import com.xiaolin.xoverhaul.util.FileGlobals;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib3.geo.render.built.GeoModel;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
-
-import java.io.File;
-import java.io.FileFilter;
 
 public class LeatherlingEntityModel extends AnimatedGeoModel<LeatherlingEntity> {
 

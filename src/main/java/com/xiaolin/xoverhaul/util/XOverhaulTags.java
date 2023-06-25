@@ -21,21 +21,6 @@ public class XOverhaulTags {
         public static final TagKey<Block> GOLDEN_PRISMARINE_BRICK_CAN_REPLACE = TagKey.of(Registry.BLOCK_KEY, new Identifier(
                 XOverhaul.MOD_ID, "golden_prismarine_brick_can_replace"));
 
-        public static final TagKey<Block> TRIPWIRE_HOOKS = TagKey.of(Registry.BLOCK_KEY, new Identifier(
-                XOverhaul.MOD_ID, "tripwire_hooks"));
-    }
-
-    public static class Items{
-
-        public static final TagKey<Item> TRIPWIRE_HOOKS = TagKey.of(Registry.ITEM_KEY, new Identifier(
-                XOverhaul.MOD_ID, "tripwire_hooks"));
-
-        public static final TagKey<Item> HOES = TagKey.of(Registry.ITEM_KEY, new Identifier(
-                XOverhaul.MOD_ID, "hoes"));
-
-        public static final TagKey<Item> SWORDS = TagKey.of(Registry.ITEM_KEY, new Identifier(
-                XOverhaul.MOD_ID, "swords"));
-
     }
 
 }

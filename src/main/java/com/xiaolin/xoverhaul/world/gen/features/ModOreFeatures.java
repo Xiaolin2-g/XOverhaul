@@ -1,7 +1,7 @@
 package com.xiaolin.xoverhaul.world.gen.features;
 
+import com.xiaolin.xiaolib.util.RuleTestGlobals;
 import com.xiaolin.xoverhaul.init.ModBlocks;
-import com.xiaolin.xoverhaul.util.RuleTestGlobals;
 import net.minecraft.block.Block;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.registry.RegistryEntry;
@@ -11,7 +11,6 @@ import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class ModOreFeatures {

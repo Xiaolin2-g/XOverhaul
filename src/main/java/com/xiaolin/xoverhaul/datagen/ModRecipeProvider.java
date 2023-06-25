@@ -1,14 +1,10 @@
 package com.xiaolin.xoverhaul.datagen;
 
-import com.xiaolin.xoverhaul.init.ModBlocks;
-import com.xiaolin.xoverhaul.init.ModPlants;
-import com.xiaolin.xoverhaul.init.ModArmor;
-import com.xiaolin.xoverhaul.init.ModFood;
-import com.xiaolin.xoverhaul.init.ModItems;
-import com.xiaolin.xoverhaul.init.ModTools;
+import com.xiaolin.xiaolib.datagen.ModRecipeHelper;
+import com.xiaolin.xiaolib.util.ModTags;
+import com.xiaolin.xiaolib.util.SmeltingGlobals;
+import com.xiaolin.xoverhaul.init.*;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
-import com.xiaolin.xoverhaul.util.SmeltingGlobals;
-import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
@@ -32,7 +28,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     protected void generateRecipes(Consumer<RecipeJsonProvider> exporter) {
-        barkRecipes(exporter);
+        //barkRecipes(exporter);
         woodRecipes(exporter);
         rebarkRecipes(exporter);
 
@@ -58,7 +54,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         otherRecipes(exporter);
     }
 
-    private void barkRecipes(Consumer<RecipeJsonProvider> exporter){
+   /* private void barkRecipes(Consumer<RecipeJsonProvider> exporter){
         ModRecipeHelper.offerBarkRecipe(exporter, Blocks.OAK_LOG, ModItems.OAK_BARK);
         ModRecipeHelper.offerBarkRecipe(exporter, Blocks.BIRCH_LOG, ModItems.BIRCH_BARK);
         ModRecipeHelper.offerBarkRecipe(exporter, Blocks.SPRUCE_LOG, ModItems.SPRUCE_BARK);
@@ -75,7 +71,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ModRecipeHelper.offerBarkRecipe(exporter, Blocks.STRIPPED_DARK_OAK_LOG, ModItems.STRIPPED_DARK_OAK_BARK);
         ModRecipeHelper.offerBarkRecipe(exporter, Blocks.STRIPPED_CRIMSON_STEM, ModItems.STRIPPED_CRIMSON_BARK);
         ModRecipeHelper.offerBarkRecipe(exporter, Blocks.STRIPPED_WARPED_STEM, ModItems.STRIPPED_WARPED_BARK);
-    }
+    }*/
 
 
     private void woodRecipes(Consumer<RecipeJsonProvider> exporter){
@@ -250,10 +246,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ModRecipeHelper.offerOWithMiddle(exporter, Items.GOLD_NUGGET, Items.BLACKSTONE,
                 Blocks.GILDED_BLACKSTONE,1, false);
 
-        ModRecipeHelper.offerOWithMiddle(exporter, ItemTags.LOGS, XOverhaulTags.Items.TRIPWIRE_HOOKS,
+        ModRecipeHelper.offerOWithMiddle(exporter, ItemTags.LOGS, ModTags.Items.TRIPWIRE_HOOKS,
                  Blocks.TRAPPED_CHEST, "has_logs",4, true);
 
-        ModRecipeHelper.offerOWithMiddle(exporter, ItemTags.PLANKS, XOverhaulTags.Items.TRIPWIRE_HOOKS,
+        ModRecipeHelper.offerOWithMiddle(exporter, ItemTags.PLANKS, ModTags.Items.TRIPWIRE_HOOKS,
                 Blocks.TRAPPED_CHEST, "has_planks",1, true);
     }
 

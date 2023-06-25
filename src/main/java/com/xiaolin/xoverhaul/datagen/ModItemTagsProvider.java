@@ -10,7 +10,7 @@ import net.minecraft.tag.BlockTags;
 import net.minecraft.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
 
-public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
+public class ModItemTagsProvider extends com.xiaolin.xiaolib.datagen.ModItemTagsProvider {
     public ModItemTagsProvider(FabricDataGenerator dataGenerator, @Nullable BlockTagProvider blockTagProvider) {
         super(dataGenerator, blockTagProvider);
     }
@@ -18,36 +18,25 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void generateTags() {
 
-        tripwireHookTagged();
+        taggedAsTripwireHook();
         hoeTagged();
         swordTagged();
 
-        slabTagged();
-        stairsTagged();
+        taggedAsSlab();
+        taggedAsStairs();
         fishTagged();
         stoneMaterialTagged();
     }
 
-    private void slabTagged(){
-        copy(BlockTags.SLABS, ItemTags.SLABS);
-    }
 
-    private void stairsTagged(){
-        copy(BlockTags.STAIRS, ItemTags.STAIRS);
-    }
 
-    private void addToFishesTag(Item item){
-        getOrCreateTagBuilder(ItemTags.FISHES).add(item);
-    }
+
 
     private void fishTagged(){
-        addToFishesTag(ModFood.COOKED_TROPICAL_FISH);
+        addToFishTag(ModFood.COOKED_TROPICAL_FISH);
     }
 
-    private void addToStoneMaterialsTag(Item item){
-        getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS).add(item);
-        getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS).add(item);
-    }
+
 
     private void stoneMaterialTagged(){
         addToStoneMaterialsTag(Items.DIORITE);
@@ -58,13 +47,9 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
         addToStoneMaterialsTag(Items.TUFF);
     }
 
-    private void tripwireHookTagged(){
-        copy(XOverhaulTags.Blocks.TRIPWIRE_HOOKS, XOverhaulTags.Items.TRIPWIRE_HOOKS);
-    }
 
-    private void addToHoeTag(Item item){
-        getOrCreateTagBuilder(XOverhaulTags.Items.HOES).add(item);
-    }
+
+
 
     private void hoeTagged(){
         addToHoeTag(Items.WOODEN_HOE);
@@ -75,9 +60,7 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
         addToHoeTag(Items.NETHERITE_HOE);
     }
 
-    private void addToSwordTag(Item item){
-        getOrCreateTagBuilder(XOverhaulTags.Items.SWORDS).add(item);
-    }
+
 
     private void swordTagged(){
         addToSwordTag(Items.WOODEN_SWORD);

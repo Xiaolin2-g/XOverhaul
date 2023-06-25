@@ -1,12 +1,11 @@
 package com.xiaolin.xoverhaul.datagen;
 
+import com.xiaolin.xiaolib.util.interfaces.BlockStateModelGeneratorInterface;
 import com.xiaolin.xoverhaul.init.*;
-import com.xiaolin.xoverhaul.util.interfaces.BlockStateModelGeneratorInterface;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
-import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.*;
 import net.minecraft.item.Item;
 

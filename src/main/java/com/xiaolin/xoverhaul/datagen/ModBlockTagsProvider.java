@@ -1,24 +1,23 @@
 package com.xiaolin.xoverhaul.datagen;
 
+import com.xiaolin.xiaolib.util.ModTags;
 import com.xiaolin.xoverhaul.init.ModBlocks;
 import com.xiaolin.xoverhaul.init.ModPlants;
 import com.xiaolin.xoverhaul.init.ModSlabs;
 import com.xiaolin.xoverhaul.util.DatagenGlobals;
 import com.xiaolin.xoverhaul.util.XOverhaulTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.tag.BlockTags;
 
-public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
+public class ModBlockTagsProvider extends com.xiaolin.xiaolib.datagen.ModBlockTagsProvider {
     public ModBlockTagsProvider(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
     }
 
     @Override
     protected void generateTags() {
-        getOrCreateTagBuilder(XOverhaulTags.Blocks.TRIPWIRE_HOOKS).add(Blocks.TRIPWIRE_HOOK);
+        getOrCreateTagBuilder(ModTags.Blocks.TRIPWIRE_HOOKS).add(Blocks.TRIPWIRE_HOOK);
 
         mineableTagged();
         soulSpeedBlockTagged();
@@ -39,9 +38,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         hoeTagged();
     }
 
-    private void addToPickaxeTag(Block block){
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
-    }
+
 
     private void pickaxeTagged(){
 
@@ -123,9 +120,6 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         bedsToAxeTag();
     }
 
-    private void addToAxeTag(Block block){
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(block);
-    }
 
     private void bedsToAxeTag(){
         addToAxeTag(Blocks.WHITE_BED);
@@ -146,26 +140,19 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToAxeTag(Blocks.BLACK_BED);
     }
 
-    private void addToShovelTag(Block block){
-        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
-    }
 
     private void shovelTagged(){
         addToShovelTag(ModBlocks.DIRTY_SAND);
         addToShovelTag(ModSlabs.DIRT_SLAB);
     }
 
-    private void addToHoeTag(Block block){
-        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE).add(block);
-    }
+
 
     private void hoeTagged(){
         addToHoeTag(ModBlocks.ROTTEN_FLESH_BLOCK);
     }
 
-    private void addToSoulSpeedBlocksTag(Block block){
-        getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS).add(block);
-    }
+
 
     private void soulSpeedBlockTagged(){
         addToSoulSpeedBlocksTag(ModBlocks.SOUL_NETHERRACK);
@@ -176,21 +163,6 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
     }
 
-    private void addToNeedsStoneToolTag(Block block){
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(block);
-    }
-
-    private void addToNeedsIronToolTag(Block block){
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL).add(block);
-    }
-
-    private void addToNeedsDiamondToolTag(Block block){
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(block);
-    }
-
-    private void addToSlabsTag(Block block){
-        getOrCreateTagBuilder(BlockTags.SLABS).add(block);
-    }
 
     private void slabTagged(){
         for(Block slab : DatagenGlobals.SLABS.values()){
@@ -198,9 +170,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         }
     }
 
-    private void addToStairsTag(Block block){
-        getOrCreateTagBuilder(BlockTags.STAIRS).add(block);
-    }
+
 
     private void stairTagged(){
         for(Block stairs : DatagenGlobals.STAIRS.values()){
@@ -208,9 +178,6 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         }
     }
 
-    private void addToWallsTag(Block block){
-        getOrCreateTagBuilder(BlockTags.WALLS).add(block);
-    }
 
     private void wallTagged(){
         for(Block walls : DatagenGlobals.WALLS.values()){
@@ -227,9 +194,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToEnderFlowerPlaceablesTag(ModBlocks.PURPUR_COBBLESTONE);
     }
 
-    private void addToSmallFlowersTag(Block block){
-        getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS).add(block);
-    }
+
 
     private void smallFlowerTagged(){
         addToSmallFlowersTag(ModPlants.ENDER_FLOWER);
@@ -247,28 +212,20 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         addToSmallFlowersTag(ModPlants.BLACK_TULIP);
     }
 
-    private void addToSoulFireBaseTag(Block block){
-        getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS).add(block);
-    }
+
 
     private void soulFireBaseTagged(){
         addToSoulFireBaseTag(ModBlocks.SOUL_NETHERRACK);
         addToSoulFireBaseTag(ModBlocks.SOUL_NETHER_BRICKS);
     }
 
-    private void addToInfiniburnTag(Block block){
-        getOrCreateTagBuilder(BlockTags.INFINIBURN_OVERWORLD).add(block);
-        getOrCreateTagBuilder(BlockTags.INFINIBURN_NETHER).add(block);
-        getOrCreateTagBuilder(BlockTags.INFINIBURN_END).add(block);
-    }
+
 
     private void infiniburnTagged(){
         addToInfiniburnTag(ModBlocks.SOUL_NETHERRACK);
     }
 
-    private void addToLeavesTag(Block block){
-        getOrCreateTagBuilder(BlockTags.LEAVES).add(block);
-    }
+
 
     private void leavesTagged(){
         addToLeavesTag(Blocks.NETHER_WART_BLOCK);

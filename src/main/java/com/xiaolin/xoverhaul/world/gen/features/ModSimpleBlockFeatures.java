@@ -16,17 +16,5 @@ public class ModSimpleBlockFeatures {
 
     // public static PlacedFeature WOODEN_CRATE_PLACED_FEATURE = placeSimpleBlock(WOODEN_CRATE_CONFIGURED_FEATURE, 1);
 
-    private static ConfiguredFeature<?,?> configureSimpleBlock(Block block){
-        return new ConfiguredFeature(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(
-                (BlockStateProvider.of(block))));
-    }
 
-    private static PlacedFeature placeSimpleBlock(ConfiguredFeature<?,?> configuredFeature, int blocksPerChunk){
-        return new PlacedFeature(RegistryEntry.of(configuredFeature),
-                Arrays.asList(
-                        CountPlacementModifier.of(blocksPerChunk), // tries per chunk
-                        SquarePlacementModifier.of(),
-                        PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
-                        BiomePlacementModifier.of()));
-    }
 }

@@ -13,7 +13,7 @@ import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
 import java.util.List;
 
-public class ModOreFeatures {
+public class ModOreFeatures extends com.xiaolin.xiaolib.world.gen.features.ModOreFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> PURPUR_COBBLESTONE_CONFIGURED_FEATURE =
             configureOre("purpur_cobblestone_configured_feature",
@@ -42,32 +42,5 @@ public class ModOreFeatures {
             placeOre("dirty_sand_configured_feature",
                     DIRTY_SAND_CONFIGURED_FEATURE,
                     1, YOffset.fixed(62), YOffset.fixed(65));
-
-
-
-
-    public static RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> configureOre(String id, RuleTest ruleTest,
-                                                                                     Block block, int veinSize){
-        return ConfiguredFeatures.register
-                (id, Feature.ORE,
-                new OreFeatureConfig(
-                        ruleTest,
-                        block.getDefaultState(),
-                        veinSize));
-    }
-
-
-    public static RegistryEntry<PlacedFeature> placeOre(String id, RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> configuredFeature,
-                                                        int veinsPerChunk, YOffset bottomYLevel, YOffset topYLevel){
-
-        return PlacedFeatures.register(
-                id, configuredFeature, List.of(
-                        CountPlacementModifier.of(veinsPerChunk), // number of veins per chunk
-                        SquarePlacementModifier.of(), // spreading horizontally
-                        HeightRangePlacementModifier.uniform(bottomYLevel, topYLevel))); // bottom Y level, top Y level
-    }
-
-
-
 
 }

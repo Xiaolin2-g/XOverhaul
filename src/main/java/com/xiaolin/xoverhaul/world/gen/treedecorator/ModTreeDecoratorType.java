@@ -8,8 +8,6 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.gen.treedecorator.TreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 
-import javax.xml.crypto.dsig.XMLObject;
-
 public class ModTreeDecoratorType implements TreeDecoratorTypeInvoker {
 
    public static TreeDecoratorType<TreeFungusTreeDecorator> TREE_FUNGUS = register("tree_fungus", TreeFungusTreeDecorator.CODEC);

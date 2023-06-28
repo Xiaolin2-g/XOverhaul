@@ -1,12 +1,11 @@
 package com.xiaolin.xoverhaul.mixin;
 
 
-import com.xiaolin.xoverhaul.goals.ArmorTemptGoal;
+import com.xiaolin.xiaolib.goals.ArmorTemptGoal;
 import com.xiaolin.xoverhaul.init.ModArmor;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.passive.VillagerEntity;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;

@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-public class ModPlantFeatures {
+public class ModPlantFeatures extends com.xiaolin.xiaolib.world.gen.features.ModPlantFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> ENDER_FLOWER_CONFIGURED_FEATURE =
             configureFlower("ender_flower_configured_feature", ModPlants.ENDER_FLOWER);
@@ -104,45 +104,6 @@ public class ModPlantFeatures {
 
     public static final RegistryEntry<PlacedFeature> BIRCH_FLOWER_PLACED_FEATURE =
             placeFlower("birch_flower_placed_feature", BIRCH_FLOWER_CONFIGURED_FEATURE, 32);
-
-
-    private static RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> configureFlower(String id, Block flower){
-
-        return ConfiguredFeatures.register(
-                id, Feature.FLOWER,
-                new RandomPatchFeatureConfig(12, 6, 2, // i: tries, j: x and z spread, k: y spread
-                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
-                        (BlockStateProvider.of(flower)))));
-    }
-
-    private static RegistryEntry<PlacedFeature> placeFlower(String id, RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> configuredFeature, int triesPerChunk){
-        return PlacedFeatures.register(id, configuredFeature,
-                List.of(
-                RarityFilterPlacementModifier.of(triesPerChunk), // tries per chunk
-                SquarePlacementModifier.of(),
-                PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
-                BiomePlacementModifier.of()));
-    }
-
-    private static RegistryEntry<PlacedFeature> placeTulip(String id, RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> configuredFeature){
-        return placeFlower(id, configuredFeature, 16);
-    }
-
-    private static RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig, ?>> configureSprouts(String id, Block sprouts){
-
-        return ConfiguredFeatures.register
-                (id, Feature.NETHER_FOREST_VEGETATION,
-                        new NetherForestVegetationFeatureConfig
-                                (BlockStateProvider.of(sprouts),
-                                        8, 4));
-    }
-
-    private static RegistryEntry<PlacedFeature> placeSprouts(String id, RegistryEntry<ConfiguredFeature<NetherForestVegetationFeatureConfig,?>> configuredFeature){
-        return PlacedFeatures.register(id, configuredFeature,
-                CountMultilayerPlacementModifier.of(4),
-                BiomePlacementModifier.of());
-    }
-
 
 }
 

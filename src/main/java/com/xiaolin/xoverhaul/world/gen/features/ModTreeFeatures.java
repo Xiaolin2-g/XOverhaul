@@ -13,7 +13,7 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
-public class ModTreeFeatures {
+public class ModTreeFeatures extends com.xiaolin.xiaolib.world.gen.features.ModTreeFeatures {
 
     public static final TreeFungusTreeDecorator TREE_FUNGUS = new TreeFungusTreeDecorator(1f);
 
@@ -37,31 +37,5 @@ public class ModTreeFeatures {
 
 
 
-    private static RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> configureTree(String id, TreeFeatureConfig.Builder tree){
-        return ConfiguredFeatures.register(id, Feature.TREE, tree.build());
-    }
-
-    private static RegistryEntry<PlacedFeature> checkTree(String id, RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> configuredFeature, Block sapling){
-        return PlacedFeatures.register(id, configuredFeature, PlacedFeatures.wouldSurvive(sapling));
-    }
-
-    private static RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> configureTreeSpawn(String id, RegistryEntry<PlacedFeature> checkedFeature, float spawnChance){
-        return ConfiguredFeatures.register(id, Feature.RANDOM_SELECTOR,
-                new RandomFeatureConfig(List.of(new RandomFeatureEntry(checkedFeature, spawnChance)),
-                        checkedFeature));
-    }
-
-    private static RegistryEntry<PlacedFeature> placeTree(String id, RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> spawnedConfiguredFeature, int count, float extraChance, int extraCount){
-        return PlacedFeatures.register(id, spawnedConfiguredFeature, VegetationPlacedFeatures.modifiers(
-                        PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
-    }
-
-    private static TreeFeatureConfig.Builder builder(Block log, Block leaves, int baseHeight, int firstRandomHeight, int secondRandomHeight, int radius) {
-        return new TreeFeatureConfig.Builder(BlockStateProvider.of(log), new StraightTrunkPlacer(baseHeight, firstRandomHeight, secondRandomHeight), BlockStateProvider.of(leaves), new BlobFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(0), 3), new TwoLayersFeatureSize(1, 0, 1));
-    }
-
-    private static TreeFeatureConfig.Builder birch() {
-        return builder(Blocks.BIRCH_LOG, Blocks.BIRCH_LEAVES, 5, 2, 0, 2).ignoreVines();
-    }
 
 }

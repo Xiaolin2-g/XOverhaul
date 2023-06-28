@@ -13,6 +13,7 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import org.checkerframework.checker.units.qual.C;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -21,19 +22,14 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 @Mixin(ArmorStandItem.class)
 public abstract class ArmorStandArmsMixin implements ArmorStandInvoker {
-
+/*
     @Inject(method = "useOnBlock",
     at = @At(value = "INVOKE",
-    target = "Lnet/minecraft/world/World;emitGameEvent(Lnet/minecraft/entity/Entity;Lnet/minecraft/world/event/GameEvent;Lnet/minecraft/entity/Entity;)V"),
+    target = "Lnet/minecraft/server/world/ServerWorld;spawnEntityAndPassengers(Lnet/minecraft/entity/Entity;)V"),
     locals = LocalCapture.CAPTURE_FAILSOFT,
     cancellable = true)
-    public void showArms(ItemUsageContext context , CallbackInfoReturnable<ActionResult> cir,
-                         World world,
-                         ItemPlacementContext itemPlacementContext, BlockPos blockPos,
-                         ItemStack itemStack, Vec3d vec3d,
-                         Box box, ServerWorld serverWorld,
-                         ArmorStandEntity armorStandEntity){
+    public void showArms(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir, ArmorStandEntity armorStandEntity){
         ((ArmorStandInvoker)armorStandEntity).invokeSetShowArms(true);
     }
-
+*/
 }

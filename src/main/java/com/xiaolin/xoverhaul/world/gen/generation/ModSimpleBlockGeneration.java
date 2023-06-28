@@ -1,6 +1,6 @@
 package com.xiaolin.xoverhaul.world.gen.generation;
 
-public class ModSimpleBlockGeneration extends ModFeatureGeneration{
+public class ModSimpleBlockGeneration {
 
     // public static RegistryKey<ConfiguredFeature<?, ?>> WOODEN_CRATE_CONFIGURED_KEY = registerConfiguredKey("wooden_crate");
     // public static RegistryKey<PlacedFeature> WOODEN_CRATE_PLACED_KEY = registerPlacedKey("wooden_crate");
